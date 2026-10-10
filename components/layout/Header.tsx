@@ -1,9 +1,16 @@
 'use client';
-import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleTheme ,setTheme } from '@/redux/slices/themeSlice';
 
-const Header = ({ mode, setTheme }) => {
+const Header = ({ mode }) => {
   const isDark = mode === 'dark';
-  // const [theme, setTheme] = useState('dark');
+  const theme = useSelector((state) => state.theme.theme);
+  const dispatch = useDispatch()
+
+  const setMyTheme = () => {
+    console.log(theme)
+    dispatch(toggleTheme())
+  };
 
   const styles = {
     header: isDark ? 'border-white/10 bg-[#050606]/90 text-white' : 'border-slate-200 bg-white/95 text-slate-900 shadow-sm',
@@ -166,7 +173,7 @@ const Header = ({ mode, setTheme }) => {
         <nav className="hidden items-center gap-5 lg:flex">
           {menuSections.map((section) => (
             <div className="group relative" key={section.title}>
-              <button style={{fontFamily:"Space Grotesk"}} type="button" className={`flex items-center gap-2 py-7 text-sm transition cursor-pointer ${styles.navButton}`}>
+              <button style={{ fontFamily: 'Space Grotesk' }} type="button" className={`flex items-center gap-2 py-7 text-sm transition cursor-pointer ${styles.navButton}`}>
                 {section.title}
 
                 <span className="text-[10px] transition-transform duration-200 group-hover:rotate-180">⌄</span>
@@ -194,7 +201,7 @@ const Header = ({ mode, setTheme }) => {
 
           {/* Header Actions */}
           <div className="flex items-center gap-4">
-            <button type="button" onClick={() => setTheme(mode === 'dark' ? 'light' : 'dark')} className={`flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border text-lg transition-all duration-300 ${mode === 'dark' ? 'border-arventa-gold/30 bg-black/80 text-arventa-gold hover:border-arventa-gold hover:bg-arventa-gold/10 hover:shadow-[0_0_20px_rgba(217,168,62,0.2)]' : 'border-slate-200 bg-white text-arventa-gold shadow-sm hover:border-arventa-gold hover:bg-arventa-gold/[0.06] hover:shadow-[0_8px_20px_rgba(15,23,42,0.1)]'}`} aria-label="Toggle theme">
+            <button type="button" onClick={() => setMyTheme()} className={`flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border text-lg transition-all duration-300 ${mode === 'dark' ? 'border-arventa-gold/30 bg-black/80 text-arventa-gold hover:border-arventa-gold hover:bg-arventa-gold/10 hover:shadow-[0_0_20px_rgba(217,168,62,0.2)]' : 'border-slate-200 bg-white text-arventa-gold shadow-sm hover:border-arventa-gold hover:bg-arventa-gold/[0.06] hover:shadow-[0_8px_20px_rgba(15,23,42,0.1)]'}`} aria-label="Toggle theme">
               {mode === 'dark' ? '☀' : '☾'}
             </button>
 

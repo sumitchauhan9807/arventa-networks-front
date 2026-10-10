@@ -1,0 +1,61 @@
+main.dark .gold-text {
+  background: linear-gradient(
+    90deg,
+    #f6d27a,
+    #d9a83e,
+    #a87920
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+main.dark .grid-bg {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+  background-size: 60px 60px;
+}
+
+main.dark .noise {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 5px 5px;
+  opacity: 0.08;
+}
+
+main.dark .network-line {
+  stroke-dasharray: 8 10;
+  animation: networkMove 5s linear infinite;
+}
+
+@keyframes networkMove {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+main.dark .pulse-ring {
+  animation: pulseRing 3s ease-out infinite;
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,301 @@
+
+/* =========================================================
+   PBX CORE PULSES
+========================================================= */
+
+.pbx-core-pulse {
+  animation: pbxCorePulse 3.5s ease-out infinite;
+}
+
+.pbx-core-pulse-2 {
+  animation: pbxCorePulse 3.5s ease-out 1.2s infinite;
+}
+
+@keyframes pbxCorePulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.75);
+    opacity: 0;
+  }
+
+  35% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.25);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================================
+   PBX SIGNAL RINGS
+========================================================= */
+
+.pbx-signal-ring {
+  animation: pbxSignal 2.4s ease-out infinite;
+}
+
+.pbx-signal-ring-2 {
+  animation: pbxSignal 2.4s ease-out 0.7s infinite;
+}
+
+@keyframes pbxSignal {
+  0% {
+    transform: scale(0.75);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================================
+   MOVING CALL PACKETS
+========================================================= */
+
+.pbx-packet {
+  animation: pbxPacket 2.8s linear infinite;
+}
+
+.pbx-packet-reverse {
+  animation-name: pbxPacketReverse;
+}
+
+@keyframes pbxPacket {
+  0% {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(-50%) scale(0.5);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+@keyframes pbxPacketReverse {
+  0% {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(-50%) scale(0.5);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+
+/* =========================================================
+   CONNECTION LIGHT
+========================================================= */
+
+.pbx-line-glow {
+  animation: pbxLineGlow 2.8s linear infinite;
+}
+
+@keyframes pbxLineGlow {
+  0% {
+    left: -30%;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+
+
+/* =========================================================
+   ONLINE STATUS
+========================================================= */
+
+.pbx-status-dot {
+  animation: pbxStatus 1.8s ease-in-out infinite;
+}
+
+@keyframes pbxStatus {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.85);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+
+/* =========================================================
+   EXTENSION FLOAT
+========================================================= */
+
+.pbx-extension {
+  animation: pbxExtension 4s ease-in-out infinite;
+}
+
+@keyframes pbxExtension {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+
+/* =========================================================
+   CALL BADGE FLOAT
+========================================================= */
+
+.pbx-call-badge {
+  animation: pbxBadge 4s ease-in-out infinite;
+}
+
+@keyframes pbxBadge {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+
+/* =========================================================
+   VOICE WAVEFORM
+========================================================= */
+
+.pbx-wave {
+  animation: pbxWave 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes pbxWave {
+  from {
+    transform: scaleY(0.45);
+    opacity: 0.45;
+  }
+
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   SCAN LINE
+========================================================= */
+
+.pbx-scan {
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(217, 168, 62, 0.08),
+    transparent
+  );
+
+  animation: pbxScan 6s ease-in-out infinite;
+}
+
+@keyframes pbxScan {
+  0% {
+    transform: translateY(-260px);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(260px);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .pbx-core-pulse,
+  .pbx-core-pulse-2,
+  .pbx-signal-ring,
+  .pbx-signal-ring-2,
+  .pbx-packet,
+  .pbx-line-glow,
+  .pbx-status-dot,
+  .pbx-extension,
+  .pbx-call-badge,
+  .pbx-wave,
+  .pbx-scan {
+    animation: none !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+  .pbx-extension {
+    transform: scale(0.82);
+  }
+
+  .pbx-call-badge {
+    transform: scale(0.78);
+  }
+}
+

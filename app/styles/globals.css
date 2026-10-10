@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+body {
+  margin: 0;
+  /* font-family: "IBM Plex Sans", Arial, sans-serif; */
+
+}
+
+p {
+  font-family:"Space Grotesk" !important
+}
 
 /* =========================================================
        DESKTOP DROPDOWN NAVIGATION
@@ -164,41 +173,31 @@ main.light .dropdown-link:hover small {
 
 /* Gold line */
 .dark .gold-line {
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #d9a83e,
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      #d9a83e,
+      transparent);
 }
 
 /* Hero glow */
 .dark .hero-glow {
   background:
-    radial-gradient(
-      circle at 70% 45%,
+    radial-gradient(circle at 70% 45%,
       rgba(217, 168, 62, 0.18),
-      transparent 25%
-    ),
-    radial-gradient(
-      circle at 85% 50%,
+      transparent 25%),
+    radial-gradient(circle at 85% 50%,
       rgba(255, 190, 50, 0.08),
-      transparent 35%
-    );
+      transparent 35%);
 }
 
 /* Grid background */
 .dark .grid-bg {
   background-image:
-    linear-gradient(
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px),
+    linear-gradient(90deg,
       rgba(255, 255, 255, 0.025) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.025) 1px,
-      transparent 1px
-    );
+      transparent 1px);
 
   background-size: 60px 60px;
 }
@@ -570,6 +569,7 @@ main.light .dropdown-link:hover small {
    ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
+
   .dark .global-orbit,
   .dark .global-orbit-2,
   .dark .hero-node-dot::after,

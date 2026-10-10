@@ -1,0 +1,66 @@
+main.light .font-display {
+  font-family: "Space Grotesk", Arial, sans-serif;
+}
+
+main.light ::selection {
+  background: #D9A83E;
+  color: #000;
+}
+
+main.light .gold-text {
+  background: linear-gradient(
+    90deg,
+    #b88725,
+    #D9A83E,
+    #a87318
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+main.light .light-grid {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+  background-size: 55px 55px;
+}
+
+main.light .network-line {
+  stroke-dasharray: 8 12;
+  animation: networkFlow 7s linear infinite;
+}
+
+main.light .network-line-reverse {
+  stroke-dasharray: 6 14;
+  animation: networkFlowReverse 9s linear infinite;
+}
+
+@keyframes networkFlow {
+  to {
+    stroke-dashoffset: -180;
+  }
+}
+
+@keyframes networkFlowReverse {
+  to {
+    stroke-dashoffset: 180;
+  }
+}
+
+main.light .network-pulse {
+  animation: networkPulse 3s ease-in-out infinite;
+}
+
+@keyframes networkPulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}

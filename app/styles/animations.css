@@ -1,0 +1,941 @@
+.hero-network-node {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  min-width: 112px;
+
+  padding: 10px 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 10px;
+
+  /* background: rgba(7, 9, 9, 0.78); */
+
+  backdrop-filter: blur(14px);
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hero-network-node:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(217, 168, 62, 0.5);
+
+  box-shadow: 0 15px 45px rgba(217, 168, 62, 0.1);
+}
+
+.hero-node-dot {
+  position: relative;
+
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 999px;
+
+  background: #d9a83e;
+
+  box-shadow: 0 0 14px rgba(217, 168, 62, 0.9);
+}
+
+.hero-node-dot::after {
+  content: "";
+
+  position: absolute;
+
+  inset: -5px;
+
+  border: 1px solid rgba(217, 168, 62, 0.25);
+
+  border-radius: 999px;
+
+  animation: heroNodePulse 2s infinite;
+}
+
+@keyframes heroNodePulse {
+  0% {
+    transform: scale(0.7);
+    opacity: 1;
+  }
+
+  70% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.network-traffic-bar {
+  width: 65%;
+
+  animation: trafficMove 2.2s ease-in-out infinite alternate;
+}
+
+@keyframes trafficMove {
+  from {
+    width: 45%;
+  }
+
+  to {
+    width: 85%;
+  }
+}
+
+
+
+
+/* =========================================================
+   EXISTING NETWORK ANIMATION
+   ========================================================= */
+
+.network-line {
+  stroke-dasharray: 8 10;
+  animation: networkFlow 8s linear infinite;
+}
+
+.network-line-reverse {
+  stroke-dasharray: 5 12;
+  animation: networkFlowReverse 10s linear infinite;
+}
+
+@keyframes networkFlow {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: -180;
+  }
+}
+
+@keyframes networkFlowReverse {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 180;
+  }
+}
+
+
+/* =========================================================
+   CENTRAL NETWORK PULSE
+   ========================================================= */
+
+.network-pulse::before {
+  content: '';
+  position: absolute;
+  inset: -14px;
+  border-radius: 9999px;
+  border: 1px solid rgba(217, 168, 62, 0.12);
+  animation: networkPulse 3.5s ease-out infinite;
+}
+
+@keyframes networkPulse {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .signal-wave,
+  .signal-dot,
+  .network-line,
+  .network-line-reverse,
+  .network-pulse::before {
+    animation: none;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+  .signal-field {
+    width: 560px;
+  }
+}
+
+/* =========================================================
+   WORLD NETWORK ROUTES
+========================================================= */
+
+.world-route {
+  stroke-dasharray: 120 30;
+  animation: worldRouteFlow 8s linear infinite;
+}
+
+.world-route-pulse {
+  animation: worldRoutePulse 3.5s linear infinite;
+}
+
+
+/* =========================================================
+   ROUTE DELAYS
+========================================================= */
+
+.world-route-0,
+.world-route-pulse-0 {
+  animation-delay: 0s;
+}
+
+.world-route-1,
+.world-route-pulse-1 {
+  animation-delay: -0.8s;
+}
+
+.world-route-2,
+.world-route-pulse-2 {
+  animation-delay: -1.5s;
+}
+
+.world-route-3,
+.world-route-pulse-3 {
+  animation-delay: -2.2s;
+}
+
+.world-route-4,
+.world-route-pulse-4 {
+  animation-delay: -3s;
+}
+
+.world-route-5,
+.world-route-pulse-5 {
+  animation-delay: -1.2s;
+}
+
+.world-route-6,
+.world-route-pulse-6 {
+  animation-delay: -2.8s;
+}
+
+.world-route-7,
+.world-route-pulse-7 {
+  animation-delay: -1.8s;
+}
+
+.world-route-8,
+.world-route-pulse-8 {
+  animation-delay: -3.4s;
+}
+
+.world-route-9,
+.world-route-pulse-9 {
+  animation-delay: -0.5s;
+}
+
+.world-route-10,
+.world-route-pulse-10 {
+  animation-delay: -2.5s;
+}
+
+.world-route-11,
+.world-route-pulse-11 {
+  animation-delay: -4s;
+}
+
+
+/* =========================================================
+   ROUTE ANIMATION
+========================================================= */
+
+@keyframes worldRouteFlow {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: -300;
+  }
+}
+
+@keyframes worldRoutePulse {
+  0% {
+    stroke-dashoffset: 40;
+    opacity: 0.15;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 0.65;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: -120;
+    opacity: 0.15;
+  }
+}
+
+
+/* =========================================================
+   CITY NODES
+========================================================= */
+
+.map-node-ring {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: mapNodeRing 2.8s ease-out infinite;
+}
+
+.map-node-glow {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: mapNodeGlow 2.2s ease-in-out infinite;
+}
+
+.map-node {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: mapNodeCore 2.2s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   NODE TIMING
+========================================================= */
+
+.map-node-ring-0 {
+  animation-delay: 0s;
+}
+
+.map-node-ring-1 {
+  animation-delay: -0.3s;
+}
+
+.map-node-ring-2 {
+  animation-delay: -0.6s;
+}
+
+.map-node-ring-3 {
+  animation-delay: -0.9s;
+}
+
+.map-node-ring-4 {
+  animation-delay: -1.2s;
+}
+
+.map-node-ring-5 {
+  animation-delay: -1.5s;
+}
+
+.map-node-ring-6 {
+  animation-delay: -1.8s;
+}
+
+.map-node-ring-7 {
+  animation-delay: -2.1s;
+}
+
+.map-node-ring-8 {
+  animation-delay: -2.4s;
+}
+
+
+/* =========================================================
+   NODE GLOW TIMING
+========================================================= */
+
+.map-node-glow-0 {
+  animation-delay: 0s;
+}
+
+.map-node-glow-1 {
+  animation-delay: -0.4s;
+}
+
+.map-node-glow-2 {
+  animation-delay: -0.8s;
+}
+
+.map-node-glow-3 {
+  animation-delay: -1.2s;
+}
+
+.map-node-glow-4 {
+  animation-delay: -1.6s;
+}
+
+.map-node-glow-5 {
+  animation-delay: -2s;
+}
+
+.map-node-glow-6 {
+  animation-delay: -2.4s;
+}
+
+.map-node-glow-7 {
+  animation-delay: -2.8s;
+}
+
+.map-node-glow-8 {
+  animation-delay: -3.2s;
+}
+
+
+/* =========================================================
+   NODE KEYFRAMES
+========================================================= */
+
+@keyframes mapNodeRing {
+  0% {
+    transform: scale(0.55);
+    opacity: 0.7;
+  }
+
+  65% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+@keyframes mapNodeGlow {
+  0%,
+  100% {
+    transform: scale(0.75);
+    opacity: 0.15;
+  }
+
+  50% {
+    transform: scale(1.55);
+    opacity: 0.5;
+  }
+}
+
+@keyframes mapNodeCore {
+  0%,
+  100% {
+    transform: scale(0.85);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 640px) {
+  .world-route {
+    stroke-dasharray: 80 25;
+  }
+
+  .world-route-pulse {
+    stroke-dasharray: 2 14;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .world-route,
+  .world-route-pulse,
+  .map-node-ring,
+  .map-node-glow,
+  .map-node {
+    animation: none !important;
+  }
+}
+
+
+/* =========================================================
+   ECOSYSTEM MOTION SYSTEM
+   ========================================================= */
+
+@keyframes ecosystem-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
+@keyframes ecosystem-float-alt {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(0, -16px, 0) rotate(0.5deg);
+  }
+}
+
+@keyframes ecosystem-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 0.75;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes ecosystem-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(198, 161, 91, 0),
+      0 0 25px rgba(198, 161, 91, 0.08);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 12px rgba(198, 161, 91, 0.035),
+      0 0 55px rgba(198, 161, 91, 0.22);
+  }
+}
+
+@keyframes ecosystem-node-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: scale(1.45);
+    opacity: 1;
+  }
+}
+
+@keyframes ecosystem-line-flow {
+  0% {
+    stroke-dashoffset: 120;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ecosystem-orbit {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes ecosystem-orbit-reverse {
+  from {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+/* =========================================================
+   FLOATING CARDS
+   ========================================================= */
+
+.ecosystem-float {
+  animation: ecosystem-float 5.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.ecosystem-float-alt {
+  animation: ecosystem-float-alt 6.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
+
+.ecosystem-card {
+  transition:
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 500ms ease,
+    border-color 500ms ease;
+}
+
+.ecosystem-card:hover {
+  transform: translateY(-10px) scale(1.025);
+}
+
+/* =========================================================
+   CARD LIGHT SWEEP
+   ========================================================= */
+
+.ecosystem-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    120deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.08) 45%,
+    transparent 70%
+  );
+
+  transform: translateX(-120%);
+  transition: transform 800ms ease;
+}
+
+.ecosystem-card:hover::after {
+  transform: translateX(120%);
+}
+
+/* =========================================================
+   CENTRAL HUB
+   ========================================================= */
+
+.network-pulse {
+  animation: ecosystem-pulse 3.5s ease-in-out infinite;
+}
+
+/* =========================================================
+   AMBIENT GLOW
+   ========================================================= */
+
+.ecosystem-atmosphere {
+  animation: ecosystem-glow 5s ease-in-out infinite;
+}
+
+/* =========================================================
+   SVG CONNECTIONS
+   ========================================================= */
+
+.ecosystem-line {
+  stroke-dasharray: 8 12;
+  animation: ecosystem-line-flow 4s linear infinite;
+}
+
+.ecosystem-line:nth-child(2) {
+  animation-delay: -1s;
+}
+
+.ecosystem-line:nth-child(3) {
+  animation-delay: -2s;
+}
+
+.ecosystem-line:nth-child(4) {
+  animation-delay: -3s;
+}
+
+/* =========================================================
+   ORBITS
+   ========================================================= */
+
+.ecosystem-orbit-primary {
+  animation: ecosystem-orbit 28s linear infinite;
+}
+
+.ecosystem-orbit-secondary {
+  animation: ecosystem-orbit-reverse 22s linear infinite;
+}
+
+/* =========================================================
+   NODE GLOW
+   ========================================================= */
+
+.ecosystem-node-ring {
+  animation: ecosystem-node-pulse 2.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .ecosystem-float,
+  .ecosystem-float-alt,
+  .network-pulse,
+  .ecosystem-atmosphere,
+  .ecosystem-line,
+  .ecosystem-orbit-primary,
+  .ecosystem-orbit-secondary,
+  .ecosystem-node-ring {
+    animation: none !important;
+  }
+
+  .ecosystem-card {
+    transition: none;
+  }
+}
+
+/* ============================================================
+   COMPLIANCE / KYC / KYB ANIMATIONS
+============================================================ */
+
+/* Regulatory orbit */
+
+.compliance-orbit {
+  animation: compliance-orbit 18s linear infinite;
+  transform-origin: center;
+}
+
+.compliance-orbit-2 {
+  animation: compliance-orbit-reverse 24s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes compliance-orbit {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes compliance-orbit-reverse {
+  from {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(-270deg);
+  }
+}
+
+
+/* Compliance nodes */
+
+.compliance-node {
+  animation: compliance-node-float 5s ease-in-out infinite;
+}
+
+.compliance-node:nth-child(2) {
+  animation-delay: -1.5s;
+}
+
+@keyframes compliance-node-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+
+/* Compliance grid */
+
+.compliance-grid {
+  animation: compliance-grid-breathe 8s ease-in-out infinite;
+  mask-image: radial-gradient(
+    circle at center,
+    black 0%,
+    rgba(0,0,0,.7) 35%,
+    transparent 72%
+  );
+}
+
+@keyframes compliance-grid-breathe {
+  0%,
+  100% {
+    opacity: .25;
+  }
+
+  50% {
+    opacity: .5;
+  }
+}
+
+
+/* Progress bar */
+
+.compliance-progress-bar {
+  width: 96.4%;
+  animation: compliance-progress 3.5s ease-in-out infinite;
+  transform-origin: left;
+}
+
+@keyframes compliance-progress {
+  0% {
+    transform: scaleX(.92);
+  }
+
+  50% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(.92);
+  }
+}
+
+
+/* Regulatory scanning line */
+
+.compliance-scan {
+  animation: compliance-scan 5s ease-in-out infinite;
+}
+
+@keyframes compliance-scan {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0) scaleX(.5);
+  }
+
+  25% {
+    opacity: .8;
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(230px) scaleX(1);
+  }
+
+  75% {
+    opacity: .5;
+  }
+}
+
+
+/* Verification particles */
+
+.compliance-particle {
+  animation: compliance-particle-float 6s ease-in-out infinite;
+}
+
+.compliance-particle-1 {
+  animation-delay: -1s;
+}
+
+.compliance-particle-2 {
+  animation-delay: -3s;
+}
+
+.compliance-particle-3 {
+  animation-delay: -4.5s;
+}
+
+.compliance-particle-4 {
+  animation-delay: -2s;
+}
+
+@keyframes compliance-particle-float {
+  0%,
+  100% {
+    opacity: .35;
+    transform: translate3d(0, 0, 0) scale(.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate3d(0, -12px, 0) scale(1.25);
+  }
+}
+
+
+/* Vertical regulatory data streams */
+
+.compliance-stream {
+  animation: compliance-stream 4s ease-in-out infinite;
+}
+
+.stream-1 {
+  animation-delay: -1s;
+}
+
+.stream-2 {
+  animation-delay: -2.2s;
+}
+
+.stream-3 {
+  animation-delay: -3s;
+}
+
+.stream-4 {
+  animation-delay: -.5s;
+}
+
+@keyframes compliance-stream {
+  0%,
+  100% {
+    opacity: .15;
+    transform: translateY(-15px) scaleY(.7);
+  }
+
+  50% {
+    opacity: .75;
+    transform: translateY(25px) scaleY(1);
+  }
+}
+
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .compliance-orbit,
+  .compliance-orbit-2,
+  .compliance-node,
+  .compliance-grid,
+  .compliance-progress-bar,
+  .compliance-scan,
+  .compliance-particle,
+  .compliance-stream {
+    animation: none !important;
+  }
+}
+
+
