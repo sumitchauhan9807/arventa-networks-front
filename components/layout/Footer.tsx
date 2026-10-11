@@ -1,555 +1,559 @@
-const Footer = ({ mode }) => {
-  const isDark = mode === 'dark';
+
+import { useSelector } from 'react-redux';
+
+const Footer = () => {
+  const theme = useSelector((state) => state.theme?.theme);
+  const isDark = theme === 'dark';
 
   const offices = [
     {
-      region: 'Headquarters',
-      city: 'New York',
-      address: (
-        <>
-          123 Example Avenue
-          <br />
-          New York, NY 10001
-          <br />
-          United States
-        </>
-      ),
+      title: 'Head Office, Arventa Networks LLC',
+      lines: [
+        'dept. Tornadodialer',
+        '8051 N. Tamiami Trail, STE E6',
+        'Sarasota, Florida 34243',
+      ],
+      email: 'sales@arventa.us',
     },
     {
-      region: 'Europe',
-      city: 'London',
-      address: (
-        <>
-          45 Example Street
-          <br />
-          London EC1A 1AA
-          <br />
-          United Kingdom
-        </>
-      ),
+      title: 'Head Office, Arventa Networks',
+      lines: ['Alte Steinhauserstrasse 10', '6330 Cham'],
+      email: 'sales@arventa.ch',
     },
     {
-      region: 'Asia Pacific',
-      city: 'Singapore',
-      address: (
-        <>
-          80 Example Road
-          <br />
-          Singapore 048624
-          <br />
-          Singapore
-        </>
-      ),
+      title: 'Head Office, Arventa EURL',
+      lines: ['73-75, rue de la Plaine', '75020 Paris'],
+      email: 'sales@arventa.net',
     },
     {
-      region: 'Middle East',
-      city: 'Dubai',
-      address: (
-        <>
-          100 Example Boulevard
-          <br />
-          Dubai
-          <br />
-          United Arab Emirates
-        </>
-      ),
+      title: 'Head Office, Arventa Networks B.V.',
+      lines: [
+        'Netherlands',
+        'Weesperstraat 107–121',
+        '1018VN Amsterdam',
+      ],
+      email: 'sales@arventa.net',
     },
     {
-      region: 'South Asia',
-      city: 'Mumbai',
-      address: (
-        <>
-          200 Example Tower
-          <br />
-          Mumbai, Maharashtra 400001
-          <br />
-          India
-        </>
-      ),
+      title: 'Branch Office, Arventa Networks',
+      lines: ['Erika-Mann-Straße 23', '80636 München'],
+      email: 'sales@ar-venta.de',
     },
     {
-      region: 'Operations',
-      city: 'Frankfurt',
-      address: (
-        <>
-          30 Example Platz
-          <br />
-          60311 Frankfurt
-          <br />
-          Germany
-        </>
-      ),
+      title: 'Branch Office, Arventa Networks',
+      lines: ['Hammer Straße 19', '40219 Düsseldorf'],
+      email: 'sales@ar-venta.de',
+    },
+    {
+      title: 'Head Office, Arventa Networks LTD.',
+      lines: [
+        '71-75 Shelton Street',
+        'Covent Garden',
+        'London WC2H 9JQ',
+        'United Kingdom',
+        'Company Number 17322837',
+      ],
+      email: 'sales@arventa.net',
+    },
+    {
+      title: 'Branch Office, Arventa Networks',
+      lines: ['Stephansplatz 8/20', '1010 Wien'],
+      email: 'sales@arventa.net',
     },
   ];
 
-  const navigation = [
+  const phoneNumbers = [
+    {
+      flag: '🇺🇸',
+      number: '+1 929 201 7707',
+      location: 'US Customer Service (24×7)',
+      tel: '+19292017707',
+    },
+    {
+      flag: '🇺🇸',
+      number: '+1 786 400 2626',
+      location: 'US Office (9:00 AM to 8:00 PM)',
+      tel: '+17864002626',
+    },
+    {
+      flag: '🇬🇧',
+      number: '+44 20 451 46 680',
+      location: 'United Kingdom',
+      tel: '+442045146680',
+    },
+    {
+      flag: '🇩🇪',
+      number: '+49 211 88 2 33 7000',
+      location: 'Düsseldorf, Germany',
+      tel: '+49211882337000',
+    },
+    {
+      flag: '🇩🇪',
+      number: '+49 89 26 20 74 900',
+      location: 'Munich, Germany',
+      tel: '+4989262074900',
+    },
+    {
+      flag: '🇦🇹',
+      number: '+43 19 284 49 400',
+      location: 'Austria, Wien',
+      tel: '+431928449400',
+    },
+    {
+      flag: '🇧🇪',
+      number: '+32 33 88 2300',
+      location: 'Belgium',
+      tel: '+3233882300',
+    },
+    {
+      flag: '🇫🇷',
+      number: '+33 18 77 06 400',
+      location: 'France, Paris',
+      tel: '+33187706400',
+    },
+    {
+      flag: '🇳🇱',
+      number: '+31 205 326 153',
+      location: 'Netherlands, Amsterdam',
+      tel: '+31205326153',
+    },
+  ];
+
+  const linkGroups = [
+    {
+      title: 'Services',
+      links: [
+        { label: 'Carrier & Network', href: '#network' },
+        { label: 'Cloud & Communications', href: '#solutions' },
+        { label: 'Software & AI', href: '#solutions' },
+        { label: 'Contact Center & Dialer', href: '#solutions' },
+      ],
+    },
+    {
+      title: 'Products',
+      links: [
+        { label: 'Tornadodialer', href: '#' },
+        { label: 'Call Con Dialer', href: '#' },
+      ],
+    },
     {
       title: 'Company',
       links: [
-        ['About Arventa', 'about.html'],
-        ['Team & 24/7 Operations', '#team'],
-        ['Partners & Ecosystem', '#partners'],
-        ['Compliance', '#compliance'],
-      ],
-    },
-    {
-      title: 'Carrier & Network',
-      links: [
-        ['Carrier & Wholesale', '#'],
-        ['Voice & SIP', '#'],
-        ['Phone Numbers & DIDs', '#'],
-        ['Internet & Connectivity', '#'],
-        ['VPN & Security', '#'],
-      ],
-    },
-    {
-      title: 'Mobile & IoT',
-      links: [
-        ['Mobile & MVNO', '#'],
-        ['eSIM', '#'],
-        ['IoT / M2M', '#'],
-      ],
-    },
-    {
-      title: 'Contact Center',
-      links: [
-        ['Solutions', '#'],
-        ['Tornado Dialer', '#'],
-        ['Call Con Dialer', '#'],
-        ['AI Platform', '#'],
-        ['Fraud Prevention', '#'],
-        ['Software & APIs', '#'],
+        { label: 'About Us', href: '#about' },
+        { label: 'Industries', href: '#industries' },
+        { label: 'Careers', href: '#careers' },
       ],
     },
   ];
 
+  const legalLinks = [
+    { label: 'Cookie Policy', href: '/cookie-policy' },
+    { label: 'Privacy Policy', href: '/privacy-policy' },
+    { label: 'Terms of Use', href: '/terms-of-use' },
+  ];
+
   const styles = {
-    footer: isDark ? 'bg-[#030404] text-white' : 'bg-white text-slate-900',
+    footer: isDark
+      ? 'border-t border-white/10 bg-[#070909] text-white'
+      : 'border-t border-[#151716]/10 bg-[#F7F5F0] text-[#151716]',
 
-    divider: isDark ? 'border-white/10' : 'border-slate-200',
+    mainGlow: isDark
+      ? 'bg-[#D9A83E]/[0.055]'
+      : 'bg-[#D9A83E]/[0.10]',
 
-    heading: isDark ? 'text-white' : 'text-slate-900',
+    leftGlow: isDark
+      ? 'bg-[#D9A83E]/[0.025]'
+      : 'bg-[#D9A83E]/[0.045]',
 
-    muted: isDark ? 'text-white/40' : 'text-slate-500',
+    rightGlow: isDark
+      ? 'bg-[#D9A83E]/[0.02]'
+      : 'bg-[#D9A83E]/[0.035]',
 
-    officeBorder: isDark ? 'border-white/10' : 'border-slate-200',
+    radialGlow: isDark
+      ? 'bg-[radial-gradient(circle_at_50%_15%,rgba(217,168,62,0.08),transparent_40%)]'
+      : 'bg-[radial-gradient(circle_at_50%_15%,rgba(217,168,62,0.10),transparent_40%)]',
 
-    officeBackground: isDark ? 'bg-white/[0.02]' : 'bg-slate-50',
+    dots: isDark
+      ? 'bg-[radial-gradient(circle,rgba(255,255,255,0.16)_1px,transparent_1px)]'
+      : 'bg-[radial-gradient(circle,rgba(21,23,22,0.12)_1px,transparent_1px)]',
 
-    officeCity: isDark ? 'text-white' : 'text-slate-900',
+    goldDots:
+      'bg-[radial-gradient(circle,rgba(217,168,62,0.18)_1px,transparent_1px)]',
 
-    officeAddress: isDark ? 'text-white/45' : 'text-slate-500',
+    bottomFade: isDark
+      ? 'from-[#070909]'
+      : 'from-[#F7F5F0]',
 
-    brandSubtext: isDark ? 'text-white/70' : 'text-slate-500',
+    heading: isDark
+      ? 'text-white'
+      : 'text-[#151716]',
 
-    brandDescription: isDark ? 'text-white/50' : 'text-slate-500',
+    body: isDark
+      ? 'text-white/55'
+      : 'text-[#151716]/65',
 
-    navHeading: isDark ? 'text-white/80' : 'text-slate-800',
+    muted: isDark
+      ? 'text-white/35'
+      : 'text-[#151716]/45',
 
-    navLink: isDark ? 'text-white/55 hover:text-arventa-gold' : 'text-slate-500 hover:text-arventa-gold',
+    divider: isDark
+      ? 'border-white/10'
+      : 'border-[#151716]/10',
 
-    bottomText: isDark ? 'text-white/45' : 'text-slate-500',
+    link: isDark
+      ? 'text-white/60 hover:text-[#D9A83E]'
+      : 'text-[#151716]/65 hover:text-[#B88725]',
   };
 
   return (
     <footer
       className={`
-        footer
-        ${isDark ? 'dark' : 'light'}
+        relative isolate overflow-hidden
         ${styles.footer}
       `}
     >
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        {/* =====================================================
-            OUR OFFICES
-        ====================================================== */}
-        <section>
-          <div className="mb-8 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
-            <div>
-              <div className="text-[10px] font-semibold uppercase tracking-[.3em] text-arventa-gold">Global Presence</div>
+      {/* Shared ambient background */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10"
+      >
+        {/* Main top gold glow */}
+        <div
+          className={`
+            absolute left-1/2 top-[-250px]
+            h-[700px] w-[1100px] max-w-none
+            -translate-x-1/2 rounded-full blur-[160px]
+            ${styles.mainGlow}
+          `}
+        />
 
-              <h3
-                className={`
-                  mt-2 text-xl font-semibold
-                  ${styles.heading}
-                `}
-              >
-                Our Offices
-              </h3>
-            </div>
+        {/* Left ambient glow */}
+        <div
+          className={`
+            absolute -left-[300px] top-[35%]
+            h-[600px] w-[600px] rounded-full blur-[150px]
+            ${styles.leftGlow}
+          `}
+        />
+
+        {/* Right ambient glow */}
+        <div
+          className={`
+            absolute -right-[300px] bottom-[10%]
+            h-[600px] w-[600px] rounded-full blur-[150px]
+            ${styles.rightGlow}
+          `}
+        />
+
+        {/* Radial gold highlight */}
+        <div
+          className={`absolute inset-0 ${styles.radialGlow}`}
+        />
+
+        {/* Fine background dots */}
+        <div
+          className={`
+            absolute inset-0 ${styles.dots}
+            bg-[size:24px_24px]
+          `}
+        />
+
+        {/* Subtle gold dot pattern */}
+        <div
+          className={`
+            absolute inset-0 ${styles.goldDots}
+            bg-[size:48px_48px]
+          `}
+        />
+
+        {/* Bottom fade */}
+        <div
+          className={`
+            absolute inset-x-0 bottom-0 h-1/3
+            bg-gradient-to-t to-transparent
+            ${styles.bottomFade}
+          `}
+        />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+        {/* Brand and navigation */}
+        <div
+          className={`
+            grid gap-12 border-b py-16
+            md:grid-cols-2
+            lg:grid-cols-[1.6fr_1fr_1fr_1fr]
+            lg:gap-10
+            ${styles.divider}
+          `}
+        >
+          {/* Brand */}
+          <div>
+            <a
+              href="#hero"
+              aria-label="Arventa Networks home"
+              className="inline-flex items-center"
+            >
+              <img
+                src="https://strapi.arventa.net/uploads/Arventa_logo_8bdf493f5c.png"
+                alt="Arventa Networks"
+                className="h-24 w-auto max-w-[180px] object-contain object-left"
+              />
+            </a>
 
             <p
               className={`
-                max-w-md text-xs leading-6
-                ${styles.muted}
+                mt-5 max-w-sm text-sm leading-7
+                ${styles.body}
               `}
             >
-              Strategically positioned teams supporting our global network, customers and partners around the clock.
+              Carrier and SIP trunk provider headquartered in Florida,
+              USA, with network coverage across 180+ countries.
             </p>
+
+            <a
+              href="mailto:sales@arventa.net"
+              className={`
+                mt-5 inline-flex items-center gap-2
+                text-sm font-medium
+                transition-colors duration-300
+                ${styles.link}
+              `}
+            >
+              Talk to our team
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
 
-          {/* Office Grid */}
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {offices.map((office) => (
-              <div
-                key={office.city}
+          {/* Navigation groups */}
+          {linkGroups.map((group) => (
+            <div key={group.title}>
+              <h3
                 className={`
-                  office-card group relative rounded-xl border p-5
-
-                  transition-all duration-300 ease-out
-
-                  ${styles.officeBorder}
-                  ${styles.officeBackground}
-
-                  hover:-translate-y-1
-                  hover:border-arventa-gold/40
-                  hover:bg-arventa-gold/[0.04]
-                  hover:shadow-[0_12px_35px_rgba(217,168,62,0.12)]
+                  mb-5 text-xs font-semibold uppercase
+                  tracking-[.2em] ${styles.heading}
                 `}
               >
-                {/* Office Header */}
-                <div className="flex items-start justify-between">
-                  <div>
-                    <div
-                      className="
-                        text-[9px]
-                        font-semibold
-                        uppercase
-                        tracking-[.25em]
-                        text-arventa-gold
-                        transition-opacity
-                        duration-300
-                        group-hover:opacity-100
-                      "
-                    >
-                      {office.region}
-                    </div>
+                {group.title}
+              </h3>
 
-                    <h4
-                      className={`
-                        mt-2 text-sm font-semibold
-                        transition-colors duration-300
-                        ${styles.officeCity}
-                        group-hover:text-arventa-gold
-                      `}
-                    >
-                      {office.city}
-                    </h4>
-                  </div>
+              <nav
+                aria-label={group.title}
+                className="flex flex-col items-start gap-3.5"
+              >
+                {group.links.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    className={`
+                      text-sm transition-colors duration-300
+                      ${styles.link}
+                    `}
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </nav>
+            </div>
+          ))}
+        </div>
 
-                  {/* Status Indicator */}
-                  <span
-                    className="
-                      h-2 w-2 rounded-full
-                      bg-arventa-gold
-                      shadow-[0_0_12px_#D9A83E]
-                      transition-all duration-300
-                      group-hover:scale-125
-                      group-hover:shadow-[0_0_18px_#D9A83E]
-                    "
-                  />
-                </div>
-
-                {/* Address */}
-                <p
-                  className={`
-                    mt-4 text-xs leading-6
-                    ${styles.officeAddress}
-                    transition-colors duration-300
-                    group-hover:text-slate-500
-                  `}
-                >
-                  {office.address}
-                </p>
-
-                {/* Map Link */}
-                <a
-                  href="#"
-                  className={`
-                    mt-4 inline-flex items-center
-                    text-[10px]
-                    font-semibold
-                    uppercase
-                    tracking-wider
-
-                    transition-all duration-300
-
-                    ${isDark ? 'text-white/40' : 'text-slate-500'}
-
-                    group-hover:translate-x-1
-                    group-hover:text-arventa-gold
-                  `}
-                >
-                  View on map
-                  <span className="ml-1 transition-transform duration-300 group-hover:translate-x-1">→</span>
-                </a>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* =====================================================
-            BRAND + NAVIGATION
-        ====================================================== */}
-        <section
+        {/* Global offices and phone numbers */}
+        <div
           className={`
-            mt-16
-            border-t
-            pt-14
+            grid gap-12 border-b py-14
+            xl:grid-cols-[1.6fr_1fr] xl:gap-16
             ${styles.divider}
           `}
         >
-          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-6">
-            {/* Brand */}
-            <div className="lg:col-span-2">
-              <a href="index.html" className="group flex items-center gap-3">
-                <div
-                  className="
-                    flex h-10 w-10
-                    items-center justify-center
-                  "
-                >
-                  <span
-                    className="
-                      text-3xl
-                      font-bold
-                      text-arventa-gold
-                      transition-transform
-                      duration-300
-                      group-hover:scale-110
-                    "
-                  >
-                    A
-                  </span>
-                </div>
+          {/* Global offices */}
+          <section aria-labelledby="global-offices-heading">
+            <div className="mb-7 flex items-center gap-4">
+              <h3
+                id="global-offices-heading"
+                className={`
+                  shrink-0 text-xs font-semibold uppercase
+                  tracking-[.22em] ${styles.heading}
+                `}
+              >
+                Global Offices
+              </h3>
 
-                <div>
-                  <div
+              <div
+                className={`h-px flex-1 ${styles.divider.replace('border-', 'bg-')}`}
+              />
+
+              <span
+                className={`
+                  shrink-0 text-[10px] uppercase tracking-wider
+                  ${styles.muted}
+                `}
+              >
+                8 Locations
+              </span>
+            </div>
+
+            <div className="grid gap-x-8 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
+              {offices.map((office, index) => (
+                <article
+                  key={`${office.title}-${index}`}
+                  className="group min-w-0 py-1"
+                >
+                  <h4
                     className={`
-                      text-lg
-                      font-bold
-                      tracking-[.22em]
+                      text-sm font-semibold leading-6
+                      transition-colors duration-300
+                      group-hover:text-[#D9A83E]
                       ${styles.heading}
                     `}
                   >
-                    ARVENTA
-                  </div>
+                    {office.title}
+                  </h4>
 
-                  <div
+                  <address
                     className={`
-                      -mt-1
-                      text-[8px]
-                      tracking-[.42em]
-                      ${styles.brandSubtext}
+                      mt-2 not-italic text-xs leading-6
+                      transition-all duration-300
+                      group-hover:translate-x-1
+                      group-hover:text-[#D9A83E]
+                      motion-reduce:transform-none
+                      ${styles.body}
                     `}
                   >
-                    NETWORKS
-                  </div>
-                </div>
-              </a>
+                    {office.lines.map((line, lineIndex) => (
+                      <p key={`${line}-${lineIndex}`}>
+                        {line}
+                      </p>
+                    ))}
+                  </address>
 
-              <p
+                  <a
+                    href={`mailto:${office.email}`}
+                    className="
+                      mt-3 inline-block break-all
+                      text-xs text-[#B88725]
+                      transition-all duration-300
+                      hover:translate-x-1 hover:text-[#D9A83E]
+                      focus-visible:outline
+                      focus-visible:outline-2
+                      focus-visible:outline-offset-4
+                      focus-visible:outline-[#D9A83E]
+                      motion-reduce:transform-none
+                    "
+                  >
+                    {office.email}
+                  </a>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          {/* Phone numbers */}
+          <section aria-labelledby="call-us-heading">
+            <div className="mb-7 flex items-center gap-4">
+              <h3
+                id="call-us-heading"
                 className={`
-                  mt-6
-                  max-w-xs
-                  text-sm
-                  leading-7
-                  ${styles.brandDescription}
+                  shrink-0 text-xs font-semibold uppercase
+                  tracking-[.22em] ${styles.heading}
                 `}
               >
-                Global telecom solutions for a connected future.
-              </p>
+                Call Us
+              </h3>
+
+              <div
+                className={`h-px flex-1 ${styles.divider.replace('border-', 'bg-')}`}
+              />
             </div>
 
-            {/* Navigation */}
-            {navigation.map((section) => (
-              <div key={section.title}>
-                <h3
+            <div className="flex flex-col">
+              {phoneNumbers.map((phone) => (
+                <a
+                  key={phone.tel}
+                  href={`tel:${phone.tel}`}
                   className={`
-                    text-xs
-                    font-semibold
-                    uppercase
-                    tracking-wider
-                    ${styles.navHeading}
+                    group flex gap-3 border-b py-3.5
+                    transition-colors duration-300
+                    last:border-b-0 ${styles.divider}
                   `}
                 >
-                  {section.title}
-                </h3>
+                  <span
+                    className="mt-0.5 text-lg"
+                    aria-hidden="true"
+                  >
+                    {phone.flag}
+                  </span>
 
-                <ul className="mt-5 space-y-3 text-sm">
-                  {section.links.map(([label, href]) => (
-                    <li key={label}>
-                      <a
-                        href={href}
-                        className={`
-                          footer-nav-link
-                          group/link
-                          relative
-                          inline-block
+                  <span className="min-w-0 flex-1">
+                    <span
+                      className={`
+                        block text-sm font-medium
+                        transition-colors duration-300
+                        group-hover:text-[#D9A83E]
+                        ${styles.heading}
+                      `}
+                    >
+                      {phone.number}
+                    </span>
 
-                          transition-all
-                          duration-300
+                    <span
+                      className={`mt-1 block text-xs ${styles.body}`}
+                    >
+                      {phone.location}
+                    </span>
+                  </span>
 
-                          ${styles.navLink}
+                  <span
+                    className={`
+                      self-center text-sm
+                      transition-all duration-300
+                      group-hover:translate-x-1
+                      group-hover:text-[#D9A83E]
+                      ${styles.muted}
+                    `}
+                    aria-hidden="true"
+                  >
+                    →
+                  </span>
+                </a>
+              ))}
+            </div>
+          </section>
+        </div>
 
-                          hover:translate-x-1
-
-                          after:absolute
-                          after:-bottom-1
-                          after:left-0
-                          after:h-px
-                          after:w-0
-                          after:bg-arventa-gold
-
-                          after:transition-all
-                          after:duration-300
-
-                          hover:after:w-full
-                        `}
-                      >
-                        {label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* =====================================================
-            BOTTOM
-        ====================================================== */}
+        {/* Copyright and legal links */}
         <div
-          className={`
-            mt-14
-            flex flex-col
-            justify-between
-            gap-5
-
-            border-t
-            pt-8
-
-            text-xs
-            sm:flex-row
-
-            ${styles.divider}
-            ${styles.bottomText}
-          `}
+          className="
+            flex flex-col items-center gap-5
+            py-7 text-center
+            sm:flex-row sm:justify-between sm:text-left
+          "
         >
-          {/* Copyright */}
-          <div>© 2026 Arventa Networks. All rights reserved.</div>
+          <p className={`text-xs leading-6 ${styles.muted}`}>
+            © {new Date().getFullYear()} Arventa Networks. All rights
+            reserved.
+          </p>
 
-          {/* Legal */}
-          <div className="flex gap-6">
-            <a
-              href="#"
-              className="
-                transition-all
-                duration-300
-                hover:translate-x-1
-                hover:text-arventa-gold
-              "
-            >
-              Privacy Policy
-            </a>
-
-            <a
-              href="#"
-              className="
-                transition-all
-                duration-300
-                hover:translate-x-1
-                hover:text-arventa-gold
-              "
-            >
-              Terms &amp; Conditions
-            </a>
-
-            <a
-              href="#"
-              className="
-                transition-all
-                duration-300
-                hover:translate-x-1
-                hover:text-arventa-gold
-              "
-            >
-              Imprint
-            </a>
-          </div>
-
-          {/* Social */}
-          <div className="flex gap-2">
-            <a
-              href="#"
-              aria-label="LinkedIn"
-              className={`
-                inline-flex h-8 w-8
-                items-center justify-center
-                rounded-md
-
-                transition-all
-                duration-300
-                ease-out
-
-                ${isDark ? 'text-white/45' : 'text-slate-500'}
-
-                hover:-translate-y-1
-                hover:bg-arventa-gold/[0.08]
-                hover:text-arventa-gold
-                hover:shadow-[0_5px_20px_rgba(217,168,62,0.12)]
-              `}
-            >
-              in
-            </a>
-
-            <a
-              href="#"
-              aria-label="X"
-              className={`
-                inline-flex h-8 w-8
-                items-center justify-center
-                rounded-md
-
-                transition-all
-                duration-300
-                ease-out
-
-                ${isDark ? 'text-white/45' : 'text-slate-500'}
-
-                hover:-translate-y-1
-                hover:bg-arventa-gold/[0.08]
-                hover:text-arventa-gold
-                hover:shadow-[0_5px_20px_rgba(217,168,62,0.12)]
-              `}
-            >
-              𝕏
-            </a>
-
-            <a
-              href="#"
-              aria-label="YouTube"
-              className={`
-                inline-flex h-8 w-8
-                items-center justify-center
-                rounded-md
-
-                transition-all
-                duration-300
-                ease-out
-
-                ${isDark ? 'text-white/45' : 'text-slate-500'}
-
-                hover:-translate-y-1
-                hover:bg-arventa-gold/[0.08]
-                hover:text-arventa-gold
-                hover:shadow-[0_5px_20px_rgba(217,168,62,0.12)]
-              `}
-            >
-              ▶
-            </a>
-          </div>
+          <nav
+            aria-label="Legal"
+            className="
+              flex flex-wrap justify-center
+              gap-x-6 gap-y-3 sm:justify-end
+            "
+          >
+            {legalLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className={`
+                  text-xs transition-colors duration-300
+                  ${styles.link}
+                `}
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
         </div>
       </div>
     </footer>
