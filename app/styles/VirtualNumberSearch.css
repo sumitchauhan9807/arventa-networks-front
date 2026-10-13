@@ -1,0 +1,744 @@
+
+/* =========================================
+   SECTION & BACKGROUND
+========================================= */
+
+.virtual-number-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 7rem 0;
+  border-bottom: 1px solid;
+  transition: background-color 0.3s ease;
+}
+
+.virtual-number-dark {
+  --vn-bg: #070909;
+  --vn-heading: #ffffff;
+  --vn-text: rgba(255, 255, 255, 0.48);
+  --vn-muted: rgba(255, 255, 255, 0.35);
+  --vn-border: rgba(255, 255, 255, 0.1);
+  --vn-card: rgba(255, 255, 255, 0.025);
+  --vn-card-hover: rgba(255, 255, 255, 0.045);
+  --vn-gold: #D9A83E;
+  --vn-gold-bright: #F6D27A;
+  --vn-accent: #D9A83E;
+  --vn-grid: rgba(255, 255, 255, 0.16);
+  --vn-shadow: transparent;
+
+  background-color: var(--vn-bg);
+  color: var(--vn-heading);
+  border-bottom-color: var(--vn-border);
+}
+
+.virtual-number-light {
+  --vn-bg: #F7F5F0;
+  --vn-heading: #151716;
+  --vn-text: rgba(21, 23, 22, 0.58);
+  --vn-muted: rgba(21, 23, 22, 0.48);
+  --vn-border: rgba(21, 23, 22, 0.1);
+  --vn-card: rgba(255, 255, 255, 0.65);
+  --vn-card-hover: rgba(255, 255, 255, 0.85);
+  --vn-gold: #A87918;
+  --vn-gold-bright: #B88A28;
+  --vn-accent: #B88A28;
+  --vn-grid: rgba(21, 23, 22, 0.12);
+  --vn-shadow: rgba(21, 23, 22, 0.05);
+
+  background-color: var(--vn-bg);
+  color: var(--vn-heading);
+  border-bottom-color: var(--vn-border);
+}
+
+.virtual-number-background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.virtual-number-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  pointer-events: none;
+}
+
+.virtual-number-glow-one {
+  top: -250px;
+  left: 50%;
+  width: min(1100px, 110vw);
+  height: 700px;
+  transform: translateX(-50%);
+}
+
+.virtual-number-dark .virtual-number-glow-one {
+  background: rgba(217, 168, 62, 0.055);
+}
+
+.virtual-number-light .virtual-number-glow-one {
+  background: rgba(217, 168, 62, 0.10);
+}
+
+.virtual-number-glow-two {
+  top: 35%;
+  left: -300px;
+  width: 600px;
+  height: 600px;
+}
+
+.virtual-number-dark .virtual-number-glow-two {
+  background: rgba(217, 168, 62, 0.025);
+}
+
+.virtual-number-light .virtual-number-glow-two {
+  background: rgba(217, 168, 62, 0.045);
+}
+
+.virtual-number-glow-three {
+  right: -300px;
+  bottom: 10%;
+  width: 600px;
+  height: 600px;
+}
+
+.virtual-number-dark .virtual-number-glow-three {
+  background: rgba(217, 168, 62, 0.02);
+}
+
+.virtual-number-light .virtual-number-glow-three {
+  background: rgba(217, 168, 62, 0.035);
+}
+
+.virtual-number-radial-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 15%,
+    rgba(217, 168, 62, 0.08),
+    transparent 40%
+  );
+}
+
+.virtual-number-light .virtual-number-radial-glow {
+  background: radial-gradient(
+    circle at 50% 15%,
+    rgba(217, 168, 62, 0.10),
+    transparent 40%
+  );
+}
+
+.virtual-number-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle,
+    var(--vn-grid) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+}
+
+.virtual-number-gold-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle,
+    rgba(217, 168, 62, 0.18) 1px,
+    transparent 1px
+  );
+  background-size: 48px 48px;
+}
+
+.virtual-number-bottom-fade {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 33.333%;
+  background: linear-gradient(
+    to top,
+    var(--vn-bg),
+    transparent
+  );
+}
+
+/* =========================================
+   CONTENT & HEADING
+========================================= */
+
+.virtual-number-content {
+  position: relative;
+  width: 100%;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.virtual-number-heading {
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.virtual-number-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 9px 16px;
+  border: 1px solid rgba(217, 168, 62, 0.22);
+  border-radius: 9999px;
+  background: rgba(217, 168, 62, 0.05);
+  color: var(--vn-gold);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  line-height: 1.5;
+}
+
+.virtual-number-eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--vn-accent);
+  box-shadow: 0 0 10px rgba(217, 168, 62, 0.65);
+}
+
+.virtual-number-title {
+  margin: 0;
+  color: var(--vn-heading);
+  font-family: var(--font-display, inherit);
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+.virtual-number-subtitle {
+  max-width: 580px;
+  margin: 24px auto 0;
+  color: var(--vn-text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* =========================================
+   SEARCH CARD
+========================================= */
+
+.virtual-number-card {
+  position: relative;
+  max-width: 800px;
+  margin: 64px auto 0;
+  overflow: hidden;
+  padding: 36px;
+  border: 1px solid var(--vn-border);
+  border-radius: 20px;
+  background: var(--vn-card);
+  box-shadow: 0 12px 40px var(--vn-shadow);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  transition:
+    border-color 0.35s ease,
+    background-color 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.35s ease;
+}
+
+.virtual-number-card:hover {
+  border-color: rgba(217, 168, 62, 0.25);
+  background: var(--vn-card-hover);
+}
+
+.virtual-number-card-accent {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--vn-accent),
+    transparent
+  );
+  opacity: 0;
+  transform: scaleX(0.2);
+  transform-origin: center;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.virtual-number-card:hover .virtual-number-card-accent {
+  opacity: 0.8;
+  transform: scaleX(1);
+}
+
+.virtual-number-card-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.virtual-number-icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(217, 168, 62, 0.25);
+  border-radius: 14px;
+  background: rgba(217, 168, 62, 0.08);
+  color: var(--vn-gold);
+}
+
+.virtual-number-card-title {
+  margin: 0;
+  color: var(--vn-heading);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.virtual-number-card-description {
+  margin: 7px 0 0;
+  color: var(--vn-text);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   INPUT FIELDS
+========================================= */
+
+.virtual-number-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.virtual-number-field-group {
+  min-width: 0;
+}
+
+.virtual-number-label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--vn-heading);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.virtual-phone-input {
+  position: relative;
+  width: 100%;
+}
+
+.virtual-phone-container {
+  width: 100% !important;
+}
+
+.virtual-phone-container .virtual-phone-field {
+  width: 100% !important;
+  height: 54px !important;
+  padding-left: 58px !important;
+  border: 1px solid var(--vn-border) !important;
+  border-radius: 10px !important;
+  background: var(--vn-bg) !important;
+  color: var(--vn-heading) !important;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease !important;
+}
+
+.virtual-phone-container .virtual-phone-field:focus {
+  border-color: rgba(217, 168, 62, 0.65) !important;
+  box-shadow: 0 0 0 3px rgba(217, 168, 62, 0.08) !important;
+}
+
+.virtual-phone-container .virtual-phone-field::placeholder {
+  color: var(--vn-muted) !important;
+  opacity: 1;
+}
+
+.virtual-phone-container .virtual-phone-flag-button {
+  width: 48px !important;
+  border: 1px solid var(--vn-border) !important;
+  border-right: 0 !important;
+  border-radius: 10px 0 0 10px !important;
+  background: var(--vn-bg) !important;
+}
+
+.virtual-phone-container .virtual-phone-flag-button:hover,
+.virtual-phone-container .virtual-phone-flag-button:focus {
+  background: var(--vn-card-hover) !important;
+}
+
+.virtual-phone-container .virtual-phone-dropdown {
+  z-index: 100 !important;
+  max-width: calc(100vw - 40px) !important;
+  border: 1px solid var(--vn-border) !important;
+  border-radius: 10px !important;
+  background: var(--vn-bg) !important;
+  color: var(--vn-heading) !important;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15) !important;
+}
+
+.virtual-phone-dark .virtual-phone-dropdown {
+  background: #101312 !important;
+  color: #ffffff !important;
+}
+
+.virtual-phone-light .virtual-phone-dropdown {
+  background: #ffffff !important;
+  color: #151716 !important;
+}
+
+.virtual-phone-container .virtual-phone-dropdown .country {
+  padding: 10px 12px !important;
+}
+
+.virtual-phone-container .virtual-phone-dropdown .country:hover,
+.virtual-phone-container .virtual-phone-dropdown .country.highlight {
+  background: rgba(217, 168, 62, 0.12) !important;
+}
+
+.virtual-phone-container .virtual-phone-dropdown .search {
+  padding: 10px !important;
+  background: inherit !important;
+}
+
+.virtual-phone-container .virtual-phone-dropdown .search-box {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 9px 12px !important;
+  border: 1px solid var(--vn-border) !important;
+  border-radius: 7px !important;
+  background: var(--vn-bg) !important;
+  color: var(--vn-heading) !important;
+  outline: none !important;
+}
+
+.virtual-number-hint {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 12px 0 0;
+  color: var(--vn-muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.virtual-number-hint-dot {
+  width: 5px;
+  height: 5px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--vn-accent);
+}
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.virtual-number-submit {
+  display: flex;
+  width: 100%;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0;
+  padding: 15px 22px;
+  border: 1px solid rgba(217, 168, 62, 0.35);
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    #D9A83E,
+    #BD8D2C
+  );
+  color: #151716;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.virtual-number-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(217, 168, 62, 0.2);
+}
+
+.virtual-number-submit:focus-visible {
+  outline: 2px solid var(--vn-gold);
+  outline-offset: 4px;
+}
+
+.virtual-number-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.virtual-number-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(21, 23, 22, 0.25);
+  border-top-color: #151716;
+  border-radius: 50%;
+  animation: virtual-number-spin 0.7s linear infinite;
+}
+
+@keyframes virtual-number-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   STATUS MESSAGES
+========================================= */
+
+.virtual-number-error,
+.virtual-number-results {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 14px 16px;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.virtual-number-error {
+  border-color: rgba(220, 70, 70, 0.25);
+  background: rgba(220, 70, 70, 0.07);
+  color: #e66b6b;
+}
+
+.virtual-number-results {
+  border-color: rgba(217, 168, 62, 0.25);
+  background: rgba(217, 168, 62, 0.06);
+  color: var(--vn-heading);
+}
+
+/* =========================================
+   CARD FOOTER
+========================================= */
+
+.virtual-number-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid var(--vn-border);
+  color: var(--vn-muted);
+  font-size: 11px;
+}
+
+.virtual-number-card-footer > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.virtual-number-footer-divider {
+  width: 1px;
+  height: 14px;
+  background: var(--vn-border);
+}
+
+.virtual-number-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #67b985;
+  box-shadow: 0 0 8px rgba(103, 185, 133, 0.35);
+}
+
+/* =========================================
+   SUPPORTING FEATURES
+========================================= */
+
+.virtual-number-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.virtual-number-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px 18px;
+  border: 1px solid var(--vn-border);
+  border-radius: 14px;
+  background: var(--vn-card);
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.virtual-number-feature:hover {
+  border-color: rgba(217, 168, 62, 0.25);
+  background: var(--vn-card-hover);
+  transform: translateY(-3px);
+}
+
+.virtual-number-feature-icon {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(217, 168, 62, 0.25);
+  border-radius: 10px;
+  background: rgba(217, 168, 62, 0.06);
+  color: var(--vn-gold);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.virtual-number-feature h4 {
+  margin: 2px 0 8px;
+  color: var(--vn-heading);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.virtual-number-feature p {
+  margin: 0;
+  color: var(--vn-text);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .virtual-number-section {
+    padding: 5rem 0;
+  }
+
+  .virtual-number-content {
+    padding: 0 24px;
+  }
+
+  .virtual-number-card {
+    margin-top: 48px;
+    padding: 28px;
+  }
+
+  .virtual-number-features {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 32px;
+  }
+
+  .virtual-number-feature {
+    padding: 18px;
+  }
+
+  .virtual-number-glow-two {
+    left: -400px;
+  }
+
+  .virtual-number-glow-three {
+    right: -450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .virtual-number-section {
+    padding: 4rem 0;
+  }
+
+  .virtual-number-content {
+    padding: 0 18px;
+  }
+
+  .virtual-number-eyebrow {
+    gap: 9px;
+    padding: 8px 12px;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+  }
+
+  .virtual-number-title {
+    font-size: 2.15rem;
+  }
+
+  .virtual-number-subtitle {
+    margin-top: 18px;
+    font-size: 14px;
+  }
+
+  .virtual-number-card {
+    margin-top: 36px;
+    padding: 22px 18px;
+    border-radius: 16px;
+  }
+
+  .virtual-number-card-top {
+    gap: 12px;
+    margin-bottom: 26px;
+  }
+
+  .virtual-number-card-title {
+    font-size: 16px;
+  }
+
+  .virtual-number-card-description {
+    font-size: 12px;
+  }
+
+  .virtual-number-card-footer {
+    gap: 12px;
+    font-size: 10px;
+  }
+
+  .virtual-number-footer-divider {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .virtual-number-section *,
+  .virtual-number-section *::before,
+  .virtual-number-section *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

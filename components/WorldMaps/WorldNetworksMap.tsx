@@ -1,3 +1,4 @@
+
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import {
@@ -16,54 +17,18 @@ const WORLD_MAP =
 ========================================================= */
 
 const routes = [
-  {
-    from: [-74.006, 40.7128],
-    to: [-0.1276, 51.5072],
-  },
-  {
-    from: [-0.1276, 51.5072],
-    to: [8.6821, 50.1109],
-  },
-  {
-    from: [8.6821, 50.1109],
-    to: [55.2708, 25.2048],
-  },
-  {
-    from: [55.2708, 25.2048],
-    to: [103.8198, 1.3521],
-  },
-  {
-    from: [103.8198, 1.3521],
-    to: [139.6917, 35.6895],
-  },
-  {
-    from: [103.8198, 1.3521],
-    to: [151.2093, -33.8688],
-  },
-  {
-    from: [-74.006, 40.7128],
-    to: [-46.6333, -23.5505],
-  },
-  {
-    from: [-0.1276, 51.5072],
-    to: [72.8777, 19.076],
-  },
-  {
-    from: [72.8777, 19.076],
-    to: [103.8198, 1.3521],
-  },
-  {
-    from: [8.6821, 50.1109],
-    to: [-74.006, 40.7128],
-  },
-  {
-    from: [-74.006, 40.7128],
-    to: [139.6917, 35.6895],
-  },
-  {
-    from: [-46.6333, -23.5505],
-    to: [151.2093, -33.8688],
-  },
+  { from: [-74.006, 40.7128], to: [-0.1276, 51.5072] },
+  { from: [-0.1276, 51.5072], to: [8.6821, 50.1109] },
+  { from: [8.6821, 50.1109], to: [55.2708, 25.2048] },
+  { from: [55.2708, 25.2048], to: [103.8198, 1.3521] },
+  { from: [103.8198, 1.3521], to: [139.6917, 35.6895] },
+  { from: [103.8198, 1.3521], to: [151.2093, -33.8688] },
+  { from: [-74.006, 40.7128], to: [-46.6333, -23.5505] },
+  { from: [-0.1276, 51.5072], to: [72.8777, 19.076] },
+  { from: [72.8777, 19.076], to: [103.8198, 1.3521] },
+  { from: [8.6821, 50.1109], to: [-74.006, 40.7128] },
+  { from: [-74.006, 40.7128], to: [139.6917, 35.6895] },
+  { from: [-46.6333, -23.5505], to: [151.2093, -33.8688] },
 ];
 
 /* =========================================================
@@ -71,56 +36,19 @@ const routes = [
 ========================================================= */
 
 const locations = [
-  {
-    name: 'NEW YORK',
-    coordinates: [-74.006, 40.7128],
-    side: 'right',
-  },
-  {
-    name: 'LONDON',
-    coordinates: [-0.1276, 51.5072],
-    side: 'left',
-  },
-  {
-    name: 'FRANKFURT',
-    coordinates: [8.6821, 50.1109],
-    side: 'right',
-  },
-  {
-    name: 'DUBAI',
-    coordinates: [55.2708, 25.2048],
-    side: 'right',
-  },
-  {
-    name: 'MUMBAI',
-    coordinates: [72.8777, 19.076],
-    side: 'right',
-  },
-  {
-    name: 'SINGAPORE',
-    coordinates: [103.8198, 1.3521],
-    side: 'right',
-  },
-  {
-    name: 'TOKYO',
-    coordinates: [139.6917, 35.6895],
-    side: 'left',
-  },
-  {
-    name: 'SYDNEY',
-    coordinates: [151.2093, -33.8688],
-    side: 'left',
-  },
-  {
-    name: 'SÃO PAULO',
-    coordinates: [-46.6333, -23.5505],
-    side: 'left',
-  },
+  { name: 'NEW YORK', coordinates: [-74.006, 40.7128], side: 'right' },
+  { name: 'LONDON', coordinates: [-0.1276, 51.5072], side: 'left' },
+  { name: 'FRANKFURT', coordinates: [8.6821, 50.1109], side: 'right' },
+  { name: 'DUBAI', coordinates: [55.2708, 25.2048], side: 'right' },
+  { name: 'MUMBAI', coordinates: [72.8777, 19.076], side: 'right' },
+  { name: 'SINGAPORE', coordinates: [103.8198, 1.3521], side: 'right' },
+  { name: 'TOKYO', coordinates: [139.6917, 35.6895], side: 'left' },
+  { name: 'SYDNEY', coordinates: [151.2093, -33.8688], side: 'left' },
+  { name: 'SÃO PAULO', coordinates: [-46.6333, -23.5505], side: 'left' },
 ];
 
 /* =========================================================
    COUNTRY STATS
-   Add your real API data here later.
 ========================================================= */
 
 const countryStats = {
@@ -132,7 +60,6 @@ const countryStats = {
     latency: '38 ms',
     uptime: '99.99%',
   },
-
   Canada: {
     region: 'North America',
     carriers: 26,
@@ -141,7 +68,6 @@ const countryStats = {
     latency: '42 ms',
     uptime: '99.98%',
   },
-
   Brazil: {
     region: 'South America',
     carriers: 31,
@@ -150,7 +76,6 @@ const countryStats = {
     latency: '61 ms',
     uptime: '99.97%',
   },
-
   'United Kingdom': {
     region: 'Europe',
     carriers: 48,
@@ -159,7 +84,6 @@ const countryStats = {
     latency: '29 ms',
     uptime: '99.99%',
   },
-
   Germany: {
     region: 'Europe',
     carriers: 51,
@@ -168,7 +92,6 @@ const countryStats = {
     latency: '27 ms',
     uptime: '99.99%',
   },
-
   France: {
     region: 'Europe',
     carriers: 38,
@@ -177,7 +100,6 @@ const countryStats = {
     latency: '31 ms',
     uptime: '99.98%',
   },
-
   India: {
     region: 'South Asia',
     carriers: 45,
@@ -186,7 +108,6 @@ const countryStats = {
     latency: '46 ms',
     uptime: '99.98%',
   },
-
   'United Arab Emirates': {
     region: 'Middle East',
     carriers: 29,
@@ -195,7 +116,6 @@ const countryStats = {
     latency: '35 ms',
     uptime: '99.99%',
   },
-
   Singapore: {
     region: 'Southeast Asia',
     carriers: 44,
@@ -204,7 +124,6 @@ const countryStats = {
     latency: '24 ms',
     uptime: '99.99%',
   },
-
   Japan: {
     region: 'East Asia',
     carriers: 47,
@@ -213,7 +132,6 @@ const countryStats = {
     latency: '32 ms',
     uptime: '99.99%',
   },
-
   Australia: {
     region: 'Oceania',
     carriers: 32,
@@ -228,15 +146,23 @@ const countryStats = {
    DEFAULT STATS
 ========================================================= */
 
-const createDefaultStats = (countryName) => ({
-  region: 'Global Network',
-  carriers: Math.floor(Math.random() * 35) + 18,
-  routes: Math.floor(Math.random() * 90) + 40,
-  traffic: `${(Math.random() * 2 + 0.8).toFixed(2)} TB`,
-  latency: `${Math.floor(Math.random() * 45) + 25} ms`,
-  uptime: '99.97%',
-  name: countryName,
-});
+const createDefaultStats = (countryName) => {
+  let hash = 0;
+
+  for (let i = 0; i < countryName.length; i += 1) {
+    hash = (hash * 31 + countryName.charCodeAt(i)) >>> 0;
+  }
+
+  return {
+    region: 'Global Network',
+    carriers: 18 + ((hash + 7) % 35),
+    routes: 40 + ((hash + 19) % 90),
+    traffic: `${(0.8 + ((hash + 23) % 200) / 100).toFixed(2)} TB`,
+    latency: `${25 + ((hash + 31) % 45)} ms`,
+    uptime: '99.97%',
+    name: countryName,
+  };
+};
 
 /* =========================================================
    COMPONENT
@@ -244,53 +170,35 @@ const createDefaultStats = (countryName) => ({
 
 const WorldNetworkMap = () => {
   const mode = useSelector((state) => state.theme.theme);
-
   const isLight = mode === 'light';
 
   const [hoveredCountry, setHoveredCountry] = useState(null);
 
-  /* =======================================================
-     THEME
-  ======================================================= */
+  // Zoom controls
+  const [zoom, setZoom] = useState(100);
 
   const colors = useMemo(
     () => ({
       background: isLight ? '#FFFFFF' : '#030505',
-
       map: isLight ? '#F6F6F1' : '#111716',
-
       mapStroke: isLight ? '#C9C9C0' : '#3E4642',
-
       mapHover: isLight ? '#EDE8D9' : '#202823',
-
       grid: isLight ? '#DADAD2' : '#222A27',
-
       gold: '#D39A24',
-
       goldLight: '#E9B949',
-
       goldBright: '#FFD978',
-
       goldDark: '#9B6D14',
-
       text: isLight ? '#1F211D' : '#F8F6EF',
-
-      muted: isLight ? '#66685F' : '#969E99',
-
+      muted: isLight ? '#66685F' : 'rgb(150, 158, 153)',
       panel: isLight
         ? 'rgba(255,255,255,0.94)'
         : 'rgba(10,14,13,0.94)',
-
       panelBorder: isLight
         ? 'rgba(30,32,27,0.12)'
         : 'rgba(255,255,255,0.12)',
     }),
     [isLight],
   );
-
-  /* =======================================================
-     HOVERED COUNTRY STATS
-  ======================================================= */
 
   const activeStats = hoveredCountry
     ? countryStats[hoveredCountry] ||
@@ -305,9 +213,7 @@ const WorldNetworkMap = () => {
         color: colors.text,
       }}
     >
-      {/* ===================================================
-          GLOBAL AMBIENT GLOW
-      =================================================== */}
+      {/* GLOBAL AMBIENT GLOW */}
 
       <div
         className="pointer-events-none absolute left-1/2 top-1/2 h-[700px] w-[1200px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[120px]"
@@ -334,9 +240,7 @@ const WorldNetworkMap = () => {
         }}
       />
 
-      {/* ===================================================
-          BACKGROUND GRID
-      =================================================== */}
+      {/* BACKGROUND GRID */}
 
       <div
         className="pointer-events-none absolute inset-0"
@@ -360,51 +264,29 @@ const WorldNetworkMap = () => {
         />
       </div>
 
-      {/* ===================================================
-          CONTENT
-      =================================================== */}
+      {/* CONTENT */}
 
       <div className="relative mx-auto max-w-[1500px] px-4 sm:px-8 lg:px-12">
-
-        {/* =================================================
-            HEADER
-        ================================================= */}
+        {/* HEADER */}
 
         <div className="mx-auto mb-8 max-w-3xl text-center sm:mb-10">
           <div
             className="mb-5 inline-flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.28em]"
-            style={{
-              color: colors.goldLight,
-            }}
+            style={{ color: colors.goldLight }}
           >
-            <span
-              className="h-px w-8"
-              style={{
-                background: colors.gold,
-              }}
-            />
-
+            <span className="h-px w-8" style={{ background: colors.gold }} />
             Carrier Network
-
-            <span
-              className="h-px w-8"
-              style={{
-                background: colors.gold,
-              }}
-            />
+            <span className="h-px w-8" style={{ background: colors.gold }} />
           </div>
 
           <h2
             className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl"
-            style={{
-              color: colors.text,
-            }}
+            style={{ color: colors.text }}
           >
             One Network.{' '}
             <span
               style={{
-                background:
-                  'linear-gradient(90deg,#F6D27A,#D9A83E)',
+                background: 'linear-gradient(90deg,#F6D27A,#D9A83E)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
               }}
@@ -415,9 +297,7 @@ const WorldNetworkMap = () => {
 
           <p
             className="mx-auto mt-5 max-w-2xl text-sm leading-7 sm:text-base"
-            style={{
-              color: colors.muted,
-            }}
+            style={{ color: colors.muted }}
           >
             Connect your business to a global carrier ecosystem with
             intelligent routing, reliable voice infrastructure and
@@ -425,15 +305,10 @@ const WorldNetworkMap = () => {
           </p>
         </div>
 
-        {/* =================================================
-            MAP AREA
-        ================================================= */}
+        {/* MAP AREA */}
 
         <div className="relative h-[500px] sm:h-[600px] lg:h-[680px]">
-
-          {/* ===============================================
-              ORBIT 1
-          =============================================== */}
+          {/* ORBIT 1 */}
 
           <div
             className="pointer-events-none absolute left-1/2 top-1/2 h-[330px] w-[680px] -translate-x-1/2 -translate-y-1/2 rounded-[50%] border sm:h-[430px] sm:w-[900px] lg:h-[500px] lg:w-[1120px]"
@@ -441,15 +316,11 @@ const WorldNetworkMap = () => {
               borderColor: isLight
                 ? 'rgba(211,154,36,0.15)'
                 : 'rgba(217,168,62,0.12)',
-
-              transform:
-                'translate(-50%, -50%) rotate(-8deg)',
+              transform: 'translate(-50%, -50%) rotate(-8deg)',
             }}
           />
 
-          {/* ===============================================
-              ORBIT 2
-          =============================================== */}
+          {/* ORBIT 2 */}
 
           <div
             className="pointer-events-none absolute left-1/2 top-1/2 h-[260px] w-[580px] -translate-x-1/2 -translate-y-1/2 rounded-[50%] border sm:h-[330px] sm:w-[760px]"
@@ -457,81 +328,56 @@ const WorldNetworkMap = () => {
               borderColor: isLight
                 ? 'rgba(211,154,36,0.09)'
                 : 'rgba(217,168,62,0.08)',
-
-              transform:
-                'translate(-50%, -50%) rotate(9deg)',
+              transform: 'translate(-50%, -50%) rotate(9deg)',
             }}
           />
 
-          {/* ===============================================
-              WORLD MAP
-          =============================================== */}
+          {/* WORLD MAP — CLIPPED TO ITS ORIGINAL VIEWPORT */}
 
-          <div className="absolute inset-0 flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
             <ComposableMap
               projection="geoMercator"
               projectionConfig={{
-                scale: 145,
-                center: [0, 8],
+                scale: zoom,
+                 center: [19.3, 42.7],
               }}
               width={900}
               height={500}
               style={{
                 width: '100%',
                 height: '100%',
+                display: 'block',
               }}
             >
-              {/* ===========================================
-                  COUNTRIES
-              =========================================== */}
+              {/* COUNTRIES */}
 
               <Geographies geography={WORLD_MAP}>
                 {({ geographies }) =>
                   geographies.map((geo) => {
-                    const countryName =
-                      geo.properties.name;
-
-                    const isHovered =
-                      hoveredCountry === countryName;
+                    const countryName = geo.properties.name;
+                    const isHovered = hoveredCountry === countryName;
 
                     return (
                       <Geography
                         key={geo.rsmKey}
                         geography={geo}
-                        fill={
-                          isHovered
-                            ? colors.mapHover
-                            : colors.map
-                        }
-                        stroke={
-                          isHovered
-                            ? colors.gold
-                            : colors.mapStroke
-                        }
-                        strokeWidth={
-                          isHovered ? 1.2 : 0.7
-                        }
-                        onMouseEnter={() => {
-                          setHoveredCountry(countryName);
-                        }}
-                        onMouseLeave={() => {
-                          setHoveredCountry(null);
-                        }}
+                        fill={isHovered ? colors.mapHover : colors.map}
+                        stroke={isHovered ? colors.gold : colors.mapStroke}
+                        strokeWidth={isHovered ? 1.2 : 0.7}
+                        onMouseEnter={() => setHoveredCountry(countryName)}
+                        onMouseLeave={() => setHoveredCountry(null)}
                         style={{
                           default: {
                             outline: 'none',
                             cursor: 'crosshair',
-                            transition:
-                              'fill 200ms ease, stroke 200ms ease',
+                            transition: 'fill 200ms ease, stroke 200ms ease',
                           },
-
                           hover: {
                             fill: colors.mapHover,
                             stroke: colors.gold,
                             strokeWidth: 1.2,
                             outline: 'none',
                           },
-
                           pressed: {
                             outline: 'none',
                           },
@@ -542,14 +388,10 @@ const WorldNetworkMap = () => {
                 }
               </Geographies>
 
-              {/* ===========================================
-                  NETWORK ROUTES
-              =========================================== */}
+              {/* NETWORK ROUTES */}
 
               {routes.map((route, index) => (
                 <React.Fragment key={`route-${index}`}>
-                  {/* Base line */}
-
                   <Line
                     from={route.from}
                     to={route.to}
@@ -558,15 +400,10 @@ const WorldNetworkMap = () => {
                     strokeLinecap="round"
                     style={{
                       opacity: isLight ? 0.82 : 0.9,
-                      filter: `
-                        drop-shadow(
-                          0 0 3px rgba(211,154,36,0.5)
-                        )
-                      `,
+                      filter:
+                        'drop-shadow(0 0 3px rgba(211,154,36,0.5))',
                     }}
                   />
-
-                  {/* Animated traffic */}
 
                   <Line
                     from={route.from}
@@ -575,60 +412,45 @@ const WorldNetworkMap = () => {
                     strokeWidth={2}
                     strokeLinecap="round"
                     strokeDasharray="2 18"
-                    className={`network-route-${index}`}
                     style={{
                       opacity: 0.95,
                       animation: `networkFlow ${
                         2.4 + (index % 4) * 0.35
                       }s linear infinite`,
-                      filter: `
-                        drop-shadow(
-                          0 0 5px rgba(255,217,120,0.9)
-                        )
-                      `,
+                      filter:
+                        'drop-shadow(0 0 5px rgba(255,217,120,0.9))',
                     }}
                   />
                 </React.Fragment>
               ))}
 
-              {/* ===========================================
-                  CITY NODES
-              =========================================== */}
+              {/* CITY NODES */}
 
               {locations.map((location, index) => (
                 <Marker
                   key={location.name}
                   coordinates={location.coordinates}
                 >
-                  {/* Expanding ring */}
-
                   <circle
                     r="8"
                     fill="none"
                     stroke={colors.gold}
                     strokeWidth="0.8"
-                    className={`node-ring-${index}`}
                     style={{
-                      animation:
-                        'nodePulse 2.5s ease-out infinite',
+                      animation: 'nodePulse 2.5s ease-out infinite',
                       animationDelay: `${index * 0.18}s`,
                     }}
                   />
-
-                  {/* Glow */}
 
                   <circle
                     r="5"
                     fill={colors.gold}
                     opacity="0.22"
                     style={{
-                      animation:
-                        'nodeGlow 2.2s ease-in-out infinite',
+                      animation: 'nodeGlow 2.2s ease-in-out infinite',
                       animationDelay: `${index * 0.18}s`,
                     }}
                   />
-
-                  {/* Core */}
 
                   <circle
                     r="2.8"
@@ -636,36 +458,22 @@ const WorldNetworkMap = () => {
                     stroke={colors.gold}
                     strokeWidth="0.8"
                     style={{
-                      filter: `
-                        drop-shadow(
-                          0 0 4px rgba(255,217,120,0.9)
-                        )
-                      `,
+                      filter:
+                        'drop-shadow(0 0 4px rgba(255,217,120,0.9))',
                     }}
                   />
 
-                  {/* Label */}
-
                   <g className="hidden sm:block">
                     <text
-                      x={
-                        location.side === 'left'
-                          ? -10
-                          : 10
-                      }
+                      x={location.side === 'left' ? -10 : 10}
                       y="3"
-                      textAnchor={
-                        location.side === 'left'
-                          ? 'end'
-                          : 'start'
-                      }
+                      textAnchor={location.side === 'left' ? 'end' : 'start'}
                       style={{
                         fill: colors.muted,
                         fontSize: '7px',
                         fontWeight: 700,
                         letterSpacing: '0.13em',
-                        fontFamily:
-                          'Inter, system-ui, sans-serif',
+                        fontFamily: 'Inter, system-ui, sans-serif',
                       }}
                     >
                       {location.name}
@@ -676,25 +484,18 @@ const WorldNetworkMap = () => {
             </ComposableMap>
           </div>
 
-          {/* =================================================
-              CENTER HUB
-          ================================================= */}
+          {/* CENTER HUB */}
 
           <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <div className="relative flex h-20 w-20 items-center justify-center">
-
               <div
                 className="absolute inset-0 rounded-full border"
                 style={{
                   borderColor: isLight
                     ? 'rgba(211,154,36,0.4)'
                     : 'rgba(217,168,62,0.45)',
-
-                  boxShadow: `
-                    0 0 30px rgba(211,154,36,0.12)
-                  `,
-                  animation:
-                    'hubPulse 3s ease-in-out infinite',
+                  boxShadow: '0 0 30px rgba(211,154,36,0.12)',
+                  animation: 'hubPulse 3s ease-in-out infinite',
                 }}
               />
 
@@ -711,38 +512,30 @@ const WorldNetworkMap = () => {
                 className="h-2.5 w-2.5 rounded-full"
                 style={{
                   background: colors.goldBright,
-
                   boxShadow: `
                     0 0 8px ${colors.gold},
                     0 0 20px ${colors.gold},
                     0 0 40px rgba(211,154,36,0.45)
                   `,
-                  animation:
-                    'hubCore 2s ease-in-out infinite',
+                  animation: 'hubCore 2s ease-in-out infinite',
                 }}
               />
 
               <span
                 className="absolute top-[82px] whitespace-nowrap text-[8px] font-bold tracking-[0.3em]"
-                style={{
-                  color: colors.goldBright,
-                }}
+                style={{ color: colors.goldBright }}
               >
                 ARVENTA NETWORK
               </span>
             </div>
           </div>
 
-          {/* =================================================
-              TOP LEFT INFO
-          ================================================= */}
+          {/* TOP LEFT INFO */}
 
           <div className="absolute left-2 top-2 sm:left-5 sm:top-5">
             <div
               className="flex items-center gap-2 text-[9px] font-bold uppercase tracking-[0.25em]"
-              style={{
-                color: colors.goldBright,
-              }}
+              style={{ color: colors.goldBright }}
             >
               <span
                 className="h-1.5 w-1.5 rounded-full"
@@ -751,31 +544,25 @@ const WorldNetworkMap = () => {
                   boxShadow: `0 0 10px ${colors.gold}`,
                 }}
               />
-
               Global Network
             </div>
 
             <div
               className="mt-2 text-[9px] tracking-[0.18em]"
-              style={{
-                color: colors.muted,
-              }}
+              style={{ color: colors.muted }}
             >
               CONNECTING THE WORLD
             </div>
           </div>
 
-          {/* =================================================
-              STATUS CARD
-          ================================================= */}
+          {/* STATUS CARD */}
 
           <div
             className="absolute right-2 top-2 rounded-xl border px-3 py-2.5 backdrop-blur-xl sm:right-5 sm:top-5 sm:px-4 sm:py-3"
             style={{
               background: colors.panel,
               borderColor: colors.panelBorder,
-              boxShadow:
-                '0 15px 50px rgba(0,0,0,0.18)',
+              boxShadow: '0 15px 50px rgba(0,0,0,0.18)',
             }}
           >
             <div className="flex items-center gap-2">
@@ -783,16 +570,13 @@ const WorldNetworkMap = () => {
                 className="h-1.5 w-1.5 rounded-full"
                 style={{
                   background: '#8FBE67',
-                  boxShadow:
-                    '0 0 8px rgba(143,190,103,0.9)',
+                  boxShadow: '0 0 8px rgba(143,190,103,0.9)',
                 }}
               />
 
               <span
                 className="text-[8px] font-bold uppercase tracking-[0.2em]"
-                style={{
-                  color: colors.text,
-                }}
+                style={{ color: colors.text }}
               >
                 Network Operational
               </span>
@@ -800,25 +584,62 @@ const WorldNetworkMap = () => {
 
             <div
               className="mt-1 text-[8px] tracking-wider"
-              style={{
-                color: colors.muted,
-              }}
+              style={{ color: colors.muted }}
             >
               99.99% UPTIME
             </div>
           </div>
 
-          {/* =================================================
-              HOVER STATS CARD
-          ================================================= */}
+          {/* ZOOM CONTROLS */}
+
+          <div
+            className="absolute bottom-20 right-2 z-40 flex flex-col overflow-hidden rounded-lg border sm:right-5"
+            style={{
+              background: colors.panel,
+              borderColor: colors.panelBorder,
+              boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
+            }}
+          >
+            <button
+              type="button"
+              aria-label="Zoom in"
+              title="Zoom in"
+              disabled={zoom >= 300}
+              onClick={() =>
+                setZoom((current) => Math.min(current + 20, 300))
+              }
+              className="flex h-9 w-9 items-center justify-center text-xl hover:bg-amber-500/10 disabled:opacity-40"
+              style={{ color: colors.goldBright }}
+            >
+              +
+            </button>
+
+            <div
+              className="mx-2 border-t"
+              style={{ borderColor: colors.panelBorder }}
+            />
+
+            <button
+              type="button"
+              aria-label="Zoom out"
+              title="Zoom out"
+              disabled={zoom <= 80}
+              onClick={() =>
+                setZoom((current) => Math.max(current - 20, 80))
+              }
+              className="flex h-9 w-9 items-center justify-center text-xl hover:bg-amber-500/10 disabled:opacity-40"
+              style={{ color: colors.goldBright }}
+            >
+              −
+            </button>
+          </div>
+
+          {/* HOVER STATS CARD */}
 
           {activeStats && (
             <div
               className="absolute left-1/2 top-4 z-30 w-[290px] -translate-x-1/2 sm:left-auto sm:right-5 sm:top-24 sm:translate-x-0"
-              style={{
-                animation:
-                  'statsEnter 180ms ease-out',
-              }}
+              style={{ animation: 'statsEnter 180ms ease-out' }}
             >
               <div
                 className="overflow-hidden rounded-2xl border backdrop-blur-2xl"
@@ -826,133 +647,84 @@ const WorldNetworkMap = () => {
                   background: isLight
                     ? 'rgba(255,255,255,0.96)'
                     : 'rgba(7,10,9,0.96)',
-
                   borderColor: isLight
                     ? 'rgba(211,154,36,0.25)'
                     : 'rgba(217,168,62,0.22)',
-
                   boxShadow: `
                     0 20px 60px rgba(0,0,0,0.25),
                     0 0 35px rgba(211,154,36,0.08)
                   `,
                 }}
               >
-                {/* Card header */}
-
                 <div
                   className="border-b px-4 py-3"
-                  style={{
-                    borderColor:
-                      colors.panelBorder,
-                  }}
+                  style={{ borderColor: colors.panelBorder }}
                 >
                   <div className="flex items-center justify-between">
                     <div>
                       <div
                         className="text-[9px] font-semibold uppercase tracking-[0.2em]"
-                        style={{
-                          color: colors.muted,
-                        }}
+                        style={{ color: colors.muted }}
                       >
                         Network Region
                       </div>
 
                       <div
                         className="mt-1 text-base font-semibold"
-                        style={{
-                          color: colors.text,
-                        }}
+                        style={{ color: colors.text }}
                       >
-                        {activeStats.name ||
-                          hoveredCountry}
+                        {activeStats.name || hoveredCountry}
                       </div>
                     </div>
 
                     <div
                       className="flex h-8 w-8 items-center justify-center rounded-full border"
                       style={{
-                        borderColor:
-                          'rgba(211,154,36,0.25)',
+                        borderColor: 'rgba(211,154,36,0.25)',
                         color: colors.goldBright,
                       }}
                     >
-                      <span className="text-xs">
-                        ◎
-                      </span>
+                      <span className="text-xs">◎</span>
                     </div>
                   </div>
 
                   <div
                     className="mt-1 text-[9px] uppercase tracking-[0.14em]"
-                    style={{
-                      color: colors.gold,
-                    }}
+                    style={{ color: colors.gold }}
                   >
                     {activeStats.region}
                   </div>
                 </div>
 
-                {/* Stats */}
-
                 <div className="grid grid-cols-2 gap-px">
-                  <Stat
-                    label="Carriers"
-                    value={activeStats.carriers}
-                    colors={colors}
-                  />
-
-                  <Stat
-                    label="Routes"
-                    value={activeStats.routes}
-                    colors={colors}
-                  />
-
-                  <Stat
-                    label="Traffic"
-                    value={activeStats.traffic}
-                    colors={colors}
-                  />
-
-                  <Stat
-                    label="Latency"
-                    value={activeStats.latency}
-                    colors={colors}
-                  />
+                  <Stat label="Carriers" value={activeStats.carriers} colors={colors} />
+                  <Stat label="Routes" value={activeStats.routes} colors={colors} />
+                  <Stat label="Traffic" value={activeStats.traffic} colors={colors} />
+                  <Stat label="Latency" value={activeStats.latency} colors={colors} />
                 </div>
-
-                {/* Footer */}
 
                 <div
                   className="flex items-center justify-between border-t px-4 py-2.5"
-                  style={{
-                    borderColor:
-                      colors.panelBorder,
-                  }}
+                  style={{ borderColor: colors.panelBorder }}
                 >
                   <span
                     className="text-[8px] font-semibold uppercase tracking-[0.18em]"
-                    style={{
-                      color: colors.muted,
-                    }}
+                    style={{ color: colors.muted }}
                   >
                     Network health
                   </span>
 
                   <span
                     className="flex items-center gap-1.5 text-[9px] font-bold"
-                    style={{
-                      color: '#8FBE67',
-                    }}
+                    style={{ color: '#8FBE67' }}
                   >
                     <span
                       className="h-1.5 w-1.5 rounded-full"
                       style={{
                         background: '#8FBE67',
-                        boxShadow:
-                          '0 0 7px #8FBE67',
+                        boxShadow: '0 0 7px #8FBE67',
                       }}
                     />
-
                     {activeStats.uptime}
                   </span>
                 </div>
@@ -960,16 +732,12 @@ const WorldNetworkMap = () => {
             </div>
           )}
 
-          {/* =================================================
-              BOTTOM LEFT
-          ================================================= */}
+          {/* BOTTOM LEFT */}
 
           <div className="absolute bottom-3 left-2 sm:bottom-6 sm:left-5">
             <div
               className="text-[8px] font-semibold uppercase tracking-[0.24em]"
-              style={{
-                color: colors.muted,
-              }}
+              style={{ color: colors.muted }}
             >
               Active Routes
             </div>
@@ -977,43 +745,33 @@ const WorldNetworkMap = () => {
             <div className="mt-1 flex items-baseline gap-2">
               <span
                 className="text-2xl font-light tracking-tight sm:text-3xl"
-                style={{
-                  color: colors.text,
-                }}
+                style={{ color: colors.text }}
               >
                 24
               </span>
 
               <span
                 className="text-[8px] font-semibold uppercase tracking-[0.18em]"
-                style={{
-                  color: colors.goldBright,
-                }}
+                style={{ color: colors.goldBright }}
               >
                 Global Links
               </span>
             </div>
           </div>
 
-          {/* =================================================
-              BOTTOM RIGHT
-          ================================================= */}
+          {/* BOTTOM RIGHT */}
 
           <div className="absolute bottom-3 right-2 text-right sm:bottom-6 sm:right-5">
             <div
               className="text-[8px] font-semibold uppercase tracking-[0.24em]"
-              style={{
-                color: colors.muted,
-              }}
+              style={{ color: colors.muted }}
             >
               Infrastructure
             </div>
 
             <div
               className="mt-1 text-[9px] font-bold uppercase tracking-[0.16em]"
-              style={{
-                color: colors.text,
-              }}
+              style={{ color: colors.text }}
             >
               Built to connect.
             </div>
@@ -1021,9 +779,7 @@ const WorldNetworkMap = () => {
         </div>
       </div>
 
-      {/* =====================================================
-          BOTTOM FADE
-      ===================================================== */}
+      {/* BOTTOM FADE */}
 
       <div
         className="pointer-events-none absolute bottom-0 left-0 right-0 h-32"
@@ -1036,9 +792,7 @@ const WorldNetworkMap = () => {
         }}
       />
 
-      {/* =====================================================
-          ANIMATIONS
-      ===================================================== */}
+      {/* ANIMATIONS */}
 
       <style>{`
         @keyframes networkFlow {
@@ -1137,24 +891,18 @@ const Stat = ({ label, value, colors }) => {
   return (
     <div
       className="px-4 py-3"
-      style={{
-        background: 'rgba(128,128,128,0.025)',
-      }}
+      style={{ background: 'rgba(128,128,128,0.025)' }}
     >
       <div
         className="text-[8px] font-semibold uppercase tracking-[0.16em]"
-        style={{
-          color: colors.muted,
-        }}
+        style={{ color: colors.muted }}
       >
         {label}
       </div>
 
       <div
         className="mt-1 text-sm font-semibold"
-        style={{
-          color: colors.text,
-        }}
+        style={{ color: colors.text }}
       >
         {value}
       </div>

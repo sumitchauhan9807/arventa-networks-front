@@ -1,10 +1,19 @@
-import Animations from '@/components/Animations/index'
+import Animations from '@/components/Animations/index';
 type HeroProps = {
-  mode?: 'dark' | 'light';
+  animation?: 'home' | 'about' | 'operations' | 'pbx' | 'partners' | 'compliance';
+};
+import { useSelector } from 'react-redux';
+
+type RootState = {
+  theme: {
+    theme: 'light' | 'dark';
+  };
 };
 
-const Hero = ({ mode = 'dark' }: HeroProps) => {
-  const isLight = mode === 'light';
+const Hero = ({ animation = 'home' }: HeroProps) => {
+  const reduxTheme = useSelector((state: RootState) => state.theme.theme);
+
+  const isLight = reduxTheme === 'light';
 
   const theme = {
     section: isLight ? 'bg-[#FAFAF8] text-[#151515]' : 'bg-[#050606] text-white',
@@ -61,7 +70,7 @@ const Hero = ({ mode = 'dark' }: HeroProps) => {
   };
 
   return (
-    <section className={`relative min-h-screen overflow-hidden pt-20 ${theme.section}`}>
+    <section className={`relative min-h-screen overflow-hidden  ${theme.section}`}>
       {/* Background */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute inset-0 opacity-30" />
@@ -159,9 +168,8 @@ const Hero = ({ mode = 'dark' }: HeroProps) => {
           </div>
 
           <div className="relative h-[560px] sm:h-[650px] lg:h-[700px]">
-             <Animations type={'compliance'}/>
-            
-            </div>
+            <Animations type={animation} />
+          </div>
         </div>
       </div>
 

@@ -24,13 +24,13 @@ const menuSections = [
       {
         title: 'Team & 24/7 Operations',
         description: 'Experts supporting your network around the clock.',
-        href: '/team',
+        href: '/operations',
         icon: Users,
       },
       {
         title: 'Partner & Ecosystem',
         description: 'Our global connectivity partnerships.',
-        href: '/partner',
+        href: '/partners',
         icon: Handshake,
       },
       {
@@ -68,7 +68,7 @@ const menuSections = [
       {
         title: 'Rufnummern & DIDs',
         description: 'Global numbering solutions.',
-        href: '/rufnummern',
+        href: '/did',
         icon: Hash,
       },
       {
@@ -323,11 +323,11 @@ const menuItemContent = {
   },
 };
 
-export default function Header({ mode }) {
+export default function Header() {
   const dispatch = useDispatch();
-  const reduxTheme = useSelector((state) => state.theme?.mode);
+  const reduxTheme = useSelector((state) => state.theme?.theme);
 
-  const isDark = (mode ?? reduxTheme) === 'dark';
+  const isDark = reduxTheme === 'dark';
 
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeMobileSection, setActiveMobileSection] = useState(null);

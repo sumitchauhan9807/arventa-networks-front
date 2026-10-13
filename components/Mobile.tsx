@@ -1,3 +1,4 @@
+
 const MobileSection = ({ mode }) => {
   const isDark = mode === "dark";
 
@@ -36,18 +37,45 @@ const MobileSection = ({ mode }) => {
 
   const styles = {
     section: isDark
-      ? "border-white/10 bg-[#080a0a] text-white"
-      : "border-slate-200 bg-white text-slate-900",
+      ? "border-white/10 bg-[#070909] text-white"
+      : "border-[#151716]/10 bg-[#F7F5F0] text-[#151716]",
+
+    mainGlow: isDark
+      ? "bg-[#D9A83E]/[0.055]"
+      : "bg-[#D9A83E]/[0.10]",
+
+    leftGlow: isDark
+      ? "bg-[#D9A83E]/[0.025]"
+      : "bg-[#D9A83E]/[0.045]",
+
+    rightGlow: isDark
+      ? "bg-[#D9A83E]/[0.02]"
+      : "bg-[#D9A83E]/[0.035]",
+
+    radialGlow: isDark
+      ? "bg-[radial-gradient(circle_at_50%_15%,rgba(217,168,62,0.08),transparent_40%)]"
+      : "bg-[radial-gradient(circle_at_50%_15%,rgba(217,168,62,0.10),transparent_40%)]",
+
+    dots: isDark
+      ? "bg-[radial-gradient(circle,rgba(255,255,255,0.16)_1px,transparent_1px)]"
+      : "bg-[radial-gradient(circle,rgba(21,23,22,0.12)_1px,transparent_1px)]",
+
+    goldDots:
+      "bg-[radial-gradient(circle,rgba(217,168,62,0.18)_1px,transparent_1px)]",
+
+    bottomFade: isDark
+      ? "from-[#070909]"
+      : "from-[#F7F5F0]",
 
     card: isDark
       ? "border-white/10 bg-black/20"
-      : "border-slate-200 bg-slate-100",
+      : "border-[#151716]/10 bg-white/65",
 
     overlay: isDark
       ? "bg-gradient-to-t from-black via-black/55 to-transparent"
       : "bg-gradient-to-t from-slate-950/90 via-slate-900/30 to-transparent",
 
-    description: isDark ? "text-white/80" : "text-white/90",
+    description: "text-white/90",
 
     cardShadow: isDark
       ? "hover:shadow-[0_20px_50px_rgba(217,168,62,0.12)]"
@@ -57,9 +85,48 @@ const MobileSection = ({ mode }) => {
   return (
     <section
       id="mobile"
-      className={`border-y py-28 ${styles.section}`}
+      className={`relative isolate overflow-hidden border-y py-28 ${styles.section}`}
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      {/* Ambient background — matching Timeline */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        {/* Main top gold glow */}
+        <div
+          className={`absolute left-1/2 top-[-250px] h-[700px] w-[1100px] max-w-none -translate-x-1/2 rounded-full blur-[160px] ${styles.mainGlow}`}
+        />
+
+        {/* Left ambient glow */}
+        <div
+          className={`absolute -left-[300px] top-[35%] h-[600px] w-[600px] rounded-full blur-[150px] ${styles.leftGlow}`}
+        />
+
+        {/* Right ambient glow */}
+        <div
+          className={`absolute -right-[300px] bottom-[10%] h-[600px] w-[600px] rounded-full blur-[150px] ${styles.rightGlow}`}
+        />
+
+        {/* Radial gold highlight */}
+        <div
+          className={`absolute inset-0 ${styles.radialGlow}`}
+        />
+
+        {/* Fine background dots */}
+        <div
+          className={`absolute inset-0 ${styles.dots} bg-[size:24px_24px]`}
+        />
+
+        {/* Subtle gold dot pattern */}
+        <div
+          className={`absolute inset-0 ${styles.goldDots} bg-[size:48px_48px]`}
+        />
+
+        {/* Bottom fade */}
+        <div
+          className={`absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t to-transparent ${styles.bottomFade}`}
+        />
+      </div>
+
+      {/* Section content */}
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Heading */}
         <div className="mb-12">
           <div className="text-xs font-semibold uppercase tracking-[.25em] text-arventa-gold">
@@ -68,7 +135,9 @@ const MobileSection = ({ mode }) => {
 
           <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
             Flexible Solutions{" "}
-            <span className="gold-text">for Your Industry</span>
+            <span className="gold-text">
+              for Your Industry
+            </span>
           </h2>
         </div>
 
@@ -95,12 +164,14 @@ const MobileSection = ({ mode }) => {
 
               {/* Content */}
               <div className="absolute inset-x-0 bottom-0 p-6">
-                <h3 className={`font-semibold transition-colors duration-300 group-hover:text-arventa-gold ${styles.description}`}>
+                <h3
+                  className={`font-semibold transition-colors duration-300 group-hover:text-arventa-gold ${styles.description}`}
+                >
                   {industry.title}
                 </h3>
 
                 <p
-                  className={`mt-2 text-xs leading-5 transition-colors duration-300 ${styles.description}`}
+                  className={`mt-2 text-xs leading-5 ${styles.description}`}
                 >
                   {industry.description}
                 </p>
@@ -122,4 +193,4 @@ const MobileSection = ({ mode }) => {
   );
 };
 
-export default MobileSection
+export default MobileSection;

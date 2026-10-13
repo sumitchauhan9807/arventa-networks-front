@@ -6,55 +6,31 @@ const WorldVoipMap = () => {
   const isDark = theme === 'dark';
 
   const styles = {
-    section: isDark
-      ? 'border-white/10 bg-[#070909]'
-      : 'border-[#151716]/10 bg-[#F7F5F0]',
+    section: isDark ? 'border-white/10 bg-[#070909]' : 'border-[#151716]/10 bg-[#F7F5F0]',
 
     heading: isDark ? 'text-white' : 'text-[#151716]',
 
-    paragraph: isDark
-      ? 'text-white/40'
-      : 'text-[#151716]/50',
+    paragraph: isDark ? 'text-white/40' : 'text-[#151716]/50',
 
-    map: isDark
-      ? 'text-white/[0.085]'
-      : 'text-[#151716]/[0.10]',
+    map: isDark ? 'text-white/[0.085]' : 'text-[#151716]/[0.10]',
 
-    mapLine: isDark
-      ? 'stroke-white/[0.08]'
-      : 'stroke-[#151716]/[0.09]',
+    mapLine: isDark ? 'stroke-white/[0.08]' : 'stroke-[#151716]/[0.09]',
 
-    route: isDark
-      ? 'stroke-[#D9A83E]/40'
-      : 'stroke-[#A87918]/35',
+    route: isDark ? 'stroke-[#D9A83E]/40' : 'stroke-[#A87918]/35',
 
-    node: isDark
-      ? 'fill-[#D9A83E]'
-      : 'fill-[#B88A28]',
+    node: isDark ? 'fill-[#D9A83E]' : 'fill-[#B88A28]',
 
-    card: isDark
-      ? 'border-white/10 bg-white/[0.035]'
-      : 'border-[#151716]/10 bg-white/65',
+    card: isDark ? 'border-white/10 bg-white/[0.035]' : 'border-[#151716]/10 bg-white/65',
 
-    cardText: isDark
-      ? 'text-white'
-      : 'text-[#151716]',
+    cardText: isDark ? 'text-white' : 'text-[#151716]',
 
-    muted: isDark
-      ? 'text-white/35'
-      : 'text-[#151716]/40',
+    muted: isDark ? 'text-white/35' : 'text-[#151716]/40',
 
-    gold: isDark
-      ? 'text-[#D9A83E]'
-      : 'text-[#A87918]',
+    gold: isDark ? 'text-[#D9A83E]' : 'text-[#A87918]',
 
-    green: isDark
-      ? 'text-emerald-400'
-      : 'text-emerald-600',
+    green: isDark ? 'text-emerald-400' : 'text-emerald-600',
 
-    glow: isDark
-      ? 'bg-[#D9A83E]/10'
-      : 'bg-[#D9A83E]/10',
+    glow: isDark ? 'bg-[#D9A83E]/10' : 'bg-[#D9A83E]/10',
   };
 
   const routes = [
@@ -167,16 +143,12 @@ const WorldVoipMap = () => {
   ];
 
   return (
-    <section
-      className={`relative overflow-hidden border-y py-24 sm:py-32 ${styles.section}`}
-    >
+    <section className={`relative overflow-hidden border-y py-24 sm:py-32 ${styles.section}`}>
       {/* ==============================
           BACKGROUND
       ============================== */}
 
-      <div
-        className={`pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[140px] ${styles.glow}`}
-      />
+      <div className={`pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[140px] ${styles.glow}`} />
 
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.08]"
@@ -190,42 +162,26 @@ const WorldVoipMap = () => {
       />
 
       <div className="relative mx-auto max-w-7xl px-6">
-
         {/* ==============================
             HEADER
         ============================== */}
 
         <div className="mx-auto max-w-3xl text-center">
-
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#D9A83E]/20 bg-[#D9A83E]/[0.05] px-4 py-2">
-
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#D9A83E] opacity-60" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#D9A83E]" />
             </span>
 
-            <span className="text-[10px] uppercase tracking-[0.25em] text-[#D9A83E]">
-              Global Voice Network
-            </span>
-
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#D9A83E]">Global Voice Network</span>
           </div>
 
-          <h2
-            className={`font-display text-4xl font-medium tracking-tight sm:text-6xl ${styles.heading}`}
-          >
+          <h2 className={`font-display text-4xl font-medium tracking-tight sm:text-6xl ${styles.heading}`}>
             Voice without
-            <span className="block bg-gradient-to-r from-[#FFF0B5] via-[#D9A83E] to-[#A87918] bg-clip-text text-transparent">
-              borders.
-            </span>
+            <span className="block bg-gradient-to-r from-[#FFF0B5] via-[#D9A83E] to-[#A87918] bg-clip-text text-transparent">borders.</span>
           </h2>
 
-          <p
-            className={`mx-auto mt-5 max-w-xl text-sm leading-7 sm:text-base ${styles.paragraph}`}
-          >
-            Intelligent VoIP infrastructure connecting businesses,
-            teams, and customers across the world in real time.
-          </p>
-
+          <p className={`mx-auto mt-5 max-w-xl text-sm leading-7 sm:text-base ${styles.paragraph}`}>Intelligent VoIP infrastructure connecting businesses, teams, and customers across the world in real time.</p>
         </div>
 
         {/* ==============================
@@ -233,54 +189,28 @@ const WorldVoipMap = () => {
         ============================== */}
 
         <div className="relative mx-auto mt-16 max-w-6xl">
-
           {/* TOP STATUS BAR */}
 
-          <div
-            className={`absolute left-1/2 top-0 z-20 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-4 rounded-full border px-5 py-2.5 backdrop-blur-xl sm:flex ${styles.card}`}
-          >
-
+          <div className={`absolute left-1/2 top-0 z-20 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-4 rounded-full border px-5 py-2.5 backdrop-blur-xl sm:flex ${styles.card}`}>
             <span className="relative flex h-2 w-2">
               <span className="absolute h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
               <span className="relative h-2 w-2 rounded-full bg-emerald-400" />
             </span>
 
-            <span className={`text-[10px] uppercase tracking-[0.2em] ${styles.green}`}>
-              Network Operational
-            </span>
+            <span className={`text-[10px] uppercase tracking-[0.2em] ${styles.green}`}>Network Operational</span>
 
             <span className={`h-3 w-px ${isDark ? 'bg-white/10' : 'bg-black/10'}`} />
 
-            <span className={`text-[10px] ${styles.muted}`}>
-              99.99% uptime
-            </span>
-
+            <span className={`text-[10px] ${styles.muted}`}>99.99% uptime</span>
           </div>
 
           {/* MAP */}
 
           <div className="relative aspect-[2/1] w-full">
-
-            <svg
-              viewBox="0 0 1200 600"
-              className="h-full w-full"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-
+            <svg viewBox="0 0 1200 600" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
-
-                <filter
-                  id="goldGlow"
-                  x="-200%"
-                  y="-200%"
-                  width="400%"
-                  height="400%"
-                >
-                  <feGaussianBlur
-                    stdDeviation="4"
-                    result="blur"
-                  />
+                <filter id="goldGlow" x="-200%" y="-200%" width="400%" height="400%">
+                  <feGaussianBlur stdDeviation="4" result="blur" />
 
                   <feMerge>
                     <feMergeNode in="blur" />
@@ -288,42 +218,17 @@ const WorldVoipMap = () => {
                   </feMerge>
                 </filter>
 
-                <filter
-                  id="softGlow"
-                  x="-200%"
-                  y="-200%"
-                  width="400%"
-                  height="400%"
-                >
+                <filter id="softGlow" x="-200%" y="-200%" width="400%" height="400%">
                   <feGaussianBlur stdDeviation="8" />
                 </filter>
 
-                <linearGradient
-                  id="routeGradient"
-                  x1="0"
-                  y1="0"
-                  x2="1"
-                  y2="0"
-                >
-                  <stop
-                    offset="0%"
-                    stopColor="#A87918"
-                    stopOpacity="0.05"
-                  />
+                <linearGradient id="routeGradient" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stopColor="#A87918" stopOpacity="0.05" />
 
-                  <stop
-                    offset="45%"
-                    stopColor="#D9A83E"
-                    stopOpacity="0.75"
-                  />
+                  <stop offset="45%" stopColor="#D9A83E" stopOpacity="0.75" />
 
-                  <stop
-                    offset="100%"
-                    stopColor="#FFF0B5"
-                    stopOpacity="0.15"
-                  />
+                  <stop offset="100%" stopColor="#FFF0B5" stopOpacity="0.15" />
                 </linearGradient>
-
               </defs>
 
               {/* ==========================
@@ -331,7 +236,6 @@ const WorldVoipMap = () => {
               =========================== */}
 
               <g className={styles.map}>
-
                 {/* North America */}
                 <path
                   fill="currentColor"
@@ -450,7 +354,6 @@ const WorldVoipMap = () => {
                     L870 425 Z
                   "
                 />
-
               </g>
 
               {/* ==========================
@@ -458,31 +361,11 @@ const WorldVoipMap = () => {
               =========================== */}
 
               <g className={styles.mapLine}>
+                <ellipse cx="600" cy="290" rx="490" ry="230" strokeDasharray="2 10" />
 
-                <ellipse
-                  cx="600"
-                  cy="290"
-                  rx="490"
-                  ry="230"
-                  strokeDasharray="2 10"
-                />
+                <ellipse cx="600" cy="290" rx="390" ry="175" strokeDasharray="2 12" />
 
-                <ellipse
-                  cx="600"
-                  cy="290"
-                  rx="390"
-                  ry="175"
-                  strokeDasharray="2 12"
-                />
-
-                <ellipse
-                  cx="600"
-                  cy="290"
-                  rx="280"
-                  ry="120"
-                  strokeDasharray="2 14"
-                />
-
+                <ellipse cx="600" cy="290" rx="280" ry="120" strokeDasharray="2 14" />
               </g>
 
               {/* ==========================
@@ -491,46 +374,21 @@ const WorldVoipMap = () => {
 
               {routes.map((route) => (
                 <g key={route.id}>
-
                   {/* Glow */}
 
-                  <path
-                    d={route.d}
-                    stroke="#D9A83E"
-                    strokeWidth="5"
-                    opacity="0.06"
-                    filter="url(#softGlow)"
-                    fill="none"
-                  />
+                  <path d={route.d} stroke="#D9A83E" strokeWidth="5" opacity="0.06" filter="url(#softGlow)" fill="none" />
 
                   {/* Main route */}
 
-                  <path
-                    id={route.id}
-                    d={route.d}
-                    stroke="url(#routeGradient)"
-                    strokeWidth="1.4"
-                    fill="none"
-                  />
+                  <path id={route.id} d={route.d} stroke="url(#routeGradient)" strokeWidth="1.4" fill="none" />
 
                   {/* Moving pulse */}
 
-                  <circle
-                    r="3"
-                    fill="#FFF0B5"
-                    filter="url(#goldGlow)"
-                  >
-
-                    <animateMotion
-                      dur={route.duration}
-                      begin={route.delay}
-                      repeatCount="indefinite"
-                    >
+                  <circle r="3" fill="#FFF0B5" filter="url(#goldGlow)">
+                    <animateMotion dur={route.duration} begin={route.delay} repeatCount="indefinite">
                       <mpath href={`#${route.id}`} />
                     </animateMotion>
-
                   </circle>
-
                 </g>
               ))}
 
@@ -540,66 +398,27 @@ const WorldVoipMap = () => {
 
               {nodes.map((node) => (
                 <g key={node.name}>
-
                   {/* Outer radar */}
 
-                  <circle
-                    cx={node.x}
-                    cy={node.y}
-                    r="9"
-                    fill="none"
-                    stroke="#D9A83E"
-                    strokeWidth="1"
-                    opacity="0.25"
-                  >
-                    <animate
-                      attributeName="r"
-                      values="7;18;7"
-                      dur="2.8s"
-                      repeatCount="indefinite"
-                    />
+                  <circle cx={node.x} cy={node.y} r="9" fill="none" stroke="#D9A83E" strokeWidth="1" opacity="0.25">
+                    <animate attributeName="r" values="7;18;7" dur="2.8s" repeatCount="indefinite" />
 
-                    <animate
-                      attributeName="opacity"
-                      values="0.35;0;0.35"
-                      dur="2.8s"
-                      repeatCount="indefinite"
-                    />
+                    <animate attributeName="opacity" values="0.35;0;0.35" dur="2.8s" repeatCount="indefinite" />
                   </circle>
 
                   {/* Glow */}
 
-                  <circle
-                    cx={node.x}
-                    cy={node.y}
-                    r="8"
-                    fill="#D9A83E"
-                    opacity="0.08"
-                    filter="url(#softGlow)"
-                  />
+                  <circle cx={node.x} cy={node.y} r="8" fill="#D9A83E" opacity="0.08" filter="url(#softGlow)" />
 
                   {/* Node */}
 
-                  <circle
-                    cx={node.x}
-                    cy={node.y}
-                    r="3.5"
-                    className={styles.node}
-                    filter="url(#goldGlow)"
-                  />
+                  <circle cx={node.x} cy={node.y} r="3.5" className={styles.node} filter="url(#goldGlow)" />
 
                   {/* Inner */}
 
-                  <circle
-                    cx={node.x}
-                    cy={node.y}
-                    r="1"
-                    fill="#FFF0B5"
-                  />
-
+                  <circle cx={node.x} cy={node.y} r="1" fill="#FFF0B5" />
                 </g>
               ))}
-
             </svg>
 
             {/* ==========================
@@ -608,131 +427,74 @@ const WorldVoipMap = () => {
 
             {/* LEFT CARD */}
 
-            <div
-              className={`absolute left-0 top-[24%] hidden w-48 rounded-2xl border p-4 backdrop-blur-xl lg:block ${styles.card}`}
-            >
-
+            <div className={`absolute left-0 top-[24%] hidden w-48 rounded-2xl border p-4 backdrop-blur-xl lg:block ${styles.card}`}>
               <div className="flex items-center justify-between">
-
-                <span className={`text-[9px] uppercase tracking-[0.18em] ${styles.muted}`}>
-                  Active Calls
-                </span>
+                <span className={`text-[9px] uppercase tracking-[0.18em] ${styles.muted}`}>Active Calls</span>
 
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.7)]" />
-
               </div>
 
-              <div className={`mt-3 font-display text-3xl ${styles.cardText}`}>
-                12,842
-              </div>
+              <div className={`mt-3 font-display text-3xl ${styles.cardText}`}>12,842</div>
 
               <div className="mt-2 flex items-center gap-2">
+                <span className={`text-[10px] ${styles.green}`}>+12.4%</span>
 
-                <span className={`text-[10px] ${styles.green}`}>
-                  +12.4%
-                </span>
-
-                <span className={`text-[9px] ${styles.muted}`}>
-                  vs last hour
-                </span>
-
+                <span className={`text-[9px] ${styles.muted}`}>vs last hour</span>
               </div>
 
               {/* Mini activity bars */}
 
               <div className="mt-4 flex h-8 items-end gap-1">
-
-                {[30, 45, 35, 60, 50, 75, 55, 85, 65, 92, 72, 100].map(
-                  (height, index) => (
-                    <div
-                      key={index}
-                      className="flex-1 rounded-full bg-[#D9A83E]/40"
-                      style={{
-                        height: `${height}%`,
-                        animation: `voipBar 1.8s ease-in-out ${
-                          index * 0.08
-                        }s infinite alternate`,
-                      }}
-                    />
-                  )
-                )}
-
+                {[30, 45, 35, 60, 50, 75, 55, 85, 65, 92, 72, 100].map((height, index) => (
+                  <div
+                    key={index}
+                    className="flex-1 rounded-full bg-[#D9A83E]/40"
+                    style={{
+                      height: `${height}%`,
+                      animation: `voipBar 1.8s ease-in-out ${index * 0.08}s infinite alternate`,
+                    }}
+                  />
+                ))}
               </div>
-
             </div>
 
             {/* RIGHT CARD */}
 
-            <div
-              className={`absolute right-0 top-[31%] hidden w-48 rounded-2xl border p-4 backdrop-blur-xl lg:block ${styles.card}`}
-            >
-
-              <span className={`text-[9px] uppercase tracking-[0.18em] ${styles.muted}`}>
-                Global Latency
-              </span>
+            <div className={`absolute right-0 top-[31%] hidden w-48 rounded-2xl border p-4 backdrop-blur-xl lg:block ${styles.card}`}>
+              <span className={`text-[9px] uppercase tracking-[0.18em] ${styles.muted}`}>Global Latency</span>
 
               <div className="mt-3 flex items-end gap-2">
+                <span className={`font-display text-3xl ${styles.cardText}`}>18</span>
 
-                <span className={`font-display text-3xl ${styles.cardText}`}>
-                  18
-                </span>
-
-                <span className={`mb-1 text-xs ${styles.muted}`}>
-                  ms
-                </span>
-
+                <span className={`mb-1 text-xs ${styles.muted}`}>ms</span>
               </div>
 
               <div className="mt-2 flex items-center gap-2">
-
-                <span className={`text-[10px] ${styles.green}`}>
-                  Excellent
-                </span>
+                <span className={`text-[10px] ${styles.green}`}>Excellent</span>
 
                 <span className="h-1 w-1 rounded-full bg-emerald-400" />
-
               </div>
 
               <div className="mt-4 h-1 overflow-hidden rounded-full bg-[#D9A83E]/10">
-
                 <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-[#A87918] to-[#D9A83E]" />
-
               </div>
-
             </div>
 
             {/* BOTTOM LEFT */}
 
-            <div
-              className={`absolute bottom-[5%] left-[10%] hidden rounded-xl border px-4 py-3 backdrop-blur-xl md:block ${styles.card}`}
-            >
+            <div className={`absolute bottom-[5%] left-[10%] hidden rounded-xl border px-4 py-3 backdrop-blur-xl md:block ${styles.card}`}>
+              <div className={`text-lg font-medium ${styles.cardText}`}>42</div>
 
-              <div className={`text-lg font-medium ${styles.cardText}`}>
-                42
-              </div>
-
-              <div className={`text-[8px] uppercase tracking-[0.18em] ${styles.muted}`}>
-                Countries
-              </div>
-
+              <div className={`text-[8px] uppercase tracking-[0.18em] ${styles.muted}`}>Countries</div>
             </div>
 
             {/* BOTTOM RIGHT */}
 
-            <div
-              className={`absolute bottom-[5%] right-[10%] hidden rounded-xl border px-4 py-3 backdrop-blur-xl md:block ${styles.card}`}
-            >
+            <div className={`absolute bottom-[5%] right-[10%] hidden rounded-xl border px-4 py-3 backdrop-blur-xl md:block ${styles.card}`}>
+              <div className={`text-lg font-medium ${styles.cardText}`}>98.99%</div>
 
-              <div className={`text-lg font-medium ${styles.cardText}`}>
-                98.99%
-              </div>
-
-              <div className={`text-[8px] uppercase tracking-[0.18em] ${styles.muted}`}>
-                Call Success
-              </div>
-
+              <div className={`text-[8px] uppercase tracking-[0.18em] ${styles.muted}`}>Call Success</div>
             </div>
-
           </div>
 
           {/* ==========================
@@ -740,29 +502,19 @@ const WorldVoipMap = () => {
           =========================== */}
 
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:hidden">
-
             {[
               ['12,842', 'Active Calls'],
               ['18 ms', 'Latency'],
               ['42', 'Countries'],
               ['98.99%', 'Success'],
             ].map(([value, label]) => (
-              <div
-                key={label}
-                className={`rounded-2xl border p-4 text-center backdrop-blur-xl ${styles.card}`}
-              >
-                <div className={`font-display text-xl ${styles.cardText}`}>
-                  {value}
-                </div>
+              <div key={label} className={`rounded-2xl border p-4 text-center backdrop-blur-xl ${styles.card}`}>
+                <div className={`font-display text-xl ${styles.cardText}`}>{value}</div>
 
-                <div className={`mt-1 text-[8px] uppercase tracking-[0.16em] ${styles.muted}`}>
-                  {label}
-                </div>
+                <div className={`mt-1 text-[8px] uppercase tracking-[0.16em] ${styles.muted}`}>{label}</div>
               </div>
             ))}
-
           </div>
-
         </div>
 
         {/* ==============================
@@ -770,31 +522,19 @@ const WorldVoipMap = () => {
         ============================== */}
 
         <div className="mx-auto mt-16 grid max-w-4xl grid-cols-2 gap-y-8 sm:grid-cols-4">
-
           {[
             ['99.99%', 'Network Uptime'],
             ['42+', 'Countries'],
             ['18 ms', 'Avg. Latency'],
             ['24/7', 'Monitoring'],
           ].map(([value, label]) => (
-            <div
-              key={label}
-              className="relative text-center"
-            >
+            <div key={label} className="relative text-center">
+              <div className={`font-display text-2xl sm:text-3xl ${styles.cardText}`}>{value}</div>
 
-              <div className={`font-display text-2xl sm:text-3xl ${styles.cardText}`}>
-                {value}
-              </div>
-
-              <div className={`mt-2 text-[9px] uppercase tracking-[0.2em] ${styles.muted}`}>
-                {label}
-              </div>
-
+              <div className={`mt-2 text-[9px] uppercase tracking-[0.2em] ${styles.muted}`}>{label}</div>
             </div>
           ))}
-
         </div>
-
       </div>
 
       {/* Animation */}
@@ -812,7 +552,6 @@ const WorldVoipMap = () => {
           }
         }
       `}</style>
-
     </section>
   );
 };

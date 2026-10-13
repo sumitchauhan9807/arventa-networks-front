@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 const layouts = {
   NUMBERED: lazy(() => import('./Numbered')),
   TIMELINE: lazy(() => import('./Timeline')),
+  BOXES: lazy(() => import('./Boxes')),
 };
 
 const FeatureGridSection = (props) => {

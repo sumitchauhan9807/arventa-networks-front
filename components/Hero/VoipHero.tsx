@@ -1,8 +1,126 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-const VoipHero = () => {
-  const theme = useSelector((state) => state.theme.theme);
+type RootState = {
+  theme: {
+    theme: 'light' | 'dark';
+  };
+};
+
+type Route = {
+  id: string;
+  d: string;
+  duration: string;
+  delay: string;
+};
+
+const routes: Route[] = [
+  {
+    id: 'route-america-europe',
+    d: 'M180 230 Q360 40 540 175',
+    duration: '3.8s',
+    delay: '0s',
+  },
+  {
+    id: 'route-america-asia',
+    d: 'M180 230 Q570 30 820 190',
+    duration: '5s',
+    delay: '0.8s',
+  },
+  {
+    id: 'route-america-africa',
+    d: 'M180 230 Q440 280 550 330',
+    duration: '4s',
+    delay: '1.4s',
+  },
+  {
+    id: 'route-europe-asia',
+    d: 'M540 175 Q690 90 820 190',
+    duration: '3s',
+    delay: '0.4s',
+  },
+  {
+    id: 'route-europe-india',
+    d: 'M540 175 Q660 240 690 310',
+    duration: '3.6s',
+    delay: '1.8s',
+  },
+  {
+    id: 'route-india-asia',
+    d: 'M690 310 Q770 260 820 190',
+    duration: '3.2s',
+    delay: '0.6s',
+  },
+  {
+    id: 'route-asia-australia',
+    d: 'M820 190 Q950 300 970 420',
+    duration: '4.2s',
+    delay: '1.1s',
+  },
+  {
+    id: 'route-africa-asia',
+    d: 'M550 330 Q720 360 820 190',
+    duration: '4.5s',
+    delay: '2s',
+  },
+  {
+    id: 'route-south-america',
+    d: 'M245 345 Q300 430 285 480',
+    duration: '3.4s',
+    delay: '1.5s',
+  },
+];
+
+const nodes = [
+  { x: 180, y: 230, label: 'North America' },
+  { x: 285, y: 480, label: 'South America' },
+  { x: 540, y: 175, label: 'Europe' },
+  { x: 550, y: 330, label: 'Africa' },
+  { x: 690, y: 310, label: 'India' },
+  { x: 820, y: 190, label: 'Asia' },
+  { x: 970, y: 420, label: 'Australia' },
+];
+
+const services = [
+  {
+    number: '01',
+    title: 'SIP Trunking',
+    description: 'Flexible, reliable SIP connectivity for your business.',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M8 10h8M8 14h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    number: '02',
+    title: 'Voice Integration',
+    description: 'Connect voice services with your existing systems.',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
+        <rect x="14" y="14" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M10 6.5h3a4 4 0 0 1 4 4V14M14 17.5h-3a4 4 0 0 1-4-4V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    number: '03',
+    title: 'Scalable Capacity',
+    description: 'Adapt call capacity to changing business demand.',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M15 5h5v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+];
+
+const VoipHero: React.FC = () => {
+  const theme = useSelector((state: RootState) => state.theme.theme);
+
   const isDark = theme === 'dark';
 
   const styles = {
@@ -10,337 +128,149 @@ const VoipHero = () => {
 
     heading: isDark ? 'text-white' : 'text-[#151716]',
 
-    paragraph: isDark ? 'text-white/45' : 'text-[#151716]/55',
+    paragraph: isDark ? 'text-white/75' : 'text-[#151716]/75',
 
-    eyebrow: isDark ? 'border-[#D9A83E]/20 bg-[#D9A83E]/[0.05] text-[#D9A83E]' : 'border-[#B88A28]/25 bg-[#D9A83E]/[0.07] text-[#A87918]',
+    eyebrow: isDark ? 'border-[#D9A83E]/30 bg-[#D9A83E]/[0.08] text-[#F0C867]' : 'border-[#B88A28]/30 bg-[#D9A83E]/[0.10] text-[#8B6517]',
 
-    primaryButton: isDark ? 'bg-[#D9A83E] text-[#11120F] hover:bg-[#F0C867]' : 'bg-[#151716] text-white hover:bg-[#2A2C2A]',
+    primaryButton: isDark ? 'bg-[#D9A83E] text-[#11120F] hover:bg-[#F0C867]' : 'bg-[#151716] text-white hover:bg-[#303330]',
 
-    secondaryButton: isDark ? 'border-white/10 bg-white/[0.035] text-white hover:border-[#D9A83E]/30 hover:bg-white/[0.06]' : 'border-[#151716]/10 bg-white/60 text-[#151716] hover:border-[#B88A28]/30 hover:bg-white/90',
+    secondaryButton: isDark ? 'border-white/20 bg-white/[0.07] text-white hover:border-[#D9A83E]/60 hover:bg-white/[0.11]' : 'border-[#151716]/20 bg-white/80 text-[#151716] hover:border-[#B88A28]/60 hover:bg-white',
 
-    map: isDark ? 'text-white/[0.07]' : 'text-[#151716]/[0.075]',
-
-    mapLines: isDark ? 'stroke-white/[0.07]' : 'stroke-[#151716]/[0.065]',
-
-    card: isDark ? 'border-white/10 bg-[#0c0f0e]/75' : 'border-[#151716]/10 bg-white/65',
+    card: isDark ? 'border-white/[0.13] bg-[#0D100F]/95' : 'border-[#151716]/15 bg-white/95',
 
     cardTitle: isDark ? 'text-white' : 'text-[#151716]',
 
-    cardMuted: isDark ? 'text-white/30' : 'text-[#151716]/40',
+    cardMuted: isDark ? 'text-white/70' : 'text-[#151716]/70',
 
-    gold: isDark ? 'text-[#D9A83E]' : 'text-[#A87918]',
+    gold: isDark ? 'text-[#F0C867]' : 'text-[#916710]',
 
-    green: isDark ? 'text-emerald-400' : 'text-emerald-600',
-
-    divider: isDark ? 'border-white/10' : 'border-[#151716]/10',
+    divider: isDark ? 'border-white/[0.13]' : 'border-[#151716]/[0.13]',
   };
 
-  const routes = [
-    {
-      id: 'hero-route-1',
-      d: 'M235 205 Q400 80 555 160',
-      duration: '3.2s',
-      delay: '0s',
-    },
-    {
-      id: 'hero-route-2',
-      d: 'M235 205 Q500 40 760 215',
-      duration: '4.2s',
-      delay: '0.8s',
-    },
-    {
-      id: 'hero-route-3',
-      d: 'M235 205 Q510 160 745 290',
-      duration: '3.8s',
-      delay: '1.5s',
-    },
-    {
-      id: 'hero-route-4',
-      d: 'M555 160 Q690 110 820 210',
-      duration: '2.8s',
-      delay: '0.5s',
-    },
-    {
-      id: 'hero-route-5',
-      d: 'M555 160 Q570 210 570 280',
-      duration: '2.4s',
-      delay: '1.8s',
-    },
-    {
-      id: 'hero-route-6',
-      d: 'M745 305 Q850 320 930 425',
-      duration: '3.6s',
-      delay: '2s',
-    },
-    {
-      id: 'hero-route-7',
-      d: 'M820 210 Q900 290 930 425',
-      duration: '3.1s',
-      delay: '1.1s',
-    },
-    {
-      id: 'hero-route-8',
-      d: 'M300 330 Q400 190 555 160',
-      duration: '3.4s',
-      delay: '2.3s',
-    },
-  ];
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
 
   return (
-    <section className={`relative min-h-[900px] overflow-hidden ${styles.section}`}>
-      {/* =====================================================
-          BACKGROUND
-      ====================================================== */}
+    <section className={`relative isolate min-h-[900px] overflow-hidden transition-colors duration-500 ${styles.section}`}>
+      {/* Background ambience */}
 
-      <div className="pointer-events-none absolute inset-0">
-        {/* Main atmospheric glow */}
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute left-1/2 top-[32%] h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[#D9A83E]/[0.10] blur-[150px]" />
 
-        <div className="absolute left-1/2 top-[48%] h-[650px] w-[650px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#D9A83E]/[0.055] blur-[150px]" />
+        <div className="absolute left-[-15%] top-[30%] h-[400px] w-[400px] rounded-full bg-[#D9A83E]/[0.055] blur-[130px]" />
 
-        {/* Left glow */}
-
-        <div className="absolute left-[-10%] top-[35%] h-[400px] w-[400px] rounded-full bg-[#D9A83E]/[0.025] blur-[130px]" />
-
-        {/* Right glow */}
-
-        <div className="absolute right-[-10%] top-[25%] h-[400px] w-[400px] rounded-full bg-[#D9A83E]/[0.025] blur-[130px]" />
-
-        {/* Grid */}
+        <div className="absolute right-[-10%] top-[25%] h-[450px] w-[450px] rounded-full bg-[#D9A83E]/[0.06] blur-[140px]" />
 
         <div
-          className="absolute inset-0 opacity-[0.055]"
+          className="absolute inset-0 opacity-[0.08]"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(217,168,62,0.15) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(217,168,62,0.15) 1px, transparent 1px)
+              linear-gradient(rgba(217,168,62,0.25) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(217,168,62,0.25) 1px, transparent 1px)
             `,
-            backgroundSize: '80px 80px',
+            backgroundSize: '70px 70px',
           }}
         />
+
+        <div className={`absolute inset-x-0 top-0 h-[600px] ${isDark ? 'bg-gradient-to-b from-[#070909]/20 via-transparent to-[#070909]' : 'bg-gradient-to-b from-[#F7F5F0]/10 via-transparent to-[#F7F5F0]'}`} />
       </div>
 
-      {/* =====================================================
-          WORLD MAP
-      ====================================================== */}
+      {/* Global network animation */}
 
-      <div className="pointer-events-none absolute inset-x-0  flex justify-center">
-        <div className="w-[1550px] max-w-none">
-          <svg viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-auto w-full">
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 flex justify-center">
+        <div className="w-[1300px] max-w-none">
+          <svg viewBox="0 0 1200 600" className="h-auto w-full overflow-visible" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <defs>
-              <filter id="heroMapGlow" x="-200%" y="-200%" width="400%" height="400%">
-                <feGaussianBlur stdDeviation="4" result="blur" />
-
-                <feMerge>
-                  <feMergeNode in="blur" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
-              </filter>
-
-              <filter id="heroPulseGlow" x="-300%" y="-300%" width="600%" height="600%">
-                <feGaussianBlur stdDeviation="3" result="blur" />
-
-                <feMerge>
-                  <feMergeNode in="blur" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
-              </filter>
-
-              <filter id="heroSoftGlow" x="-200%" y="-200%" width="400%" height="400%">
-                <feGaussianBlur stdDeviation="9" />
-              </filter>
-
-              <linearGradient id="heroRouteGradient" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stopColor="#A87918" stopOpacity="0" />
-
-                <stop offset="40%" stopColor="#D9A83E" stopOpacity="0.65" />
-
-                <stop offset="65%" stopColor="#FFF0B5" stopOpacity="0.45" />
-
-                <stop offset="100%" stopColor="#D9A83E" stopOpacity="0" />
+              <linearGradient id="voipRouteGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stopColor="#A87918" stopOpacity="0.05" />
+                <stop offset="45%" stopColor="#D9A83E" stopOpacity="0.85" />
+                <stop offset="70%" stopColor="#FFF0B5" stopOpacity="0.9" />
+                <stop offset="100%" stopColor="#D9A83E" stopOpacity="0.05" />
               </linearGradient>
 
-              <radialGradient id="heroFade">
-                <stop offset="0%" stopColor="white" stopOpacity="1" />
+              <radialGradient id="voipNodeGradient">
+                <stop offset="0%" stopColor="#FFF0B5" />
+                <stop offset="40%" stopColor="#D9A83E" />
+                <stop offset="100%" stopColor="#D9A83E" stopOpacity="0" />
+              </radialGradient>
 
-                <stop offset="60%" stopColor="white" stopOpacity="0.8" />
+              <filter id="voipGlow" x="-200%" y="-200%" width="400%" height="400%">
+                <feGaussianBlur stdDeviation="4" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
 
+              <filter id="voipSoftGlow" x="-200%" y="-200%" width="400%" height="400%">
+                <feGaussianBlur stdDeviation="14" />
+              </filter>
+
+              <radialGradient id="voipMapFade">
+                <stop offset="0%" stopColor="white" stopOpacity="0.95" />
+                <stop offset="65%" stopColor="white" stopOpacity="0.8" />
                 <stop offset="100%" stopColor="white" stopOpacity="0" />
               </radialGradient>
 
-              <mask id="heroMask">
-                <rect width="1200" height="600" fill="url(#heroFade)" />
+              <mask id="voipMapMask">
+                <rect width="1200" height="600" fill="url(#voipMapFade)" />
               </mask>
             </defs>
 
-            <g mask="url(#heroMask)">
-              {/* ==============================
-                  CONTINENTS
-              =============================== */}
+            <g mask="url(#voipMapMask)">
+              {/* Decorative globe */}
 
-              <g className={styles.map}>
-                {/* North America */}
+              <g stroke="#D9A83E" strokeWidth="0.8" strokeOpacity={isDark ? '0.16' : '0.19'}>
+                <ellipse cx="600" cy="290" rx="510" ry="225" strokeDasharray="3 10" />
 
-                <path
-                  fill="currentColor"
-                  d="
-                    M145 185
-                    C125 155 145 125 180 115
-                    C210 105 245 112 270 130
-                    L310 155
-                    L295 180
-                    L270 195
-                    L250 225
-                    L215 235
-                    L195 270
-                    L165 250
-                    L155 220
-                    L130 210
-                    Z
-                  "
-                />
+                <ellipse cx="600" cy="290" rx="390" ry="170" strokeDasharray="3 12" />
 
-                {/* South America */}
+                <ellipse cx="600" cy="290" rx="260" ry="115" strokeDasharray="3 14" />
 
-                <path
-                  fill="currentColor"
-                  d="
-                    M290 295
-                    C315 285 340 300 350 330
-                    C360 365 350 400 335 430
-                    L315 475
-                    L290 510
-                    L270 485
-                    L275 440
-                    L255 405
-                    L265 365
-                    L250 330
-                    Z
-                  "
-                />
+                <ellipse cx="600" cy="290" rx="160" ry="225" />
 
-                {/* Europe */}
-
-                <path
-                  fill="currentColor"
-                  d="
-                    M510 160
-                    L540 135
-                    L575 130
-                    L600 145
-                    L625 135
-                    L650 155
-                    L635 180
-                    L605 185
-                    L580 175
-                    L550 190
-                    L525 180
-                    Z
-                  "
-                />
-
-                {/* Africa */}
-
-                <path
-                  fill="currentColor"
-                  d="
-                    M535 215
-                    C565 195 610 205 630 235
-                    C650 270 645 320 625 360
-                    L600 415
-                    L565 450
-                    L535 420
-                    L525 375
-                    L505 335
-                    L510 290
-                    L495 250
-                    Z
-                  "
-                />
-
-                {/* Asia */}
-
-                <path
-                  fill="currentColor"
-                  d="
-                    M640 175
-                    C685 145 745 140 800 155
-                    L865 175
-                    L930 205
-                    L975 235
-                    L955 270
-                    L910 280
-                    L875 265
-                    L830 280
-                    L790 260
-                    L745 275
-                    L700 255
-                    L660 230
-                    L625 205
-                    Z
-                  "
-                />
-
-                {/* India */}
-
-                <path
-                  fill="currentColor"
-                  d="
-                    M735 270
-                    L770 280
-                    L790 315
-                    L770 345
-                    L745 325
-                    L720 290
-                    Z
-                  "
-                />
-
-                {/* Australia */}
-
-                <path
-                  fill="currentColor"
-                  d="
-                    M880 395
-                    C910 375 955 380 985 405
-                    L1000 440
-                    L975 470
-                    L930 475
-                    L895 455
-                    L870 425
-                    Z
-                  "
-                />
+                <ellipse cx="600" cy="290" rx="320" ry="225" />
               </g>
 
-              {/* ==============================
-                  ORBITAL LINES
-              =============================== */}
+              {/* Continent silhouettes */}
 
-              <g className={styles.mapLines}>
-                <ellipse cx="600" cy="285" rx="500" ry="235" strokeDasharray="2 12" />
+              <g fill={isDark ? '#D9A83E' : '#9A772B'} fillOpacity={isDark ? '0.10' : '0.09'} stroke="#D9A83E" strokeOpacity="0.22" strokeWidth="0.8">
+                <path d="M100 175 L140 125 L195 105 L250 120 L290 145 L320 180 L295 210 L255 215 L230 255 L195 275 L170 250 L155 220 L120 215 Z" />
 
-                <ellipse cx="600" cy="285" rx="400" ry="175" strokeDasharray="2 14" />
+                <path d="M245 300 L285 285 L325 310 L345 350 L330 395 L310 445 L285 495 L270 465 L275 415 L250 380 L240 340 Z" />
 
-                <ellipse cx="600" cy="285" rx="285" ry="115" strokeDasharray="2 16" />
+                <path d="M490 155 L520 125 L565 120 L600 140 L630 130 L665 155 L650 180 L615 190 L580 180 L550 200 L510 185 Z" />
+
+                <path d="M520 210 L560 195 L600 210 L630 245 L645 290 L625 345 L600 390 L570 430 L545 405 L530 365 L510 325 L500 275 L485 245 Z" />
+
+                <path d="M650 165 L700 140 L765 145 L820 165 L880 185 L930 220 L970 245 L950 275 L910 285 L870 270 L835 290 L790 270 L755 285 L710 255 L670 225 L635 200 Z" />
+
+                <path d="M700 270 L740 280 L770 315 L750 350 L725 325 L695 295 Z" />
+
+                <path d="M875 390 L920 375 L960 390 L995 425 L985 455 L950 475 L910 465 L880 440 L860 415 Z" />
               </g>
 
-              {/* ==============================
-                  CONNECTION ROUTES
-              =============================== */}
+              {/* Glowing route lines */}
 
               {routes.map((route) => (
                 <g key={route.id}>
-                  {/* Soft glow */}
+                  <path d={route.d} stroke="#D9A83E" strokeWidth="10" opacity="0.10" filter="url(#voipSoftGlow)" />
 
-                  <path d={route.d} stroke="#D9A83E" strokeWidth="7" opacity="0.035" filter="url(#heroSoftGlow)" />
+                  <path id={route.id} d={route.d} stroke="url(#voipRouteGradient)" strokeWidth="1.5" strokeLinecap="round" />
 
-                  {/* Route */}
+                  <path d={route.d} stroke="#D9A83E" strokeWidth="0.6" strokeDasharray="3 13" strokeOpacity="0.6" />
 
-                  <path id={route.id} d={route.d} stroke="url(#heroRouteGradient)" strokeWidth="1.4" />
+                  <circle r="4" fill="#FFF0B5" filter="url(#voipGlow)">
+                    <animateMotion dur={route.duration} begin={route.delay} repeatCount="indefinite">
+                      <mpath href={`#${route.id}`} />
+                    </animateMotion>
+                  </circle>
 
-                  {/* Moving signal */}
-
-                  <circle r="3" fill="#FFF0B5" filter="url(#heroPulseGlow)">
+                  <circle r="8" fill="#D9A83E" opacity="0.45" filter="url(#voipGlow)">
                     <animateMotion dur={route.duration} begin={route.delay} repeatCount="indefinite">
                       <mpath href={`#${route.id}`} />
                     </animateMotion>
@@ -348,29 +278,21 @@ const VoipHero = () => {
                 </g>
               ))}
 
-              {/* ==============================
-                  NETWORK NODES
-              =============================== */}
+              {/* Pulsating connection nodes */}
 
-              {[
-                [235, 205],
-                [300, 330],
-                [555, 160],
-                [570, 280],
-                [745, 305],
-                [820, 210],
-                [930, 425],
-              ].map(([cx, cy], index) => (
-                <g key={`${cx}-${cy}`}>
-                  <circle cx={cx} cy={cy} r="8" fill="none" stroke="#D9A83E" strokeWidth="1" opacity="0.3">
-                    <animate attributeName="r" values="7;20;7" dur="3s" begin={`${index * 0.3}s`} repeatCount="indefinite" />
+              {nodes.map((node, index) => (
+                <g key={node.label}>
+                  <circle cx={node.x} cy={node.y} r="16" fill="url(#voipNodeGradient)" opacity="0.35" filter="url(#voipGlow)" />
 
-                    <animate attributeName="opacity" values="0.35;0;0.35" dur="3s" begin={`${index * 0.3}s`} repeatCount="indefinite" />
+                  <circle cx={node.x} cy={node.y} r="6" fill="none" stroke="#D9A83E" strokeWidth="1">
+                    <animate attributeName="r" values="6;19;6" dur="3.5s" begin={`${index * 0.4}s`} repeatCount="indefinite" />
+
+                    <animate attributeName="opacity" values="0.8;0.1;0.8" dur="3.5s" begin={`${index * 0.4}s`} repeatCount="indefinite" />
                   </circle>
 
-                  <circle cx={cx} cy={cy} r="3" fill="#D9A83E" filter="url(#heroMapGlow)" />
+                  <circle cx={node.x} cy={node.y} r="3.5" fill="#FFF0B5" filter="url(#voipGlow)" />
 
-                  <circle cx={cx} cy={cy} r="1" fill="#FFF0B5" />
+                  <circle cx={node.x} cy={node.y} r="1.5" fill="#FFFFFF" />
                 </g>
               ))}
             </g>
@@ -378,146 +300,119 @@ const VoipHero = () => {
         </div>
       </div>
 
-      {/* =====================================================
-          HERO CONTENT
-      ====================================================== */}
+      {/* Hero content */}
 
-      <div className="relative z-10 mx-auto max-w-6xl px-6 pt-[235px] text-center sm:pt-[275px]">
-        <div className="mx-auto max-w-4xl">
-          {/* Eyebrow */}
+      <div className="relative z-10 mx-auto max-w-6xl px-5 pb-24 pt-[180px] text-center sm:px-6 sm:pt-[220px] lg:pt-[245px]">
+        {/* Eyebrow */}
 
-          <div className={`mx-auto mb-7 inline-flex items-center gap-2 rounded-full border px-4 py-2 backdrop-blur-xl ${styles.eyebrow}`}>
-            <span className="relative flex h-2 w-2">
-              <span className="absolute h-full w-full animate-ping rounded-full bg-[#D9A83E] opacity-50" />
+        <div className={`mx-auto mb-7 inline-flex items-center gap-3 rounded-full border px-4 py-2.5 shadow-lg backdrop-blur-xl ${styles.eyebrow}`}>
+          <span className="relative flex h-2.5 w-2.5">
+            <span className="absolute inset-0 animate-ping rounded-full bg-[#D9A83E] opacity-70" />
+            <span className="relative h-2.5 w-2.5 rounded-full bg-[#F0C867]" />
+          </span>
 
-              <span className="relative h-2 w-2 rounded-full bg-[#D9A83E]" />
-            </span>
+          <span className="text-[10px] font-semibold uppercase tracking-[0.22em] sm:text-[11px]">Global Voice Infrastructure</span>
+        </div>
 
-            <span className="text-[10px] font-medium uppercase tracking-[0.25em]">Global VoIP Infrastructure</span>
-          </div>
+        {/* Heading */}
 
-          {/* Heading */}
+        <h1 className={`font-display text-5xl font-medium leading-[0.98] tracking-[-0.055em] sm:text-7xl lg:text-[94px] ${styles.heading}`}>
+          Voice Without
+          <br />
+          <span className="bg-gradient-to-r from-[#A87918] via-[#E4B94F] to-[#FFF0B5] bg-clip-text text-transparent">Boundaries.</span>
+        </h1>
 
-          <h1 className={`font-display text-5xl font-medium leading-[0.94] tracking-[-0.045em] sm:text-7xl lg:text-[92px] ${styles.heading}`}>
-            Communication
-            <br />
-            <span className="bg-gradient-to-r from-[#8E6718] via-[#D9A83E] to-[#FFF0B5] bg-clip-text text-transparent">without borders.</span>
-          </h1>
+        {/* Description */}
 
-          {/* Description */}
+        <p className={`mx-auto mt-7 max-w-2xl text-sm leading-7 sm:text-lg sm:leading-8 ${styles.paragraph}`}>Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.</p>
 
-          <p className={`mx-auto mt-7 max-w-2xl text-sm leading-7 sm:text-lg sm:leading-8 ${styles.paragraph}`}>Connect your business to the world with intelligent VoIP infrastructure built for crystal-clear voice, reliable connectivity, and effortless global scale.</p>
+        {/* CTAs */}
 
-          {/* Buttons */}
+        <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <button type="button" onClick={() => scrollTo('contact')} className={`group inline-flex h-[54px] min-w-[175px] items-center justify-center gap-3 rounded-full px-7 text-sm font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_35px_rgba(217,168,62,0.25)] ${styles.primaryButton}`}>
+            Get Started
+            <svg viewBox="0 0 20 20" className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" aria-hidden="true">
+              <path d="M4 10H16M11 5L16 10L11 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
 
-          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <button className={`group inline-flex h-13 min-w-[155px] items-center justify-center gap-3 rounded-full px-7 text-sm font-medium transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(217,168,62,0.18)] ${styles.primaryButton}`}>
-              Get Started
-              <svg viewBox="0 0 20 20" className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none">
-                <path d="M4 10H16M11 5L16 10L11 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
+          <button type="button" onClick={() => scrollTo('voice-solutions')} className={`inline-flex h-[54px] min-w-[175px] items-center justify-center gap-3 rounded-full border px-7 text-sm font-semibold backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 ${styles.secondaryButton}`}>
+            Explore Solutions
+            <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none" aria-hidden="true">
+              <path d="M10 3V17M4 10H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+            </svg>
+          </button>
+        </div>
 
-            <button className={`inline-flex h-13 min-w-[155px] items-center justify-center gap-3 rounded-full border px-7 text-sm font-medium backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 ${styles.secondaryButton}`}>
-              Explore Network
-              <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none">
-                <path d="M10 3V17M4 10H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-              </svg>
-            </button>
+        {/* Service cards */}
+
+        <div id="voice-solutions" className="mx-auto mt-16 max-w-5xl scroll-mt-24 sm:mt-20">
+          <div className={`overflow-hidden rounded-3xl border text-left shadow-2xl shadow-black/[0.08] backdrop-blur-2xl ${styles.card}`}>
+            <div className="grid grid-cols-1 sm:grid-cols-3">
+              {services.map((service, index) => (
+                <article key={service.number} className={`group relative p-6 transition-colors duration-300 hover:bg-[#D9A83E]/[0.06] sm:p-7 ${index !== 2 ? `border-b sm:border-b-0 sm:border-r ${styles.divider}` : ''}`}>
+                  <div className="flex items-center justify-between">
+                    <span className={`font-display text-sm font-semibold ${styles.gold}`}>{service.number}</span>
+
+                    <div className={`flex h-11 w-11 items-center justify-center rounded-2xl border border-[#D9A83E]/35 bg-[#D9A83E]/[0.10] transition-all duration-300 group-hover:border-[#D9A83E]/60 group-hover:bg-[#D9A83E]/[0.18] group-hover:shadow-[0_0_25px_rgba(217,168,62,0.12)] ${styles.gold}`}>
+                      <div className="h-5 w-5">{service.icon}</div>
+                    </div>
+                  </div>
+
+                  <h2 className={`mt-6 font-display text-xl font-semibold tracking-tight sm:text-2xl ${styles.cardTitle}`}>{service.title}</h2>
+
+                  <p className={`mt-3 text-sm leading-6 ${styles.cardMuted}`}>{service.description}</p>
+
+                  <div className="mt-6 h-px w-full bg-gradient-to-r from-[#D9A83E]/45 via-[#D9A83E]/15 to-transparent" />
+
+                  <div className={`mt-4 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.12em] ${styles.gold}`}>
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#D9A83E]" />
+                    Built for your business
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
 
-        {/* =====================================================
-            FLOATING LIVE STATS
-        ====================================================== */}
+        {/* High-contrast feature highlights */}
 
-        <div className="relative mx-auto mt-20 max-w-5xl">
-          {/* Main stats container */}
+        <div className="mx-auto mt-10 max-w-4xl rounded-2xl border border-[#D9A83E]/20 bg-[#D9A83E]/[0.055] px-5 py-5 shadow-lg backdrop-blur-xl sm:px-7">
+          <p className={`mb-4 text-[10px] font-bold uppercase tracking-[0.2em] ${styles.gold}`}>Communication, built around you</p>
 
-          <div className={`overflow-hidden rounded-3xl border backdrop-blur-2xl ${styles.card}`}>
-            <div className="grid grid-cols-2 sm:grid-cols-4">
-              {/* Active Calls */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-3">
+            {['Flexible SIP Connectivity', 'Seamless Voice Integration', 'Scalable Call Capacity'].map((feature) => (
+              <div key={feature} className={`flex items-center justify-center gap-2 text-xs font-semibold sm:text-sm ${styles.cardTitle}`}>
+                <svg viewBox="0 0 20 20" className={`h-4 w-4 shrink-0 ${styles.gold}`} fill="none" aria-hidden="true">
+                  <circle cx="10" cy="10" r="8" stroke="currentColor" strokeWidth="1.3" />
+                  <path d="m6.5 10 2.3 2.3 4.7-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
 
-              <div className={`relative p-5 sm:p-6 ${styles.divider} border-b sm:border-b-0 sm:border-r`}>
-                <div className="flex items-center justify-center gap-2">
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute h-full w-full animate-ping rounded-full bg-emerald-400 opacity-50" />
-
-                    <span className="relative h-2 w-2 rounded-full bg-emerald-400" />
-                  </span>
-
-                  <span className={`text-[9px] uppercase tracking-[0.18em] ${styles.cardMuted}`}>Live Calls</span>
-                </div>
-
-                <div className={`mt-2 font-display text-2xl sm:text-3xl ${styles.cardTitle}`}>12,842</div>
-
-                <div className={`mt-1 text-[9px] ${styles.green}`}>+12.4% today</div>
+                <span>{feature}</span>
               </div>
-
-              {/* Countries */}
-
-              <div className={`relative p-5 sm:p-6 ${styles.divider} border-b sm:border-b-0 sm:border-r`}>
-                <div className={`text-[9px] uppercase tracking-[0.18em] ${styles.cardMuted}`}>Connected</div>
-
-                <div className={`mt-2 font-display text-2xl sm:text-3xl ${styles.cardTitle}`}>42+</div>
-
-                <div className={`mt-1 text-[9px] ${styles.gold}`}>Countries</div>
-              </div>
-
-              {/* Latency */}
-
-              <div className={`relative p-5 sm:p-6 ${styles.divider} border-r`}>
-                <div className={`text-[9px] uppercase tracking-[0.18em] ${styles.cardMuted}`}>Avg. Latency</div>
-
-                <div className={`mt-2 font-display text-2xl sm:text-3xl ${styles.cardTitle}`}>
-                  18<span className="ml-1 text-sm">ms</span>
-                </div>
-
-                <div className={`mt-1 text-[9px] ${styles.green}`}>Excellent</div>
-              </div>
-
-              {/* Uptime */}
-
-              <div className="relative p-5 sm:p-6">
-                <div className={`text-[9px] uppercase tracking-[0.18em] ${styles.cardMuted}`}>Network Uptime</div>
-
-                <div className={`mt-2 font-display text-2xl sm:text-3xl ${styles.cardTitle}`}>99.99%</div>
-
-                <div className={`mt-1 text-[9px] ${styles.green}`}>Operational</div>
-              </div>
-            </div>
+            ))}
           </div>
-
-          {/* Decorative line */}
-
-          <div className="mx-auto mt-4 h-px w-32 bg-gradient-to-r from-transparent via-[#D9A83E]/40 to-transparent" />
         </div>
       </div>
 
-      {/* =====================================================
-          BOTTOM TRUST STRIP
-      ====================================================== */}
+      {/* Bottom trust strip with stronger contrast */}
 
-      <div className={`absolute bottom-0 left-0 right-0 z-20 border-t backdrop-blur-xl ${isDark ? 'border-white/[0.07] bg-[#070909]/55' : 'border-[#151716]/[0.07] bg-[#F7F5F0]/60'}`}>
+      <div className={`relative z-20 border-t backdrop-blur-2xl ${isDark ? 'border-white/15 bg-[#090C0B]' : 'border-[#151716]/15 bg-[#FFFFFF]'}`}>
         <div className="mx-auto grid max-w-6xl grid-cols-2 sm:grid-cols-4">
           {[
-            ['99.99%', 'Uptime'],
-            ['42+', 'Countries'],
-            ['18 ms', 'Latency'],
-            ['24 / 7', 'Monitoring'],
+            ['SIP', 'Trunking Solutions'],
+            ['API', 'Voice Integration'],
+            ['Scale', 'Flexible Capacity'],
+            ['24 / 7', 'Voice Support'],
           ].map(([value, label], index) => (
-            <div key={label} className={`relative flex items-center justify-center gap-3 py-4 ${index !== 0 ? 'border-l' : ''} ${styles.divider}`}>
-              <span className={`font-display text-sm sm:text-base ${styles.cardTitle}`}>{value}</span>
+            <div key={label} className={`flex min-h-[76px] items-center justify-center gap-3 px-2 py-4 sm:min-h-[88px] sm:px-4 ${index % 2 === 1 ? 'border-l' : ''} ${index >= 2 ? 'border-t sm:border-t-0' : ''} sm:border-l ${index === 0 ? 'sm:border-l-0' : ''} ${styles.divider}`}>
+              <span className={`font-display text-base font-bold tracking-tight sm:text-xl ${styles.gold}`}>{value}</span>
 
-              <span className={`text-[8px] uppercase tracking-[0.18em] ${styles.cardMuted}`}>{label}</span>
+              <span className={`max-w-[110px] text-[10px] font-semibold leading-4 sm:text-xs ${styles.cardMuted}`}>{label}</span>
             </div>
           ))}
         </div>
       </div>
-
-      {/* Bottom fade */}
-
-      <div className={`pointer-events-none absolute bottom-[55px] left-0 right-0 h-48 bg-gradient-to-t ${isDark ? 'from-[#070909]' : 'from-[#F7F5F0]'} to-transparent`} />
     </section>
   );
 };

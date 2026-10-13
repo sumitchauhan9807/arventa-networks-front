@@ -1,17 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
-import {
-  ComposableMap,
-  Geographies,
-  Geography,
-  Line,
-  Marker,
-} from 'react-simple-maps';
+import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
 
-const WORLD_MAP =
-  'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
-
-
+const WORLD_MAP = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
 
 /* =========================================================
    NETWORK LOCATIONS
@@ -67,7 +58,6 @@ const locations = [
 
 /* =========================================================
    COUNTRY STATS
-   Add your real API data here later.
 ========================================================= */
 
 const countryStats = {
@@ -175,15 +165,23 @@ const countryStats = {
    DEFAULT STATS
 ========================================================= */
 
-const createDefaultStats = (countryName) => ({
-  region: 'Global Network',
-  carriers: Math.floor(Math.random() * 35) + 18,
-  routes: Math.floor(Math.random() * 90) + 40,
-  traffic: `${(Math.random() * 2 + 0.8).toFixed(2)} TB`,
-  latency: `${Math.floor(Math.random() * 45) + 25} ms`,
-  uptime: '99.97%',
-  name: countryName,
-});
+const createDefaultStats = (countryName) => {
+  let hash = 0;
+
+  for (let i = 0; i < countryName.length; i += 1) {
+    hash = (hash * 31 + countryName.charCodeAt(i)) >>> 0;
+  }
+
+  return {
+    region: 'Global Network',
+    carriers: 18 + ((hash + 7) % 35),
+    routes: 40 + ((hash + 19) % 90),
+    traffic: `${(0.8 + ((hash + 23) % 200) / 100).toFixed(2)} TB`,
+    latency: `${25 + ((hash + 31) % 45)} ms`,
+    uptime: '99.97%',
+    name: countryName,
+  };
+};
 
 /* =========================================================
    COMPONENT
@@ -196,9 +194,8 @@ const WorldCountries = () => {
 
   const [hoveredCountry, setHoveredCountry] = useState(null);
 
-  /* =======================================================
-     THEME
-  ======================================================= */
+  // Zoom controls only
+  const [zoom, setZoom] = useState(145);
 
   const colors = useMemo(
     () => ({
@@ -224,25 +221,14 @@ const WorldCountries = () => {
 
       muted: isLight ? '#66685F' : '#969E99',
 
-      panel: isLight
-        ? 'rgba(255,255,255,0.94)'
-        : 'rgba(10,14,13,0.94)',
+      panel: isLight ? 'rgba(255,255,255,0.94)' : 'rgba(10,14,13,0.94)',
 
-      panelBorder: isLight
-        ? 'rgba(30,32,27,0.12)'
-        : 'rgba(255,255,255,0.12)',
+      panelBorder: isLight ? 'rgba(30,32,27,0.12)' : 'rgba(255,255,255,0.12)',
     }),
-    [isLight],
+    [isLight]
   );
 
-  /* =======================================================
-     HOVERED COUNTRY STATS
-  ======================================================= */
-
-  const activeStats = hoveredCountry
-    ? countryStats[hoveredCountry] ||
-      createDefaultStats(hoveredCountry)
-    : null;
+  const activeStats = hoveredCountry ? countryStats[hoveredCountry] || createDefaultStats(hoveredCountry) : null;
 
   return (
     <section
@@ -252,9 +238,7 @@ const WorldCountries = () => {
         color: colors.text,
       }}
     >
-      {/* ===================================================
-          GLOBAL AMBIENT GLOW
-      =================================================== */}
+      {/* GLOBAL AMBIENT GLOW */}
 
       <div
         className="pointer-events-none absolute left-1/2 top-1/2 h-[700px] w-[1200px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[120px]"
@@ -281,9 +265,7 @@ const WorldCountries = () => {
         }}
       />
 
-      {/* ===================================================
-          BACKGROUND GRID
-      =================================================== */}
+      {/* BACKGROUND GRID */}
 
       <div
         className="pointer-events-none absolute inset-0"
@@ -299,23 +281,16 @@ const WorldCountries = () => {
               linear-gradient(90deg, ${colors.grid} 1px, transparent 1px)
             `,
             backgroundSize: '80px 80px',
-            maskImage:
-              'radial-gradient(ellipse at center, black 10%, transparent 75%)',
-            WebkitMaskImage:
-              'radial-gradient(ellipse at center, black 10%, transparent 75%)',
+            maskImage: 'radial-gradient(ellipse at center, black 10%, transparent 75%)',
+            WebkitMaskImage: 'radial-gradient(ellipse at center, black 10%, transparent 75%)',
           }}
         />
       </div>
 
-      {/* ===================================================
-          CONTENT
-      =================================================== */}
+      {/* CONTENT */}
 
       <div className="relative mx-auto max-w-[1500px] px-4 sm:px-8 lg:px-12">
-
-        {/* =================================================
-            HEADER
-        ================================================= */}
+        {/* HEADER */}
 
         <div className="mx-auto mb-8 max-w-3xl text-center sm:mb-10">
           <div
@@ -330,9 +305,7 @@ const WorldCountries = () => {
                 background: colors.gold,
               }}
             />
-
             Carrier Network
-
             <span
               className="h-px w-8"
               style={{
@@ -350,8 +323,7 @@ const WorldCountries = () => {
             One Network.{' '}
             <span
               style={{
-                background:
-                  'linear-gradient(90deg,#F6D27A,#D9A83E)',
+                background: 'linear-gradient(90deg,#F6D27A,#D9A83E)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
               }}
@@ -366,60 +338,43 @@ const WorldCountries = () => {
               color: colors.muted,
             }}
           >
-            Connect your business to a global carrier ecosystem with
-            intelligent routing, reliable voice infrastructure and
-            scalable connectivity.
+            Connect your business to a global carrier ecosystem with intelligent routing, reliable voice infrastructure and scalable connectivity.
           </p>
         </div>
 
-        {/* =================================================
-            MAP AREA
-        ================================================= */}
+        {/* MAP AREA */}
 
         <div className="relative h-[500px] sm:h-[600px] lg:h-[680px]">
-
-          {/* ===============================================
-              ORBIT 1
-          =============================================== */}
+          {/* ORBIT 1 */}
 
           <div
             className="pointer-events-none absolute left-1/2 top-1/2 h-[330px] w-[680px] -translate-x-1/2 -translate-y-1/2 rounded-[50%] border sm:h-[430px] sm:w-[900px] lg:h-[500px] lg:w-[1120px]"
             style={{
-              borderColor: isLight
-                ? 'rgba(211,154,36,0.15)'
-                : 'rgba(217,168,62,0.12)',
+              borderColor: isLight ? 'rgba(211,154,36,0.15)' : 'rgba(217,168,62,0.12)',
 
-              transform:
-                'translate(-50%, -50%) rotate(-8deg)',
+              transform: 'translate(-50%, -50%) rotate(-8deg)',
             }}
           />
 
-          {/* ===============================================
-              ORBIT 2
-          =============================================== */}
+          {/* ORBIT 2 */}
 
           <div
             className="pointer-events-none absolute left-1/2 top-1/2 h-[260px] w-[580px] -translate-x-1/2 -translate-y-1/2 rounded-[50%] border sm:h-[330px] sm:w-[760px]"
             style={{
-              borderColor: isLight
-                ? 'rgba(211,154,36,0.09)'
-                : 'rgba(217,168,62,0.08)',
+              borderColor: isLight ? 'rgba(211,154,36,0.09)' : 'rgba(217,168,62,0.08)',
 
-              transform:
-                'translate(-50%, -50%) rotate(9deg)',
+              transform: 'translate(-50%, -50%) rotate(9deg)',
             }}
           />
 
-          {/* ===============================================
-              WORLD MAP
-          =============================================== */}
+          {/* WORLD MAP */}
 
           <div className="absolute inset-0 flex items-center justify-center">
             <ComposableMap
               projection="geoMercator"
               projectionConfig={{
-                scale: 145,
-                center: [0, 8],
+                scale: zoom,
+                center: [19.3, 42.7],
               }}
               width={900}
               height={500}
@@ -428,36 +383,22 @@ const WorldCountries = () => {
                 height: '100%',
               }}
             >
-              {/* ===========================================
-                  COUNTRIES
-              =========================================== */}
+              {/* COUNTRIES */}
 
               <Geographies geography={WORLD_MAP}>
                 {({ geographies }) =>
                   geographies.map((geo) => {
-                    const countryName =
-                      geo.properties.name;
+                    const countryName = geo.properties.name;
 
-                    const isHovered =
-                      hoveredCountry === countryName;
+                    const isHovered = hoveredCountry === countryName;
 
                     return (
                       <Geography
                         key={geo.rsmKey}
                         geography={geo}
-                        fill={
-                          isHovered
-                            ? colors.mapHover
-                            : colors.map
-                        }
-                        stroke={
-                          isHovered
-                            ? colors.gold
-                            : colors.mapStroke
-                        }
-                        strokeWidth={
-                          isHovered ? 1.2 : 0.7
-                        }
+                        fill={isHovered ? colors.mapHover : colors.map}
+                        stroke={isHovered ? colors.gold : colors.mapStroke}
+                        strokeWidth={isHovered ? 1.2 : 0.7}
                         onMouseEnter={() => {
                           setHoveredCountry(countryName);
                         }}
@@ -468,8 +409,7 @@ const WorldCountries = () => {
                           default: {
                             outline: 'none',
                             cursor: 'crosshair',
-                            transition:
-                              'fill 200ms ease, stroke 200ms ease',
+                            transition: 'fill 200ms ease, stroke 200ms ease',
                           },
 
                           hover: {
@@ -489,17 +429,10 @@ const WorldCountries = () => {
                 }
               </Geographies>
 
-              
-
-              {/* ===========================================
-                  CITY NODES
-              =========================================== */}
+              {/* CITY NODES */}
 
               {locations.map((location, index) => (
-                <Marker
-                  key={location.name}
-                  coordinates={location.coordinates}
-                >
+                <Marker key={location.name} coordinates={location.coordinates}>
                   {/* Expanding ring */}
 
                   <circle
@@ -507,10 +440,8 @@ const WorldCountries = () => {
                     fill="none"
                     stroke={colors.gold}
                     strokeWidth="0.8"
-                    className={`node-ring-${index}`}
                     style={{
-                      animation:
-                        'nodePulse 2.5s ease-out infinite',
+                      animation: 'nodePulse 2.5s ease-out infinite',
                       animationDelay: `${index * 0.18}s`,
                     }}
                   />
@@ -522,8 +453,7 @@ const WorldCountries = () => {
                     fill={colors.gold}
                     opacity="0.22"
                     style={{
-                      animation:
-                        'nodeGlow 2.2s ease-in-out infinite',
+                      animation: 'nodeGlow 2.2s ease-in-out infinite',
                       animationDelay: `${index * 0.18}s`,
                     }}
                   />
@@ -548,24 +478,15 @@ const WorldCountries = () => {
 
                   <g className="hidden sm:block">
                     <text
-                      x={
-                        location.side === 'left'
-                          ? -10
-                          : 10
-                      }
+                      x={location.side === 'left' ? -10 : 10}
                       y="3"
-                      textAnchor={
-                        location.side === 'left'
-                          ? 'end'
-                          : 'start'
-                      }
+                      textAnchor={location.side === 'left' ? 'end' : 'start'}
                       style={{
                         fill: colors.muted,
                         fontSize: '7px',
                         fontWeight: 700,
                         letterSpacing: '0.13em',
-                        fontFamily:
-                          'Inter, system-ui, sans-serif',
+                        fontFamily: 'Inter, system-ui, sans-serif',
                       }}
                     >
                       {location.name}
@@ -576,34 +497,26 @@ const WorldCountries = () => {
             </ComposableMap>
           </div>
 
-          {/* =================================================
-              CENTER HUB
-          ================================================= */}
+          {/* CENTER HUB */}
 
           <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <div className="relative flex h-20 w-20 items-center justify-center">
-
               <div
                 className="absolute inset-0 rounded-full border"
                 style={{
-                  borderColor: isLight
-                    ? 'rgba(211,154,36,0.4)'
-                    : 'rgba(217,168,62,0.45)',
+                  borderColor: isLight ? 'rgba(211,154,36,0.4)' : 'rgba(217,168,62,0.45)',
 
                   boxShadow: `
                     0 0 30px rgba(211,154,36,0.12)
                   `,
-                  animation:
-                    'hubPulse 3s ease-in-out infinite',
+                  animation: 'hubPulse 3s ease-in-out infinite',
                 }}
               />
 
               <div
                 className="absolute inset-[8px] rounded-full border"
                 style={{
-                  borderColor: isLight
-                    ? 'rgba(211,154,36,0.22)'
-                    : 'rgba(217,168,62,0.22)',
+                  borderColor: isLight ? 'rgba(211,154,36,0.22)' : 'rgba(217,168,62,0.22)',
                 }}
               />
 
@@ -617,8 +530,7 @@ const WorldCountries = () => {
                     0 0 20px ${colors.gold},
                     0 0 40px rgba(211,154,36,0.45)
                   `,
-                  animation:
-                    'hubCore 2s ease-in-out infinite',
+                  animation: 'hubCore 2s ease-in-out infinite',
                 }}
               />
 
@@ -633,9 +545,7 @@ const WorldCountries = () => {
             </div>
           </div>
 
-          {/* =================================================
-              TOP LEFT INFO
-          ================================================= */}
+          {/* TOP LEFT INFO */}
 
           <div className="absolute left-2 top-2 sm:left-5 sm:top-5">
             <div
@@ -651,7 +561,6 @@ const WorldCountries = () => {
                   boxShadow: `0 0 10px ${colors.gold}`,
                 }}
               />
-
               Global Network
             </div>
 
@@ -665,17 +574,14 @@ const WorldCountries = () => {
             </div>
           </div>
 
-          {/* =================================================
-              STATUS CARD
-          ================================================= */}
+          {/* STATUS CARD */}
 
           <div
             className="absolute right-2 top-2 rounded-xl border px-3 py-2.5 backdrop-blur-xl sm:right-5 sm:top-5 sm:px-4 sm:py-3"
             style={{
               background: colors.panel,
               borderColor: colors.panelBorder,
-              boxShadow:
-                '0 15px 50px rgba(0,0,0,0.18)',
+              boxShadow: '0 15px 50px rgba(0,0,0,0.18)',
             }}
           >
             <div className="flex items-center gap-2">
@@ -683,8 +589,7 @@ const WorldCountries = () => {
                 className="h-1.5 w-1.5 rounded-full"
                 style={{
                   background: '#8FBE67',
-                  boxShadow:
-                    '0 0 8px rgba(143,190,103,0.9)',
+                  boxShadow: '0 0 8px rgba(143,190,103,0.9)',
                 }}
               />
 
@@ -708,28 +613,67 @@ const WorldCountries = () => {
             </div>
           </div>
 
-          {/* =================================================
-              HOVER STATS CARD
-          ================================================= */}
+          {/* ZOOM CONTROLS — ONLY ADDITION */}
+
+          <div
+            className="absolute bottom-20 right-2 z-40 flex flex-col overflow-hidden rounded-lg border sm:right-5"
+            style={{
+              background: colors.panel,
+              borderColor: colors.panelBorder,
+              boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
+            }}
+          >
+            <button
+              type="button"
+              aria-label="Zoom in"
+              title="Zoom in"
+              disabled={zoom >= 300}
+              onClick={() => setZoom((current) => Math.min(current + 20, 300))}
+              className="flex h-9 w-9 items-center justify-center text-xl hover:bg-amber-500/10 disabled:opacity-40"
+              style={{
+                color: colors.goldBright,
+              }}
+            >
+              +
+            </button>
+
+            <div
+              className="mx-2 border-t"
+              style={{
+                borderColor: colors.panelBorder,
+              }}
+            />
+
+            <button
+              type="button"
+              aria-label="Zoom out"
+              title="Zoom out"
+              disabled={zoom <= 80}
+              onClick={() => setZoom((current) => Math.max(current - 20, 80))}
+              className="flex h-9 w-9 items-center justify-center text-xl hover:bg-amber-500/10 disabled:opacity-40"
+              style={{
+                color: colors.goldBright,
+              }}
+            >
+              −
+            </button>
+          </div>
+
+          {/* HOVER STATS CARD */}
 
           {activeStats && (
             <div
               className="absolute left-1/2 top-4 z-30 w-[290px] -translate-x-1/2 sm:left-auto sm:right-5 sm:top-24 sm:translate-x-0"
               style={{
-                animation:
-                  'statsEnter 180ms ease-out',
+                animation: 'statsEnter 180ms ease-out',
               }}
             >
               <div
                 className="overflow-hidden rounded-2xl border backdrop-blur-2xl"
                 style={{
-                  background: isLight
-                    ? 'rgba(255,255,255,0.96)'
-                    : 'rgba(7,10,9,0.96)',
+                  background: isLight ? 'rgba(255,255,255,0.96)' : 'rgba(7,10,9,0.96)',
 
-                  borderColor: isLight
-                    ? 'rgba(211,154,36,0.25)'
-                    : 'rgba(217,168,62,0.22)',
+                  borderColor: isLight ? 'rgba(211,154,36,0.25)' : 'rgba(217,168,62,0.22)',
 
                   boxShadow: `
                     0 20px 60px rgba(0,0,0,0.25),
@@ -742,8 +686,7 @@ const WorldCountries = () => {
                 <div
                   className="border-b px-4 py-3"
                   style={{
-                    borderColor:
-                      colors.panelBorder,
+                    borderColor: colors.panelBorder,
                   }}
                 >
                   <div className="flex items-center justify-between">
@@ -763,22 +706,18 @@ const WorldCountries = () => {
                           color: colors.text,
                         }}
                       >
-                        {activeStats.name ||
-                          hoveredCountry}
+                        {activeStats.name || hoveredCountry}
                       </div>
                     </div>
 
                     <div
                       className="flex h-8 w-8 items-center justify-center rounded-full border"
                       style={{
-                        borderColor:
-                          'rgba(211,154,36,0.25)',
+                        borderColor: 'rgba(211,154,36,0.25)',
                         color: colors.goldBright,
                       }}
                     >
-                      <span className="text-xs">
-                        ◎
-                      </span>
+                      <span className="text-xs">◎</span>
                     </div>
                   </div>
 
@@ -795,29 +734,13 @@ const WorldCountries = () => {
                 {/* Stats */}
 
                 <div className="grid grid-cols-2 gap-px">
-                  <Stat
-                    label="Carriers"
-                    value={activeStats.carriers}
-                    colors={colors}
-                  />
+                  <Stat label="Carriers" value={activeStats.carriers} colors={colors} />
 
-                  <Stat
-                    label="Routes"
-                    value={activeStats.routes}
-                    colors={colors}
-                  />
+                  <Stat label="Routes" value={activeStats.routes} colors={colors} />
 
-                  <Stat
-                    label="Traffic"
-                    value={activeStats.traffic}
-                    colors={colors}
-                  />
+                  <Stat label="Traffic" value={activeStats.traffic} colors={colors} />
 
-                  <Stat
-                    label="Latency"
-                    value={activeStats.latency}
-                    colors={colors}
-                  />
+                  <Stat label="Latency" value={activeStats.latency} colors={colors} />
                 </div>
 
                 {/* Footer */}
@@ -825,8 +748,7 @@ const WorldCountries = () => {
                 <div
                   className="flex items-center justify-between border-t px-4 py-2.5"
                   style={{
-                    borderColor:
-                      colors.panelBorder,
+                    borderColor: colors.panelBorder,
                   }}
                 >
                   <span
@@ -848,8 +770,7 @@ const WorldCountries = () => {
                       className="h-1.5 w-1.5 rounded-full"
                       style={{
                         background: '#8FBE67',
-                        boxShadow:
-                          '0 0 7px #8FBE67',
+                        boxShadow: '0 0 7px #8FBE67',
                       }}
                     />
 
@@ -860,9 +781,7 @@ const WorldCountries = () => {
             </div>
           )}
 
-          {/* =================================================
-              BOTTOM LEFT
-          ================================================= */}
+          {/* BOTTOM LEFT */}
 
           <div className="absolute bottom-3 left-2 sm:bottom-6 sm:left-5">
             <div
@@ -895,9 +814,7 @@ const WorldCountries = () => {
             </div>
           </div>
 
-          {/* =================================================
-              BOTTOM RIGHT
-          ================================================= */}
+          {/* BOTTOM RIGHT */}
 
           <div className="absolute bottom-3 right-2 text-right sm:bottom-6 sm:right-5">
             <div
@@ -921,9 +838,7 @@ const WorldCountries = () => {
         </div>
       </div>
 
-      {/* =====================================================
-          BOTTOM FADE
-      ===================================================== */}
+      {/* BOTTOM FADE */}
 
       <div
         className="pointer-events-none absolute bottom-0 left-0 right-0 h-32"
@@ -936,9 +851,7 @@ const WorldCountries = () => {
         }}
       />
 
-      {/* =====================================================
-          ANIMATIONS
-      ===================================================== */}
+      {/* ANIMATIONS */}
 
       <style>{`
         @keyframes networkFlow {

@@ -12,10 +12,20 @@ import Header from '@/components/layout/Header';
 import Header2 from '@/components/layout/Header2';
 
 import Footer from '@/components/layout/Footer';
+
 import WorldNetworks from '@/components/WorldMaps/WorldNetworks';
 import WorldNetworksMap from '@/components/WorldMaps/WorldNetworksMap';
 import WorldCountries from '@/components/WorldMaps/WorldCountries';
 import Loader from '@/components/layout/Loader';
+import CTA from '@/components/dynamic-zone/CTA';
+import CountUp from '@/components/dynamic-zone/CountUp/Full';
+import CountUpBoxes from '@/components/dynamic-zone/CountUp';
+
+import FAQ from '@/components/dynamic-zone/FAQ';
+import VirtualOfficeNumbers from '@/components/VirtualOfficeNumbers';
+import VirtualNumberSearch from '@/components/VirtualNumberSearch';
+
+import Testimonials from '@/components/Testimonials';
 
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
@@ -45,32 +55,39 @@ export default function Home() {
 
   return (
     <main className={theme == 'light' ? 'light' : 'dark'}>
-      <Header2 mode={theme} />
+      <Header2 />
       {loading ? (
         <Loader isLight={theme == 'light'} message="Establishing secure connections" duration={1800} />
       ) : (
         <>
-          <Hero mode={theme} />
-
+          <Hero animation={'home'} />
           <Service mode={theme} />
-          <Solutions mode={theme} />
-          <Animations type={'home'} />
-          <ContactCenter mode={theme} />
-
-          <Company mode={theme} />
 
           <CarrierNetwork mode={theme} />
 
-          <Mobile mode={theme} />
+          <Solutions mode={theme} />
+          <CountUp />
 
-          <Partners mode={theme} />
-          {/* <WorldCountries/> */}
+          <ContactCenter mode={theme} />
+
+          <VirtualOfficeNumbers />
+          {/* <VirtualNumberSearch onSearch={()=>{}}/> */}
+          <WorldCountries />
           {/* <WorldNetworks/> */}
           {/* <WorldNetworksMap/> */}
+          <CountUpBoxes />
+
+          <Mobile mode={theme} />
+
+          <Partners />
+
           <Contact mode={theme} />
+          <Testimonials />
+          <FAQ />
+          <CTA />
         </>
       )}
-      <Footer mode={theme} />
+      <Footer />
     </main>
   );
 }

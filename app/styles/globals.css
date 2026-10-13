@@ -579,3 +579,27 @@ main.light .dropdown-link:hover small {
     animation: none;
   }
 }
+
+main.dark .gold-text {
+  background: linear-gradient(
+    90deg,
+    #f6d27a,
+    #d9a83e,
+    #a87920
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+main.light .gold-text {
+  background: linear-gradient(
+    90deg,
+    #b88725,
+    #D9A83E,
+    #a87318
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

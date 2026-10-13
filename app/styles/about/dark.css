@@ -1,15 +1,3 @@
-main.dark .gold-text {
-  background: linear-gradient(
-    90deg,
-    #f6d27a,
-    #d9a83e,
-    #a87920
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 main.dark .grid-bg {
   background-image:
     linear-gradient(

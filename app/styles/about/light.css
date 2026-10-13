@@ -7,18 +7,6 @@ main.light ::selection {
   color: #000;
 }
 
-main.light .gold-text {
-  background: linear-gradient(
-    90deg,
-    #b88725,
-    #D9A83E,
-    #a87318
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 main.light .light-grid {
   background-image:
     linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
