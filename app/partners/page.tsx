@@ -11,12 +11,15 @@ import CTA from '@/components/dynamic-zone/CTA';
 import WorldNetworksMap from '@/components/dynamic-zone/WorldMaps/WorldNetworksMap';
 import FAQ from '@/components/dynamic-zone/FAQ';
 
+import {  CTAData  , featureGridSectionData3 ,countupData} from '@/app/data/partners';
+
 // import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection'
 
 import Loader from '@/components/layout/Loader';
 
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+
 
 export default function Home() {
   const theme = useSelector((state) => state.theme.theme);
@@ -46,12 +49,12 @@ export default function Home() {
       ) : (
         <>
           <Hero animation="partners" />
-          <CountUp />
+          <CountUp data={countupData} />
           {/* <WorldNetworksMap /> */}
-          <FeatureGridSection layoutType={'NUMBERED'} />
+          <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData3} />
           {/* <Team />
           <FAQ /> */}
-          <CTA />
+          <CTA data={CTAData} />
         </>
       )}
 

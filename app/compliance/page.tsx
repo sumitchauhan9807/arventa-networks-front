@@ -17,6 +17,9 @@ import Loader from '@/components/layout/Loader';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
+import {  CTAData  , featureGridSectionData3 ,countupData } from '@/app/data/compliance';
+
+
 export default function Home() {
   const theme = useSelector((state) => state.theme.theme);
 
@@ -45,12 +48,12 @@ export default function Home() {
       ) : (
         <>
           <Hero animation="compliance" />
-          <CountUp />
+          <CountUp data={countupData} />
           {/* <WorldNetworksMap /> */}
-          <FeatureGridSection layoutType={'NUMBERED'} />
+          <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData3} />
           {/* <Team />
           <FAQ /> */}
-          <CTA />
+          <CTA data={CTAData} />
         </>
       )}
 
