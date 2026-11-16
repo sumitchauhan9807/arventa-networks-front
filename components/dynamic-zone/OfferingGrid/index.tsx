@@ -1,105 +1,85 @@
-const ContactCenter = ({ mode }) => {
-  const isDark = mode === 'dark';
 
-  const products = [
-    {
-      icon: '✦',
-      title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
-    },
-    {
-      icon: '◇',
-      title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
-    },
-    {
-      icon: 'AI',
-      title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
-    },
-    {
-      icon: '◇',
-      title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
-    },
-    {
-      icon: 'API',
-      title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
-    },
-  ];
+
+const OfferingGrid = ({ theme, data }) => {
+  const isDark = theme === "dark";
 
   const styles = {
     section: isDark
-      ? 'border-white/10 bg-[#070909]'
-      : 'border-[#151716]/10 bg-[#F7F5F0]',
+      ? "border-white/10 bg-[#070909]"
+      : "border-[#151716]/10 bg-[#F7F5F0]",
 
     mainGlow: isDark
-      ? 'bg-[#D9A83E]/[0.055]'
-      : 'bg-[#D9A83E]/[0.10]',
+      ? "bg-[#D9A83E]/[0.055]"
+      : "bg-[#D9A83E]/[0.10]",
 
     sideGlow: isDark
-      ? 'bg-[#D9A83E]/[0.025]'
-      : 'bg-[#D9A83E]/[0.045]',
+      ? "bg-[#D9A83E]/[0.025]"
+      : "bg-[#D9A83E]/[0.045]",
 
     radialGlow: isDark
-      ? 'bg-[radial-gradient(circle_at_50%_12%,rgba(217,168,62,0.08),transparent_42%)]'
-      : 'bg-[radial-gradient(circle_at_50%_12%,rgba(217,168,62,0.10),transparent_42%)]',
+      ? "bg-[radial-gradient(circle_at_50%_12%,rgba(217,168,62,0.08),transparent_42%)]"
+      : "bg-[radial-gradient(circle_at_50%_12%,rgba(217,168,62,0.10),transparent_42%)]",
 
     dots: isDark
-      ? 'bg-[radial-gradient(circle,rgba(255,255,255,0.13)_1px,transparent_1px)]'
-      : 'bg-[radial-gradient(circle,rgba(21,23,22,0.10)_1px,transparent_1px)]',
+      ? "bg-[radial-gradient(circle,rgba(255,255,255,0.13)_1px,transparent_1px)]"
+      : "bg-[radial-gradient(circle,rgba(21,23,22,0.10)_1px,transparent_1px)]",
 
     bottomFade: isDark
-      ? 'from-[#070909]'
-      : 'from-[#F7F5F0]',
+      ? "from-[#070909]"
+      : "from-[#F7F5F0]",
 
-    heading: isDark ? 'text-white' : 'text-[#151716]',
+    heading: isDark
+      ? "text-white"
+      : "text-[#151716]",
 
-    paragraph: isDark ? 'text-white/45' : 'text-[#151716]/55',
+    paragraph: isDark
+      ? "text-white/45"
+      : "text-[#151716]/55",
 
     goldGradient: isDark
-      ? 'from-[#FFF0B5] via-[#F6D27A] to-[#D9A83E]'
-      : 'from-[#8E6718] via-[#B88A28] to-[#D9A83E]',
+      ? "from-[#FFF0B5] via-[#F6D27A] to-[#D9A83E]"
+      : "from-[#8E6718] via-[#B88A28] to-[#D9A83E]",
 
     badge: isDark
-      ? 'border-[#D9A83E]/20 bg-[#D9A83E]/[0.06] text-[#E6B84F]'
-      : 'border-[#B88A28]/25 bg-[#D9A83E]/[0.08] text-[#A87918]',
+      ? "border-[#D9A83E]/20 bg-[#D9A83E]/[0.06] text-[#E6B84F]"
+      : "border-[#B88A28]/25 bg-[#D9A83E]/[0.08] text-[#A87918]",
 
     badgeDot: isDark
-      ? 'bg-[#D9A83E] shadow-[0_0_10px_#D9A83E]'
-      : 'bg-[#C9972E] shadow-[0_0_10px_rgba(201,151,46,0.55)]',
+      ? "bg-[#D9A83E] shadow-[0_0_10px_#D9A83E]"
+      : "bg-[#C9972E] shadow-[0_0_10px_rgba(201,151,46,0.55)]",
 
     tab: isDark
-      ? 'border-white/10 bg-white/[0.025] text-white/50 hover:border-[#D9A83E]/40 hover:text-white/80'
-      : 'border-[#151716]/10 bg-white/50 text-[#151716]/55 hover:border-[#B88A28]/40 hover:text-[#151716]',
+      ? "border-white/10 bg-white/[0.025] text-white/50 hover:border-[#D9A83E]/40 hover:text-white/80"
+      : "border-[#151716]/10 bg-white/50 text-[#151716]/55 hover:border-[#B88A28]/40 hover:text-[#151716]",
 
     activeTab: isDark
-      ? 'border-[#D9A83E]/40 bg-[#D9A83E]/[0.10] text-[#F6D27A] shadow-[inset_0_0_20px_rgba(217,168,62,0.04)]'
-      : 'border-[#B88A28]/40 bg-[#D9A83E]/[0.10] text-[#8E6718]',
+      ? "border-[#D9A83E]/40 bg-[#D9A83E]/[0.10] text-[#F6D27A] shadow-[inset_0_0_20px_rgba(217,168,62,0.04)]"
+      : "border-[#B88A28]/40 bg-[#D9A83E]/[0.10] text-[#8E6718]",
 
     panel: isDark
-      ? 'border-white/10 bg-white/[0.025] shadow-[0_20px_60px_rgba(0,0,0,0.15)]'
-      : 'border-[#151716]/10 bg-white/50 shadow-[0_20px_60px_rgba(21,23,22,0.04)]',
+      ? "border-white/10 bg-white/[0.025] shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
+      : "border-[#151716]/10 bg-white/50 shadow-[0_20px_60px_rgba(21,23,22,0.04)]",
 
     countryCard: isDark
-      ? 'border-white/[0.07] bg-white/[0.025] hover:border-[#D9A83E]/30 hover:bg-[#D9A83E]/[0.045]'
-      : 'border-[#151716]/[0.07] bg-white/50 hover:border-[#B88A28]/30 hover:bg-white/90',
+      ? "border-white/[0.07] bg-white/[0.025] hover:border-[#D9A83E]/30 hover:bg-[#D9A83E]/[0.045]"
+      : "border-[#151716]/[0.07] bg-white/50 hover:border-[#B88A28]/30 hover:bg-white/90",
 
     countryText: isDark
-      ? 'text-white/65 group-hover:text-[#F6D27A]'
-      : 'text-[#151716]/70 group-hover:text-[#A87918]',
+      ? "text-white/65 group-hover:text-[#F6D27A]"
+      : "text-[#151716]/70 group-hover:text-[#A87918]",
 
-    muted: isDark ? 'text-white/30' : 'text-[#151716]/35',
+    muted: isDark
+      ? "text-white/30"
+      : "text-[#151716]/35",
 
     pagination: isDark
-      ? 'border-white/10 bg-white/[0.04] text-white/60 hover:border-[#D9A83E]/40 hover:text-[#F6D27A]'
-      : 'border-[#151716]/10 bg-white/60 text-[#151716]/60 hover:border-[#B88A28]/40 hover:text-[#8E6718]',
+      ? "border-white/10 bg-white/[0.04] text-white/60 hover:border-[#D9A83E]/40 hover:text-[#F6D27A]"
+      : "border-[#151716]/10 bg-white/60 text-[#151716]/60 hover:border-[#B88A28]/40 hover:text-[#8E6718]",
   };
 
   return (
     <section
-      id="contact-center"
+      id={data.sectionId}
       className={`relative isolate overflow-hidden border-y ${styles.section}`}
     >
       {/* Background layers */}
@@ -110,18 +90,19 @@ const ContactCenter = ({ mode }) => {
         {/* Background image */}
         <div
           className={`absolute inset-0 bg-cover bg-center ${
-            isDark ? 'opacity-[0.12]' : 'opacity-[0.08]'
+            isDark ? "opacity-[0.12]" : "opacity-[0.08]"
           }`}
           style={{
-            backgroundImage:
-              'url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1800&q=80")',
+            backgroundImage: `url("${data.background.image}")`,
           }}
         />
 
         {/* Theme overlay */}
         <div
           className={`absolute inset-0 ${
-            isDark ? 'bg-[#070909]/90' : 'bg-[#F7F5F0]/90'
+            isDark
+              ? "bg-[#070909]/90"
+              : "bg-[#F7F5F0]/90"
           }`}
         />
 
@@ -142,8 +123,8 @@ const ContactCenter = ({ mode }) => {
         <div
           className={`absolute inset-0 ${styles.dots}`}
           style={{
-            backgroundSize: '22px 22px',
-            backgroundPosition: 'center center',
+            backgroundSize: "22px 22px",
+            backgroundPosition: "center center",
           }}
         />
 
@@ -153,11 +134,13 @@ const ContactCenter = ({ mode }) => {
         />
       </div>
 
-      {/* Main content */}
+      {/* Main data */}
       <div className="relative mx-auto max-w-7xl px-6 py-20 sm:py-24 lg:px-8 lg:py-28">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-14">
+
           {/* Intro */}
           <div>
+
             {/* Eyebrow */}
             <div
               className={`inline-flex items-center gap-2 rounded-full border px-3.5 py-2 text-[10px] font-semibold uppercase tracking-[0.2em] sm:text-xs ${styles.badge}`}
@@ -165,19 +148,22 @@ const ContactCenter = ({ mode }) => {
               <span
                 className={`h-1.5 w-1.5 rounded-full ${styles.badgeDot}`}
               />
-              Contact Center &amp; Software
+
+              {data.eyebrow}
             </div>
 
             {/* Heading */}
             <h2
               className={`mt-6 text-4xl font-semibold leading-[1.12] tracking-[-0.04em] sm:text-5xl lg:text-6xl ${styles.heading}`}
             >
-              Smarter Dialers.
+              {data.heading.first}
+
               <br />
+
               <span
                 className={`bg-gradient-to-r bg-clip-text text-transparent ${styles.goldGradient}`}
               >
-                Better Conversations.
+                {data.heading.highlight}
               </span>
             </h2>
 
@@ -185,15 +171,12 @@ const ContactCenter = ({ mode }) => {
             <p
               className={`mt-6 max-w-xl text-sm leading-7 transition-colors duration-300 sm:text-base sm:leading-8 ${styles.paragraph}`}
             >
-              Boost your efficiency with our advanced dialer solutions, AI
-              platform and fraud prevention tools. Empower your team with
-              smarter technology designed to improve productivity and customer
-              engagement.
+              {data.description}
             </p>
 
             {/* CTA */}
             <a
-              href="#"
+              href={data.cta.href}
               className="
                 group mt-8 inline-flex items-center gap-5
                 rounded-md border border-[#D9A83E]/30
@@ -205,7 +188,7 @@ const ContactCenter = ({ mode }) => {
                 hover:shadow-[0_12px_35px_rgba(217,168,62,0.22)]
               "
             >
-              Discover Contact Center Solutions
+              {data.cta.label}
 
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 →
@@ -213,14 +196,20 @@ const ContactCenter = ({ mode }) => {
             </a>
 
             {/* Supporting note */}
-            <div className={`mt-5 flex items-center gap-2 text-xs ${styles.muted}`}>
-              <span className={`h-1 w-1 rounded-full ${styles.badgeDot}`} />
-              Intelligent solutions for modern business communication
+            <div
+              className={`mt-5 flex items-center gap-2 text-xs ${styles.muted}`}
+            >
+              <span
+                className={`h-1 w-1 rounded-full ${styles.badgeDot}`}
+              />
+
+              {data.supportingNote}
             </div>
           </div>
 
           {/* Product cards */}
           <div className="relative">
+
             {/* Subtle glow behind cards */}
             <div
               aria-hidden="true"
@@ -228,10 +217,10 @@ const ContactCenter = ({ mode }) => {
             />
 
             <div className="relative space-y-3">
-              {products.map((product, index) => (
+              {data.items.map((product, index) => (
                 <a
                   key={product.title}
-                  href="#"
+                  href={product.href || "#"}
                   className={`
                     group relative flex items-center gap-4 overflow-hidden
                     rounded-xl border p-4 backdrop-blur-md
@@ -253,12 +242,12 @@ const ContactCenter = ({ mode }) => {
                   <div
                     className={`relative hidden w-5 shrink-0 text-[10px] font-medium tabular-nums sm:block ${styles.muted}`}
                   >
-                    0{index + 1}
+                    {String(index + 1).padStart(2, "0")}
                   </div>
 
                   {/* Icon */}
                   <div
-                    className={`
+                    className="
                       relative flex h-12 w-12 shrink-0 items-center
                       justify-center rounded-lg border
                       border-[#D9A83E]/25 bg-[#D9A83E]/[0.06]
@@ -269,7 +258,7 @@ const ContactCenter = ({ mode }) => {
                       group-hover:bg-[#D9A83E]/[0.10]
                       group-hover:shadow-[0_0_18px_rgba(217,168,62,0.12)]
                       sm:h-14 sm:w-14
-                    `}
+                    "
                   >
                     {product.icon}
                   </div>
@@ -291,7 +280,7 @@ const ContactCenter = ({ mode }) => {
 
                   {/* Arrow */}
                   <div
-                    className={`
+                    className="
                       relative flex h-8 w-8 shrink-0 items-center
                       justify-center rounded-full border
                       border-transparent text-[#D9A83E]
@@ -299,21 +288,12 @@ const ContactCenter = ({ mode }) => {
                       group-hover:translate-x-1
                       group-hover:border-[#D9A83E]/20
                       group-hover:bg-[#D9A83E]/[0.06]
-                    `}
+                    "
                   >
-                    →
+                    {data.product.arrow}
                   </div>
                 </a>
               ))}
-            </div>
-
-            {/* Bottom card caption */}
-            <div className={`relative mt-5 flex items-center justify-between px-1 text-[10px] uppercase tracking-[0.16em] ${styles.muted}`}>
-              <span>Integrated solutions</span>
-              <span className="flex items-center gap-2">
-                <span className={`h-1.5 w-1.5 rounded-full ${styles.badgeDot}`} />
-                Built for performance
-              </span>
             </div>
           </div>
         </div>
@@ -322,4 +302,4 @@ const ContactCenter = ({ mode }) => {
   );
 };
 
-export default ContactCenter;
+export default OfferingGrid;

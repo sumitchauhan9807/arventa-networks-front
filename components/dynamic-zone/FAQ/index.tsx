@@ -1,8 +1,9 @@
-
 import { useState } from "react";
 import { useSelector } from "react-redux";
 
-const FAQ = () => {
+
+
+const FAQ = ({data}) => {
   const reduxTheme = useSelector((state) => state.theme?.theme);
   const isLight = reduxTheme === "light";
   const isDark = !isLight;
@@ -75,42 +76,9 @@ const FAQ = () => {
       : "border-white/10 bg-white/[0.025]",
   };
 
-  const faqs = [
-    {
-      question: "What is Arventa Networks?",
-      answer:
-        "Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.",
-    },
-    {
-      question: "How reliable is your message delivery?",
-      answer:
-        "Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.",
-    },
-    {
-      question: "Which countries and regions do you support?",
-      answer:
-        "We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.",
-    },
-    {
-      question: "How quickly can we integrate your platform?",
-      answer:
-        "Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.",
-    },
-    {
-      question: "Do you support high-volume messaging?",
-      answer:
-        "Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.",
-    },
-    {
-      question: "How can I get started with Arventa Networks?",
-      answer:
-        "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
-    },
-  ];
-
   return (
     <section
-      id="faq"
+      id={data.sectionId}
       className={`relative isolate overflow-hidden border-y px-5 py-20 sm:px-8 md:py-28 ${theme.section}`}
     >
       {/* Ambient background — matching Timeline and MobileSection */}
@@ -161,32 +129,31 @@ const FAQ = () => {
             className={`mb-5 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.24em] ${theme.eyebrow}`}
           >
             <span className={`h-px w-8 ${theme.eyebrowLine}`} />
-            Frequently Asked Questions
+            {data.heading.eyebrow}
             <span className={`h-px w-8 ${theme.eyebrowLine}`} />
           </div>
 
           <h2
             className={`font-display text-4xl font-semibold leading-[1.12] tracking-[-0.04em] sm:text-5xl md:text-6xl ${theme.heading}`}
           >
-            Answers to help you{" "}
+            {data.heading.first}{" "}
             <span
               className={`bg-gradient-to-r ${theme.gradient} bg-clip-text text-transparent`}
             >
-              move forward.
+              {data.heading.highlight}
             </span>
           </h2>
 
           <p
             className={`mx-auto mt-6 max-w-xl text-sm leading-7 sm:text-base ${theme.body}`}
           >
-            Everything you need to know about our messaging
-            infrastructure, global reach, and getting started.
+            {data.heading.description}
           </p>
         </div>
 
         {/* FAQ accordion */}
         <div className="mx-auto max-w-3xl space-y-3">
-          {faqs.map((faq, index) => {
+          {data.faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             const questionId = `faq-question-${index}`;
             const answerId = `faq-answer-${index}`;
@@ -289,19 +256,19 @@ const FAQ = () => {
         >
           <div>
             <h3 className={`text-sm font-semibold ${theme.heading}`}>
-              Still have questions?
+              {data.contact.heading}
             </h3>
 
             <p className={`mt-1 text-sm ${theme.body}`}>
-              Let's talk about your messaging requirements.
+              {data.contact.description}
             </p>
           </div>
 
           <a
-            href="#contact"
+            href={data.contact.href}
             className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-[#D9A83E] px-5 py-3 text-sm font-semibold text-[#151515] transition-all duration-300 hover:bg-[#E7BD5B] hover:shadow-[0_8px_25px_rgba(217,168,62,.2)]"
           >
-            Contact our team
+            {data.contact.cta}
 
             <svg
               viewBox="0 0 24 24"

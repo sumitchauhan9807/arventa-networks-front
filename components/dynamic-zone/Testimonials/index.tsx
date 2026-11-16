@@ -6,98 +6,26 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  company: string;
-  quote: string;
-  image: string;
-  rating: number;
-}
-
 interface RootState {
   theme: {
     theme: 'dark' | 'light';
   };
 }
 
-const testimonials: Testimonial[] = [
-  {
-    id: 1,
-    name: 'Arjun Mehta',
-    role: 'Chief Technology Officer',
-    company: 'Nexus Networks',
-    quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
-    rating: 5,
-  },
-  {
-    id: 2,
-    name: 'Sarah Williams',
-    role: 'Director of Operations',
-    company: 'Vertex Solutions',
-    quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
-    rating: 5,
-  },
-  {
-    id: 3,
-    name: 'Daniel Chen',
-    role: 'Network Infrastructure Lead',
-    company: 'CloudBridge Systems',
-    quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
-    rating: 5,
-  },
-  {
-    id: 4,
-    name: 'Olivia Bennett',
-    role: 'Managing Director',
-    company: 'Elevate Technologies',
-    quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
-    rating: 5,
-  },
-  {
-    id: 5,
-    name: 'Michael Anderson',
-    role: 'Head of IT Infrastructure',
-    company: 'Apex Digital',
-    quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
-    rating: 5,
-  },
-  {
-    id: 6,
-    name: 'Priya Sharma',
-    role: 'Technology Director',
-    company: 'Brightwave Communications',
-    quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
-    rating: 5,
-  },
-  {
-    id: 7,
-    name: 'James Mitchell',
-    role: 'Chief Operating Officer',
-    company: 'Summit Connect',
-    quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
-    rating: 5,
-  },
-  {
-    id: 8,
-    name: 'Ananya Kapoor',
-    role: 'Network Operations Manager',
-    company: 'Pinnacle Technologies',
-    quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
-    image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
-    rating: 5,
-  },
-];
 
-const Testimonials = () => {
+
+const swiper = {
+  autoplayDelay: 1500,
+  speed: 650,
+  spaceBetween: 20,
+  breakpoints: {
+    tablet: 640,
+    desktop: 768,
+    largeDesktop: 1100,
+  },
+};
+
+const Testimonials = ({ data }) => {
   const theme = useSelector((state: RootState) => state.theme.theme);
   const isDark = theme === 'dark';
 
@@ -141,16 +69,16 @@ const Testimonials = () => {
         <div className="mx-auto max-w-3xl text-center">
           <div className={`mb-6 inline-flex items-center gap-3 rounded-full border px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.3em] ${styles.badge}`}>
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#D9A83E] shadow-[0_0_10px_#D9A83E]" />
-            Client Experiences
+            {data.section.eyebrow}
           </div>
 
           <h2 className={`font-display text-4xl font-semibold tracking-[-0.03em] sm:text-5xl lg:text-6xl ${styles.heading}`}>
-            Trusted by those
+            {data.section.heading.first}
             <br />
-            who expect <span className="bg-gradient-to-r from-[#FFF0B5] via-[#D9A83E] to-[#A87918] bg-clip-text text-transparent">more.</span>
+            {data.section.heading.second} <span className="bg-gradient-to-r from-[#FFF0B5] via-[#D9A83E] to-[#A87918] bg-clip-text text-transparent">{data.section.heading.highlight}</span>
           </h2>
 
-          <p className={`mx-auto mt-6 max-w-xl text-sm leading-7 sm:text-base ${styles.paragraph}`}>The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.</p>
+          <p className={`mx-auto mt-6 max-w-xl text-sm leading-7 sm:text-base ${styles.paragraph}`}>{data.section.description}</p>
         </div>
 
         {/* Centered Swiper */}
@@ -161,13 +89,13 @@ const Testimonials = () => {
             slidesPerGroup={1}
             centeredSlides={false}
             centerInsufficientSlides
-            spaceBetween={20}
-            speed={650}
+            spaceBetween={swiper.spaceBetween}
+            speed={swiper.speed}
             loop
             grabCursor
             watchOverflow
             autoplay={{
-              delay: 1500,
+              delay: swiper.autoplayDelay,
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
@@ -180,27 +108,27 @@ const Testimonials = () => {
               el: '.testimonial-pagination',
             }}
             breakpoints={{
-              640: {
+              [swiper.breakpoints.tablet]: {
                 slidesPerView: 1,
                 spaceBetween: 24,
               },
-              768: {
+              [swiper.breakpoints.desktop]: {
                 slidesPerView: 2,
                 spaceBetween: 24,
               },
-              1100: {
+              [swiper.breakpoints.largeDesktop]: {
                 slidesPerView: 3,
                 spaceBetween: 28,
               },
             }}
             className="testimonials-swiper !mx-0 !w-full !overflow-hidden"
           >
-            {testimonials.map((testimonial) => (
+            {data.items.map((testimonial) => (
               <SwiperSlide key={testimonial.id} className="!h-auto">
                 <article className={`group relative flex h-full min-h-[390px] flex-col overflow-hidden rounded-2xl border p-7 transition-all duration-500 sm:p-8 ${styles.card}`}>
                   {/* Decorative quote mark */}
                   <div aria-hidden="true" className={`pointer-events-none absolute right-6 top-3 font-serif text-8xl leading-none opacity-10 ${styles.gold}`}>
-                    “
+                    {data.decorative.quoteMark}
                   </div>
 
                   {/* Star rating */}
@@ -249,13 +177,13 @@ const Testimonials = () => {
             <div className="testimonial-pagination flex min-h-6 flex-1 items-center gap-2" />
 
             <div className="flex shrink-0 items-center gap-3">
-              <button type="button" aria-label="Previous testimonials" className={`testimonial-prev flex h-11 w-11 items-center justify-center rounded-full border transition-all duration-300 ${styles.button}`}>
+              <button type="button" aria-label="" className={`testimonial-prev flex h-11 w-11 items-center justify-center rounded-full border transition-all duration-300 ${styles.button}`}>
                 <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" aria-hidden="true">
                   <path d="M19 12H5m7 7-7-7 7-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
 
-              <button type="button" aria-label="Next testimonials" className={`testimonial-next flex h-11 w-11 items-center justify-center rounded-full border transition-all duration-300 ${styles.button}`}>
+              <button type="button" aria-label="" className={`testimonial-next flex h-11 w-11 items-center justify-center rounded-full border transition-all duration-300 ${styles.button}`}>
                 <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" aria-hidden="true">
                   <path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>

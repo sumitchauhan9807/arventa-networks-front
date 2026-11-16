@@ -1,80 +1,60 @@
-const Solutions = ({ mode }) => {
-  const isDark = mode === 'dark';
-
-  const solutions = [
-    {
-      image:
-        'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
-      icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity & Security.',
-    },
-    {
-      image:
-        'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80',
-      icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM, IoT / M2M connectivity.',
-    },
-    {
-      image:
-        'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
-      icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
-    },
-  ];
+const SolutionsGrid = ({ theme, data }) => {
+  const isDark = theme === "dark";
 
   const styles = {
     section: isDark
-      ? 'border-white/10 bg-[#070909] text-white'
-      : 'border-[#151716]/10 bg-[#F7F5F0] text-[#151716]',
+      ? "border-white/10 bg-[#070909] text-white"
+      : "border-[#151716]/10 bg-[#F7F5F0] text-[#151716]",
 
     mainGlow: isDark
-      ? 'bg-[#D9A83E]/[0.055]'
-      : 'bg-[#D9A83E]/[0.10]',
+      ? "bg-[#D9A83E]/[0.055]"
+      : "bg-[#D9A83E]/[0.10]",
 
     sideGlow: isDark
-      ? 'bg-[#D9A83E]/[0.025]'
-      : 'bg-[#D9A83E]/[0.045]',
+      ? "bg-[#D9A83E]/[0.025]"
+      : "bg-[#D9A83E]/[0.045]",
 
     radialGlow: isDark
-      ? 'bg-[radial-gradient(circle_at_50%_12%,rgba(217,168,62,0.08),transparent_42%)]'
-      : 'bg-[radial-gradient(circle_at_50%_12%,rgba(217,168,62,0.10),transparent_42%)]',
+      ? "bg-[radial-gradient(circle_at_50%_12%,rgba(217,168,62,0.08),transparent_42%)]"
+      : "bg-[radial-gradient(circle_at_50%_12%,rgba(217,168,62,0.10),transparent_42%)]",
 
     dots: isDark
-      ? 'bg-[radial-gradient(circle,rgba(255,255,255,0.13)_1px,transparent_1px)]'
-      : 'bg-[radial-gradient(circle,rgba(21,23,22,0.10)_1px,transparent_1px)]',
+      ? "bg-[radial-gradient(circle,rgba(255,255,255,0.13)_1px,transparent_1px)]"
+      : "bg-[radial-gradient(circle,rgba(21,23,22,0.10)_1px,transparent_1px)]",
 
     bottomFade: isDark
-      ? 'from-[#070909]'
-      : 'from-[#F7F5F0]',
+      ? "from-[#070909]"
+      : "from-[#F7F5F0]",
 
-    heading: isDark ? 'text-white' : 'text-[#151716]',
+    heading: isDark ? "text-white" : "text-[#151716]",
 
-    description: isDark ? 'text-white/45' : 'text-[#151716]/55',
+    description: isDark
+      ? "text-white/45"
+      : "text-[#151716]/55",
 
     goldGradient: isDark
-      ? 'from-[#FFF0B5] via-[#F6D27A] to-[#D9A83E]'
-      : 'from-[#8E6718] via-[#B88A28] to-[#D9A83E]',
+      ? "from-[#FFF0B5] via-[#F6D27A] to-[#D9A83E]"
+      : "from-[#8E6718] via-[#B88A28] to-[#D9A83E]",
 
     badge: isDark
-      ? 'border-[#D9A83E]/20 bg-[#D9A83E]/[0.06] text-[#E6B84F]'
-      : 'border-[#B88A28]/25 bg-[#D9A83E]/[0.08] text-[#A87918]',
+      ? "border-[#D9A83E]/20 bg-[#D9A83E]/[0.06] text-[#E6B84F]"
+      : "border-[#B88A28]/25 bg-[#D9A83E]/[0.08] text-[#A87918]",
 
     badgeDot: isDark
-      ? 'bg-[#D9A83E] shadow-[0_0_10px_#D9A83E]'
-      : 'bg-[#C9972E] shadow-[0_0_10px_rgba(201,151,46,0.55)]',
+      ? "bg-[#D9A83E] shadow-[0_0_10px_#D9A83E]"
+      : "bg-[#C9972E] shadow-[0_0_10px_rgba(201,151,46,0.55)]",
 
     card: isDark
-      ? 'border-white/10 bg-white/[0.025] shadow-[0_20px_60px_rgba(0,0,0,0.15)]'
-      : 'border-[#151716]/10 bg-white/50 shadow-[0_20px_60px_rgba(21,23,22,0.04)]',
+      ? "border-white/10 bg-white/[0.025] shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
+      : "border-[#151716]/10 bg-white/50 shadow-[0_20px_60px_rgba(21,23,22,0.04)]",
 
     cardDescription: isDark
-      ? 'text-white/45'
-      : 'text-[#151716]/55',
+      ? "text-white/45"
+      : "text-[#151716]/55",
 
-    muted: isDark ? 'text-white/30' : 'text-[#151716]/35',
+    muted: isDark
+      ? "text-white/30"
+      : "text-[#151716]/35",
   };
 
   return (
@@ -104,8 +84,8 @@ const Solutions = ({ mode }) => {
         <div
           className={`absolute inset-0 ${styles.dots}`}
           style={{
-            backgroundSize: '22px 22px',
-            backgroundPosition: 'center center',
+            backgroundSize: "22px 22px",
+            backgroundPosition: "center center",
           }}
         />
 
@@ -118,8 +98,10 @@ const Solutions = ({ mode }) => {
       {/* Main content */}
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-3 lg:gap-14">
+
           {/* Intro */}
           <div className="flex flex-col items-start">
+
             {/* Eyebrow */}
             <div
               className={`inline-flex items-center gap-2 rounded-full border px-3.5 py-2 text-[10px] font-semibold uppercase tracking-[0.2em] sm:text-xs ${styles.badge}`}
@@ -127,18 +109,19 @@ const Solutions = ({ mode }) => {
               <span
                 className={`h-1.5 w-1.5 rounded-full ${styles.badgeDot}`}
               />
-              What We Do
+              {data.eyebrow}
             </div>
 
             {/* Heading */}
             <h2
               className={`mt-6 text-4xl font-semibold leading-[1.12] tracking-[-0.04em] sm:text-5xl ${styles.heading}`}
             >
-              Our{' '}
+              {data.heading.normal}{" "}
+
               <span
                 className={`bg-gradient-to-r bg-clip-text text-transparent ${styles.goldGradient}`}
               >
-                Solutions
+                {data.heading.highlight}
               </span>
             </h2>
 
@@ -146,14 +129,12 @@ const Solutions = ({ mode }) => {
             <p
               className={`mt-6 max-w-md text-sm leading-7 transition-colors duration-300 sm:text-base sm:leading-8 ${styles.description}`}
             >
-              From carrier services to AI-powered contact center solutions, we
-              provide the infrastructure and software you need to grow,
-              connect and succeed.
+              {data.description}
             </p>
 
             {/* CTA */}
             <a
-              href="#"
+              href={data.cta.href}
               className="
                 group mt-8 inline-flex items-center gap-5
                 rounded-md border border-[#D9A83E]/40
@@ -166,7 +147,7 @@ const Solutions = ({ mode }) => {
                 hover:shadow-[0_10px_30px_rgba(217,168,62,0.18)]
               "
             >
-              Explore All Solutions
+              {data.cta.label}
 
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 →
@@ -180,16 +161,16 @@ const Solutions = ({ mode }) => {
               <span
                 className={`h-1.5 w-1.5 rounded-full ${styles.badgeDot}`}
               />
-              Technology built for growth
+              {data.supportingNote}
             </div>
           </div>
 
           {/* Solution cards */}
           <div className="grid gap-5 sm:grid-cols-3 lg:col-span-2">
-            {solutions.map((solution, index) => (
+            {data.items.map((solution, index) => (
               <a
                 key={solution.title}
-                href="#"
+                href={solution.href || "#"}
                 className={`
                   group relative flex flex-col overflow-hidden rounded-xl
                   border backdrop-blur-md
@@ -202,7 +183,7 @@ const Solutions = ({ mode }) => {
               >
                 {/* Image */}
                 <div className="relative h-48 shrink-0 overflow-hidden sm:h-40 lg:h-48">
-                  {/* Image layer */}
+
                   <div
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-110"
                     style={{
@@ -210,28 +191,28 @@ const Solutions = ({ mode }) => {
                     }}
                   />
 
-                  {/* Image contrast overlay */}
+                  {/* Image overlay */}
                   <div
                     className={`absolute inset-0 transition-colors duration-500 ${
                       isDark
-                        ? 'bg-[#070909]/35 group-hover:bg-[#070909]/20'
-                        : 'bg-[#F7F5F0]/20 group-hover:bg-[#D9A83E]/[0.06]'
+                        ? "bg-[#070909]/35 group-hover:bg-[#070909]/20"
+                        : "bg-[#F7F5F0]/20 group-hover:bg-[#D9A83E]/[0.06]"
                     }`}
                   />
 
                   {/* Gold image gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#070909]/75 via-transparent to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-60" />
 
-                  {/* Top category number */}
+                  {/* Category number */}
                   <div className="absolute right-4 top-4">
                     <span
                       className={`flex h-8 min-w-8 items-center justify-center rounded-full border px-2 text-[10px] font-medium backdrop-blur-md ${
                         isDark
-                          ? 'border-white/15 bg-black/30 text-white/70'
-                          : 'border-white/50 bg-white/60 text-[#151716]/70'
+                          ? "border-white/15 bg-black/30 text-white/70"
+                          : "border-white/50 bg-white/60 text-[#151716]/70"
                       }`}
                     >
-                      0{index + 1}
+                      {String(index + 1).padStart(2, "0")}
                     </span>
                   </div>
 
@@ -241,8 +222,9 @@ const Solutions = ({ mode }) => {
                   </div>
                 </div>
 
-                {/* Card content */}
+                {/* Card data */}
                 <div className="relative flex flex-1 flex-col p-5 sm:p-5 lg:p-6">
+
                   {/* Title */}
                   <h3
                     className={`text-base font-semibold tracking-[-0.02em] transition-colors duration-300 group-hover:text-[#D9A83E] ${styles.heading}`}
@@ -260,7 +242,7 @@ const Solutions = ({ mode }) => {
                   {/* Card link */}
                   <div className="mt-6 flex items-center justify-between">
                     <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#D9A83E]/80 transition-colors duration-300 group-hover:text-[#D9A83E]">
-                      Explore solution
+                      {data.card.linkLabel}
                     </span>
 
                     <span className="flex h-8 w-8 items-center justify-center rounded-full border border-[#D9A83E]/15 text-[#D9A83E] transition-all duration-300 group-hover:translate-x-1 group-hover:border-[#D9A83E]/40 group-hover:bg-[#D9A83E]/[0.08]">
@@ -274,10 +256,11 @@ const Solutions = ({ mode }) => {
               </a>
             ))}
           </div>
+
         </div>
       </div>
     </section>
   );
 };
 
-export default Solutions;
+export default SolutionsGrid;

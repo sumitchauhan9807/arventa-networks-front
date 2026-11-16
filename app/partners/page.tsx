@@ -8,7 +8,7 @@ import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection';
 import Team from '@/components/Team';
 import CountUp from '@/components/dynamic-zone/CountUp';
 import CTA from '@/components/dynamic-zone/CTA';
-import WorldNetworksMap from '@/components/WorldMaps/WorldNetworksMap';
+import WorldNetworksMap from '@/components/dynamic-zone/WorldMaps/WorldNetworksMap';
 import FAQ from '@/components/dynamic-zone/FAQ';
 
 // import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection'

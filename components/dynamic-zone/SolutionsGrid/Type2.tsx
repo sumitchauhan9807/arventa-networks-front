@@ -1,39 +1,5 @@
-
-const MobileSection = ({ mode }) => {
-  const isDark = mode === "dark";
-
-  const industries = [
-    {
-      title: "Telecom Operators",
-      description: "Expand your network and reach.",
-      image:
-        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=700&q=80",
-    },
-    {
-      title: "Businesses",
-      description: "Reliable communication and connectivity.",
-      image:
-        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=80",
-    },
-    {
-      title: "Contact Centers",
-      description: "Higher efficiency. Better customer experiences.",
-      image:
-        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=80",
-    },
-    {
-      title: "MVNOs",
-      description: "Launch your own mobile brand.",
-      image:
-        "https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=700&q=80",
-    },
-    {
-      title: "IoT / M2M",
-      description: "Connect devices. Unlock potential.",
-      image:
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80",
-    },
-  ];
+const SolutionsGrid = ({ theme, data }) => {
+  const isDark = theme === "dark";
 
   const styles = {
     section: isDark
@@ -84,11 +50,12 @@ const MobileSection = ({ mode }) => {
 
   return (
     <section
-      id="mobile"
+      id={data.sectionId}
       className={`relative isolate overflow-hidden border-y py-28 ${styles.section}`}
     >
-      {/* Ambient background — matching Timeline */}
+      {/* Ambient background */}
       <div className="pointer-events-none absolute inset-0 -z-10">
+
         {/* Main top gold glow */}
         <div
           className={`absolute left-1/2 top-[-250px] h-[700px] w-[1100px] max-w-none -translate-x-1/2 rounded-full blur-[160px] ${styles.mainGlow}`}
@@ -125,28 +92,30 @@ const MobileSection = ({ mode }) => {
         />
       </div>
 
-      {/* Section content */}
+      {/* Section data */}
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+
         {/* Heading */}
         <div className="mb-12">
           <div className="text-xs font-semibold uppercase tracking-[.25em] text-arventa-gold">
-            Industries We Serve
+            {data.eyebrow}
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
-            Flexible Solutions{" "}
+            {data.heading.normal}{" "}
+
             <span className="gold-text">
-              for Your Industry
+              {data.heading.highlight}
             </span>
           </h2>
         </div>
 
         {/* Industry Cards */}
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
-          {industries.map((industry) => (
+          {data.items.map((industry) => (
             <a
               key={industry.title}
-              href="#"
+              href={industry.href || "#"}
               className={`group relative h-80 overflow-hidden rounded-xl border ${styles.card} ${styles.cardShadow} transition-all duration-300 ease-out hover:-translate-y-2 hover:border-arventa-gold/50`}
             >
               {/* Image */}
@@ -162,7 +131,7 @@ const MobileSection = ({ mode }) => {
                 className={`absolute inset-0 transition-opacity duration-300 group-hover:opacity-90 ${styles.overlay}`}
               />
 
-              {/* Content */}
+              {/* data */}
               <div className="absolute inset-x-0 bottom-0 p-6">
                 <h3
                   className={`font-semibold transition-colors duration-300 group-hover:text-arventa-gold ${styles.description}`}
@@ -178,7 +147,7 @@ const MobileSection = ({ mode }) => {
 
                 <div className="mt-4 flex items-center text-arventa-gold">
                   <span className="transition-transform duration-300 group-hover:translate-x-2">
-                    →
+                    {data.card.arrow}
                   </span>
                 </div>
               </div>
@@ -193,4 +162,4 @@ const MobileSection = ({ mode }) => {
   );
 };
 
-export default MobileSection;
+export default SolutionsGrid;

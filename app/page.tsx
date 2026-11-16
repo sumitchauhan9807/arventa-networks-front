@@ -1,36 +1,36 @@
 'use client';
-import Hero from '@/components/Hero/LandingHero';
-import Service from '@/components/Service';
-import Solutions from '@/components/Solutions';
-import ContactCenter from '@/components/ContactCenter';
-import Company from '@/components/Company';
-import CarrierNetwork from '@/components/CarrierNetwork';
-import Mobile from '@/components/Mobile';
-import Partners from '@/components/Partners';
-import Contact from '@/components/Contact';
-import Header from '@/components/layout/Header';
-import Header2 from '@/components/layout/Header2';
-
-import Footer from '@/components/layout/Footer';
-
-import WorldNetworks from '@/components/WorldMaps/WorldNetworks';
-import WorldNetworksMap from '@/components/WorldMaps/WorldNetworksMap';
-import WorldCountries from '@/components/WorldMaps/WorldCountries';
-import Loader from '@/components/layout/Loader';
-import CTA from '@/components/dynamic-zone/CTA';
-import CountUp from '@/components/dynamic-zone/CountUp/Full';
-import CountUpBoxes from '@/components/dynamic-zone/CountUp';
-
-import FAQ from '@/components/dynamic-zone/FAQ';
-import VirtualOfficeNumbers from '@/components/VirtualOfficeNumbers';
-import VirtualNumberSearch from '@/components/VirtualNumberSearch';
-
-import Testimonials from '@/components/Testimonials';
 
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import Animations from '@/components/Animations';
+
+import Hero from '@/components/Hero/LandingHero';
+
+
+
+
+import Header2 from '@/components/layout/Header2';
+
+import Footer from '@/components/layout/Footer';
+
+
+import Loader from '@/components/layout/Loader';
+import CTA from '@/components/dynamic-zone/CTA';
+import CountUpGrid from '@/components/dynamic-zone/CountUp/Grid';
+import CountUp from '@/components/dynamic-zone/CountUp';
+import FAQ from '@/components/dynamic-zone/FAQ';
+import ServicesGrid from '@/components/dynamic-zone/ServicesGrid';
+import SolutionsGrid from '@/components/dynamic-zone/SolutionsGrid';
+import OfferingGrid from '@/components/dynamic-zone/OfferingGrid';
+import Partners from '@/components/dynamic-zone/Partners';
+import Testimonials from '@/components/dynamic-zone/Testimonials';
+import VirtualNumberComponents from '@/components/dynamic-zone/VirtualNumberComponents';
+import WorldMaps from '@/components/dynamic-zone/WorldMaps';
+import FancyComponents from '@/components/dynamic-zone/FancyComponents'
+
+
+
+import { serviceGridData, solutionGridData, testimonialsData, offeringGridData, partnerData, faqData, CTAData ,countupData ,countUpGridData } from '@/app/data/home';
 
 export default function Home() {
   const theme = useSelector((state) => state.theme.theme);
@@ -61,30 +61,34 @@ export default function Home() {
       ) : (
         <>
           <Hero animation={'home'} />
-          <Service mode={theme} />
+          <ServicesGrid theme={theme} data={serviceGridData} />
+          <SolutionsGrid theme={theme} data={solutionGridData} type="TYPE1" />
 
-          <CarrierNetwork mode={theme} />
+          <OfferingGrid theme={theme} data={offeringGridData} />
+          <FancyComponents/>
+          <CountUp data={countupData} />
 
-          <Solutions mode={theme} />
-          <CountUp />
+         
+          <VirtualNumberComponents type="VIRTUAL_OFFICE_NUMBERS"/>
+          <VirtualNumberComponents type="VI/RTUAL_NUMBER_SEARCH"/>
 
-          <ContactCenter mode={theme} />
+          <WorldMaps type="WORLD_COUNTRIES"/>
+          {/* <WorldMaps type="WORLD_MAP"/>
+          <WorldMaps type="WORLD_NETWORKS"/>
+          <WorldMaps type="WORLD_NETWORKS_MAP"/> */}
 
-          <VirtualOfficeNumbers />
-          {/* <VirtualNumberSearch onSearch={()=>{}}/> */}
-          <WorldCountries />
-          {/* <WorldNetworks/> */}
-          {/* <WorldNetworksMap/> */}
-          <CountUpBoxes />
 
-          <Mobile mode={theme} />
+        
+          
+          <CountUpGrid data={countUpGridData}/>
 
-          <Partners />
+          <SolutionsGrid theme={theme} data={solutionGridData} type="TYPE2" />
 
-          <Contact mode={theme} />
-          <Testimonials />
-          <FAQ />
-          <CTA />
+          <Partners data={partnerData} />
+
+          <Testimonials data={testimonialsData} />
+          <FAQ data={faqData} />
+          <CTA data={CTAData} />
         </>
       )}
       <Footer />

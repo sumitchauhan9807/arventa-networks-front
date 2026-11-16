@@ -37,7 +37,6 @@ const countries = {
   africa: [
     country('Algeria', 'dz', 'algeria'),
     country('Benin', 'bj', 'benin'),
-    country('Kenya', 'ke', 'kenya'),
     country('Mali', 'ml', 'mali'),
     country('Mauritius', 'mu', 'mauritius'),
     country('Namibia', 'na', 'namibia'),

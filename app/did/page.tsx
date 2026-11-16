@@ -6,15 +6,15 @@ import Header2 from '@/components/layout/Header2';
 
 import Footer from '@/components/layout/Footer';
 import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection';
-import WorldVoipMap from '@/components/WorldMaps/WorldMap';
+import WorldVoipMap from '@/components/dynamic-zone/WorldMaps/WorldMap';
 import VoipHero from '@/components/Hero/VoipHero';
 
 import CountUp from '@/components/dynamic-zone/CountUp';
 import CTA from '@/components/dynamic-zone/CTA';
 import FAQ from '@/components/dynamic-zone/FAQ';
 
-import VirtualOfficeNumbers from '@/components/VirtualOfficeNumbers';
-import VirtualNumberSearch from '@/components/VirtualNumberSearch';
+import VirtualOfficeNumbers from '@/components/dynamic-zone/VirtualNumberComponents/VirtualOfficeNumbers';
+import VirtualNumberSearch from '@/components/dynamic-zone/VirtualNumberComponents/VirtualNumberSearch';
 
 // import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection'
 

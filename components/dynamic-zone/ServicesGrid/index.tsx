@@ -1,82 +1,30 @@
-
-const Service = ({ mode }) => {
-  const isDark = mode === 'dark';
-
-  const items = [
-    {
-      icon: '◈',
-      title: 'Carrier & Wholesale',
-      description: 'SIP Trunking, Origination/Termination, LCR',
-    },
-    {
-      icon: '▣',
-      title: 'Mobile & MVNO',
-      description: 'Flexible mobile solutions for your business',
-    },
-    {
-      icon: '△',
-      title: 'IoT / M2M',
-      description: 'Connected devices. Unlimited possibilities.',
-    },
-    {
-      icon: '◉',
-      title: 'Contact Center Software',
-      description: 'Powerful dialers, AI and fraud prevention.',
-    },
-    {
-      icon: '◎',
-      title: 'Global Network',
-      description: 'Secure. Scalable. Reliable.',
-    },
-  ];
+const ServiceGrid = ({ theme = 'dark' ,data }) => {
+  const isDark = theme === 'dark';
 
   const styles = {
-    section: isDark
-      ? 'border-white/10 bg-[#070909] text-white'
-      : 'border-[#151716]/10 bg-[#F7F5F0] text-[#151716]',
+    section: isDark ? 'border-white/10 bg-[#070909] text-white' : 'border-[#151716]/10 bg-[#F7F5F0] text-[#151716]',
 
-    mainGlow: isDark
-      ? 'bg-[#D9A83E]/[0.055]'
-      : 'bg-[#D9A83E]/[0.10]',
+    mainGlow: isDark ? 'bg-[#D9A83E]/[0.055]' : 'bg-[#D9A83E]/[0.10]',
 
-    leftGlow: isDark
-      ? 'bg-[#D9A83E]/[0.025]'
-      : 'bg-[#D9A83E]/[0.045]',
+    leftGlow: isDark ? 'bg-[#D9A83E]/[0.025]' : 'bg-[#D9A83E]/[0.045]',
 
-    rightGlow: isDark
-      ? 'bg-[#D9A83E]/[0.02]'
-      : 'bg-[#D9A83E]/[0.035]',
+    rightGlow: isDark ? 'bg-[#D9A83E]/[0.02]' : 'bg-[#D9A83E]/[0.035]',
 
-    radialGlow: isDark
-      ? 'bg-[radial-gradient(circle_at_50%_15%,rgba(217,168,62,0.08),transparent_40%)]'
-      : 'bg-[radial-gradient(circle_at_50%_15%,rgba(217,168,62,0.10),transparent_40%)]',
+    radialGlow: isDark ? 'bg-[radial-gradient(circle_at_50%_15%,rgba(217,168,62,0.08),transparent_40%)]' : 'bg-[radial-gradient(circle_at_50%_15%,rgba(217,168,62,0.10),transparent_40%)]',
 
-    dots: isDark
-      ? 'bg-[radial-gradient(circle,rgba(255,255,255,0.16)_1px,transparent_1px)]'
-      : 'bg-[radial-gradient(circle,rgba(21,23,22,0.12)_1px,transparent_1px)]',
+    dots: isDark ? 'bg-[radial-gradient(circle,rgba(255,255,255,0.16)_1px,transparent_1px)]' : 'bg-[radial-gradient(circle,rgba(21,23,22,0.12)_1px,transparent_1px)]',
 
-    goldDots:
-      'bg-[radial-gradient(circle,rgba(217,168,62,0.18)_1px,transparent_1px)]',
+    goldDots: 'bg-[radial-gradient(circle,rgba(217,168,62,0.18)_1px,transparent_1px)]',
 
-    bottomFade: isDark
-      ? 'from-[#070909]'
-      : 'from-[#F7F5F0]',
+    bottomFade: isDark ? 'from-[#070909]' : 'from-[#F7F5F0]',
 
-    itemBorder: isDark
-      ? 'border-white/10'
-      : 'border-[#151716]/10',
+    itemBorder: isDark ? 'border-white/10' : 'border-[#151716]/10',
 
-    itemHover: isDark
-      ? 'hover:bg-white/[0.025]'
-      : 'hover:bg-[#D9A83E]/[0.045]',
+    itemHover: isDark ? 'hover:bg-white/[0.025]' : 'hover:bg-[#D9A83E]/[0.045]',
 
-    heading: isDark
-      ? 'text-white'
-      : 'text-[#151716]',
+    heading: isDark ? 'text-white' : 'text-[#151716]',
 
-    description: isDark
-      ? 'text-white/60'
-      : 'text-[#151716]/60',
+    description: isDark ? 'text-white/60' : 'text-[#151716]/60',
   };
 
   return (
@@ -87,10 +35,7 @@ const Service = ({ mode }) => {
       `}
     >
       {/* Shared ambient background */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10"
-      >
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
         {/* Main top gold glow */}
         <div
           className={`
@@ -120,9 +65,7 @@ const Service = ({ mode }) => {
         />
 
         {/* Radial gold highlight */}
-        <div
-          className={`absolute inset-0 ${styles.radialGlow}`}
-        />
+        <div className={`absolute inset-0 ${styles.radialGlow}`} />
 
         {/* Fine background dots */}
         <div
@@ -157,7 +100,7 @@ const Service = ({ mode }) => {
           grid-cols-2 lg:grid-cols-5
         "
       >
-        {items.map((item, index) => (
+        {data.map((item, index) => (
           <a
             key={item.title}
             href="#"
@@ -168,16 +111,8 @@ const Service = ({ mode }) => {
               sm:p-8
               ${styles.itemBorder}
               ${styles.itemHover}
-              ${
-                index < 4
-                  ? 'border-b lg:border-b-0 lg:border-r'
-                  : ''
-              }
-              ${
-                index === 0 || index === 2
-                  ? 'border-r lg:border-r'
-                  : ''
-              }
+              ${index < 4 ? 'border-b lg:border-b-0 lg:border-r' : ''}
+              ${index === 0 || index === 2 ? 'border-r lg:border-r' : ''}
             `}
           >
             {/* Subtle hover glow */}
@@ -225,11 +160,7 @@ const Service = ({ mode }) => {
               className={`
                 relative mt-2 text-xs leading-5
                 transition-colors duration-300
-                ${
-                  isDark
-                    ? 'text-white/60 group-hover:text-white/75'
-                    : 'text-[#151716]/60 group-hover:text-[#151716]/80'
-                }
+                ${isDark ? 'text-white/60 group-hover:text-white/75' : 'text-[#151716]/60 group-hover:text-[#151716]/80'}
               `}
             >
               {item.description}
@@ -252,4 +183,4 @@ const Service = ({ mode }) => {
   );
 };
 
-export default Service;
+export default ServiceGrid;
