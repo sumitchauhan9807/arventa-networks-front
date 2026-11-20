@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -109,6 +108,30 @@ const countries = {
   ],
 };
 
+const accents = [
+  {
+    name: 'gold',
+    color: '#B8892D',
+    light: '#D9A83E',
+    bright: '#F5CC70',
+    rgb: '184,137,45',
+  },
+  {
+    name: 'green',
+    color: '#16A34A',
+    light: '#22C55E',
+    bright: '#4ADE80',
+    rgb: '34,197,94',
+  },
+  {
+    name: 'red',
+    color: '#DC2626',
+    light: '#EF4444',
+    bright: '#F87171',
+    rgb: '239,68,68',
+  },
+];
+
 const VirtualOfficeNumbers = () => {
   const theme = useSelector((state) => state.theme.theme);
   const isDark = theme === 'dark';
@@ -204,10 +227,12 @@ const VirtualOfficeNumbers = () => {
     >
       {/* Ambient background */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        {/* Main gold glow */}
         <div
           className={`absolute left-1/2 top-[-250px] h-[650px] w-[1000px] -translate-x-1/2 rounded-full blur-[150px] ${styles.mainGlow}`}
         />
 
+        {/* Secondary gold glow */}
         <div
           className={`absolute -left-[300px] top-[35%] h-[550px] w-[550px] rounded-full blur-[150px] ${styles.sideGlow}`}
         />
@@ -216,10 +241,47 @@ const VirtualOfficeNumbers = () => {
           className={`absolute -right-[300px] bottom-[5%] h-[550px] w-[550px] rounded-full blur-[150px] ${styles.sideGlow}`}
         />
 
+        {/* Green ambient glow */}
+        <div
+          className="absolute -right-[180px] top-[15%] h-[420px] w-[420px] rounded-full bg-[#22C55E]/[0.035] blur-[150px]"
+        />
+
+        {/* Red ambient glow */}
+        <div
+          className="absolute -left-[180px] bottom-[5%] h-[400px] w-[400px] rounded-full bg-[#EF4444]/[0.03] blur-[150px]"
+        />
+
         <div className={`absolute inset-0 ${styles.radialGlow}`} />
 
+        {/* Base dot pattern */}
         <div
           className={`absolute inset-0 bg-[size:24px_24px] ${styles.dots}`}
+        />
+
+        {/* Green dot texture */}
+        <div
+          className="absolute inset-0 bg-[size:47px_47px] opacity-[0.16]"
+          style={{
+            backgroundImage:
+              'radial-gradient(circle, rgba(34,197,94,0.42) 1px, transparent 1px)',
+            maskImage:
+              'radial-gradient(ellipse at 90% 25%, black, transparent 55%)',
+            WebkitMaskImage:
+              'radial-gradient(ellipse at 90% 25%, black, transparent 55%)',
+          }}
+        />
+
+        {/* Red dot texture */}
+        <div
+          className="absolute inset-0 bg-[size:53px_53px] opacity-[0.13]"
+          style={{
+            backgroundImage:
+              'radial-gradient(circle, rgba(239,68,68,0.4) 1px, transparent 1px)',
+            maskImage:
+              'radial-gradient(ellipse at 8% 80%, black, transparent 55%)',
+            WebkitMaskImage:
+              'radial-gradient(ellipse at 8% 80%, black, transparent 55%)',
+          }}
         />
 
         <div
@@ -258,6 +320,21 @@ const VirtualOfficeNumbers = () => {
             Build trust, strengthen your global presence, and support customers
             in the countries they know.
           </p>
+
+          {/* Three-color heading indicator */}
+          <div className="mt-7 flex items-center justify-center gap-2">
+            {accents.map((accent) => (
+              <span
+                key={accent.name}
+                className="h-1 rounded-full"
+                style={{
+                  width: accent.name === 'gold' ? '34px' : '15px',
+                  background: `linear-gradient(90deg, ${accent.color}, ${accent.bright})`,
+                  boxShadow: `0 0 10px rgba(${accent.rgb},0.25)`,
+                }}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Region tabs */}
@@ -269,6 +346,7 @@ const VirtualOfficeNumbers = () => {
           >
             {regions.map((region, index) => {
               const isActive = activeRegion === region.id;
+              const accent = accents[index % accents.length];
 
               return (
                 <button
@@ -311,11 +389,31 @@ const VirtualOfficeNumbers = () => {
                       .getElementById(`region-tab-${nextRegion.id}`)
                       ?.focus();
                   }}
-                  className={`shrink-0 rounded-full border px-4 py-2.5 text-xs font-medium transition-all duration-300 sm:px-5 sm:text-sm ${
+                  className={`group/tab relative shrink-0 overflow-hidden rounded-full border px-4 py-2.5 text-xs font-medium transition-all duration-300 sm:px-5 sm:text-sm ${
                     isActive ? styles.activeTab : styles.tab
                   }`}
                 >
                   {region.label}
+
+                  {/* Restrained accent detail on inactive tabs */}
+                  {!isActive && (
+                    <span
+                      className="absolute bottom-0 left-1/2 h-[2px] w-0 -translate-x-1/2 rounded-full transition-all duration-300 group-hover/tab:w-1/2"
+                      style={{
+                        background: accent.light,
+                      }}
+                    />
+                  )}
+
+                  {isActive && (
+                    <span
+                      className="absolute bottom-0 left-1/2 h-[2px] w-5 -translate-x-1/2 rounded-full"
+                      style={{
+                        background: '#D9A83E',
+                        boxShadow: '0 0 9px rgba(217,168,62,0.4)',
+                      }}
+                    />
+                  )}
                 </button>
               );
             })}
@@ -327,10 +425,21 @@ const VirtualOfficeNumbers = () => {
             role="tabpanel"
             aria-labelledby={`region-tab-${activeRegion}`}
             tabIndex={0}
-            className={`mt-5 rounded-2xl border p-4 outline-none transition-colors duration-300 sm:mt-8 sm:rounded-3xl sm:p-7 lg:p-10 ${styles.panel}`}
+            className={`relative mt-5 overflow-hidden rounded-2xl border p-4 outline-none transition-colors duration-300 sm:mt-8 sm:rounded-3xl sm:p-7 lg:p-10 ${styles.panel}`}
           >
+            {/* Panel ambient accents */}
+            <div
+              className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-[#D9A83E]/[0.045] blur-[90px]"
+              aria-hidden="true"
+            />
+
+            <div
+              className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-[#22C55E]/[0.035] blur-[90px]"
+              aria-hidden="true"
+            />
+
             {/* Panel heading */}
-            <div className="mb-6 flex items-center justify-between gap-4 sm:mb-8">
+            <div className="relative z-10 mb-6 flex items-center justify-between gap-4 sm:mb-8">
               <div>
                 <h3
                   className={`font-display text-lg font-semibold tracking-tight sm:text-xl ${styles.heading}`}
@@ -344,9 +453,7 @@ const VirtualOfficeNumbers = () => {
               </div>
 
               <span
-                className={`shrink-0 rounded-full border px-3 py-1.5 text-[10px] font-semibold tracking-wider sm:text-xs ${
-                  styles.badge
-                }`}
+                className={`shrink-0 rounded-full border px-3 py-1.5 text-[10px] font-semibold tracking-wider ${styles.badge}`}
               >
                 {String(selectedCountries.length).padStart(2, '0')} COUNTRIES
               </span>
@@ -354,57 +461,67 @@ const VirtualOfficeNumbers = () => {
 
             {/* Countries grid */}
             <div
-              className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 xl:grid-cols-6"
+              className="relative z-10 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 xl:grid-cols-6"
               key={activeRegion}
             >
-              {visibleCountries.map((item, index) => (
-                <a
-                  key={`${item.code}-${item.name}`}
-                  href={item.href}
-                  className={`group relative flex min-h-[115px] flex-col items-center justify-center overflow-hidden rounded-xl border p-4 text-center transition-all duration-300 hover:-translate-y-1 sm:min-h-[135px] sm:rounded-2xl sm:p-5 ${
-                    styles.countryCard
-                  }`}
-                  style={{
-                    animationDelay: `${index * 35}ms`,
-                  }}
-                >
-                  {/* Subtle hover glow */}
-                  <span
-                    className="pointer-events-none absolute -right-8 -top-8 h-20 w-20 rounded-full bg-[#D9A83E]/10 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100"
-                    aria-hidden="true"
-                  />
+              {visibleCountries.map((item, index) => {
+                const accent = accents[index % accents.length];
 
-                  {/* Country flag */}
-                  <span className="relative mb-3 flex h-8 w-12 items-center justify-center overflow-hidden rounded-md border border-black/10 shadow-sm transition-transform duration-300 group-hover:scale-105 sm:h-9 sm:w-14">
-                    <img
-                      src={`https://flagcdn.com/w80/${item.code}.png`}
-                      alt={`${item.name} flag`}
-                      loading="lazy"
-                      width="80"
-                      height="60"
-                      className="h-full w-full object-cover"
-                    />
-                  </span>
-
-                  {/* Country name */}
-                  <span
-                    className={`relative text-xs font-medium leading-5 transition-colors duration-300 sm:text-sm ${styles.countryText}`}
+                return (
+                  <a
+                    key={`${item.code}-${item.name}`}
+                    href={item.href}
+                    className={`group relative flex min-h-[115px] flex-col items-center justify-center overflow-hidden rounded-xl border p-4 text-center transition-all duration-300 hover:-translate-y-1 sm:min-h-[135px] sm:rounded-2xl sm:p-5 ${
+                      styles.countryCard
+                    }`}
                   >
-                    {item.name}
-                  </span>
+                    {/* Individual accent glow */}
+                    <span
+                      className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100"
+                      style={{
+                        background: `rgba(${accent.rgb},0.16)`,
+                      }}
+                      aria-hidden="true"
+                    />
 
-                  {/* Hover underline */}
-                  <span
-                    className="absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 bg-gradient-to-r from-[#D9A83E] to-transparent transition-all duration-500 group-hover:w-full"
-                    aria-hidden="true"
-                  />
-                </a>
-              ))}
+                    {/* Country flag */}
+                    <span
+                      className="relative mb-3 flex h-8 w-12 items-center justify-center overflow-hidden rounded-md border border-black/10 shadow-sm transition-transform duration-300 group-hover:scale-105 sm:h-9 sm:w-14"
+                    >
+                      <img
+                        src={`https://flagcdn.com/w80/${item.code}.png`}
+                        alt={`${item.name} flag`}
+                        loading="lazy"
+                        width="80"
+                        height="60"
+                        className="h-full w-full object-cover"
+                      />
+                    </span>
+
+                    {/* Country name */}
+                    <span
+                      className={`relative text-xs font-medium leading-5 transition-colors duration-300 sm:text-sm ${styles.countryText}`}
+                    >
+                      {item.name}
+                    </span>
+
+                    {/* Color-coded hover indicator */}
+                    <span
+                      className="absolute bottom-0 left-1/2 h-[2px] w-0 -translate-x-1/2 rounded-full transition-all duration-500 group-hover:w-full"
+                      style={{
+                        background: `linear-gradient(90deg, ${accent.color}, ${accent.bright})`,
+                        boxShadow: `0 0 10px rgba(${accent.rgb},0.25)`,
+                      }}
+                      aria-hidden="true"
+                    />
+                  </a>
+                );
+              })}
             </div>
 
             {/* Europe pagination */}
             {activeRegion === 'europe' && totalPages > 1 && (
-              <div className="mt-8 flex items-center justify-center gap-3">
+              <div className="relative z-10 mt-8 flex items-center justify-center gap-3">
                 <button
                   type="button"
                   onClick={() =>
@@ -439,7 +556,7 @@ const VirtualOfficeNumbers = () => {
                     aria-current={europePage === index ? 'page' : undefined}
                     className={`h-2 rounded-full transition-all duration-300 ${
                       europePage === index
-                        ? 'w-7 bg-[#D9A83E]'
+                        ? 'w-7 bg-[#D9A83E] shadow-[0_0_10px_rgba(217,168,62,0.35)]'
                         : `w-2 ${
                             isDark ? 'bg-white/20' : 'bg-[#151716]/20'
                           }`
@@ -478,9 +595,9 @@ const VirtualOfficeNumbers = () => {
 
             {/* Bottom note */}
             <div
-              className={`mt-7 flex items-center justify-center gap-2 border-t pt-5 text-center text-xs leading-6 sm:mt-8 ${styles.muted} ${
+              className={`relative z-10 mt-7 flex items-center justify-center gap-2 border-t pt-5 text-center text-xs leading-6 ${styles.muted} ${
                 isDark ? 'border-white/[0.07]' : 'border-[#151716]/[0.08]'
-              }`}
+              } sm:mt-8`}
             >
               <svg
                 viewBox="0 0 24 24"

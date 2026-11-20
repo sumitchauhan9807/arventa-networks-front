@@ -1,5 +1,3 @@
-
-
 const OfferingGrid = ({ theme, data }) => {
   const isDark = theme === "dark";
 
@@ -16,6 +14,14 @@ const OfferingGrid = ({ theme, data }) => {
       ? "bg-[#D9A83E]/[0.025]"
       : "bg-[#D9A83E]/[0.045]",
 
+    greenGlow: isDark
+      ? "bg-[#22C55E]/[0.035]"
+      : "bg-[#16A34A]/[0.055]",
+
+    redGlow: isDark
+      ? "bg-[#EF4444]/[0.03]"
+      : "bg-[#DC2626]/[0.045]",
+
     radialGlow: isDark
       ? "bg-[radial-gradient(circle_at_50%_12%,rgba(217,168,62,0.08),transparent_42%)]"
       : "bg-[radial-gradient(circle_at_50%_12%,rgba(217,168,62,0.10),transparent_42%)]",
@@ -23,6 +29,18 @@ const OfferingGrid = ({ theme, data }) => {
     dots: isDark
       ? "bg-[radial-gradient(circle,rgba(255,255,255,0.13)_1px,transparent_1px)]"
       : "bg-[radial-gradient(circle,rgba(21,23,22,0.10)_1px,transparent_1px)]",
+
+    goldDots: isDark
+      ? "bg-[radial-gradient(circle,rgba(217,168,62,0.24)_1px,transparent_1px)]"
+      : "bg-[radial-gradient(circle,rgba(184,138,40,0.18)_1px,transparent_1px)]",
+
+    greenDots: isDark
+      ? "bg-[radial-gradient(circle,rgba(34,197,94,0.20)_1px,transparent_1px)]"
+      : "bg-[radial-gradient(circle,rgba(22,163,74,0.15)_1px,transparent_1px)]",
+
+    redDots: isDark
+      ? "bg-[radial-gradient(circle,rgba(239,68,68,0.18)_1px,transparent_1px)]"
+      : "bg-[radial-gradient(circle,rgba(220,38,38,0.14)_1px,transparent_1px)]",
 
     bottomFade: isDark
       ? "from-[#070909]"
@@ -48,34 +66,76 @@ const OfferingGrid = ({ theme, data }) => {
       ? "bg-[#D9A83E] shadow-[0_0_10px_#D9A83E]"
       : "bg-[#C9972E] shadow-[0_0_10px_rgba(201,151,46,0.55)]",
 
-    tab: isDark
-      ? "border-white/10 bg-white/[0.025] text-white/50 hover:border-[#D9A83E]/40 hover:text-white/80"
-      : "border-[#151716]/10 bg-white/50 text-[#151716]/55 hover:border-[#B88A28]/40 hover:text-[#151716]",
-
-    activeTab: isDark
-      ? "border-[#D9A83E]/40 bg-[#D9A83E]/[0.10] text-[#F6D27A] shadow-[inset_0_0_20px_rgba(217,168,62,0.04)]"
-      : "border-[#B88A28]/40 bg-[#D9A83E]/[0.10] text-[#8E6718]",
-
-    panel: isDark
-      ? "border-white/10 bg-white/[0.025] shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
-      : "border-[#151716]/10 bg-white/50 shadow-[0_20px_60px_rgba(21,23,22,0.04)]",
-
-    countryCard: isDark
-      ? "border-white/[0.07] bg-white/[0.025] hover:border-[#D9A83E]/30 hover:bg-[#D9A83E]/[0.045]"
-      : "border-[#151716]/[0.07] bg-white/50 hover:border-[#B88A28]/30 hover:bg-white/90",
-
-    countryText: isDark
-      ? "text-white/65 group-hover:text-[#F6D27A]"
-      : "text-[#151716]/70 group-hover:text-[#A87918]",
-
     muted: isDark
       ? "text-white/30"
       : "text-[#151716]/35",
 
-    pagination: isDark
-      ? "border-white/10 bg-white/[0.04] text-white/60 hover:border-[#D9A83E]/40 hover:text-[#F6D27A]"
-      : "border-[#151716]/10 bg-white/60 text-[#151716]/60 hover:border-[#B88A28]/40 hover:text-[#8E6718]",
+    panel: isDark
+      ? "border-white/10 bg-white/[0.025] shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
+      : "border-[#151716]/10 bg-white/50 shadow-[0_20px_60px_rgba(21,23,22,0.04)]",
   };
+
+  // Three-color accent system
+  const accents = [
+    {
+      name: "gold",
+      border: "hover:border-[#D9A83E]/35",
+      shadow: "hover:shadow-[0_10px_30px_rgba(217,168,62,0.10)]",
+      title: "group-hover:text-[#D9A83E]",
+      iconText: "text-[#D9A83E]",
+      iconBorder: "border-[#D9A83E]/25",
+      iconBg: "bg-[#D9A83E]/[0.06]",
+      iconHoverBorder: "group-hover:border-[#D9A83E]/50",
+      iconHoverBg: "group-hover:bg-[#D9A83E]/[0.10]",
+      iconHoverShadow: "group-hover:shadow-[0_0_18px_rgba(217,168,62,0.14)]",
+      arrowText: "text-[#D9A83E]",
+      arrowBorder: "group-hover:border-[#D9A83E]/25",
+      arrowBg: "group-hover:bg-[#D9A83E]/[0.07]",
+      highlight: "from-[#D9A83E]/[0.08]",
+      glow: "#D9A83E",
+      bottomLine: "from-[#D9A83E] via-[#F6D27A] to-transparent",
+    },
+    {
+      name: "green",
+      border: "hover:border-[#22C55E]/35",
+      shadow: "hover:shadow-[0_10px_30px_rgba(34,197,94,0.10)]",
+      title: isDark
+        ? "group-hover:text-[#4ADE80]"
+        : "group-hover:text-[#15803D]",
+      iconText: isDark ? "text-[#4ADE80]" : "text-[#15803D]",
+      iconBorder: "border-[#22C55E]/25",
+      iconBg: "bg-[#22C55E]/[0.06]",
+      iconHoverBorder: "group-hover:border-[#22C55E]/50",
+      iconHoverBg: "group-hover:bg-[#22C55E]/[0.10]",
+      iconHoverShadow: "group-hover:shadow-[0_0_18px_rgba(34,197,94,0.14)]",
+      arrowText: isDark ? "text-[#4ADE80]" : "text-[#15803D]",
+      arrowBorder: "group-hover:border-[#22C55E]/25",
+      arrowBg: "group-hover:bg-[#22C55E]/[0.07]",
+      highlight: "from-[#22C55E]/[0.08]",
+      glow: "#22C55E",
+      bottomLine: "from-[#16A34A] via-[#4ADE80] to-transparent",
+    },
+    {
+      name: "red",
+      border: "hover:border-[#EF4444]/35",
+      shadow: "hover:shadow-[0_10px_30px_rgba(239,68,68,0.10)]",
+      title: isDark
+        ? "group-hover:text-[#F87171]"
+        : "group-hover:text-[#B91C1C]",
+      iconText: isDark ? "text-[#F87171]" : "text-[#B91C1C]",
+      iconBorder: "border-[#EF4444]/25",
+      iconBg: "bg-[#EF4444]/[0.06]",
+      iconHoverBorder: "group-hover:border-[#EF4444]/50",
+      iconHoverBg: "group-hover:bg-[#EF4444]/[0.10]",
+      iconHoverShadow: "group-hover:shadow-[0_0_18px_rgba(239,68,68,0.14)]",
+      arrowText: isDark ? "text-[#F87171]" : "text-[#B91C1C]",
+      arrowBorder: "group-hover:border-[#EF4444]/25",
+      arrowBg: "group-hover:bg-[#EF4444]/[0.07]",
+      highlight: "from-[#EF4444]/[0.08]",
+      glow: "#EF4444",
+      bottomLine: "from-[#DC2626] via-[#F87171] to-transparent",
+    },
+  ];
 
   return (
     <section
@@ -106,25 +166,73 @@ const OfferingGrid = ({ theme, data }) => {
           }`}
         />
 
-        {/* Main gold glow */}
+        {/* Gold ambient glow */}
         <div
           className={`absolute -left-40 -top-40 h-[420px] w-[420px] rounded-full blur-[120px] ${styles.mainGlow}`}
         />
 
-        {/* Side gold glow */}
         <div
           className={`absolute -right-40 top-1/4 h-[360px] w-[360px] rounded-full blur-[110px] ${styles.sideGlow}`}
+        />
+
+        {/* Green ambient glow */}
+        <div
+          className={`absolute -bottom-32 left-[30%] h-[360px] w-[360px] rounded-full blur-[120px] ${styles.greenGlow}`}
+        />
+
+        {/* Red ambient glow */}
+        <div
+          className={`absolute right-[12%] top-[8%] h-[280px] w-[280px] rounded-full blur-[110px] ${styles.redGlow}`}
         />
 
         {/* Radial highlight */}
         <div className={`absolute inset-0 ${styles.radialGlow}`} />
 
-        {/* Dotted background */}
+        {/* Base dotted background */}
         <div
           className={`absolute inset-0 ${styles.dots}`}
           style={{
             backgroundSize: "22px 22px",
             backgroundPosition: "center center",
+          }}
+        />
+
+        {/* Gold dot pattern */}
+        <div
+          className={`absolute inset-0 ${styles.goldDots}`}
+          style={{
+            backgroundSize: "38px 38px",
+            backgroundPosition: "10px 14px",
+            maskImage:
+              "radial-gradient(ellipse at 15% 25%, black, transparent 48%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse at 15% 25%, black, transparent 48%)",
+          }}
+        />
+
+        {/* Green dot pattern */}
+        <div
+          className={`absolute inset-0 ${styles.greenDots}`}
+          style={{
+            backgroundSize: "44px 44px",
+            backgroundPosition: "center",
+            maskImage:
+              "radial-gradient(ellipse at 75% 80%, black, transparent 45%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse at 75% 80%, black, transparent 45%)",
+          }}
+        />
+
+        {/* Red dot pattern */}
+        <div
+          className={`absolute inset-0 ${styles.redDots}`}
+          style={{
+            backgroundSize: "52px 52px",
+            backgroundPosition: "right top",
+            maskImage:
+              "radial-gradient(ellipse at 90% 20%, black, transparent 40%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse at 90% 20%, black, transparent 40%)",
           }}
         />
 
@@ -140,7 +248,6 @@ const OfferingGrid = ({ theme, data }) => {
 
           {/* Intro */}
           <div>
-
             {/* Eyebrow */}
             <div
               className={`inline-flex items-center gap-2 rounded-full border px-3.5 py-2 text-[10px] font-semibold uppercase tracking-[0.2em] sm:text-xs ${styles.badge}`}
@@ -209,7 +316,6 @@ const OfferingGrid = ({ theme, data }) => {
 
           {/* Product cards */}
           <div className="relative">
-
             {/* Subtle glow behind cards */}
             <div
               aria-hidden="true"
@@ -217,83 +323,121 @@ const OfferingGrid = ({ theme, data }) => {
             />
 
             <div className="relative space-y-3">
-              {data.items.map((product, index) => (
-                <a
-                  key={product.title}
-                  href={product.href || "#"}
-                  className={`
-                    group relative flex items-center gap-4 overflow-hidden
-                    rounded-xl border p-4 backdrop-blur-md
-                    transition-all duration-300 ease-out
-                    hover:-translate-y-1
-                    hover:shadow-[0_10px_30px_rgba(217,168,62,0.08)]
-                    sm:gap-5 sm:p-5
-                    ${styles.panel}
-                    ${styles.countryCard}
-                  `}
-                >
-                  {/* Hover highlight */}
-                  <div
-                    aria-hidden="true"
-                    className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#D9A83E]/[0.06] via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                  />
+              {data.items.map((product, index) => {
+                const accent = accents[index % accents.length];
 
-                  {/* Product number */}
-                  <div
-                    className={`relative hidden w-5 shrink-0 text-[10px] font-medium tabular-nums sm:block ${styles.muted}`}
+                return (
+                  <a
+                    key={product.title}
+                    href={product.href || "#"}
+                    className={`
+                      group relative flex items-center gap-4 overflow-hidden
+                      rounded-xl border p-4 backdrop-blur-md
+                      transition-all duration-300 ease-out
+                      hover:-translate-y-1
+                      sm:gap-5 sm:p-5
+                      ${styles.panel}
+                      ${accent.border}
+                      ${accent.shadow}
+                    `}
                   >
-                    {String(index + 1).padStart(2, "0")}
-                  </div>
+                    {/* Accent hover highlight */}
+                    <div
+                      aria-hidden="true"
+                      className={`
+                        pointer-events-none absolute inset-0
+                        bg-gradient-to-r ${accent.highlight}
+                        via-transparent to-transparent
+                        opacity-0 transition-opacity duration-300
+                        group-hover:opacity-100
+                      `}
+                    />
 
-                  {/* Icon */}
-                  <div
-                    className="
-                      relative flex h-12 w-12 shrink-0 items-center
-                      justify-center rounded-lg border
-                      border-[#D9A83E]/25 bg-[#D9A83E]/[0.06]
-                      text-sm font-semibold text-[#D9A83E]
-                      transition-all duration-300
-                      group-hover:scale-105
-                      group-hover:border-[#D9A83E]/50
-                      group-hover:bg-[#D9A83E]/[0.10]
-                      group-hover:shadow-[0_0_18px_rgba(217,168,62,0.12)]
-                      sm:h-14 sm:w-14
-                    "
-                  >
-                    {product.icon}
-                  </div>
+                    {/* Accent radial glow */}
+                    <div
+                      aria-hidden="true"
+                      className="pointer-events-none absolute -right-10 top-1/2 h-28 w-28 -translate-y-1/2 rounded-full opacity-0 blur-[55px] transition-opacity duration-500 group-hover:opacity-100"
+                      style={{
+                        backgroundColor: accent.glow,
+                      }}
+                    />
 
-                  {/* Product text */}
-                  <div className="relative min-w-0 flex-1">
-                    <h3
-                      className={`text-sm font-semibold transition-colors duration-300 sm:text-base ${styles.heading} group-hover:text-[#D9A83E]`}
+                    {/* Product number */}
+                    <div
+                      className={`relative hidden w-5 shrink-0 text-[10px] font-medium tabular-nums sm:block ${styles.muted}`}
                     >
-                      {product.title}
-                    </h3>
+                      {String(index + 1).padStart(2, "0")}
+                    </div>
 
-                    <p
-                      className={`mt-1 text-xs leading-5 transition-colors duration-300 sm:text-[13px] ${styles.paragraph}`}
+                    {/* Icon */}
+                    <div
+                      className={`
+                        relative flex h-12 w-12 shrink-0 items-center
+                        justify-center rounded-lg border
+                        text-sm font-semibold
+                        transition-all duration-300
+                        group-hover:scale-105
+                        sm:h-14 sm:w-14
+                        ${accent.iconBorder}
+                        ${accent.iconBg}
+                        ${accent.iconText}
+                        ${accent.iconHoverBorder}
+                        ${accent.iconHoverBg}
+                        ${accent.iconHoverShadow}
+                      `}
                     >
-                      {product.description}
-                    </p>
-                  </div>
+                      {product.icon}
+                    </div>
 
-                  {/* Arrow */}
-                  <div
-                    className="
-                      relative flex h-8 w-8 shrink-0 items-center
-                      justify-center rounded-full border
-                      border-transparent text-[#D9A83E]
-                      transition-all duration-300
-                      group-hover:translate-x-1
-                      group-hover:border-[#D9A83E]/20
-                      group-hover:bg-[#D9A83E]/[0.06]
-                    "
-                  >
-                    {data.product.arrow}
-                  </div>
-                </a>
-              ))}
+                    {/* Product text */}
+                    <div className="relative min-w-0 flex-1">
+                      <h3
+                        className={`
+                          text-sm font-semibold
+                          transition-colors duration-300 sm:text-base
+                          ${styles.heading}
+                          ${accent.title}
+                        `}
+                      >
+                        {product.title}
+                      </h3>
+
+                      <p
+                        className={`mt-1 text-xs leading-5 transition-colors duration-300 sm:text-[13px] ${styles.paragraph}`}
+                      >
+                        {product.description}
+                      </p>
+                    </div>
+
+                    {/* Arrow */}
+                    <div
+                      className={`
+                        relative flex h-8 w-8 shrink-0 items-center
+                        justify-center rounded-full border
+                        transition-all duration-300
+                        group-hover:translate-x-1
+                        ${accent.arrowText}
+                        border-transparent
+                        ${accent.arrowBorder}
+                        ${accent.arrowBg}
+                      `}
+                    >
+                      {data.product.arrow}
+                    </div>
+
+                    {/* Bottom accent line */}
+                    <div
+                      className={`
+                        pointer-events-none absolute inset-x-0 bottom-0
+                        h-px origin-left scale-x-0
+                        bg-gradient-to-r ${accent.bottomLine}
+                        transition-transform duration-500
+                        group-hover:scale-x-100
+                      `}
+                    />
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>

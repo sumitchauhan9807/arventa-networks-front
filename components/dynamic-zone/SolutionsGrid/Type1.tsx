@@ -1,11 +1,14 @@
+
 const SolutionsGrid = ({ theme, data }) => {
   const isDark = theme === "dark";
 
+  // Theme configuration
   const styles = {
     section: isDark
       ? "border-white/10 bg-[#070909] text-white"
       : "border-[#151716]/10 bg-[#F7F5F0] text-[#151716]",
 
+    // Gold atmosphere
     mainGlow: isDark
       ? "bg-[#D9A83E]/[0.055]"
       : "bg-[#D9A83E]/[0.10]",
@@ -13,6 +16,16 @@ const SolutionsGrid = ({ theme, data }) => {
     sideGlow: isDark
       ? "bg-[#D9A83E]/[0.025]"
       : "bg-[#D9A83E]/[0.045]",
+
+    // Green atmosphere
+    greenGlow: isDark
+      ? "bg-[#22C55E]/[0.045]"
+      : "bg-[#22C55E]/[0.07]",
+
+    // Red atmosphere
+    redGlow: isDark
+      ? "bg-[#EF4444]/[0.035]"
+      : "bg-[#EF4444]/[0.06]",
 
     radialGlow: isDark
       ? "bg-[radial-gradient(circle_at_50%_12%,rgba(217,168,62,0.08),transparent_42%)]"
@@ -32,9 +45,21 @@ const SolutionsGrid = ({ theme, data }) => {
       ? "text-white/45"
       : "text-[#151716]/55",
 
+    // Gold
+    gold: isDark ? "#D9A83E" : "#B8892D",
+    goldBright: "#F5CC70",
+
     goldGradient: isDark
       ? "from-[#FFF0B5] via-[#F6D27A] to-[#D9A83E]"
       : "from-[#8E6718] via-[#B88A28] to-[#D9A83E]",
+
+    // Green
+    green: isDark ? "#22C55E" : "#16A34A",
+    greenBright: isDark ? "#4ADE80" : "#15803D",
+
+    // Red
+    red: isDark ? "#EF4444" : "#DC2626",
+    redBright: isDark ? "#F87171" : "#B91C1C",
 
     badge: isDark
       ? "border-[#D9A83E]/20 bg-[#D9A83E]/[0.06] text-[#E6B84F]"
@@ -57,12 +82,52 @@ const SolutionsGrid = ({ theme, data }) => {
       : "text-[#151716]/35",
   };
 
+  // Card accent configuration
+  const accents = [
+    {
+      color: styles.gold,
+      border: "hover:border-[#D9A83E]/40",
+      shadow: "hover:shadow-[0_18px_45px_rgba(217,168,62,0.12)]",
+      iconBorder: "border-[#D9A83E]/40",
+      iconHover: "group-hover:border-[#D9A83E]/70",
+      iconBg: "group-hover:bg-[#D9A83E]/[0.15]",
+      iconShadow: "group-hover:shadow-[0_0_20px_rgba(217,168,62,0.15)]",
+      gradient: "from-[#8E6718] via-[#F6D27A] to-[#D9A83E]",
+      arrowBorder: "group-hover:border-[#D9A83E]/40",
+      arrowBg: "group-hover:bg-[#D9A83E]/[0.08]",
+    },
+    {
+      color: styles.green,
+      border: "hover:border-[#22C55E]/40",
+      shadow: "hover:shadow-[0_18px_45px_rgba(34,197,94,0.10)]",
+      iconBorder: "border-[#22C55E]/40",
+      iconHover: "group-hover:border-[#22C55E]/70",
+      iconBg: "group-hover:bg-[#22C55E]/[0.15]",
+      iconShadow: "group-hover:shadow-[0_0_20px_rgba(34,197,94,0.15)]",
+      gradient: "from-[#15803D] via-[#4ADE80] to-[#22C55E]",
+      arrowBorder: "group-hover:border-[#22C55E]/40",
+      arrowBg: "group-hover:bg-[#22C55E]/[0.08]",
+    },
+    {
+      color: styles.red,
+      border: "hover:border-[#EF4444]/40",
+      shadow: "hover:shadow-[0_18px_45px_rgba(239,68,68,0.10)]",
+      iconBorder: "border-[#EF4444]/40",
+      iconHover: "group-hover:border-[#EF4444]/70",
+      iconBg: "group-hover:bg-[#EF4444]/[0.15]",
+      iconShadow: "group-hover:shadow-[0_0_20px_rgba(239,68,68,0.15)]",
+      gradient: "from-[#B91C1C] via-[#F87171] to-[#EF4444]",
+      arrowBorder: "group-hover:border-[#EF4444]/40",
+      arrowBg: "group-hover:bg-[#EF4444]/[0.08]",
+    },
+  ];
+
   return (
     <section
       id="solutions"
       className={`relative isolate overflow-hidden border-y py-20 sm:py-24 lg:py-28 ${styles.section}`}
     >
-      {/* Background effects */}
+      {/* BACKGROUND EFFECTS */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
@@ -77,8 +142,20 @@ const SolutionsGrid = ({ theme, data }) => {
           className={`absolute -right-40 top-1/4 h-[360px] w-[360px] rounded-full blur-[110px] ${styles.sideGlow}`}
         />
 
-        {/* Radial highlight */}
-        <div className={`absolute inset-0 ${styles.radialGlow}`} />
+        {/* Green ambient glow */}
+        <div
+          className={`absolute left-[12%] top-[35%] h-[300px] w-[300px] rounded-full blur-[110px] ${styles.greenGlow}`}
+        />
+
+        {/* Red ambient glow */}
+        <div
+          className={`absolute right-[8%] bottom-[10%] h-[280px] w-[280px] rounded-full blur-[110px] ${styles.redGlow}`}
+        />
+
+        {/* Radial gold highlight */}
+        <div
+          className={`absolute inset-0 ${styles.radialGlow}`}
+        />
 
         {/* Dotted background */}
         <div
@@ -95,11 +172,11 @@ const SolutionsGrid = ({ theme, data }) => {
         />
       </div>
 
-      {/* Main content */}
+      {/* MAIN CONTENT */}
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-3 lg:gap-14">
 
-          {/* Intro */}
+          {/* INTRO */}
           <div className="flex flex-col items-start">
 
             {/* Eyebrow */}
@@ -109,6 +186,7 @@ const SolutionsGrid = ({ theme, data }) => {
               <span
                 className={`h-1.5 w-1.5 rounded-full ${styles.badgeDot}`}
               />
+
               {data.eyebrow}
             </div>
 
@@ -161,100 +239,167 @@ const SolutionsGrid = ({ theme, data }) => {
               <span
                 className={`h-1.5 w-1.5 rounded-full ${styles.badgeDot}`}
               />
+
               {data.supportingNote}
             </div>
           </div>
 
-          {/* Solution cards */}
+          {/* SOLUTION CARDS */}
           <div className="grid gap-5 sm:grid-cols-3 lg:col-span-2">
-            {data.items.map((solution, index) => (
-              <a
-                key={solution.title}
-                href={solution.href || "#"}
-                className={`
-                  group relative flex flex-col overflow-hidden rounded-xl
-                  border backdrop-blur-md
-                  transition-all duration-300 ease-out
-                  hover:-translate-y-2
-                  hover:border-[#D9A83E]/40
-                  hover:shadow-[0_18px_45px_rgba(217,168,62,0.12)]
-                  ${styles.card}
-                `}
-              >
-                {/* Image */}
-                <div className="relative h-48 shrink-0 overflow-hidden sm:h-40 lg:h-48">
+            {data.items.map((solution, index) => {
+              const accent = accents[index % accents.length];
 
-                  <div
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-110"
-                    style={{
-                      backgroundImage: `url("${solution.image}")`,
-                    }}
-                  />
+              return (
+                <a
+                  key={solution.title}
+                  href={solution.href || "#"}
+                  className={`
+                    group relative flex flex-col overflow-hidden
+                    rounded-xl border backdrop-blur-md
+                    transition-all duration-300 ease-out
+                    hover:-translate-y-2
+                    ${styles.card}
+                    ${accent.border}
+                    ${accent.shadow}
+                  `}
+                >
+                  {/* IMAGE */}
+                  <div className="relative h-48 shrink-0 overflow-hidden sm:h-40 lg:h-48">
 
-                  {/* Image overlay */}
-                  <div
-                    className={`absolute inset-0 transition-colors duration-500 ${
-                      isDark
-                        ? "bg-[#070909]/35 group-hover:bg-[#070909]/20"
-                        : "bg-[#F7F5F0]/20 group-hover:bg-[#D9A83E]/[0.06]"
-                    }`}
-                  />
+                    {/* Background image */}
+                    <div
+                      className="
+                        absolute inset-0 bg-cover bg-center
+                        transition-transform duration-700 ease-out
+                        group-hover:scale-110
+                      "
+                      style={{
+                        backgroundImage: `url("${solution.image}")`,
+                      }}
+                    />
 
-                  {/* Gold image gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#070909]/75 via-transparent to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-60" />
-
-                  {/* Category number */}
-                  <div className="absolute right-4 top-4">
-                    <span
-                      className={`flex h-8 min-w-8 items-center justify-center rounded-full border px-2 text-[10px] font-medium backdrop-blur-md ${
+                    {/* Image overlay */}
+                    <div
+                      className={`absolute inset-0 transition-colors duration-500 ${
                         isDark
-                          ? "border-white/15 bg-black/30 text-white/70"
-                          : "border-white/50 bg-white/60 text-[#151716]/70"
+                          ? "bg-[#070909]/35 group-hover:bg-[#070909]/20"
+                          : "bg-[#F7F5F0]/20 group-hover:bg-[#D9A83E]/[0.06]"
                       }`}
+                    />
+
+                    {/* Gold image gradient */}
+                    <div
+                      className="
+                        absolute inset-0
+                        bg-gradient-to-t from-[#070909]/75
+                        via-transparent to-transparent
+                        opacity-80 transition-opacity duration-500
+                        group-hover:opacity-60
+                      "
+                    />
+
+                    {/* Category number */}
+                    <div className="absolute right-4 top-4">
+                      <span
+                        className={`flex h-8 min-w-8 items-center justify-center rounded-full border px-2 text-[10px] font-medium backdrop-blur-md ${
+                          isDark
+                            ? "border-white/15 bg-black/30 text-white/70"
+                            : "border-white/50 bg-white/60 text-[#151716]/70"
+                        }`}
+                      >
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                    </div>
+
+                    {/* Accent image icon */}
+                    <div
+                      className={`
+                        absolute bottom-4 left-5
+                        flex h-11 w-11 items-center justify-center
+                        rounded-lg border bg-[#070909]/55
+                        text-lg backdrop-blur-md
+                        transition-all duration-300
+                        ${accent.iconBorder}
+                        ${accent.iconHover}
+                        ${accent.iconBg}
+                        ${accent.iconShadow}
+                      `}
+                      style={{ color: accent.color }}
                     >
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
+                      {solution.icon}
+                    </div>
                   </div>
 
-                  {/* Image icon */}
-                  <div className="absolute bottom-4 left-5 flex h-11 w-11 items-center justify-center rounded-lg border border-[#D9A83E]/40 bg-[#070909]/55 text-lg text-[#F6D27A] backdrop-blur-md transition-all duration-300 group-hover:border-[#D9A83E]/70 group-hover:bg-[#D9A83E]/15 group-hover:shadow-[0_0_20px_rgba(217,168,62,0.15)]">
-                    {solution.icon}
+                  {/* CARD DATA */}
+                  <div className="relative flex flex-1 flex-col p-5 sm:p-5 lg:p-6">
+
+                    {/* Title */}
+                    <h3
+                      className={`
+                        text-base font-semibold tracking-[-0.02em]
+                        transition-colors duration-300
+                        ${styles.heading}
+                      `}
+                      style={{
+                        "--card-accent": accent.color,
+                      }}
+                    >
+                      {solution.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p
+                      className={`mt-3 flex-1 text-xs leading-6 transition-colors duration-300 ${styles.cardDescription}`}
+                    >
+                      {solution.description}
+                    </p>
+
+                    {/* Card link */}
+                    <div className="mt-6 flex items-center justify-between">
+
+                      <span
+                        className="
+                          text-[10px] font-semibold uppercase
+                          tracking-[0.18em] transition-colors duration-300
+                        "
+                        style={{
+                          color: accent.color,
+                        }}
+                      >
+                        {data.card.linkLabel}
+                      </span>
+
+                      {/* Arrow */}
+                      <span
+                        className={`
+                          flex h-8 w-8 items-center justify-center
+                          rounded-full border transition-all duration-300
+                          group-hover:translate-x-1
+                          ${accent.arrowBorder}
+                          ${accent.arrowBg}
+                        `}
+                        style={{
+                          color: accent.color,
+                          borderColor: `${accent.color}26`,
+                        }}
+                      >
+                        →
+                      </span>
+                    </div>
+
+                    {/* Accent gradient bottom line */}
+                    <span
+                      className={`
+                        absolute bottom-0 left-0 h-px w-0
+                        bg-gradient-to-r ${accent.gradient}
+                        transition-all duration-500 ease-out
+                        group-hover:w-full
+                      `}
+                    />
                   </div>
-                </div>
-
-                {/* Card data */}
-                <div className="relative flex flex-1 flex-col p-5 sm:p-5 lg:p-6">
-
-                  {/* Title */}
-                  <h3
-                    className={`text-base font-semibold tracking-[-0.02em] transition-colors duration-300 group-hover:text-[#D9A83E] ${styles.heading}`}
-                  >
-                    {solution.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p
-                    className={`mt-3 flex-1 text-xs leading-6 transition-colors duration-300 ${styles.cardDescription}`}
-                  >
-                    {solution.description}
-                  </p>
-
-                  {/* Card link */}
-                  <div className="mt-6 flex items-center justify-between">
-                    <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#D9A83E]/80 transition-colors duration-300 group-hover:text-[#D9A83E]">
-                      {data.card.linkLabel}
-                    </span>
-
-                    <span className="flex h-8 w-8 items-center justify-center rounded-full border border-[#D9A83E]/15 text-[#D9A83E] transition-all duration-300 group-hover:translate-x-1 group-hover:border-[#D9A83E]/40 group-hover:bg-[#D9A83E]/[0.08]">
-                      →
-                    </span>
-                  </div>
-
-                  {/* Bottom gold line */}
-                  <span className="absolute bottom-0 left-0 h-px w-0 bg-gradient-to-r from-[#8E6718] via-[#F6D27A] to-[#D9A83E] transition-all duration-500 ease-out group-hover:w-full" />
-                </div>
-              </a>
-            ))}
+                </a>
+              );
+            })}
           </div>
 
         </div>

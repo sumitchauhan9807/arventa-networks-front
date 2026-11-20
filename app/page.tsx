@@ -70,7 +70,7 @@ export default function Home() {
 
          
           <VirtualNumberComponents type="VIRTUAL_OFFICE_NUMBERS"/>
-          <VirtualNumberComponents type="VI/RTUAL_NUMBER_SEARCH"/>
+          <VirtualNumberComponents type="VIRTUAL_NUMBER_SEARCH"/>
 
           <WorldMaps type="WORLD_COUNTRIES"/>
           {/* <WorldMaps type="WORLD_MAP"/>
