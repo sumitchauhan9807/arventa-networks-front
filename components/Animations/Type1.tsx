@@ -6,19 +6,18 @@ const Animations = ({ bright = false }) => {
   const mode = useSelector((state) => state.theme.theme);
   const isLight = mode === 'light';
 
-  // Theme configuration
   const theme = {
     // Background
     section: isLight
       ? 'bg-[#FAFAF8] text-[#151515]'
       : 'bg-[#050606] text-white',
 
-    atmosphere: isLight ? 'bg-[#D9A83E]/10' : 'bg-[#D9A83E]/10',
-    greenAtmosphere: isLight ? 'bg-[#22C55E]/[0.07]' : 'bg-[#22C55E]/[0.045]',
-    redAtmosphere: isLight ? 'bg-[#EF4444]/[0.06]' : 'bg-[#EF4444]/[0.035]',
+    atmosphere: isLight ? 'bg-[#D9A83E]/[0.16]' : 'bg-[#D9A83E]/[0.14]',
+    greenAtmosphere: isLight ? 'bg-[#22C55E]/[0.12]' : 'bg-[#22C55E]/[0.09]',
+    redAtmosphere: isLight ? 'bg-[#EF4444]/[0.11]' : 'bg-[#EF4444]/[0.08]',
 
     // Gold
-    gold: isLight ? '#B8892D' : '#D9A83E',
+    gold: isLight ? '#A87920' : '#D9A83E',
     goldBright: '#F5CC70',
 
     // Green
@@ -31,56 +30,62 @@ const Animations = ({ bright = false }) => {
 
     // Globe
     globeFill: isLight
-      ? 'rgba(255,255,255,.72)'
-      : 'rgba(7,9,9,.85)',
+      ? 'rgba(255,255,255,.76)'
+      : 'rgba(7,9,9,.90)',
 
-    globeStrokeOpacity: isLight ? '.28' : '.18',
+    globeStrokeOpacity: isLight ? '.40' : '.30',
     globeInnerStroke: isLight ? '#1A1A1A' : 'white',
-    globeInnerOpacity: isLight ? '.07' : '.05',
-    globeLineOpacity: isLight ? '.22' : '.12',
-    globeLineOpacity2: isLight ? '.14' : '.08',
-    globeLongitudeOpacity: isLight ? '.16' : '.09',
-    globeLongitudeOpacity2: isLight ? '.11' : '.06',
+    globeInnerOpacity: isLight ? '.10' : '.08',
+    globeLineOpacity: isLight ? '.38' : '.24',
+    globeLineOpacity2: isLight ? '.28' : '.18',
+    globeLongitudeOpacity: isLight ? '.30' : '.20',
+    globeLongitudeOpacity2: isLight ? '.24' : '.16',
 
     // Network routes
     route: isLight ? '#B8892D' : '#D9A83E',
     routeGreen: isLight ? '#16A34A' : '#22C55E',
     routeRed: isLight ? '#DC2626' : '#EF4444',
 
-    routeStrongOpacity: isLight ? '.55' : '.35',
-    routeOpacity: isLight ? '.4' : '.25',
-    routeSoftOpacity: isLight ? '.25' : '.18',
+    routeStrongOpacity: isLight ? '.80' : '.65',
+    routeOpacity: isLight ? '.60' : '.45',
+    routeSoftOpacity: isLight ? '.40' : '.30',
 
     // Hub
     hubRing: isLight
-      ? 'border-[#D9A83E]/25'
-      : 'border-[#D9A83E]/20',
+      ? 'border-[#D9A83E]/50'
+      : 'border-[#D9A83E]/40',
 
     hub: isLight
-      ? 'border-[#D9A83E]/60 bg-white/90 shadow-[0_10px_50px_rgba(0,0,0,.08)] backdrop-blur'
-      : 'border-[#D9A83E]/60 bg-[#080a0a]/95 shadow-[0_0_70px_rgba(217,168,62,.28)]',
+      ? 'border-[#D9A83E]/70 bg-white/95 shadow-[0_10px_50px_rgba(217,168,62,.20)] backdrop-blur'
+      : 'border-[#D9A83E]/70 bg-[#080a0a]/95 shadow-[0_0_70px_rgba(217,168,62,.35)]',
 
-    hubLetter: isLight ? 'text-[#A87920]' : 'text-[#D9A83E]',
-    hubName: isLight ? 'text-[#222]' : 'text-white/97',
-    hubSub: isLight ? 'text-[#777]' : 'text-white',
+    hubLetter: isLight ? 'text-[#A87920]' : 'text-[#F5CC70]',
+    hubName: isLight ? 'text-[#222]' : 'text-white',
+    hubSub: isLight ? 'text-[#15803D]' : 'text-[#4ADE80]',
 
-    // Network nodes
+    // Regional node text
     node: isLight ? 'text-[#292929]' : 'text-white',
     nodeMuted: isLight ? 'text-[#777]' : 'text-white/85',
 
+    nodeGold: isLight ? 'text-[#A87920]' : 'text-[#F5CC70]',
+    nodeGreen: isLight ? 'text-[#15803D]' : 'text-[#4ADE80]',
+    nodeRed: isLight ? 'text-[#DC2626]' : 'text-[#F87171]',
+
     // Panel
     panel: isLight
-      ? 'border-[#E2E2DC] bg-white/90 shadow-[0_15px_50px_rgba(0,0,0,.08)]'
-      : 'border-white/10 bg-[#080a0a]/90 shadow-2xl',
+      ? 'border-[#D9A83E]/40 bg-white/95 shadow-[0_15px_50px_rgba(217,168,62,.15)]'
+      : 'border-[#D9A83E]/30 bg-[#080a0a]/95 shadow-[0_0_45px_rgba(217,168,62,.14)]',
 
-    panelLabel: isLight ? 'text-[#555]' : 'text-white/85',
+    panelLabel: isLight ? 'text-[#A87920]' : 'text-[#F5CC70]',
     panelValue: isLight ? 'text-[#222]' : 'text-white',
     panelMuted: isLight ? 'text-[#777]' : 'text-white/75',
 
-    panelDivider: isLight ? 'divide-[#E5E5E0]' : 'divide-white/10',
-    trafficBg: isLight ? 'bg-[#ECECE7]' : 'bg-white/5',
-    trafficText: isLight ? 'text-[#777]' : 'text-white/85',
-    scrollText: isLight ? 'text-[#777]' : 'text-white/90',
+    panelDivider: isLight
+      ? 'divide-[#D9A83E]/25'
+      : 'divide-white/10',
+
+    trafficBg: isLight ? 'bg-[#ECECE7]' : 'bg-white/10',
+    trafficText: isLight ? 'text-[#A87920]' : 'text-[#F5CC70]',
   };
 
   return (
@@ -92,7 +97,7 @@ const Animations = ({ bright = false }) => {
           pointer-events-none absolute left-1/2 top-1/2
           h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2
           rounded-full ${theme.atmosphere} blur-[75px]
-          sm:h-[430px] sm:w-[430px] sm:blur-[90px]
+          sm:h-[430px] sm:w-[430px] sm:blur-[100px]
         `}
       />
 
@@ -121,7 +126,8 @@ const Animations = ({ bright = false }) => {
         className="
           absolute left-1/2 top-1/2
           h-[330px] w-[330px] -translate-x-1/2 -translate-y-1/2
-          rounded-full border border-[#D9A83E]/10
+          rounded-full border border-[#D9A83E]/25
+          shadow-[0_0_30px_rgba(217,168,62,.06)]
           sm:h-[470px] sm:w-[470px]
           lg:h-[560px] lg:w-[560px]
         "
@@ -131,7 +137,8 @@ const Animations = ({ bright = false }) => {
         className="
           global-orbit absolute left-1/2 top-1/2
           h-[350px] w-[175px] -translate-x-1/2 -translate-y-1/2
-          rounded-[50%] border border-[#22C55E]/20
+          rounded-[50%] border border-[#22C55E]/30
+          shadow-[0_0_25px_rgba(34,197,94,.10)]
           sm:h-[500px] sm:w-[250px]
         "
       />
@@ -140,7 +147,8 @@ const Animations = ({ bright = false }) => {
         className="
           global-orbit-2 absolute left-1/2 top-1/2
           h-[350px] w-[175px] -translate-x-1/2 -translate-y-1/2
-          rotate-90 rounded-[50%] border border-[#EF4444]/15
+          rotate-90 rounded-[50%] border border-[#EF4444]/25
+          shadow-[0_0_25px_rgba(239,68,68,.10)]
           sm:h-[500px] sm:w-[250px]
         "
       />
@@ -164,6 +172,7 @@ const Animations = ({ bright = false }) => {
           fill={theme.globeFill}
           stroke={theme.route}
           strokeOpacity={theme.globeStrokeOpacity}
+          strokeWidth="1.5"
         />
 
         <circle
@@ -182,6 +191,7 @@ const Animations = ({ bright = false }) => {
           ry="65"
           stroke={theme.route}
           strokeOpacity={theme.globeLineOpacity}
+          strokeWidth="1.3"
         />
 
         <ellipse
@@ -191,6 +201,7 @@ const Animations = ({ bright = false }) => {
           ry="125"
           stroke={theme.routeGreen}
           strokeOpacity={theme.globeLineOpacity2}
+          strokeWidth="1.3"
         />
 
         {/* Longitude */}
@@ -216,12 +227,14 @@ const Animations = ({ bright = false }) => {
           d="M400 160 C315 225 315 475 400 540"
           stroke={theme.routeGreen}
           strokeOpacity={theme.globeLongitudeOpacity2}
+          strokeWidth="1.3"
         />
 
         <path
           d="M400 160 C485 225 485 475 400 540"
           stroke={theme.route}
           strokeOpacity={theme.globeLongitudeOpacity2}
+          strokeWidth="1.3"
         />
 
         {/* CONNECTION PATHS */}
@@ -232,7 +245,7 @@ const Animations = ({ bright = false }) => {
           d="M315 260 Q350 300 400 350"
           stroke={theme.route}
           strokeOpacity={theme.routeStrongOpacity}
-          strokeWidth="1.5"
+          strokeWidth="2"
         />
 
         {/* New York - Green */}
@@ -240,8 +253,8 @@ const Animations = ({ bright = false }) => {
           id="route-newyork"
           d="M240 330 Q320 320 400 350"
           stroke={theme.routeGreen}
-          strokeOpacity={theme.routeOpacity}
-          strokeWidth="1.5"
+          strokeOpacity={theme.routeStrongOpacity}
+          strokeWidth="2"
         />
 
         {/* Dubai - Red */}
@@ -250,7 +263,7 @@ const Animations = ({ bright = false }) => {
           d="M510 350 Q460 350 400 350"
           stroke={theme.routeRed}
           strokeOpacity={theme.routeStrongOpacity}
-          strokeWidth="1.5"
+          strokeWidth="2"
         />
 
         {/* Singapore - Gold */}
@@ -258,8 +271,8 @@ const Animations = ({ bright = false }) => {
           id="route-singapore"
           d="M530 445 Q465 410 400 350"
           stroke={theme.route}
-          strokeOpacity={theme.routeOpacity}
-          strokeWidth="1.5"
+          strokeOpacity={theme.routeStrongOpacity}
+          strokeWidth="2"
         />
 
         {/* Additional network connections */}
@@ -267,18 +280,19 @@ const Animations = ({ bright = false }) => {
           d="M350 250 Q370 300 400 350"
           stroke={theme.routeGreen}
           strokeOpacity={theme.routeSoftOpacity}
+          strokeWidth="1.5"
         />
 
         <path
           d="M545 285 Q475 300 400 350"
           stroke={theme.routeRed}
           strokeOpacity={theme.routeSoftOpacity}
+          strokeWidth="1.5"
         />
 
         {/* ANIMATED DATA PACKETS */}
 
-        {/* Gold packet */}
-        <circle r="4" fill={theme.goldBright}>
+        <circle r="4.5" fill={theme.goldBright}>
           <animateMotion
             dur="2.8s"
             repeatCount="indefinite"
@@ -286,8 +300,7 @@ const Animations = ({ bright = false }) => {
           />
         </circle>
 
-        {/* Green packet */}
-        <circle r="3" fill={theme.greenBright}>
+        <circle r="4" fill={theme.greenBright}>
           <animateMotion
             dur="3.4s"
             begin=".8s"
@@ -296,8 +309,7 @@ const Animations = ({ bright = false }) => {
           />
         </circle>
 
-        {/* Red packet */}
-        <circle r="4" fill={theme.redBright}>
+        <circle r="4.5" fill={theme.redBright}>
           <animateMotion
             dur="3s"
             begin="1.4s"
@@ -306,8 +318,7 @@ const Animations = ({ bright = false }) => {
           />
         </circle>
 
-        {/* Gold packet */}
-        <circle r="3" fill={theme.goldBright}>
+        <circle r="4" fill={theme.goldBright}>
           <animateMotion
             dur="3.6s"
             begin=".3s"
@@ -318,9 +329,9 @@ const Animations = ({ bright = false }) => {
 
         {/* REVERSE TRAFFIC */}
         <circle
-          r="2.5"
+          r="3"
           fill={theme.green}
-          opacity={isLight ? '.8' : '.7'}
+          opacity={isLight ? '.9' : '.85'}
         >
           <animateMotion
             dur="4s"
@@ -344,7 +355,7 @@ const Animations = ({ bright = false }) => {
         <div
           className="
             absolute h-28 w-28 animate-ping
-            rounded-full border border-[#D9A83E]/20
+            rounded-full border border-[#D9A83E]/30
             sm:h-40 sm:w-40
           "
           style={{ animationDuration: '3s' }}
@@ -354,7 +365,8 @@ const Animations = ({ bright = false }) => {
         <div
           className="
             absolute h-[110px] w-[110px]
-            rounded-full border border-[#22C55E]/20
+            rounded-full border border-[#22C55E]/35
+            shadow-[0_0_25px_rgba(34,197,94,.12)]
             sm:h-[150px] sm:w-[150px]
           "
         />
@@ -363,7 +375,8 @@ const Animations = ({ bright = false }) => {
         <div
           className="
             absolute h-24 w-24 rounded-full
-            border border-[#EF4444]/15
+            border border-[#EF4444]/30
+            shadow-[0_0_20px_rgba(239,68,68,.10)]
             sm:h-32 sm:w-32
           "
         />
@@ -372,7 +385,8 @@ const Animations = ({ bright = false }) => {
         <div
           className={`
             absolute h-24 w-24 rounded-full border
-            ${theme.hubRing} bg-[#D9A83E]/5
+            ${theme.hubRing} bg-[#D9A83E]/[0.08]
+            shadow-[0_0_30px_rgba(217,168,62,.15)]
             sm:h-32 sm:w-32
           `}
         />
@@ -386,25 +400,38 @@ const Animations = ({ bright = false }) => {
             sm:h-24 sm:w-24
           `}
         >
-          <div className={`text-2xl font-bold sm:text-3xl ${theme.hubLetter}`}>
+          <div
+            className="
+              bg-gradient-to-br from-[#F5CC70]
+              via-[#D9A83E] to-[#B8892D]
+              bg-clip-text text-3xl font-extrabold
+              text-transparent
+              drop-shadow-[0_0_15px_rgba(217,168,62,.4)]
+              sm:text-4xl
+            "
+          >
             A
           </div>
 
           <div
-            className={`
-              mt-0.5 text-[10px] font-semibold tracking-[.18em]
-              sm:text-[12px] sm:tracking-[.25em]
-              ${theme.hubName}
-            `}
+            className="
+              mt-0.5 text-[10px] font-extrabold
+              tracking-[.18em] sm:text-[12px]
+              sm:tracking-[.25em]
+              bg-gradient-to-r from-[#F5CC70]
+              via-[#D9A83E] to-[#F5CC70]
+              bg-clip-text text-transparent
+            "
           >
             ARVENTA
           </div>
 
           <div
-            className={`
-              text-[7px] tracking-[.22em] sm:text-[8px]
-              sm:tracking-[.3em] ${theme.hubSub}
-            `}
+            className="
+              text-[7px] tracking-[.22em]
+              text-[#22C55E] sm:text-[8px]
+              sm:tracking-[.3em]
+            "
           >
             NETWORKS
           </div>
@@ -428,17 +455,17 @@ const Animations = ({ bright = false }) => {
           <span
             className="
               hero-node-dot h-1.5 w-1.5 shrink-0 rounded-full
-              bg-[#D9A83E] shadow-[0_0_10px_#D9A83E]
+              bg-[#D9A83E] shadow-[0_0_15px_#D9A83E]
               sm:h-2 sm:w-2
             "
           />
 
           <div>
-            <div className={`text-[10px] font-semibold sm:text-[11px] ${theme.node}`}>
+            <div className={`text-[10px] font-bold sm:text-[11px] ${theme.nodeGold}`}>
               Frankfurt
             </div>
 
-            <div className={`mt-0.5 text-[8px] sm:text-[10px] ${theme.nodeMuted}`}>
+            <div className={`mt-0.5 text-[8px] sm:text-[10px] ${theme.nodeGold} opacity-75`}>
               Europe
             </div>
           </div>
@@ -451,17 +478,17 @@ const Animations = ({ bright = false }) => {
           <span
             className="
               hero-node-dot h-1.5 w-1.5 shrink-0 rounded-full
-              bg-[#22C55E] shadow-[0_0_10px_#22C55E]
+              bg-[#22C55E] shadow-[0_0_15px_#22C55E]
               sm:h-2 sm:w-2
             "
           />
 
           <div>
-            <div className={`text-[10px] font-semibold sm:text-[11px] ${theme.node}`}>
+            <div className={`text-[10px] font-bold sm:text-[11px] ${theme.nodeGreen}`}>
               New York
             </div>
 
-            <div className={`mt-0.5 text-[8px] sm:text-[10px] ${theme.nodeMuted}`}>
+            <div className={`mt-0.5 text-[8px] sm:text-[10px] ${theme.nodeGreen} opacity-75`}>
               North America
             </div>
           </div>
@@ -474,17 +501,17 @@ const Animations = ({ bright = false }) => {
           <span
             className="
               hero-node-dot h-1.5 w-1.5 shrink-0 rounded-full
-              bg-[#EF4444] shadow-[0_0_10px_#EF4444]
+              bg-[#EF4444] shadow-[0_0_15px_#EF4444]
               sm:h-2 sm:w-2
             "
           />
 
           <div>
-            <div className={`text-[10px] font-semibold sm:text-[11px] ${theme.node}`}>
+            <div className={`text-[10px] font-bold sm:text-[11px] ${theme.nodeRed}`}>
               Dubai
             </div>
 
-            <div className={`mt-0.5 text-[8px] sm:text-[10px] ${theme.nodeMuted}`}>
+            <div className={`mt-0.5 text-[8px] sm:text-[10px] ${theme.nodeRed} opacity-75`}>
               Middle East
             </div>
           </div>
@@ -497,17 +524,17 @@ const Animations = ({ bright = false }) => {
           <span
             className="
               hero-node-dot h-1.5 w-1.5 shrink-0 rounded-full
-              bg-[#D9A83E] shadow-[0_0_10px_#D9A83E]
+              bg-[#D9A83E] shadow-[0_0_15px_#D9A83E]
               sm:h-2 sm:w-2
             "
           />
 
           <div>
-            <div className={`text-[10px] font-semibold sm:text-[11px] ${theme.node}`}>
+            <div className={`text-[10px] font-bold sm:text-[11px] ${theme.nodeGold}`}>
               Singapore
             </div>
 
-            <div className={`mt-0.5 text-[8px] sm:text-[10px] ${theme.nodeMuted}`}>
+            <div className={`mt-0.5 text-[8px] sm:text-[10px] ${theme.nodeGold} opacity-75`}>
               Asia Pacific
             </div>
           </div>
@@ -534,15 +561,16 @@ const Animations = ({ bright = false }) => {
                 h-2 w-2 shrink-0 rounded-full
                 bg-[#22C55E]
                 shadow-[0_0_12px_#22C55E]
+                animate-pulse
               "
             />
 
-            <span className={`text-[9px] font-semibold uppercase tracking-wider ${theme.panelLabel}`}>
+            <span className={`text-[9px] font-bold uppercase tracking-wider ${theme.panelLabel}`}>
               Global Network
             </span>
           </div>
 
-          <span className="text-[8px] font-semibold text-[#22C55E]">
+          <span className="text-[8px] font-bold text-[#22C55E]">
             LIVE
           </span>
         </div>
@@ -550,7 +578,7 @@ const Animations = ({ bright = false }) => {
         {/* Network statistics */}
         <div className={`mt-3 grid grid-cols-3 divide-x ${theme.panelDivider} sm:mt-4`}>
           <div className="min-w-0 px-2 first:pl-0">
-            <div className={`text-sm font-semibold ${theme.panelValue}`}>
+            <div className="text-sm font-extrabold text-[#D9A83E]">
               18.4K
             </div>
 
@@ -560,7 +588,7 @@ const Animations = ({ bright = false }) => {
           </div>
 
           <div className="min-w-0 px-2 sm:px-3">
-            <div className="text-sm font-semibold text-[#22C55E]">
+            <div className="text-sm font-extrabold text-[#22C55E]">
               18ms
             </div>
 
@@ -570,7 +598,7 @@ const Animations = ({ bright = false }) => {
           </div>
 
           <div className="min-w-0 px-2 sm:px-3">
-            <div className="text-sm font-semibold text-[#D9A83E]">
+            <div className="text-sm font-extrabold text-[#EF4444]">
               99.9%
             </div>
 
@@ -583,21 +611,29 @@ const Animations = ({ bright = false }) => {
         {/* LIVE TRAFFIC BAR */}
         <div className="mt-3 sm:mt-4">
           <div className="mb-1 flex items-center justify-between gap-2">
-            <span className={`text-[8px] ${theme.panelMuted}`}>
+            <span className={`text-[8px] font-semibold ${theme.panelMuted}`}>
               LIVE TRAFFIC
             </span>
 
-            <span className={`text-[8px] ${theme.trafficText}`}>
+            <span
+              className="
+                text-[8px] font-bold
+                bg-gradient-to-r from-[#D9A83E]
+                via-[#22C55E] to-[#EF4444]
+                bg-clip-text text-transparent
+              "
+            >
               2.48 TB/s
             </span>
           </div>
 
-          <div className={`h-1 overflow-hidden rounded-full ${theme.trafficBg}`}>
+          <div className={`h-1.5 overflow-hidden rounded-full ${theme.trafficBg}`}>
             <div
               className="
                 network-traffic-bar h-full rounded-full
                 bg-gradient-to-r
                 from-[#D9A83E] via-[#22C55E] to-[#EF4444]
+                shadow-[0_0_12px_rgba(34,197,94,.35)]
               "
             />
           </div>
@@ -625,7 +661,7 @@ const BrightAura = ({ isLight }) => {
           h-[180px] w-[340px] -translate-x-1/2
           rounded-full blur-[80px]
           sm:h-[260px] sm:w-[600px] sm:blur-[100px]
-          ${isLight ? 'bg-[#D9A83E]/10' : 'bg-[#D9A83E]/15'}
+          ${isLight ? 'bg-[#D9A83E]/[0.16]' : 'bg-[#D9A83E]/[0.18]'}
         `}
       />
 
@@ -634,7 +670,7 @@ const BrightAura = ({ isLight }) => {
         className={`
           absolute left-[12%] top-[30%]
           h-[150px] w-[250px] rounded-full blur-[80px]
-          ${isLight ? 'bg-[#22C55E]/[0.08]' : 'bg-[#22C55E]/[0.10]'}
+          ${isLight ? 'bg-[#22C55E]/[0.12]' : 'bg-[#22C55E]/[0.13]'}
         `}
       />
 
@@ -643,7 +679,7 @@ const BrightAura = ({ isLight }) => {
         className={`
           absolute right-[12%] top-[25%]
           h-[150px] w-[250px] rounded-full blur-[80px]
-          ${isLight ? 'bg-[#EF4444]/[0.07]' : 'bg-[#EF4444]/[0.08]'}
+          ${isLight ? 'bg-[#EF4444]/[0.11]' : 'bg-[#EF4444]/[0.12]'}
         `}
       />
 
@@ -661,8 +697,9 @@ const BrightAura = ({ isLight }) => {
             aurora-ribbon aurora-ribbon-1
             absolute left-[-10%] top-[45%]
             h-[70px] w-[120%] rounded-[50%] border-t
+            shadow-[0_-8px_25px_rgba(217,168,62,.12)]
             sm:h-[90px]
-            ${isLight ? 'border-[#B8892D]/30' : 'border-[#D9A83E]/30'}
+            ${isLight ? 'border-[#B8892D]/50' : 'border-[#D9A83E]/50'}
           `}
         />
 
@@ -672,8 +709,9 @@ const BrightAura = ({ isLight }) => {
             aurora-ribbon aurora-ribbon-2
             absolute left-[-15%] top-[55%]
             h-[90px] w-[130%] rounded-[50%] border-t
+            shadow-[0_-8px_25px_rgba(34,197,94,.12)]
             sm:h-[120px]
-            ${isLight ? 'border-[#16A34A]/25' : 'border-[#22C55E]/25'}
+            ${isLight ? 'border-[#16A34A]/40' : 'border-[#22C55E]/40'}
           `}
         />
 
@@ -683,110 +721,93 @@ const BrightAura = ({ isLight }) => {
             aurora-ribbon aurora-ribbon-3
             absolute left-[-5%] top-[35%]
             h-[110px] w-[110%] rounded-[50%] border-t
+            shadow-[0_-8px_25px_rgba(239,68,68,.12)]
             sm:h-[150px]
-            ${isLight ? 'border-[#DC2626]/20' : 'border-[#EF4444]/20'}
+            ${isLight ? 'border-[#DC2626]/35' : 'border-[#EF4444]/35'}
           `}
         />
       </div>
 
-      {/* Moving light particles */}
-
-      {/* Gold particle */}
+      {/* GOLD PARTICLE */}
       <span
         className={`
           aurora-particle aurora-particle-1
           absolute left-[22%] top-[20%]
           h-1.5 w-1.5 rounded-full bg-[#D9A83E]
-          ${isLight
-            ? 'shadow-[0_0_12px_rgba(168,121,32,.55)]'
-            : 'shadow-[0_0_18px_#D9A83E]'}
+          shadow-[0_0_18px_#D9A83E]
         `}
       />
 
-      {/* Green particle */}
+      {/* GREEN PARTICLE */}
       <span
         className={`
           aurora-particle aurora-particle-2
           absolute left-[67%] top-[17%]
           h-1.5 w-1.5 rounded-full bg-[#22C55E]
-          ${isLight
-            ? 'shadow-[0_0_12px_rgba(34,197,94,.55)]'
-            : 'shadow-[0_0_18px_#22C55E]'}
+          shadow-[0_0_18px_#22C55E]
         `}
       />
 
-      {/* Red particle */}
+      {/* RED PARTICLE */}
       <span
         className={`
           aurora-particle aurora-particle-3
           absolute left-[76%] top-[42%]
           h-1.5 w-1.5 rounded-full bg-[#EF4444]
-          ${isLight
-            ? 'shadow-[0_0_12px_rgba(239,68,68,.45)]'
-            : 'shadow-[0_0_18px_#EF4444]'}
+          shadow-[0_0_18px_#EF4444]
         `}
       />
 
-      {/* Gold particle */}
+      {/* GOLD PARTICLE */}
       <span
-        className={`
+        className="
           aurora-particle aurora-particle-4
           absolute left-[16%] top-[45%]
           h-1.5 w-1.5 rounded-full bg-[#F5CC70]
-          ${isLight
-            ? 'shadow-[0_0_12px_rgba(217,168,62,.45)]'
-            : 'shadow-[0_0_18px_#F5CC70]'}
-        `}
+          shadow-[0_0_18px_#F5CC70]
+        "
       />
 
       {/* Vertical data streams */}
 
-      {/* Gold stream */}
       <div
-        className={`
+        className="
           data-stream stream-1
           absolute left-[25%] top-[15%]
           h-[150px] w-px
-          ${isLight
-            ? 'bg-gradient-to-b from-transparent via-[#D9A83E]/30 to-transparent'
-            : 'bg-gradient-to-b from-transparent via-[#D9A83E]/25 to-transparent'}
-        `}
+          bg-gradient-to-b from-transparent
+          via-[#D9A83E]/50 to-transparent
+        "
       />
 
-      {/* Green stream */}
       <div
-        className={`
+        className="
           data-stream stream-2
           absolute left-[38%] top-[10%]
           h-[190px] w-px
-          ${isLight
-            ? 'bg-gradient-to-b from-transparent via-[#16A34A]/25 to-transparent'
-            : 'bg-gradient-to-b from-transparent via-[#22C55E]/25 to-transparent'}
-        `}
+          bg-gradient-to-b from-transparent
+          via-[#22C55E]/45 to-transparent
+        "
       />
 
-      {/* Red stream */}
       <div
-        className={`
+        className="
           data-stream stream-3
           absolute right-[35%] top-[18%]
           h-[140px] w-px
-          ${isLight
-            ? 'bg-gradient-to-b from-transparent via-[#DC2626]/25 to-transparent'
-            : 'bg-gradient-to-b from-transparent via-[#EF4444]/25 to-transparent'}
-        `}
+          bg-gradient-to-b from-transparent
+          via-[#EF4444]/45 to-transparent
+        "
       />
 
-      {/* Gold stream */}
       <div
-        className={`
+        className="
           data-stream stream-4
           absolute right-[22%] top-[8%]
           h-[170px] w-px
-          ${isLight
-            ? 'bg-gradient-to-b from-transparent via-[#A87920]/20 to-transparent'
-            : 'bg-gradient-to-b from-transparent via-[#F5CC70]/20 to-transparent'}
-        `}
+          bg-gradient-to-b from-transparent
+          via-[#F5CC70]/40 to-transparent
+        "
       />
 
       {/* Floating micro nodes */}
@@ -796,6 +817,7 @@ const BrightAura = ({ isLight }) => {
           floating-node floating-node-1
           absolute left-[30%] top-[22%]
           h-1.5 w-1.5 rounded-full bg-[#D9A83E]
+          shadow-[0_0_12px_#D9A83E]
         "
       />
 
@@ -804,6 +826,7 @@ const BrightAura = ({ isLight }) => {
           floating-node floating-node-2
           absolute left-[62%] top-[18%]
           h-1.5 w-1.5 rounded-full bg-[#22C55E]
+          shadow-[0_0_12px_#22C55E]
         "
       />
 
@@ -812,6 +835,7 @@ const BrightAura = ({ isLight }) => {
           floating-node floating-node-3
           absolute left-[72%] top-[30%]
           h-1.5 w-1.5 rounded-full bg-[#EF4444]
+          shadow-[0_0_12px_#EF4444]
         "
       />
 
@@ -820,6 +844,7 @@ const BrightAura = ({ isLight }) => {
           floating-node floating-node-4
           absolute left-[18%] top-[32%]
           h-1.5 w-1.5 rounded-full bg-[#22C55E]
+          shadow-[0_0_12px_#22C55E]
         "
       />
     </div>

@@ -1,4 +1,3 @@
-
 import Animations from '@/components/Animations/index';
 import { useSelector } from 'react-redux';
 
@@ -14,102 +13,49 @@ type RootState = {
 
 const Hero = ({ animation = 'home' }: HeroProps) => {
   const reduxTheme = useSelector((state: RootState) => state.theme.theme);
-
   const isLight = reduxTheme === 'light';
 
   const theme = {
-    section: isLight
-      ? 'bg-[#FAFAF8] text-[#151515]'
-      : 'bg-[#050606] text-white',
+    section: isLight ? 'bg-[#FAFAF8] text-[#151515]' : 'bg-[#050606] text-white',
 
-    // Ambient background colors
+    // Ambient background
     atmosphere: isLight ? 'bg-[#D9A83E]/10' : 'bg-[#D9A83E]/10',
-    greenAtmosphere: isLight ? 'bg-[#22C55E]/[0.07]' : 'bg-[#22C55E]/[0.045]',
-    redAtmosphere: isLight ? 'bg-[#EF4444]/[0.06]' : 'bg-[#EF4444]/[0.035]',
+    greenAtmosphere: isLight ? 'bg-[#22C55E]/[0.08]' : 'bg-[#22C55E]/[0.055]',
+    redAtmosphere: isLight ? 'bg-[#EF4444]/[0.07]' : 'bg-[#EF4444]/[0.045]',
+
+    // Color palette
+    gold: isLight ? '#A87920' : '#F5CC70',
+    green: isLight ? '#15803D' : '#4ADE80',
+    red: isLight ? '#DC2626' : '#F87171',
 
     // Eyebrow
     eyebrow: isLight ? 'text-[#A87920]' : 'text-[#D9A83E]',
-    eyebrowLine: 'bg-[#D9A83E]',
 
     // Heading
     heading: isLight ? 'text-[#171717]' : 'text-white',
 
-    gradient: isLight
-      ? 'from-[#A87920] via-[#D9A83E] to-[#8E681F]'
-      : 'from-[#F6D27A] via-[#D9A83E] to-[#A87920]',
+    goldGradient: isLight ? 'from-[#A87920] via-[#D9A83E] to-[#8E681F]' : 'from-[#F6D27A] via-[#D9A83E] to-[#A87920]',
 
-    greenGradient: isLight
-      ? 'from-[#15803D] via-[#22C55E] to-[#166534]'
-      : 'from-[#86EFAC] via-[#22C55E] to-[#15803D]',
+    greenGradient: isLight ? 'from-[#15803D] via-[#22C55E] to-[#166534]' : 'from-[#86EFAC] via-[#22C55E] to-[#15803D]',
 
-    redGradient: isLight
-      ? 'from-[#B91C1C] via-[#EF4444] to-[#991B1B]'
-      : 'from-[#FCA5A5] via-[#EF4444] to-[#B91C1C]',
+    redGradient: isLight ? 'from-[#B91C1C] via-[#EF4444] to-[#991B1B]' : 'from-[#FCA5A5] via-[#EF4444] to-[#B91C1C]',
 
-    body: isLight ? 'text-[#5E5E5E]' : 'text-white/93',
+    multiGradient: isLight ? 'from-[#A87920] via-[#16A34A] to-[#DC2626]' : 'from-[#F5CC70] via-[#4ADE80] to-[#F87171]',
+
+    body: isLight ? 'text-[#5E5E5E]' : 'text-white/80',
 
     // Primary button
-    primaryButton: isLight
-      ? 'text-[#171717] shadow-[0_10px_30px_rgba(217,168,62,.18)] hover:bg-[#E7BD5B] hover:shadow-[0_12px_35px_rgba(217,168,62,.25)]'
-      : 'text-black hover:bg-[#F5CC70]',
+    primaryButton: isLight ? 'text-[#171717] shadow-[0_10px_30px_rgba(217,168,62,.20)] hover:bg-[#E7BD5B] hover:shadow-[0_12px_35px_rgba(217,168,62,.30)]' : 'text-black hover:bg-[#F5CC70]',
 
     // Secondary button
-    secondaryButton: isLight
-      ? 'border-[#D7D7D2] bg-white/70 text-[#303030] hover:border-[#22C55E] hover:text-[#15803D]'
-      : 'border-white/15 text-white/95 hover:border-[#22C55E] hover:text-[#4ADE80]',
+    secondaryButton: isLight ? 'border-[#D7D7D2] bg-white/70 text-[#303030] hover:border-[#22C55E] hover:text-[#15803D]' : 'border-white/15 bg-white/[0.02] text-white/95 hover:border-[#22C55E]/60 hover:text-[#4ADE80]',
 
-    // Stats
-    statText: isLight ? 'text-[#171717]' : 'text-white',
-    statMuted: isLight ? 'text-[#777]' : 'text-white/82',
+    // Statistics
+    statMuted: isLight ? 'text-[#777]' : 'text-white/65',
     statBorder: isLight ? 'border-[#DCDCD6]' : 'border-white/10',
 
-    // Globe
-    globeFill: isLight ? 'rgba(255,255,255,.72)' : 'rgba(7,9,9,.85)',
-    globeStrokeOpacity: isLight ? '.28' : '.18',
-    globeInnerStroke: isLight ? '#1A1A1A' : 'white',
-    globeInnerOpacity: isLight ? '.07' : '.05',
-    globeLineOpacity: isLight ? '.22' : '.12',
-    globeLineOpacity2: isLight ? '.14' : '.08',
-    globeLongitudeOpacity: isLight ? '.16' : '.09',
-    globeLongitudeOpacity2: isLight ? '.11' : '.06',
-
-    // Network routes: gold, green and red
-    route: isLight ? '#B8892D' : '#D9A83E',
-    routeGreen: isLight ? '#16A34A' : '#22C55E',
-    routeRed: isLight ? '#DC2626' : '#EF4444',
-
-    routeStrongOpacity: isLight ? '.55' : '.35',
-    routeOpacity: isLight ? '.4' : '.25',
-    routeSoftOpacity: isLight ? '.25' : '.18',
-
-    // Hub
-    hubRing: isLight ? 'border-[#D9A83E]/25' : 'border-[#D9A83E]/20',
-
-    hub: isLight
-      ? 'border-[#D9A83E]/60 bg-white/90 shadow-[0_10px_50px_rgba(0,0,0,.08)] backdrop-blur'
-      : 'border-[#D9A83E]/60 bg-[#080a0a]/95 shadow-[0_0_70px_rgba(217,168,62,.28)]',
-
-    hubLetter: isLight ? 'text-[#A87920]' : 'text-[#D9A83E]',
-    hubName: isLight ? 'text-[#222]' : 'text-white/97',
-    hubSub: isLight ? 'text-[#777]' : 'text-white',
-
-    // Network nodes
-    node: isLight ? 'text-[#292929]' : 'text-white',
-    nodeMuted: isLight ? 'text-[#888]' : 'text-white/97',
-
-    // Panel
-    panel: isLight
-      ? 'border-[#E2E2DC] bg-white/85 shadow-[0_15px_50px_rgba(0,0,0,.08)]'
-      : 'border-white/10 bg-[#080a0a]/80 shadow-2xl',
-
-    panelLabel: isLight ? 'text-[#555]' : 'text-white/88',
-    panelValue: isLight ? 'text-[#222]' : 'text-white',
-    panelMuted: isLight ? 'text-[#888]' : 'text-white/95',
-    panelDivider: isLight ? 'divide-[#E5E5E0]' : 'divide-white/10',
-    trafficBg: isLight ? 'bg-[#ECECE7]' : 'bg-white/5',
-    trafficText: isLight ? 'text-[#777]' : 'text-white/88',
-
-    scrollText: isLight ? 'text-[#777]' : 'text-white/93',
+    // Scroll
+    scrollText: isLight ? 'text-[#777]' : 'text-white/60',
   };
 
   return (
@@ -119,9 +65,11 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
         ${theme.section}
       `}
     >
-      {/* Background atmosphere */}
-      <div className="pointer-events-none absolute inset-0">
+      {/* =====================================================
+          BACKGROUND ATMOSPHERE
+      ====================================================== */}
 
+      <div className="pointer-events-none absolute inset-0">
         {/* Gold atmosphere */}
         <div
           className={`
@@ -158,9 +106,8 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
           className={`
             absolute right-[-200px] top-[20%]
             h-[500px] w-[500px]
-            rounded-full
+            rounded-full blur-[130px]
             ${isLight ? 'bg-[#D9A83E]/[0.08]' : 'bg-[#D9A83E]/[0.05]'}
-            blur-[130px]
           `}
         />
 
@@ -169,9 +116,8 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
           className={`
             absolute bottom-[-200px] left-[25%]
             h-[450px] w-[450px]
-            rounded-full
+            rounded-full blur-[130px]
             ${isLight ? 'bg-[#22C55E]/[0.045]' : 'bg-[#22C55E]/[0.025]'}
-            blur-[130px]
           `}
         />
 
@@ -179,11 +125,7 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
         <div
           className={`
             absolute inset-0
-            ${
-              isLight
-                ? 'bg-[radial-gradient(circle,rgba(21,23,22,0.10)_1px,transparent_1px)]'
-                : 'bg-[radial-gradient(circle,rgba(255,255,255,0.12)_1px,transparent_1px)]'
-            }
+            ${isLight ? 'bg-[radial-gradient(circle,rgba(21,23,22,0.10)_1px,transparent_1px)]' : 'bg-[radial-gradient(circle,rgba(255,255,255,0.12)_1px,transparent_1px)]'}
             bg-[size:28px_28px]
           `}
         />
@@ -219,27 +161,48 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
         <div
           className={`
             absolute inset-0
-            ${
-              isLight
-                ? 'bg-[radial-gradient(ellipse_at_50%_20%,rgba(217,168,62,0.07),transparent_55%)]'
-                : 'bg-[radial-gradient(ellipse_at_50%_20%,rgba(217,168,62,0.055),transparent_55%)]'
-            }
+            ${isLight ? 'bg-[radial-gradient(ellipse_at_50%_20%,rgba(217,168,62,0.07),transparent_55%)]' : 'bg-[radial-gradient(ellipse_at_50%_20%,rgba(217,168,62,0.055),transparent_55%)]'}
+          `}
+        />
+
+        {/* Green radial highlight */}
+        <div
+          className={`
+            absolute inset-0
+            ${isLight ? 'bg-[radial-gradient(ellipse_at_10%_45%,rgba(34,197,94,0.045),transparent_40%)]' : 'bg-[radial-gradient(ellipse_at_10%_45%,rgba(34,197,94,0.035),transparent_40%)]'}
+          `}
+        />
+
+        {/* Red radial highlight */}
+        <div
+          className={`
+            absolute inset-0
+            ${isLight ? 'bg-[radial-gradient(ellipse_at_90%_60%,rgba(239,68,68,0.04),transparent_40%)]' : 'bg-[radial-gradient(ellipse_at_90%_60%,rgba(239,68,68,0.03),transparent_40%)]'}
           `}
         />
       </div>
 
-      {/* Hero content */}
+      {/* =====================================================
+          HERO CONTENT
+      ====================================================== */}
+
       <div
         className="
           relative mx-auto flex min-h-[calc(100vh-80px)]
           max-w-7xl items-center px-6 py-16 lg:px-8
         "
       >
-        <div className="grid w-full items-center gap-10 lg:grid-cols-[.9fr_1.1fr]">
+        <div
+          className="
+            grid w-full items-center gap-10
+            lg:grid-cols-[.9fr_1.1fr]
+          "
+        >
+          {/* =================================================
+              LEFT CONTENT
+          ================================================== */}
 
-          {/* LEFT CONTENT */}
           <div className="relative z-20 max-w-2xl">
-
             {/* Eyebrow */}
             <div
               className={`
@@ -249,11 +212,12 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
                 ${theme.eyebrow}
               `}
             >
-              <span className={`h-px w-10 ${theme.eyebrowLine}`} />
+              <span className="h-px w-10 bg-gradient-to-r from-[#D9A83E] to-[#22C55E]" />
               Global Connectivity. Intelligent Solutions.
+              <span className="h-1.5 w-1.5 rounded-full bg-[#22C55E] shadow-[0_0_12px_#22C55E]" />
             </div>
 
-            {/* Heading */}
+            {/* Main heading */}
             <h1
               className={`
                 text-5xl font-semibold leading-[1.03]
@@ -263,21 +227,28 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
               `}
             >
               Connecting
-
+              {/* Gold heading */}
               <span
                 className={`
                   block bg-gradient-to-r
-                  ${theme.gradient}
+                  ${theme.goldGradient}
                   bg-clip-text text-transparent
                 `}
               >
                 the World.
               </span>
-
-              <span className="block">
+              {/* Green heading */}
+              <span
+                className={`
+                  block bg-gradient-to-r
+                  ${theme.greenGradient}
+                  bg-clip-text text-transparent
+                `}
+              >
                 Intelligently.
               </span>
             </h1>
+
 
             {/* Description */}
             <p
@@ -287,14 +258,32 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
                 sm:text-lg
               `}
             >
-              Arventa Networks connects businesses, carriers and
-              technologies across the globe through intelligent
-              telecom, mobile, IoT and AI infrastructure.
+              Arventa Networks connects businesses, carriers and technologies across the globe through intelligent telecom mobile and IoT infrastructure, powered by next-generation AI solutions .
             </p>
 
-            {/* Buttons */}
-            <div className="mt-9 flex flex-wrap gap-4">
+            {/* Feature highlights */}
+            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3">
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#D9A83E] shadow-[0_0_10px_#D9A83E]" />
+                <span className={`text-xs font-medium ${theme.body}`}>Global Reach</span>
+              </div>
 
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#22C55E] shadow-[0_0_10px_#22C55E]" />
+                <span className={`text-xs font-medium ${theme.body}`}>Intelligent Connectivity</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#EF4444] shadow-[0_0_10px_#EF4444]" />
+                <span className={`text-xs font-medium ${theme.body}`}>Future Ready</span>
+              </div>
+            </div>
+
+            {/* =================================================
+                BUTTONS
+            ================================================== */}
+
+            <div className="mt-9 flex flex-wrap gap-4">
               {/* Primary CTA */}
               <a
                 href="#solutions"
@@ -308,7 +297,6 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
                 `}
               >
                 Explore Our Network
-
                 <span
                   className="
                     transition-transform duration-300
@@ -332,10 +320,22 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
                 `}
               >
                 Talk to an Expert
+                <span
+                  className="
+                    text-[#22C55E]
+                    transition-transform duration-300
+                    group-hover:translate-x-1
+                  "
+                >
+                  →
+                </span>
               </a>
             </div>
 
-            {/* Stats */}
+            {/* =================================================
+                STATISTICS
+            ================================================== */}
+
             <div
               className={`
                 mt-12 grid max-w-xl
@@ -343,9 +343,14 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
                 ${theme.statBorder}
               `}
             >
+              {/* Gold statistic */}
               <div>
                 <div
-                  className={`text-2xl font-semibold ${theme.statText}`}
+                  className={`
+                    text-2xl font-semibold
+                    bg-gradient-to-r ${theme.goldGradient}
+                    bg-clip-text text-transparent
+                  `}
                 >
                   180+
                 </div>
@@ -360,11 +365,14 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
                 </div>
               </div>
 
-              <div
-                className={`border-l pl-5 ${theme.statBorder}`}
-              >
+              {/* Green statistic */}
+              <div className={`border-l pl-5 ${theme.statBorder}`}>
                 <div
-                  className={`text-2xl font-semibold ${theme.statText}`}
+                  className={`
+                    text-2xl font-semibold
+                    bg-gradient-to-r ${theme.greenGradient}
+                    bg-clip-text text-transparent
+                  `}
                 >
                   99.9%
                 </div>
@@ -379,11 +387,14 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
                 </div>
               </div>
 
-              <div
-                className={`border-l pl-5 ${theme.statBorder}`}
-              >
+              {/* Red statistic */}
+              <div className={`border-l pl-5 ${theme.statBorder}`}>
                 <div
-                  className={`text-2xl font-semibold ${theme.statText}`}
+                  className={`
+                    text-2xl font-semibold
+                    bg-gradient-to-r ${theme.redGradient}
+                    bg-clip-text text-transparent
+                  `}
                 >
                   24/7
                 </div>
@@ -400,10 +411,17 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
             </div>
           </div>
 
-          {/* RIGHT ANIMATION */}
-          <div className="relative h-[560px] sm:h-[650px] lg:h-[700px]">
+          {/* =================================================
+              RIGHT ANIMATION
+          ================================================== */}
 
-            {/* Animation ambient glow */}
+          <div
+            className="
+              relative h-[560px]
+              sm:h-[650px] lg:h-[700px]
+            "
+          >
+            {/* Gold ambient glow */}
             <div
               className={`
                 pointer-events-none absolute
@@ -415,6 +433,7 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
               `}
             />
 
+            {/* Green ambient glow */}
             <div
               className={`
                 pointer-events-none absolute
@@ -425,6 +444,7 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
               `}
             />
 
+            {/* Red ambient glow */}
             <div
               className={`
                 pointer-events-none absolute
@@ -435,7 +455,7 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
               `}
             />
 
-            {/* Original animation preserved */}
+            {/* Animation */}
             <div className="relative z-10 h-full w-full">
               <Animations type={animation} />
             </div>
@@ -443,7 +463,10 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* =====================================================
+          SCROLL INDICATOR
+      ====================================================== */}
+
       <div
         className={`
           absolute bottom-7 left-1/2
@@ -454,7 +477,17 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
         `}
       >
         <span>Explore Arventa</span>
-        <span className="scroll-line" />
+
+        <span
+          className="
+            scroll-line
+            relative h-10 w-px
+            bg-gradient-to-b
+            from-[#D9A83E]
+            via-[#22C55E]
+            to-[#EF4444]
+          "
+        />
       </div>
     </section>
   );
