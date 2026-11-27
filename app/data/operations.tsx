@@ -198,8 +198,8 @@ export const heroData = {
     eyebrow: '24/7 VoIP Operations & Network Monitoring',
 
     heading: {
-      firstLine: 'Always Connected.',
-      secondLine: 'Always Operational.',
+      firstLine: 'Always',
+      secondLine: 'Operational.',
     },
 
     description: 'Behind every successful call is dependable infrastructure. Our operations focus on monitoring SIP connectivity, managing voice traffic, and maintaining the systems that keep business communications moving.',
