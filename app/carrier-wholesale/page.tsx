@@ -15,14 +15,16 @@ import FAQ from '@/components/dynamic-zone/FAQ';
 
 import VirtualOfficeNumbers from '@/components/dynamic-zone/VirtualNumberComponents/VirtualOfficeNumbers';
 import VirtualNumberSearch from '@/components/dynamic-zone/VirtualNumberComponents/VirtualNumberSearch';
-import { faqData, CTAData, countupData, featureGridSectionData1 ,heroData } from '@/app/data/carrierWholesale';
+import { faqData, CTAData, countupData, featureGridSectionData1, heroData, solutionGridData ,offeringGridData , processData , principlesData ,featureGridSectionData3 } from '@/app/data/carrierWholesale';
 
 import Loader from '@/components/layout/Loader';
-
+import ContactForm from '@/components/dynamic-zone/ContactForm'
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-
-
+import SolutionsGrid from '@/components/dynamic-zone/SolutionsGrid';
+import OfferingGrid from '@/components/dynamic-zone/OfferingGrid';
+import ProcessSteps from '@/components/dynamic-zone/ProcessSteps';
+import PrinciplesGrid from '@/components/dynamic-zone/PrinciplesGrid';
 
 export default function Home() {
   const theme = useSelector((state) => state.theme.theme);
@@ -52,13 +54,18 @@ export default function Home() {
       ) : (
         <>
           <VoipHero data={heroData} />
-          <CountUp data={countupData} />
-          <VirtualNumberSearch onSearch={() => {}} />
-          <VirtualOfficeNumbers />
-          <WorldVoipMap />
+
+           <OfferingGrid data={offeringGridData} />
+          
+          <ProcessSteps data={processData} type="TYPE2" />
+          <PrinciplesGrid data={principlesData} type="TYPE2" />
+
           <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData1} />
+          <SolutionsGrid data={solutionGridData} type="TYPE1" />
+
           <FAQ data={faqData} />
           <CTA data={CTAData} />
+          <ContactForm/>
         </>
       )}
 

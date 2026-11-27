@@ -1,5 +1,9 @@
-const SolutionsGrid = ({ theme, data }) => {
-  const isDark = theme === "dark";
+import { useSelector } from "react-redux";
+
+const SolutionsGrid = ({ data }) => {
+  const reduxTheme = useSelector((state) => state.theme?.theme);
+
+  const isDark = reduxTheme === "dark";
 
   const styles = {
     section: isDark

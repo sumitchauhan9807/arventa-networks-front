@@ -27,6 +27,7 @@ import Testimonials from '@/components/dynamic-zone/Testimonials';
 import VirtualNumberComponents from '@/components/dynamic-zone/VirtualNumberComponents';
 import WorldMaps from '@/components/dynamic-zone/WorldMaps';
 import FancyComponents from '@/components/dynamic-zone/FancyComponents'
+import ContactForm from '@/components/dynamic-zone/ContactForm'
 
 
 
@@ -63,8 +64,8 @@ export default function Home() {
       ) : (
         <>
           <Hero data={heroData} />
-          <ServicesGrid theme={theme} data={serviceGridData} />
-          <SolutionsGrid theme={theme} data={solutionGridData} type="TYPE1" />
+          <ServicesGrid  data={serviceGridData} />
+          <SolutionsGrid  data={solutionGridData} type="TYPE1" />
 
           <OfferingGrid  data={offeringGridData} />
           <FancyComponents/>
@@ -91,6 +92,7 @@ export default function Home() {
           <Testimonials data={testimonialsData} />
           <FAQ data={faqData} />
           <CTA data={CTAData} />
+          <ContactForm/>
         </>
       )}
       <Footer />

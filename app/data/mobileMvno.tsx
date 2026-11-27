@@ -1,28 +1,29 @@
+
 export const serviceGridData = [
   {
     icon: '◈',
-    title: 'Carrier & Wholesale',
-    description: 'SIP Trunking, Origination/Termination, LCR',
+    title: 'MVNO Solutions',
+    description: 'Flexible mobile services and infrastructure for virtual operators.',
   },
   {
     icon: '▣',
-    title: 'Mobile & MVNO',
-    description: 'Flexible mobile solutions for your business',
+    title: 'SIM & eSIM',
+    description: 'Flexible subscriber connectivity with SIM and eSIM options.',
   },
   {
     icon: '△',
-    title: 'IoT / M2M',
-    description: 'Connected devices. Unlimited possibilities.',
+    title: 'Mobile Connectivity',
+    description: 'Voice, messaging, and data services for connected customers.',
   },
   {
     icon: '◉',
-    title: 'Contact Center Software',
-    description: 'Powerful dialers, AI and fraud prevention.',
+    title: 'Wholesale Mobile',
+    description: 'Mobile network access and connectivity for business partners.',
   },
   {
     icon: '◎',
-    title: 'Global Network',
-    description: 'Secure. Scalable. Reliable.',
+    title: 'Subscriber Management',
+    description: 'Tools and services to manage mobile users and connections.',
   },
 ];
 
@@ -30,18 +31,18 @@ export const solutionGridData = {
   eyebrow: 'What We Do',
 
   heading: {
-    normal: 'Our',
+    normal: 'Mobile',
     highlight: 'Solutions',
   },
 
-  description: 'From carrier services to AI-powered contact center solutions, we provide the infrastructure and software you need to grow, connect and succeed.',
+  description: 'From MVNO enablement and SIM services to mobile connectivity and subscriber management, we help businesses build, operate, and expand mobile services around their needs.',
 
   cta: {
-    label: 'Explore All Solutions',
+    label: 'Explore Mobile Solutions',
     href: '#',
   },
 
-  supportingNote: 'Technology built for growth',
+  supportingNote: 'Flexible mobile technology for growing businesses',
 
   card: {
     linkLabel: 'Explore solution',
@@ -50,42 +51,42 @@ export const solutionGridData = {
     {
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity & Security.',
+      title: 'MVNO & Wholesale',
+      description: 'Mobile network access, MVNO enablement, and wholesale services.',
     },
     {
       image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80',
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM, IoT / M2M connectivity.',
+      title: 'SIM & eSIM Connectivity',
+      description: 'SIM provisioning, eSIM options, and mobile subscriber services.',
     },
     {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
+      title: 'Mobile Management',
+      description: 'Subscriber lifecycle, service management, and integration options.',
     },
   ],
 };
 
 export const offeringGridData = {
-  sectionId: 'contact-center',
+  sectionId: 'mobile-mvno',
 
-  eyebrow: 'Contact Center & Software',
+  eyebrow: 'Mobile & MVNO Services',
 
   heading: {
-    first: 'Smarter Dialers.',
-    highlight: 'Better Conversations.',
+    first: 'Flexible Mobile.',
+    highlight: 'Built for Growth.',
   },
 
-  description: 'Boost your efficiency with our advanced dialer solutions, AI platform and fraud prevention tools. Empower your team with smarter technology designed to improve productivity and customer engagement.',
+  description: 'Build and manage mobile services with flexible MVNO and connectivity solutions. From SIM and eSIM provisioning to subscriber management and mobile service integration, we help businesses shape mobile offerings around their customers and markets.',
 
   cta: {
-    label: 'Discover Contact Center Solutions',
+    label: 'Discover Mobile Solutions',
     href: '#',
   },
 
-  supportingNote: 'Intelligent solutions for modern business communication',
+  supportingNote: 'Mobile connectivity designed around your business',
 
   product: {
     arrow: '→',
@@ -97,28 +98,28 @@ export const offeringGridData = {
   items: [
     {
       icon: '✦',
-      title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
+      title: 'MVNO Enablement',
+      description: 'Build and operate mobile services using partner network infrastructure.',
     },
     {
       icon: '◇',
-      title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
+      title: 'SIM Management',
+      description: 'Manage SIM provisioning and subscriber connectivity.',
     },
     {
       icon: 'AI',
-      title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
+      title: 'eSIM Solutions',
+      description: 'Support digital SIM provisioning and flexible activation journeys.',
     },
     {
       icon: '◇',
-      title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
+      title: 'Mobile Voice & Data',
+      description: 'Mobile services shaped around voice, messaging, and data needs.',
     },
     {
       icon: 'API',
-      title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
+      title: 'Mobile APIs & Integration',
+      description: 'Connect mobile services with your platforms and business systems.',
     },
   ],
 };
@@ -209,10 +210,10 @@ export const testimonialsData = {
     eyebrow: 'Client Experiences',
     heading: {
       first: 'Trusted by those',
-      second: 'who expect',
-      highlight: 'more.',
+      second: 'building',
+      highlight: 'mobile.',
     },
-    description: 'The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.',
+    description: 'Discover how flexible connectivity and mobile infrastructure can help businesses develop services, reach subscribers, and adapt to changing customer needs.',
   },
 
   decorative: {
@@ -225,7 +226,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus Networks',
-      quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
+      quote: 'We wanted a more flexible approach to mobile connectivity. Having the right infrastructure and technical direction is important as we develop services for our customers.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -234,7 +235,7 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Solutions',
-      quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
+      quote: 'Managing mobile services requires coordination across connectivity, subscriber needs, and internal systems. A flexible approach helps us plan for growth without unnecessary complexity.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -243,7 +244,7 @@ export const testimonialsData = {
       name: 'Daniel Chen',
       role: 'Network Infrastructure Lead',
       company: 'CloudBridge Systems',
-      quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
+      quote: 'We needed a partner who understood the technical side of mobile connectivity and how it fits into our wider infrastructure. Clear planning and integration are essential for us.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -252,7 +253,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Technologies',
-      quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
+      quote: 'Our mobile strategy needs to keep pace with the business. Having options around connectivity and subscriber services gives us a useful foundation for future development.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -261,7 +262,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of IT Infrastructure',
       company: 'Apex Digital',
-      quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
+      quote: 'Mobile connectivity is an important part of our technology environment. We value solutions that consider integration, operational requirements, and the experience of our users.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -270,7 +271,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Communications',
-      quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
+      quote: 'We needed flexibility as our mobile requirements evolved. A thoughtful approach to SIM services, connectivity, and integration helps us adapt to new opportunities.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -279,7 +280,7 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Connect',
-      quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
+      quote: 'The mobile environment involves many moving parts. We appreciate solutions that bring connectivity and subscriber management together in a way that supports our operational goals.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -288,7 +289,7 @@ export const testimonialsData = {
       name: 'Ananya Kapoor',
       role: 'Network Operations Manager',
       company: 'Pinnacle Technologies',
-      quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
+      quote: 'Flexible mobile infrastructure gives businesses more ways to shape their services. We look for a partner who understands connectivity, integration, and the demands of a changing market.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -300,41 +301,41 @@ export const faqData = {
 
   heading: {
     eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    first: 'Your mobile',
+    highlight: 'questions answered.',
+    description: 'Learn more about MVNO services, SIM and eSIM connectivity, mobile infrastructure, and getting started.',
   },
 
   faqs: [
     {
-      question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      question: 'What is an MVNO?',
+      answer: 'A Mobile Virtual Network Operator (MVNO) provides mobile services to customers using network infrastructure supplied by one or more mobile network operators. This allows a business to offer mobile services without operating its own radio access network.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'What is included in an MVNO solution?',
+      answer: 'Depending on the chosen model and partner network, an MVNO solution may include mobile connectivity, SIM provisioning, subscriber management, voice, messaging, data services, and supporting integrations.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'Do you support SIM and eSIM services?',
+      answer: 'SIM and eSIM options can be part of a mobile solution, depending on the supported network, device compatibility, and service configuration. Requirements can be reviewed during the planning process.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'Can I launch my own mobile brand?',
+      answer: 'An MVNO model can provide a route for businesses to develop mobile services under their own brand. The operating model, network arrangements, commercial terms, and regulatory requirements depend on the target market.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'Can mobile services be integrated with existing systems?',
+      answer: 'Integration options depend on the available platform and technical requirements. APIs and other integration methods may support subscriber management, provisioning workflows, and connections with business systems.',
     },
     {
       question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      answer: "Contact our team to discuss your target markets, subscriber requirements, preferred mobile services, SIM or eSIM needs, and integration plans. We'll help explore a suitable approach for your business.",
     },
   ],
 
   contact: {
     heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    description: "Let's talk about your mobile and MVNO requirements.",
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -345,11 +346,11 @@ export const CTAData = {
 
   heading: {
     eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    first: 'Your mobile vision,',
+    highlight: 'within reach.',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Whether you are planning an MVNO, exploring SIM and eSIM services, or looking for flexible mobile connectivity, our team is ready to discuss your business requirements.',
 
   cta: {
     primary: {
@@ -367,28 +368,28 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '3',
-    accent: 's',
-    label: 'P95 delivery',
-    description: 'Measured continuously',
+    value: 'MVNO',
+    accent: '',
+    label: 'Mobile services',
+    description: 'Flexible operator models',
   },
   {
-    value: '99.5',
-    accent: '%',
-    label: 'Delivery success',
-    description: 'With failover',
+    value: 'SIM',
+    accent: '',
+    label: 'Subscriber connectivity',
+    description: 'SIM provisioning options',
   },
   {
-    value: '500',
-    accent: 'ms',
-    label: 'Failover time',
-    description: 'Route-to-route',
+    value: 'eSIM',
+    accent: '',
+    label: 'Digital activation',
+    description: 'Where supported by the network',
   },
   {
-    value: '200',
-    accent: '+',
-    label: 'Countries',
-    description: 'Premium OTP routes',
+    value: 'API',
+    accent: '',
+    label: 'Service integration',
+    description: 'Connect mobile platforms and systems',
   },
 ];
 
@@ -398,15 +399,15 @@ export const countUpGridData = {
   badge: 'Who We Are',
 
   heading: {
-    firstLine: 'Infrastructure with',
-    highlight: 'purpose.',
+    firstLine: 'Mobile connectivity',
+    highlight: 'made flexible.',
   },
 
   description:
-    'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+    'Arventa Networks brings together telecom expertise and connectivity solutions to help businesses develop and manage mobile services. We focus on the infrastructure and partnerships that support flexible mobile offerings.',
 
   secondaryDescription:
-    'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+    'From MVNO enablement and wholesale mobile access to SIM, eSIM, and subscriber management, our approach is built around flexibility, integration, and long-term business needs.',
 
   cta: {
     label: 'Discover Our Approach',
@@ -415,63 +416,64 @@ export const countUpGridData = {
   },
 
   supportingNote:
-    'Reliable connectivity. Built for the long term.',
+    'Mobile services. Flexible by design.',
 
   statsPanel: {
     eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    heading: 'Mobile service building blocks',
+    badge: 'Connected through mobile',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: 'MVNO', label: 'Operator Enablement' },
+      { value: 'SIM', label: 'Subscriber Connectivity' },
+      { value: 'eSIM', label: 'Digital SIM Options' },
+      { value: 'API', label: 'Platform Integration' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'Connectivity shaped around your mobile strategy',
+      status: 'Built for flexibility',
     },
   },
 };
+
 export const featureGridSectionData1 = {
   buttonText: 'Explore Solutions',
   eyebrow: 'What we do',
   heading: {
-    firstLine: 'Communication',
-    highlight: 'engineered.',
+    firstLine: 'Mobile services',
+    highlight: 'reimagined.',
   },
-  description: 'From carrier services to communication infrastructure, we provide the technology and connectivity businesses need to grow, connect and operate.',
+  description: 'From MVNO enablement to SIM and eSIM connectivity, we provide mobile infrastructure and services designed to help businesses create, manage, and grow their mobile offerings.',
   items: [
     {
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
+      title: 'MVNO & Wholesale',
+      description: 'Mobile network access and infrastructure for virtual operators.',
     },
     {
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM and IoT / M2M connectivity solutions.',
+      title: 'SIM & eSIM',
+      description: 'Subscriber connectivity, SIM provisioning, and digital SIM options.',
     },
     {
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, fraud prevention and communication APIs.',
+      title: 'Mobile Services',
+      description: 'Voice, messaging, and data connectivity for mobile customers.',
     },
     {
       icon: '✦',
-      title: 'Technology Partnerships',
-      description: 'Integrate. Automate. Grow with the right ecosystem.',
+      title: 'Subscriber Management',
+      description: 'Flexible service management and integration with business systems.',
     },
   ],
 };
 
 export const hero1Data = {
   hero: {
-    title: 'Voice Without',
-    highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
+    title: 'Mobile Without',
+    highlightedTitle: 'Limits.',
+    description: 'Build flexible mobile services with MVNO enablement, SIM and eSIM connectivity, and business-ready mobile infrastructure. Create offerings around your customers, your markets, and the way your business wants to grow.',
     primaryButton: 'Get Started',
     secondaryButton: 'Explore Solutions',
   },
@@ -480,8 +482,8 @@ export const hero1Data = {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
+        title: 'MVNO Enablement',
+        description: 'Build mobile services using partner network infrastructure.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -492,8 +494,8 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
+        title: 'SIM & eSIM',
+        description: 'Support subscriber connectivity with physical and digital SIM options.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -505,8 +507,8 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
+        title: 'Mobile Integration',
+        description: 'Connect mobile services with platforms and business systems.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -517,74 +519,74 @@ export const hero1Data = {
       },
     ],
   },
-}
+};
 
 export const hero2Data = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'Mobile & MVNO Solutions',
+    title: 'Your mobile vision.',
+    highlightedTitle: 'Connected.',
+    description: 'From mobile network access to subscriber services, build a flexible foundation for your mobile offering. Explore connectivity options and service models shaped around your business.',
+    primaryButton: 'Explore Mobile Solutions',
+    secondaryButton: 'Discuss Your Requirements',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'MVNO',
+        label: 'Operator Solutions',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'SIM',
+        label: 'Subscriber Services',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'eSIM',
+        label: 'Digital Connectivity',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'API',
+        label: 'Platform Integration',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'Mobile services built around your needs.',
+    status: 'Flexible service models',
+    availability: 'Solutions shaped around your market',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'MV',
+        name: 'MVNO Solutions',
+        role: 'Mobile Service Enablement',
+        status: 'Service area',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'SC',
+        name: 'SIM Connectivity',
+        role: 'SIM & eSIM Services',
+        status: 'Service area',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'SM',
+        name: 'Subscriber Management',
+        role: 'Mobile Operations',
+        status: 'Service area',
       },
     ] 
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Mobile service overview',
+    status: 'Configured to requirements',
   },
-}
+};
 
 export const hero3Data = {
   hero: {
@@ -592,10 +594,10 @@ export const hero3Data = {
 
     heading: {
       firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      secondLine: 'We enable mobile.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'We help businesses bring mobile services to life through flexible connectivity, telecom infrastructure, and technology partnerships. Our focus is on making mobile solutions adaptable to the needs of operators, organizations, and their customers.',
 
     primaryCta: {
       label: 'Discover Our Story',
@@ -611,20 +613,20 @@ export const hero3Data = {
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
+        value: 'MVNO',
+        label: 'Mobile Operator Solutions',
       },
       {
-        value: '42+',
-        label: 'Countries Connected',
+        value: 'SIM',
+        label: 'Subscriber Connectivity',
       },
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'eSIM',
+        label: 'Digital SIM Options',
       },
       {
-        value: '24/7',
-        label: 'Global Support',
+        value: 'API',
+        label: 'Mobile Integration',
       },
     ],
   },
@@ -637,8 +639,8 @@ export const hero3Data = {
     items: [
       {
         number: '01',
-        title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        title: 'Customer Focus',
+        description: 'Mobile services should reflect the needs of the people and businesses using them.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -650,7 +652,7 @@ export const hero3Data = {
       {
         number: '02',
         title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        description: 'Mobile infrastructure should be adaptable as subscriber needs, service portfolios, and business opportunities evolve.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -661,8 +663,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Connected Thinking',
+        description: 'The best mobile solutions bring together network access, subscriber services, and technology in a coordinated way.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -672,4 +674,98 @@ export const hero3Data = {
       },
     ],
   },
+};
+
+export const processData = {
+  content: {
+    eyebrow: 'Our Approach',
+    titleLine1: 'From mobile concept',
+    titleHighlight: 'to connection.',
+    description: 'Launching and managing mobile services requires the right combination of network access, service design, and operational planning. We take a structured approach to understanding your goals and identifying the right mobile solution for your business.',
+
+    statusText: 'A structured approach to mobile services',
+    flowText: 'Understand · Design · Connect · Manage',
+    footerTitle: 'Mobile services shaped around your goals',
+    footerDescription: 'The right foundations help your mobile offering adapt as your business evolves.',
+    phaseLabel: 'Project stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Understand',
+      subtitle: 'Define your mobile requirements',
+      description: 'Explore your target markets, customer groups, expected subscriber needs, preferred services, and commercial objectives to establish a clear project scope.',
+    },
+    {
+      number: '02',
+      title: 'Design',
+      subtitle: 'Shape the right service model',
+      description: 'Consider suitable MVNO models, network arrangements, SIM and eSIM options, service features, and integration requirements for your business.',
+    },
+    {
+      number: '03',
+      title: 'Connect',
+      subtitle: 'Prepare mobile services',
+      description: 'Coordinate the relevant connectivity, provisioning, and platform integration activities based on the agreed solution and partner capabilities.',
+    },
+    {
+      number: '04',
+      title: 'Manage & Evolve',
+      subtitle: 'Adapt as your needs change',
+      description: 'Review subscriber requirements, service operations, and future opportunities to identify ways to refine and develop your mobile offering.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Our Approach',
+    titleLine1: 'Better mobile starts',
+    titleLine2: 'with the right foundations.',
+    description: 'Successful mobile services depend on more than connectivity. They require a clear understanding of customers, thoughtful service design, reliable partnerships, and an adaptable operating model. These principles guide our approach to mobile and MVNO solutions.',
+
+    cardFooter: 'The principles behind our mobile solutions',
+    approachEyebrow: 'The Arventa Approach',
+    approachTitle: 'Connectivity, technology, and customer needs working together.',
+    approachDescription: 'Because building mobile services requires more than network access alone.',
+
+    approachHighlight: ' Built around flexibility.',
+
+    approachLabel: 'Mobile commitment',
+    approachSubLabel: 'Focused on adaptable connectivity',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our mobile philosophy',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'Customer Focus',
+      description: 'Mobile services should be designed around real customer needs, from the service experience to the connectivity options behind it.',
+      icon: "",
+      tag: 'Experience',
+    },
+    {
+      number: '02',
+      title: 'Flexibility',
+      description: 'A flexible service model helps businesses adapt their mobile offering as customer expectations, markets, and technology evolve.',
+      icon: "",
+      tag: 'Adaptability',
+    },
+    {
+      number: '03',
+      title: 'Strong Partnerships',
+      description: 'Mobile services rely on collaboration between network providers, technology platforms, and service partners to bring the right capabilities together.',
+      icon: "",
+      tag: 'Collaboration',
+    },
+    {
+      number: '04',
+      title: 'Continuous Improvement',
+      description: 'Regularly reviewing subscriber needs, service operations, and technology options helps businesses refine their mobile offering over time.',
+      icon: "",
+      tag: 'Progress',
+    },
+  ],
 };

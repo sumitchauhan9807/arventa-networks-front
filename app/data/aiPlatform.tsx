@@ -3,32 +3,32 @@ export const serviceGridData = [
   {
     icon: '◈',
     title: 'AI Infrastructure',
-    description: 'Scalable AI computing, model hosting and enterprise AI infrastructure.',
+    description: 'Flexible AI infrastructure, model hosting and deployment foundations for business applications.',
   },
   {
     icon: '▣',
     title: 'AI Agents',
-    description: 'Intelligent autonomous agents that simplify tasks and workflows.',
+    description: 'Intelligent agents that assist with tasks, interact with tools and support business workflows.',
   },
   {
     icon: '△',
     title: 'AI Automation',
-    description: 'Automate complex business processes with intelligent AI workflows.',
+    description: 'Connect business processes with intelligent workflows and task automation.',
   },
   {
     icon: '◉',
     title: 'Conversational AI',
-    description: 'Build intelligent chatbots, voice assistants and customer experiences.',
+    description: 'Create AI-powered chatbots, voice assistants and natural conversational experiences.',
   },
   {
     icon: '✦',
     title: 'Generative AI',
-    description: 'Create, analyze and transform content with advanced AI models.',
+    description: 'Use advanced AI models to generate, understand, summarize and transform content.',
   },
   {
     icon: '◎',
     title: 'AI Integrations',
-    description: 'Connect AI capabilities with your existing tools, systems and APIs.',
+    description: 'Connect AI models and capabilities with existing applications, systems and APIs.',
   },
 ];
 
@@ -40,14 +40,14 @@ export const solutionGridData = {
     highlight: 'AI Solutions',
   },
 
-  description: 'From intelligent AI agents to enterprise automation and generative AI, we provide the technology and infrastructure businesses need to innovate, automate and scale.',
+  description: 'From intelligent agents and conversational applications to generative AI and workflow automation, we help businesses explore practical ways to bring artificial intelligence into their operations.',
 
   cta: {
     label: 'Explore All Solutions',
     href: '#',
   },
 
-  supportingNote: 'Intelligence engineered for the future',
+  supportingNote: 'Intelligence engineered for real-world business',
 
   card: {
     linkLabel: 'Explore solution',
@@ -57,25 +57,25 @@ export const solutionGridData = {
       image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80',
       icon: '◈',
       title: 'AI Infrastructure',
-      description: 'Scalable AI computing, model deployment and enterprise infrastructure.',
+      description: 'Explore model hosting, deployment options and infrastructure for AI-powered applications.',
     },
     {
       image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80',
       icon: '▣',
       title: 'AI Agents & Assistants',
-      description: 'Autonomous AI agents, virtual assistants and intelligent task execution.',
+      description: 'Build intelligent assistants that support users, interact with tools and handle tasks.',
     },
     {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
       title: 'AI Automation',
-      description: 'Intelligent workflows, process automation and business optimization.',
+      description: 'Connect applications and streamline suitable business processes with intelligent workflows.',
     },
     {
       image: 'https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=900&q=80',
       icon: '✦',
       title: 'Generative AI',
-      description: 'Advanced language models, content generation and conversational intelligence.',
+      description: 'Explore language models, content generation and conversational AI applications.',
     },
   ],
 };
@@ -87,17 +87,17 @@ export const offeringGridData = {
 
   heading: {
     first: 'Intelligent Systems.',
-    highlight: 'Infinite Possibilities.',
+    highlight: 'Practical Possibilities.',
   },
 
-  description: 'Accelerate your business with advanced AI technology. From autonomous agents and conversational AI to intelligent automation and enterprise integrations, build smarter workflows that transform how your business operates.',
+  description: 'Bring artificial intelligence into your business with capabilities spanning autonomous agents, generative AI, conversational applications and intelligent automation. Explore the technologies and integrations that can support your next digital initiative.',
 
   cta: {
     label: 'Discover AI Solutions',
     href: '#',
   },
 
-  supportingNote: 'Powering the next generation of intelligent businesses',
+  supportingNote: 'Building the next generation of intelligent businesses',
 
   product: {
     arrow: '→',
@@ -110,27 +110,27 @@ export const offeringGridData = {
     {
       icon: '✦',
       title: 'AI Agents',
-      description: 'Autonomous agents that think, act and execute business tasks.',
+      description: 'Create intelligent agents to assist with tasks and connected workflows.',
     },
     {
       icon: '◇',
       title: 'AI Automation',
-      description: 'Streamline operations with intelligent workflows.',
+      description: 'Coordinate business processes through intelligent, connected workflows.',
     },
     {
       icon: 'AI',
       title: 'Generative AI',
-      description: 'Unlock creativity with advanced language and multimodal models.',
+      description: 'Explore language and multimodal models for content and application development.',
     },
     {
       icon: '◇',
       title: 'AI Analytics',
-      description: 'Turn complex data into actionable business intelligence.',
+      description: 'Apply AI capabilities to explore information and support data-informed decisions.',
     },
     {
       icon: 'API',
       title: 'AI Software & APIs',
-      description: 'Integrate intelligence into every part of your business.',
+      description: 'Connect AI capabilities with applications, services and existing systems.',
     },
   ],
 };
@@ -226,7 +226,7 @@ export const testimonialsData = {
       second: 'building the',
       highlight: 'future.',
     },
-    description: 'Discover how forward-thinking businesses are using intelligent technology, AI automation and advanced platforms to transform their operations.',
+    description: 'Discover how businesses are exploring AI agents, intelligent automation and connected AI applications to support new ways of working.',
   },
 
   decorative: {
@@ -239,7 +239,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus AI Systems',
-      quote: 'Their AI platform has transformed how we approach automation and intelligent workflows. We have been able to streamline complex processes, improve productivity and introduce entirely new capabilities across our business.',
+      quote: 'We wanted a more structured way to explore AI automation and intelligent workflows. The platform gave us a foundation to evaluate new use cases and bring AI capabilities into our business processes.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -248,7 +248,7 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Intelligence',
-      quote: 'What impressed us most was the flexibility of the platform. We started with a single automation use case and gradually expanded into AI-powered workflows that now support multiple departments.',
+      quote: 'The flexibility to start with a focused use case and consider additional AI workflows as our needs evolve was an important part of our evaluation.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -257,7 +257,7 @@ export const testimonialsData = {
       name: 'Daniel Chen',
       role: 'Head of AI Engineering',
       company: 'CloudBridge AI',
-      quote: 'We needed a reliable foundation for deploying AI solutions at scale. The platform gave our team the flexibility to connect models, automate workflows and build intelligent applications.',
+      quote: 'Connecting models, applications and business workflows is central to the AI solutions we want to develop. Having these capabilities in the same conversation helped us plan our approach.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -266,7 +266,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Digital',
-      quote: 'AI adoption felt complicated before we found the right technology partner. The implementation process was straightforward, and we now use intelligent automation to improve everyday business operations.',
+      quote: 'We were looking for practical ways to introduce AI into everyday operations. Starting with clear business requirements helped us identify where intelligent automation could be useful.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -275,7 +275,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of Technology',
       company: 'Apex Innovations',
-      quote: 'The platform has helped us bring our data, AI models and workflows together. We now have a much more structured approach to developing and deploying intelligent business applications.',
+      quote: 'Bringing our AI models, data sources and applications into a connected architecture is an important part of our technology roadmap.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -284,7 +284,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Technologies',
-      quote: 'We wanted to introduce AI without disrupting our existing systems. Their integration-focused approach made it easier to connect intelligent workflows with the tools our teams already use.',
+      quote: 'Integration with our existing technology environment was one of our key considerations. We wanted an approach that takes our current systems and workflows into account.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -293,7 +293,7 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Intelligence',
-      quote: 'From planning to deployment, the experience has been excellent. AI automation has helped our teams reduce repetitive work and dedicate more time to strategic initiatives.',
+      quote: 'We see AI as an opportunity to rethink repetitive work and give our teams more time for activities that need human judgment and attention.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -302,7 +302,7 @@ export const testimonialsData = {
       name: 'Ananya Kapoor',
       role: 'AI Solutions Architect',
       company: 'Pinnacle Digital',
-      quote: 'The combination of AI capabilities, flexible integrations and scalable architecture has given us a strong foundation for building intelligent products and delivering better customer experiences.',
+      quote: 'The ability to consider agents, generative AI and integrations together gives us a useful framework for planning intelligent products and customer experiences.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -316,33 +316,33 @@ export const faqData = {
     eyebrow: 'Frequently Asked Questions',
     first: 'Everything about',
     highlight: 'our AI platform.',
-    description: 'Explore how our AI technology, intelligent automation and integrations can help your business innovate and scale.',
+    description: 'Learn about the platform capabilities, AI technologies and integration possibilities that can support your business.',
   },
 
   faqs: [
     {
       question: 'What is an AI platform?',
-      answer: 'An AI platform provides the technology and tools needed to build, integrate and deploy artificial intelligence into business operations. It can bring together AI models, intelligent agents, automation workflows and integrations within a unified environment.',
+      answer: 'An AI platform brings together technologies and tools that help businesses build, integrate and use artificial intelligence. Depending on its capabilities, it can include AI models, intelligent agents, automation workflows, integrations and tools for developing AI-powered applications.',
     },
     {
-      question: 'What can I build with your AI platform?',
-      answer: 'Depending on your requirements and selected capabilities, you can explore AI assistants, conversational applications, automated workflows, intelligent agents and AI-powered business tools.',
+      question: 'What can I build with the Arventa AI Platform?',
+      answer: 'Depending on the selected components and your requirements, you can explore AI assistants, conversational applications, intelligent agents, automated workflows and AI-powered business tools.',
     },
     {
-      question: 'Which AI models and technologies do you support?',
-      answer: 'AI model and technology options depend on your specific implementation requirements. Our team can help you evaluate suitable language models, generative AI technologies and integration approaches.',
+      question: 'Which AI models and technologies are supported?',
+      answer: 'Available models and technologies depend on the integrations and deployment options selected for your project. Our team can help you evaluate suitable language models, generative AI technologies and supporting tools for your use case.',
     },
     {
       question: 'Can the platform integrate with our existing systems?',
-      answer: 'Yes. Integration possibilities depend on your existing technology stack and use case. We can discuss APIs, third-party services, data sources and workflow connections required for your implementation.',
+      answer: 'Integration possibilities depend on your current technology stack and project requirements. We can assess APIs, third-party services, databases, data sources and workflow connections as part of the implementation discussion.',
     },
     {
       question: 'Is the AI platform suitable for enterprise businesses?',
-      answer: 'The platform is designed around business AI use cases, with an emphasis on scalable workflows, integrations and operational flexibility. Specific security, deployment and infrastructure requirements can be evaluated with our team.',
+      answer: 'The platform is intended to support business-focused AI use cases, including integrations, intelligent workflows and application development. Specific infrastructure, security, governance and deployment requirements should be evaluated for each enterprise implementation.',
     },
     {
       question: 'How can we get started?',
-      answer: 'Contact our team to discuss your business objectives, current systems and AI requirements. We will help identify relevant use cases and explore an appropriate implementation approach.',
+      answer: 'Contact our team to discuss your business objectives, existing systems and AI requirements. We can help identify suitable use cases and explore an implementation approach based on your priorities.',
     },
   ],
 
@@ -363,7 +363,7 @@ export const CTAData = {
     highlight: 'starts with AI.',
   },
 
-  description: 'Whether you want to automate business operations, build intelligent AI agents, integrate generative AI or develop next-generation applications, our team is ready to help turn your ideas into reality.',
+  description: 'Whether you want to introduce intelligent agents, explore generative AI, automate business workflows or connect AI with existing applications, our team can help you evaluate the right approach.',
 
   cta: {
     primary: {
@@ -381,35 +381,35 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '24',
-    accent: '/7',
-    label: 'AI Availability',
-    description: 'Intelligence whenever you need it',
+    value: 'Flexible',
+    accent: '',
+    label: 'AI Workflows',
+    description: 'Explore automation for different business needs',
   },
   {
-    value: '99.9',
-    accent: '%',
-    label: 'Platform Reliability',
-    description: 'Built for consistent performance',
-  },
-  {
-    value: '100',
-    accent: '+',
+    value: 'Connected',
+    accent: '',
     label: 'AI Integrations',
-    description: 'Connect your business ecosystem',
+    description: 'Connect models, applications and systems',
   },
   {
-    value: '1',
-    accent: ' Platform',
-    label: 'Unified Intelligence',
-    description: 'AI models, agents and workflows',
+    value: 'Multi-Model',
+    accent: '',
+    label: 'AI Capabilities',
+    description: 'Evaluate technologies for your use case',
+  },
+  {
+    value: 'Unified',
+    accent: '',
+    label: 'AI Platform',
+    description: 'Agents, models and workflows in one approach',
   },
 ];
 
 export const countUpGridData = {
   id: 'who-we-are',
 
-  badge: 'Who We Are',
+  badge: 'The AI Platform',
 
   heading: {
     firstLine: 'Intelligence with',
@@ -417,10 +417,10 @@ export const countUpGridData = {
   },
 
   description:
-    'We operate at the intersection of artificial intelligence, automation and software innovation. Our mission is to make advanced AI technology accessible, practical and valuable for modern businesses.',
+    'We work at the intersection of artificial intelligence, automation and software innovation. Our goal is to help businesses explore practical AI capabilities and turn promising ideas into useful applications.',
 
   secondaryDescription:
-    'From intelligent agents and generative AI to workflow automation and enterprise integrations, we help organizations transform ideas into scalable AI-powered solutions.',
+    'From intelligent agents and generative AI to workflow automation and enterprise integrations, we help organizations plan and develop AI-powered solutions around their needs.',
 
   cta: {
     label: 'Discover Our Approach',
@@ -429,23 +429,23 @@ export const countUpGridData = {
   },
 
   supportingNote:
-    'Building intelligent technology for tomorrow.',
+    'Building intelligent technology for real-world needs.',
 
   statsPanel: {
     eyebrow: 'At a glance',
-    heading: 'AI at scale',
-    badge: 'Built for innovation',
+    heading: 'AI capabilities',
+    badge: 'Built for business',
 
     stats: [
-      { value: '24/7', label: 'AI Availability' },
-      { value: '100+', label: 'Integration Possibilities' },
-      { value: 'Multi-Model', label: 'AI Capabilities' },
-      { value: 'API', label: 'First Architecture' },
+      { value: 'Agents', label: 'Intelligent Assistants' },
+      { value: 'Models', label: 'Generative AI' },
+      { value: 'Workflows', label: 'Business Automation' },
+      { value: 'APIs', label: 'Connected Systems' },
     ],
 
     footer: {
-      description: 'Intelligence without boundaries',
-      status: 'AI ready',
+      description: 'Intelligence connected to your business',
+      status: 'Explore AI',
     },
   },
 };
@@ -457,27 +457,27 @@ export const featureGridSectionData1 = {
     firstLine: 'Intelligence',
     highlight: 'reimagined.',
   },
-  description: 'From generative AI to intelligent automation, we provide the technology, tools and integrations businesses need to innovate, operate smarter and scale faster.',
+  description: 'Explore the technologies and capabilities that bring AI into business applications, from model infrastructure and intelligent agents to automation and connected systems.',
   items: [
     {
       icon: '◈',
       title: 'AI Infrastructure',
-      description: 'Scalable computing, model deployment and enterprise AI foundations.',
+      description: 'Explore computing, model hosting and deployment foundations for AI applications.',
     },
     {
       icon: '▣',
       title: 'AI Agents',
-      description: 'Intelligent autonomous agents and virtual assistants.',
+      description: 'Develop intelligent assistants that can interact with tools and support tasks.',
     },
     {
       icon: '◉',
       title: 'AI Automation',
-      description: 'Intelligent workflows, process optimization and task automation.',
+      description: 'Connect business processes through intelligent workflows and task automation.',
     },
     {
       icon: '✦',
       title: 'AI Integrations',
-      description: 'Connect models, applications and business systems seamlessly.',
+      description: 'Connect models, applications, data sources and business systems.',
     },
   ],
 };
@@ -488,13 +488,13 @@ export const aiPlatformPageData = {
   sectionId: 'ai-platform',
 
   hero: {
-    eyebrow: 'Next-Generation AI Platform',
+    eyebrow: 'The Arventa AI Platform',
     heading: {
       first: 'Build beyond',
       highlight: 'what is possible.',
     },
     description:
-      'Unlock the power of artificial intelligence with a unified platform built for intelligent automation, AI agents and generative applications. Transform business processes, accelerate innovation and create smarter digital experiences.',
+      'Explore a connected approach to artificial intelligence, bringing together AI agents, generative models, intelligent automation and integrations. Turn business challenges into opportunities to build smarter workflows and digital experiences.',
     primaryCta: {
       label: 'Talk to Our AI Team',
       href: '#contact',
@@ -503,7 +503,7 @@ export const aiPlatformPageData = {
       label: 'Explore Platform Features',
       href: '#ai-features',
     },
-    supportingNote: 'One platform. Endless intelligence.',
+    supportingNote: 'One platform. Connected intelligence.',
   },
 
   introduction: {
@@ -513,7 +513,7 @@ export const aiPlatformPageData = {
       highlight: 'intelligence.',
     },
     description:
-      'Bring advanced AI capabilities into your everyday operations. From understanding natural language to executing complex workflows, empower your business with intelligent systems that learn, assist and automate.',
+      'Bring AI capabilities into the way your business works. From understanding natural language to supporting multi-step processes, explore intelligent systems that assist people, connect tools and help automate suitable tasks.',
   },
 
   features: {
@@ -524,43 +524,43 @@ export const aiPlatformPageData = {
       highlight: 'to build with AI.',
     },
     description:
-      'Explore a powerful collection of AI capabilities designed to connect models, automate processes and turn innovative ideas into real-world applications.',
+      'Explore a range of AI capabilities designed to connect models, support automation and help turn ideas into useful business applications.',
     items: [
       {
         icon: '◉',
         title: 'Intelligent AI Agents',
         description:
-          'Build AI agents that understand instructions, interact with connected tools and execute multi-step tasks to support your business operations.',
+          'Explore agents that interpret instructions, interact with connected tools and support multi-step tasks across suitable business workflows.',
       },
       {
         icon: '✦',
         title: 'Generative AI & LLMs',
         description:
-          'Leverage advanced language models to generate content, understand information, summarize data and power intelligent applications.',
+          'Use language models to generate content, understand information, summarize material and support intelligent applications.',
       },
       {
         icon: '▤',
         title: 'Workflow Automation',
         description:
-          'Design intelligent workflows that connect applications, automate repetitive processes and coordinate complex business tasks.',
+          'Design connected workflows that bring applications together, support repetitive tasks and coordinate business processes.',
       },
       {
         icon: '◇',
         title: 'Conversational AI',
         description:
-          'Create natural conversational experiences through AI-powered chatbots, virtual assistants and intelligent voice applications.',
+          'Create conversational experiences through AI-powered chatbots, virtual assistants and voice applications.',
       },
       {
         icon: '◎',
         title: 'AI Integrations & APIs',
         description:
-          'Connect AI capabilities with your existing software, databases, applications and business systems through flexible integrations.',
+          'Explore ways to connect AI capabilities with software, databases, applications and business systems through integrations.',
       },
       {
         icon: '↗',
         title: 'Scalable AI Infrastructure',
         description:
-          'Build and expand AI-powered applications with an adaptable foundation designed to support evolving business requirements.',
+          'Plan an adaptable technical foundation for AI applications as business requirements and implementation needs evolve.',
       },
     ],
   },
@@ -573,24 +573,24 @@ export const aiPlatformPageData = {
     },
     items: [
       {
-        title: 'Increase productivity',
+        title: 'Support productivity',
         description:
-          'Automate repetitive tasks and give your teams more time to focus on strategic and creative work.',
+          'Use AI to assist with repetitive tasks and help teams focus on work that benefits from human judgment and creativity.',
       },
       {
         title: 'Build smarter experiences',
         description:
-          'Create intelligent applications that understand user needs and deliver more relevant, personalized interactions.',
+          'Create applications that can interpret requests, support conversations and deliver more relevant interactions.',
       },
       {
-        title: 'Unlock new possibilities',
+        title: 'Make more of your information',
         description:
-          'Use AI to transform information into insights, accelerate decision-making and discover new business opportunities.',
+          'Explore how AI can summarize content, surface useful insights and support information-driven decisions.',
       },
       {
-        title: 'Scale with confidence',
+        title: 'Evolve with your business',
         description:
-          'Start with individual AI use cases and expand into connected intelligent systems as your business evolves.',
+          'Start with focused AI use cases and consider additional connected capabilities as your requirements develop.',
       },
     ],
   },
@@ -599,28 +599,28 @@ export const aiPlatformPageData = {
     eyebrow: 'Built for real-world applications',
     heading: {
       first: 'Turn AI potential',
-      highlight: 'into business impact.',
+      highlight: 'into business value.',
     },
     items: [
       {
         title: 'Intelligent Customer Support',
         description:
-          'Build AI assistants that answer questions, understand requests and help customers find solutions.',
+          'Explore AI assistants that respond to common questions, interpret requests and help customers find relevant information.',
       },
       {
         title: 'Business Process Automation',
         description:
-          'Automate repetitive operational workflows, document processing and everyday business tasks.',
+          'Use connected workflows to support repetitive operational tasks, document handling and suitable business processes.',
       },
       {
         title: 'AI-Powered Applications',
         description:
-          'Develop intelligent software experiences using generative AI, language models and connected services.',
+          'Develop software experiences that use generative AI, language models and connected services.',
       },
       {
         title: 'Enterprise Knowledge Assistants',
         description:
-          'Help employees access relevant information through AI-powered search, knowledge retrieval and conversational interfaces.',
+          'Help employees find and understand relevant information through AI-powered search and conversational interfaces.',
       },
     ],
   },
@@ -629,32 +629,32 @@ export const aiPlatformPageData = {
     {
       question: 'What is the Arventa AI Platform?',
       answer:
-        'The Arventa AI Platform is designed to help businesses adopt artificial intelligence through intelligent agents, generative AI, workflow automation and connected applications.',
+        'The Arventa AI Platform is designed to help businesses explore and adopt artificial intelligence through capabilities such as intelligent agents, generative AI, workflow automation and connected applications.',
     },
     {
       question: 'Can I build custom AI agents?',
       answer:
-        'AI agent capabilities and customization options depend on the selected platform components. Our team can help evaluate your requirements and discuss suitable agent architectures and integrations.',
+        'AI agent capabilities and customization options depend on the selected platform components and project requirements. Our team can help evaluate your use case and discuss suitable agent architectures and integrations.',
     },
     {
       question: 'Does the platform support different AI models?',
       answer:
-        'Model compatibility depends on the supported integrations and deployment requirements. Contact our team to explore the available AI model options for your use case.',
+        'Model compatibility depends on supported integrations and deployment requirements. Contact our team to explore suitable AI model options for your application.',
     },
     {
       question: 'Can it integrate with our existing software?',
       answer:
-        'Yes. Integration possibilities can include APIs, business applications, data sources and external services. The exact approach depends on your technology stack and implementation requirements.',
+        'Integration possibilities can include APIs, business applications, data sources and external services. The specific approach depends on your technology stack and implementation requirements.',
     },
     {
       question: 'Can we automate existing business workflows?',
       answer:
-        'Yes. You can explore AI-powered automation for suitable repetitive tasks and multi-step processes. Our team can help identify workflows where AI can deliver practical value.',
+        'You can explore AI-powered automation for suitable repetitive tasks and multi-step processes. Our team can help identify workflows where AI may provide practical value.',
     },
     {
       question: 'How do we get started?',
       answer:
-        'Contact our team with your business objectives, current technology stack and AI requirements. We will help identify relevant use cases and discuss an implementation strategy.',
+        'Contact our team with your business objectives, existing technology stack and AI requirements. We can help identify relevant use cases and discuss an implementation strategy.',
     },
   ],
 
@@ -665,7 +665,7 @@ export const aiPlatformPageData = {
       highlight: 'something smarter?',
     },
     description:
-      'Tell us about your vision. Together, we can explore how AI agents, generative AI and intelligent automation can transform your business.',
+      'Tell us about your vision. Together, we can explore how AI agents, generative AI and intelligent automation could support your business.',
     button: {
       label: 'Start Your AI Journey',
       href: '#contact',
@@ -677,7 +677,7 @@ export const hero1Data = {
   hero: {
     title: 'Intelligence Without',
     highlightedTitle: 'Boundaries.',
-    description: 'Build the next generation of intelligent applications with powerful AI models, autonomous agents and seamless integrations designed to automate workflows, unlock insights and transform your business.',
+    description: 'Explore a connected AI platform for intelligent agents, generative applications and business automation. Bring models, workflows and integrations together to create useful digital experiences.',
     primaryButton: 'Get Started',
     secondaryButton: 'Explore AI Solutions',
   },
@@ -687,8 +687,8 @@ export const hero1Data = {
       {
         number: '01',
         title: 'AI Agents',
-        description: 'Intelligent agents that understand, reason and execute tasks.',
-        footer: 'Built for your business',
+        description: 'Intelligent assistants that interpret instructions and support business tasks.',
+        footer: 'Built around your needs',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
@@ -699,8 +699,8 @@ export const hero1Data = {
       {
         number: '02',
         title: 'AI Integrations',
-        description: 'Connect intelligent models with your existing applications.',
-        footer: 'Built for your business',
+        description: 'Connect AI models and applications with your existing systems.',
+        footer: 'Built around your needs',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
@@ -712,8 +712,8 @@ export const hero1Data = {
       {
         number: '03',
         title: 'Intelligent Automation',
-        description: 'Scale business operations with AI-powered workflows.',
-        footer: 'Built for your business',
+        description: 'Connect tasks and business processes with AI-powered workflows.',
+        footer: 'Built around your needs',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -723,14 +723,14 @@ export const hero1Data = {
       },
     ],
   },
-}
+};
 
 export const hero2Data = {
   hero: {
-    eyebrow: 'Always-On AI Infrastructure',
-    title: 'Always intelligent.',
-    highlightedTitle: 'Always evolving.',
-    description: 'Behind every intelligent application is a powerful technology foundation. Discover how AI models, automated workflows and connected systems work together to power smarter business operations.',
+    eyebrow: 'Connected AI Technology',
+    title: 'Intelligence that',
+    highlightedTitle: 'works together.',
+    description: 'Explore the technologies behind modern AI applications. From language models and intelligent agents to connected workflows and APIs, bring the right capabilities together around your business requirements.',
     primaryButton: 'Explore Technology',
     secondaryButton: 'Discover Our Platform',
   },
@@ -738,70 +738,70 @@ export const hero2Data = {
   stats: {
     items: [
       {
-        value: '24/7',
-        label: 'AI Availability',
+        value: 'Agents',
+        label: 'Intelligent Assistants',
         icon: '◉',
       },
       {
-        value: '∞',
-        label: 'Automation Potential',
+        value: 'Models',
+        label: 'Generative AI',
         icon: '◌',
       },
       {
-        value: 'Multi-Model',
-        label: 'AI Capabilities',
+        value: 'Workflows',
+        label: 'Process Automation',
         icon: '◎',
       },
       {
-        value: 'API',
-        label: 'Integration Ready',
+        value: 'APIs',
+        label: 'System Integrations',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your intelligence is always evolving.',
-    status: 'AI Platform Online',
-    availability: 'Intelligence at work',
+    title: 'What makes an AI platform?',
+    status: 'Connected capabilities',
+    availability: 'Designed around your needs',
     members: [
       {
         initials: 'AI',
-        name: 'AI Assistant',
-        role: 'Intelligent Agent',
-        status: 'Online',
+        name: 'AI Agents',
+        role: 'Intelligent Assistance',
+        status: 'Platform capability',
       },
       {
-        initials: 'ML',
-        name: 'Model Engine',
-        role: 'AI Processing',
-        status: 'Online',
+        initials: 'LLM',
+        name: 'Language Models',
+        role: 'Generative AI',
+        status: 'Platform capability',
       },
       {
         initials: 'WF',
-        name: 'Workflow Engine',
-        role: 'Automation',
-        status: 'Monitoring',
+        name: 'Workflow Automation',
+        role: 'Connected Processes',
+        status: 'Platform capability',
       },
     ] 
   },
 
   activity: {
-    title: 'Live AI platform activity',
-    status: 'Operational',
+    title: 'Explore AI capabilities',
+    status: 'Discover the platform',
   },
-}
+};
 
 export const hero3Data = {
   hero: {
-    eyebrow: 'About Our Company',
+    eyebrow: 'AI Platform',
 
     heading: {
       firstLine: 'We build intelligence.',
       secondLine: 'We empower innovation.',
     },
 
-    description: 'We bring together artificial intelligence, automation and modern software engineering to help businesses rethink possibilities, simplify operations and build a smarter digital future.',
+    description: 'We bring together artificial intelligence, automation and modern software engineering to help businesses explore new possibilities, connect their systems and build useful digital experiences.',
 
     primaryCta: {
       label: 'Discover Our Story',
@@ -826,11 +826,11 @@ export const hero3Data = {
       },
       {
         value: 'API-Ready',
-        label: 'Integrations',
+        label: 'Integration Approach',
       },
       {
-        value: '24/7',
-        label: 'Intelligent Operations',
+        value: 'Connected',
+        label: 'Intelligent Workflows',
       },
     ],
   },
@@ -868,7 +868,7 @@ export const hero3Data = {
       {
         number: '03',
         title: 'Responsible Intelligence',
-        description: 'We believe in building practical, reliable and responsible AI experiences that deliver meaningful value.',
+        description: 'Build practical AI experiences with attention to responsible use, appropriate oversight and meaningful business value.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -878,4 +878,98 @@ export const hero3Data = {
       },
     ],
   },
+};
+
+export const processData = {
+  content: {
+    eyebrow: 'Our AI Implementation Approach',
+    titleLine1: 'From business idea',
+    titleHighlight: 'to intelligent solution.',
+    description: 'Successful AI adoption starts with understanding the problem. We take a structured approach to identifying useful opportunities, evaluating the right technologies, connecting systems and planning an implementation that fits your business.',
+
+    statusText: 'A practical approach to AI adoption',
+    flowText: 'Discover · Design · Integrate · Evolve',
+    footerTitle: 'Intelligence built around real needs',
+    footerDescription: 'Start with a clear use case and develop your AI capabilities as your requirements evolve.',
+    phaseLabel: 'Implementation stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Discover',
+      subtitle: 'Understand your business needs',
+      description: 'Explore your business objectives, existing systems and operational challenges to identify where AI agents, generative AI or automation may provide practical value.',
+    },
+    {
+      number: '02',
+      title: 'Design',
+      subtitle: 'Define the right AI approach',
+      description: 'Evaluate suitable models, platform capabilities, data requirements and workflow designs based on the use case and desired outcomes.',
+    },
+    {
+      number: '03',
+      title: 'Integrate',
+      subtitle: 'Connect tools and applications',
+      description: 'Plan how AI capabilities can work with your existing applications, APIs, data sources and business processes.',
+    },
+    {
+      number: '04',
+      title: 'Evolve',
+      subtitle: 'Review and improve',
+      description: 'Evaluate the implementation, gather feedback and identify opportunities to refine workflows or expand AI capabilities as business needs change.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Our AI Approach',
+    titleLine1: 'Intelligent technology',
+    titleLine2: 'with a clear purpose.',
+    description: 'Successful AI adoption requires more than choosing a model or implementing a tool. It takes a thoughtful approach to people, processes, technology and responsible use. These principles guide how we explore AI opportunities with our customers.',
+
+    cardFooter: 'The principles behind our AI approach',
+    approachEyebrow: 'The Arventa Approach',
+    approachTitle: 'People, processes, and technology working together.',
+    approachDescription: 'Because useful AI solutions begin with understanding the people and business processes they are designed to support.',
+
+    approachHighlight: ' Built around real needs.',
+
+    approachLabel: 'AI commitment',
+    approachSubLabel: 'Focused on practical business outcomes',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our approach to intelligent technology',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'Human-Centred AI',
+      description: 'Design AI experiences that support people, complement human judgment and make everyday work more useful.',
+      icon: "",
+      tag: 'People First',
+    },
+    {
+      number: '02',
+      title: 'Practical Innovation',
+      description: 'Focus on meaningful use cases and choose technologies that address real business needs rather than adopting AI for its own sake.',
+      icon: "",
+      tag: 'Purpose',
+    },
+    {
+      number: '03',
+      title: 'Responsible Intelligence',
+      description: 'Consider data, security, oversight and responsible AI practices when planning and implementing intelligent applications.',
+      icon: "",
+      tag: 'Responsibility',
+    },
+    {
+      number: '04',
+      title: 'Continuous Improvement',
+      description: 'Review outcomes, learn from implementation experience and refine AI workflows as technology and business requirements evolve.',
+      icon: "",
+      tag: 'Progress',
+    },
+  ],
 };

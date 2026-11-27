@@ -1,5 +1,9 @@
-const ServiceGrid = ({ theme = 'dark' ,data }) => {
-  const isDark = theme === 'dark';
+import { useSelector } from 'react-redux';
+
+const ServiceGrid = ({ data }) => {
+  const reduxTheme = useSelector((state) => state.theme.theme);
+
+  const isDark = reduxTheme === 'dark';
 
   const styles = {
     section: isDark ? 'border-white/10 bg-[#070909] text-white' : 'border-[#151716]/10 bg-[#F7F5F0] text-[#151716]',

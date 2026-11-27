@@ -14,7 +14,7 @@ import FAQ from '@/components/dynamic-zone/FAQ';
 import { CTAData, featureGridSectionData3, countupData, heroData, partnerData } from '@/app/data/partners';
 
 // import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection'
-
+import ContactForm from '@/components/dynamic-zone/ContactForm'
 import Loader from '@/components/layout/Loader';
 
 import { useEffect, useState } from 'react';
@@ -58,6 +58,7 @@ export default function Home() {
           {/* <Team />
           <FAQ /> */}
           <CTA data={CTAData} />
+          <ContactForm/>
         </>
       )}
 

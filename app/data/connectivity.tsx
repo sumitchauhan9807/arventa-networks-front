@@ -1,28 +1,29 @@
+
 export const serviceGridData = [
   {
     icon: '◈',
-    title: 'Carrier & Wholesale',
-    description: 'SIP Trunking, Origination/Termination, LCR',
+    title: 'Business Internet',
+    description: 'Reliable, high-performance internet connectivity for businesses.',
   },
   {
     icon: '▣',
-    title: 'Mobile & MVNO',
-    description: 'Flexible mobile solutions for your business',
+    title: 'Dedicated Connectivity',
+    description: 'Dedicated internet access and bandwidth built around your needs.',
   },
   {
     icon: '△',
-    title: 'IoT / M2M',
-    description: 'Connected devices. Unlimited possibilities.',
+    title: 'Network Solutions',
+    description: 'Flexible network infrastructure for connected operations.',
   },
   {
     icon: '◉',
-    title: 'Contact Center Software',
-    description: 'Powerful dialers, AI and fraud prevention.',
+    title: 'Global Connectivity',
+    description: 'Connect offices, teams, and systems across locations.',
   },
   {
     icon: '◎',
-    title: 'Global Network',
-    description: 'Secure. Scalable. Reliable.',
+    title: 'Network Security',
+    description: 'Secure, scalable connectivity for business-critical services.',
   },
 ];
 
@@ -30,18 +31,18 @@ export const solutionGridData = {
   eyebrow: 'What We Do',
 
   heading: {
-    normal: 'Our',
+    normal: 'Connectivity',
     highlight: 'Solutions',
   },
 
-  description: 'From carrier services to AI-powered contact center solutions, we provide the infrastructure and software you need to grow, connect and succeed.',
+  description: 'From business internet access to dedicated network infrastructure, we deliver connectivity solutions that help organizations stay online, connect locations, and operate with confidence.',
 
   cta: {
     label: 'Explore All Solutions',
     href: '#',
   },
 
-  supportingNote: 'Technology built for growth',
+  supportingNote: 'Connected infrastructure for modern business',
 
   card: {
     linkLabel: 'Explore solution',
@@ -50,42 +51,42 @@ export const solutionGridData = {
     {
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity & Security.',
+      title: 'Business Internet',
+      description: 'Reliable internet access, dedicated bandwidth, and business connectivity.',
     },
     {
       image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80',
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM, IoT / M2M connectivity.',
+      title: 'Network Infrastructure',
+      description: 'Flexible network solutions for offices, teams, and connected systems.',
     },
     {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
+      title: 'Global Connectivity',
+      description: 'Connect business locations and digital operations across markets.',
     },
   ],
 };
 
 export const offeringGridData = {
-  sectionId: 'contact-center',
+  sectionId: 'connectivity-services',
 
-  eyebrow: 'Contact Center & Software',
+  eyebrow: 'Internet & Network Services',
 
   heading: {
-    first: 'Smarter Dialers.',
-    highlight: 'Better Conversations.',
+    first: 'Stronger Connections.',
+    highlight: 'Smarter Networks.',
   },
 
-  description: 'Boost your efficiency with our advanced dialer solutions, AI platform and fraud prevention tools. Empower your team with smarter technology designed to improve productivity and customer engagement.',
+  description: 'Build a dependable foundation for your business with internet and connectivity services designed around your operations. From dedicated access to flexible network solutions, we help keep your people, systems, and locations connected.',
 
   cta: {
-    label: 'Discover Contact Center Solutions',
+    label: 'Discover Connectivity Solutions',
     href: '#',
   },
 
-  supportingNote: 'Intelligent solutions for modern business communication',
+  supportingNote: 'Flexible connectivity for evolving business needs',
 
   product: {
     arrow: '→',
@@ -97,28 +98,28 @@ export const offeringGridData = {
   items: [
     {
       icon: '✦',
-      title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
+      title: 'Business Internet',
+      description: 'Reliable internet access for everyday business operations.',
     },
     {
       icon: '◇',
-      title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
+      title: 'Dedicated Internet Access',
+      description: 'Dedicated connectivity and bandwidth for critical workloads.',
     },
     {
-      icon: 'AI',
-      title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
+      icon: '◎',
+      title: 'Network Connectivity',
+      description: 'Connect offices, teams, and business locations.',
     },
     {
       icon: '◇',
-      title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
+      title: 'Network Security',
+      description: 'Support safer connections across your business network.',
     },
     {
       icon: 'API',
-      title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
+      title: 'Managed Connectivity',
+      description: 'Simplify network management as your business grows.',
     },
   ],
 };
@@ -208,11 +209,11 @@ export const testimonialsData = {
   section: {
     eyebrow: 'Client Experiences',
     heading: {
-      first: 'Trusted by those',
-      second: 'who expect',
-      highlight: 'more.',
+      first: 'Connected by trust',
+      second: 'and built for',
+      highlight: 'what’s next.',
     },
-    description: 'The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.',
+    description: 'Discover how dependable connectivity and thoughtful technical support can help businesses keep their people, systems, and locations connected.',
   },
 
   decorative: {
@@ -225,7 +226,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus Networks',
-      quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
+      quote: 'A dependable connectivity foundation makes a real difference to how our teams work. Having a partner who understands our network requirements helps us plan with greater confidence.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -234,7 +235,7 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Solutions',
-      quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
+      quote: 'We wanted connectivity that could adapt as our business evolved. A clear approach to our requirements and a focus on dependable service made the process straightforward.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -243,7 +244,7 @@ export const testimonialsData = {
       name: 'Daniel Chen',
       role: 'Network Infrastructure Lead',
       company: 'CloudBridge Systems',
-      quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
+      quote: 'Managing a complex network requires the right infrastructure and a partner who understands the technical details. Flexibility and scalability are essential to our long-term plans.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -252,7 +253,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Technologies',
-      quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
+      quote: 'Our business depends on keeping teams and systems connected. Having a clear connectivity strategy gives us a stronger foundation for day-to-day operations and future growth.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -261,7 +262,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of IT Infrastructure',
       company: 'Apex Digital',
-      quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
+      quote: 'We look for infrastructure that is practical, scalable, and suited to our operational needs. A structured approach to connectivity helps us build a more resilient network environment.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -270,7 +271,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Communications',
-      quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
+      quote: 'As our connectivity needs change, flexibility becomes increasingly important. Understanding our requirements and planning for growth are key parts of building the right solution.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -279,7 +280,7 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Connect',
-      quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
+      quote: 'A well-planned network supports every part of the business. We value an approach that considers reliability, long-term performance, and the way our teams actually work.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -288,7 +289,7 @@ export const testimonialsData = {
       name: 'Ananya Kapoor',
       role: 'Network Operations Manager',
       company: 'Pinnacle Technologies',
-      quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
+      quote: 'Our network requirements continue to evolve. Having the flexibility to adapt connectivity as our operations grow is an important part of staying ready for what comes next.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -300,41 +301,41 @@ export const faqData = {
 
   heading: {
     eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    first: 'Everything you need',
+    highlight: 'to stay connected.',
+    description: 'Learn more about business internet, network connectivity, service options, and how to get started with Arventa Networks.',
   },
 
   faqs: [
     {
-      question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      question: 'What is business internet connectivity?',
+      answer: 'Business internet connectivity provides organizations with internet access designed to support their daily operations, applications, teams, and digital services. Depending on your requirements, solutions can include standard business broadband or dedicated internet access.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'What is the difference between broadband and dedicated internet access?',
+      answer: 'Broadband provides internet access over a shared network infrastructure, while dedicated internet access is designed to provide a dedicated connection with defined service characteristics. The right option depends on your bandwidth needs, usage patterns, and operational requirements.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'Can you connect multiple business locations?',
+      answer: 'Connectivity solutions can be designed to link offices, branches, and other business locations. The appropriate setup depends on your locations, applications, security requirements, and the network architecture you need.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'How much bandwidth does my business need?',
+      answer: 'Bandwidth requirements depend on the number of users, cloud applications, video meetings, file transfers, and other services your organization relies on. Our team can help assess your usage and identify a suitable connectivity option.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'Can connectivity solutions scale as my business grows?',
+      answer: 'Connectivity requirements can change as your organization adds users, locations, and digital services. We can discuss flexible options that align with your current needs and future network plans.',
     },
     {
       question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      answer: "Contact our team to discuss your locations, bandwidth requirements, existing infrastructure, and business priorities. We'll help you explore suitable internet and connectivity solutions.",
     },
   ],
 
   contact: {
     heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    description: "Let's discuss your internet and connectivity requirements.",
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -345,11 +346,11 @@ export const CTAData = {
 
   heading: {
     eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    first: 'Build a stronger',
+    highlight: 'connection.',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Whether you need business internet, dedicated connectivity, network infrastructure, or solutions for multiple locations, our team is ready to understand your requirements and help you move forward.',
 
   cta: {
     primary: {
@@ -367,28 +368,28 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '3',
-    accent: 's',
-    label: 'P95 delivery',
-    description: 'Measured continuously',
+    value: 'Business',
+    accent: '',
+    label: 'Internet Access',
+    description: 'Connectivity for daily operations',
   },
   {
-    value: '99.5',
-    accent: '%',
-    label: 'Delivery success',
-    description: 'With failover',
+    value: 'Dedicated',
+    accent: '',
+    label: 'Connectivity',
+    description: 'Options for business-critical needs',
   },
   {
-    value: '500',
-    accent: 'ms',
-    label: 'Failover time',
-    description: 'Route-to-route',
+    value: 'Flexible',
+    accent: '',
+    label: 'Network Solutions',
+    description: 'Designed around your requirements',
   },
   {
-    value: '200',
-    accent: '+',
-    label: 'Countries',
-    description: 'Premium OTP routes',
+    value: 'Global',
+    accent: '',
+    label: 'Connectivity',
+    description: 'Connecting locations and operations',
   },
 ];
 
@@ -398,15 +399,15 @@ export const countUpGridData = {
   badge: 'Who We Are',
 
   heading: {
-    firstLine: 'Infrastructure with',
+    firstLine: 'Connectivity with',
     highlight: 'purpose.',
   },
 
   description:
-    'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+    'Arventa Networks brings together telecommunications, technology, and network connectivity to help organizations build the infrastructure they depend on. We focus on practical solutions that keep businesses, teams, and digital services connected.',
 
   secondaryDescription:
-    'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+    'From business internet and dedicated access to network infrastructure and global connectivity, our approach is built around flexibility, dependable service, and long-term partnerships.',
 
   cta: {
     label: 'Discover Our Approach',
@@ -415,63 +416,64 @@ export const countUpGridData = {
   },
 
   supportingNote:
-    'Reliable connectivity. Built for the long term.',
+    'Reliable connectivity. Built around your business.',
 
   statsPanel: {
-    eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    eyebrow: 'Our Connectivity Approach',
+    heading: 'Built around your network',
+    badge: 'Connected infrastructure',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: 'Business', label: 'Internet Access' },
+      { value: 'Dedicated', label: 'Connectivity Options' },
+      { value: 'Flexible', label: 'Network Solutions' },
+      { value: 'Scalable', label: 'Infrastructure' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'Connectivity designed for business',
+      status: 'Built to keep you connected',
     },
   },
 };
+
 export const featureGridSectionData1 = {
   buttonText: 'Explore Solutions',
-  eyebrow: 'What we do',
+  eyebrow: 'What We Do',
   heading: {
-    firstLine: 'Communication',
+    firstLine: 'Connectivity',
     highlight: 'engineered.',
   },
-  description: 'From carrier services to communication infrastructure, we provide the technology and connectivity businesses need to grow, connect and operate.',
+  description: 'From business internet access to network infrastructure, we provide connectivity solutions that help organizations connect locations, support digital operations, and grow with confidence.',
   items: [
     {
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
+      title: 'Business Internet',
+      description: 'Reliable internet access for teams, applications, and daily operations.',
     },
     {
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM and IoT / M2M connectivity solutions.',
+      title: 'Dedicated Connectivity',
+      description: 'Dedicated internet access and bandwidth options for business needs.',
     },
     {
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, fraud prevention and communication APIs.',
+      title: 'Network Infrastructure',
+      description: 'Flexible connectivity for offices, locations, and connected systems.',
     },
     {
       icon: '✦',
-      title: 'Technology Partnerships',
-      description: 'Integrate. Automate. Grow with the right ecosystem.',
+      title: 'Network Security',
+      description: 'Build a more secure foundation for your business connectivity.',
     },
   ],
 };
 
 export const hero1Data = {
   hero: {
-    title: 'Voice Without',
-    highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
+    title: 'Internet Without',
+    highlightedTitle: 'Limits.',
+    description: 'Build a stronger digital foundation with flexible internet and connectivity solutions designed to connect your people, locations, and systems. Keep your business moving with infrastructure that can adapt as your needs evolve.',
     primaryButton: 'Get Started',
     secondaryButton: 'Explore Solutions',
   },
@@ -480,8 +482,8 @@ export const hero1Data = {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
+        title: 'Business Internet',
+        description: 'Reliable internet access for modern business operations.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -492,8 +494,8 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
+        title: 'Network Connectivity',
+        description: 'Connect your offices, teams, and business systems.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -505,8 +507,8 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
+        title: 'Scalable Infrastructure',
+        description: 'Adapt your connectivity as your business grows.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -517,85 +519,85 @@ export const hero1Data = {
       },
     ],
   },
-}
+};
 
 export const hero2Data = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'Business Connectivity',
+    title: 'Your business,',
+    highlightedTitle: 'always connected.',
+    description: 'Build a dependable network foundation for your business. From internet access to connected locations and infrastructure, find connectivity solutions shaped around the way you work.',
+    primaryButton: 'Explore Connectivity',
+    secondaryButton: 'Contact Our Team',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Business',
+        label: 'Internet Access',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'Dedicated',
+        label: 'Connectivity Options',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'Flexible',
+        label: 'Network Solutions',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'Scalable',
+        label: 'Infrastructure',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'Connectivity built around your needs.',
+    status: 'Business Connectivity',
+    availability: 'Solutions shaped around your operations',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'IN',
+        name: 'Internet Access',
+        role: 'Business Connectivity',
+        status: 'Service',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'NW',
+        name: 'Network Solutions',
+        role: 'Network Infrastructure',
+        status: 'Service',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'GL',
+        name: 'Global Connectivity',
+        role: 'Connected Locations',
+        status: 'Service',
       },
     ] 
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Connectivity solutions',
+    status: 'Designed around your needs',
   },
-}
+};
 
 export const hero3Data = {
   hero: {
     eyebrow: 'About Our Company',
 
     heading: {
-      firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      firstLine: 'We connect businesses.',
+      secondLine: 'We enable what’s next.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'We help businesses build the connectivity foundation behind modern operations. Bringing together network infrastructure, internet access, and practical technology solutions, we make it easier for organizations to stay connected and move forward.',
 
     primaryCta: {
       label: 'Discover Our Story',
@@ -611,20 +613,20 @@ export const hero3Data = {
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
+        value: 'Business',
+        label: 'Internet Solutions',
       },
       {
-        value: '42+',
-        label: 'Countries Connected',
+        value: 'Flexible',
+        label: 'Connectivity Options',
       },
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Scalable',
+        label: 'Network Infrastructure',
       },
       {
-        value: '24/7',
-        label: 'Global Support',
+        value: 'Connected',
+        label: 'Business Operations',
       },
     ],
   },
@@ -637,8 +639,8 @@ export const hero3Data = {
     items: [
       {
         number: '01',
-        title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        title: 'People First',
+        description: 'Connectivity should make it easier for people to work, collaborate, and access the tools they need.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -650,7 +652,7 @@ export const hero3Data = {
       {
         number: '02',
         title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        description: 'Network infrastructure should adapt as businesses add users, locations, and digital services.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -661,8 +663,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Dependable by Design',
+        description: 'Every connection matters. We believe in thoughtful infrastructure and solutions designed around dependable business connectivity.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -672,4 +674,98 @@ export const hero3Data = {
       },
     ],
   },
+};
+
+export const processData = {
+  content: {
+    eyebrow: 'Our Approach',
+    titleLine1: 'From your requirements',
+    titleHighlight: 'to connection.',
+    description: 'The right connectivity solution starts with understanding how your business works. We take a structured approach to assessing your needs, planning the right infrastructure, coordinating implementation, and supporting your evolving requirements.',
+
+    statusText: 'A considered approach to business connectivity',
+    flowText: 'Assess · Design · Connect · Optimize',
+    footerTitle: 'Connectivity that evolves with your business',
+    footerDescription: 'Every stage is focused on building a practical foundation for your network.',
+    phaseLabel: 'Implementation stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Assess',
+      subtitle: 'Understand your connectivity needs',
+      description: 'Review your locations, current infrastructure, bandwidth requirements, applications, and business priorities to understand what your network needs to support.',
+    },
+    {
+      number: '02',
+      title: 'Design',
+      subtitle: 'Plan the right solution',
+      description: 'Identify suitable internet access and network connectivity options based on your technical requirements, operational needs, and future plans.',
+    },
+    {
+      number: '03',
+      title: 'Connect',
+      subtitle: 'Coordinate implementation',
+      description: 'Coordinate the required connectivity setup and integration with your existing network environment, keeping your operational requirements in focus.',
+    },
+    {
+      number: '04',
+      title: 'Optimize',
+      subtitle: 'Adapt as your business evolves',
+      description: 'Review changing connectivity requirements, identify opportunities for improvement, and consider how your network can support new users, locations, and services.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Our Approach',
+    titleLine1: 'Stronger networks',
+    titleLine2: 'start with strong principles.',
+    description: 'Good connectivity is about more than getting online. It requires thoughtful planning, clear communication, and an understanding of how infrastructure supports real business needs. These principles guide our approach to internet and network solutions.',
+
+    cardFooter: 'The principles behind our connectivity approach',
+    approachEyebrow: 'The Arventa Approach',
+    approachTitle: 'People, infrastructure, and technology working together.',
+    approachDescription: 'Because effective business connectivity starts with understanding what your organization needs.',
+
+    approachHighlight: ' Built around your business.',
+
+    approachLabel: 'Connectivity commitment',
+    approachSubLabel: 'Focused on practical network solutions',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our connectivity philosophy',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'Reliability',
+      description: 'Business connectivity should provide a dependable foundation for the applications, teams, and services organizations rely on every day.',
+      icon: "",
+      tag: 'Dependability',
+    },
+    {
+      number: '02',
+      title: 'Transparency',
+      description: 'Clear communication and straightforward guidance help customers understand their connectivity options and make informed decisions.',
+      icon: "",
+      tag: 'Clarity',
+    },
+    {
+      number: '03',
+      title: 'Flexibility',
+      description: 'Connectivity solutions should reflect each organization’s requirements and adapt as its users, locations, and operations change.',
+      icon: "",
+      tag: 'Adaptability',
+    },
+    {
+      number: '04',
+      title: 'Continuous Improvement',
+      description: 'Technology and business needs continue to evolve. Reviewing infrastructure and identifying opportunities for improvement helps keep networks aligned with those changes.',
+      icon: "",
+      tag: 'Progress',
+    },
+  ],
 };

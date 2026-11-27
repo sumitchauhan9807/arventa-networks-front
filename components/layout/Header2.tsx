@@ -12,11 +12,11 @@ const GOLD_DARK = '#9A7020';
 
 const menuSections = [
   {
-    title: 'Unternehmen',
+    title: 'Company',
     icon: Building2,
     items: [
       {
-        title: 'Über Arventa',
+        title: 'About Arventa',
         description: 'Discover our company and vision.',
         href: '/about',
         icon: Building2,
@@ -50,7 +50,7 @@ const menuSections = [
     },
   },
   {
-    title: 'Carrier & Netzwerk',
+    title: 'Carrier & Network',
     icon: Network,
     items: [
       {
@@ -66,7 +66,7 @@ const menuSections = [
         icon: PhoneCall,
       },
       {
-        title: 'Rufnummern & DIDs',
+        title: 'Phone Numbers & DIDs',
         description: 'Global numbering solutions.',
         href: '/did',
         icon: Hash,
@@ -130,7 +130,7 @@ const menuSections = [
     icon: Headset,
     items: [
       {
-        title: 'Contact Center Lösungen',
+        title: 'Contact Center Solutions',
         description: 'Modern customer communication platforms.',
         href: '/contact-center',
         icon: Headset,

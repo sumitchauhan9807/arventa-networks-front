@@ -673,3 +673,96 @@ export const hero3Data = {
     ],
   },
 };
+export const processData = {
+  content: {
+    eyebrow: 'Our Operations',
+    titleLine1: 'From first alert',
+    titleHighlight: 'to resolution.',
+    description: 'Keeping voice services reliable requires a structured operational approach. We combine continuous monitoring, intelligent investigation, coordinated response, and ongoing improvement to support dependable SIP and VoIP connectivity.',
+
+    statusText: 'A continuous approach to network reliability',
+    flowText: 'Monitor · Detect · Investigate · Resolve',
+    footerTitle: 'Reliability through continuous improvement',
+    footerDescription: 'Every operational insight helps us strengthen the network.',
+    phaseLabel: 'Operational stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Monitor',
+      subtitle: 'Continuous network visibility',
+      description: 'Monitor SIP infrastructure, network connectivity, voice traffic, and service performance to maintain visibility into the health of critical communication systems.',
+    },
+    {
+      number: '02',
+      title: 'Detect',
+      subtitle: 'Identify potential issues',
+      description: 'Analyze service indicators, network alerts, and traffic patterns to identify anomalies, potential disruptions, and performance concerns.',
+    },
+    {
+      number: '03',
+      title: 'Investigate & Respond',
+      subtitle: 'Take coordinated action',
+      description: 'Investigate connectivity problems, SIP signaling issues, routing concerns, and service incidents while coordinating the appropriate technical response.',
+    },
+    {
+      number: '04',
+      title: 'Resolve & Improve',
+      subtitle: 'Strengthen service reliability',
+      description: 'Work toward service restoration, review incident findings, document corrective actions, and identify opportunities to improve infrastructure and operational processes.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Our Operations',
+    titleLine1: 'Reliable voice starts',
+    titleLine2: 'with reliable operations.',
+    description: 'Behind every dependable communication service is a commitment to accountability, technical discipline, and continuous improvement. These principles guide how we manage our infrastructure and support our customers.',
+
+    cardFooter: 'The principles behind our operations',
+    approachEyebrow: 'The Arventa Approach',
+    approachTitle: 'People, processes, and technology working together.',
+    approachDescription: 'Because dependable SIP and VoIP services require more than infrastructure alone.',
+
+    approachHighlight: ' Built around reliability.',
+
+    approachLabel: 'Operational commitment',
+    approachSubLabel: 'Focused on dependable communication',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our operational philosophy',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'Accountability',
+      description: 'Clear ownership, defined responsibilities, and documented operational procedures help ensure every issue receives the appropriate attention.',
+      icon: "",
+      tag: 'Ownership',
+    },
+    {
+      number: '02',
+      title: 'Transparency',
+      description: 'Clear communication, structured updates, and coordinated escalation help customers understand service issues and operational progress.',
+      icon: "",
+      tag: 'Communication',
+    },
+    {
+      number: '03',
+      title: 'Proactive Monitoring',
+      description: 'Continuous visibility into network health, SIP connectivity, and voice performance helps identify potential risks before they become larger problems.',
+      icon: "",
+      tag: 'Prevention',
+    },
+    {
+      number: '04',
+      title: 'Continuous Improvement',
+      description: 'Operational reviews, incident analysis, and performance insights help strengthen infrastructure, refine processes, and improve service reliability.',
+      icon: "",
+      tag: 'Progress',
+    },
+  ],
+};

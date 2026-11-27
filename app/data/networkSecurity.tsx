@@ -1,28 +1,29 @@
+
 export const serviceGridData = [
   {
     icon: '◈',
-    title: 'Carrier & Wholesale',
-    description: 'SIP Trunking, Origination/Termination, LCR',
+    title: 'Virtual Private Networks',
+    description: 'Secure, private connectivity for distributed teams and locations.',
   },
   {
     icon: '▣',
-    title: 'Mobile & MVNO',
-    description: 'Flexible mobile solutions for your business',
+    title: 'Network Security',
+    description: 'Protect business networks, systems, and connected devices.',
   },
   {
     icon: '△',
-    title: 'IoT / M2M',
-    description: 'Connected devices. Unlimited possibilities.',
+    title: 'Threat Protection',
+    description: 'Strengthen your network against unauthorized access and threats.',
   },
   {
     icon: '◉',
-    title: 'Contact Center Software',
-    description: 'Powerful dialers, AI and fraud prevention.',
+    title: 'Network Monitoring',
+    description: 'Visibility into network activity, performance, and security.',
   },
   {
     icon: '◎',
-    title: 'Global Network',
-    description: 'Secure. Scalable. Reliable.',
+    title: 'Secure Connectivity',
+    description: 'Scalable, managed connections built around your requirements.',
   },
 ];
 
@@ -30,18 +31,18 @@ export const solutionGridData = {
   eyebrow: 'What We Do',
 
   heading: {
-    normal: 'Our',
-    highlight: 'Solutions',
+    normal: 'Secure',
+    highlight: 'Connectivity',
   },
 
-  description: 'From carrier services to AI-powered contact center solutions, we provide the infrastructure and software you need to grow, connect and succeed.',
+  description: 'From virtual private networks to network protection and monitoring, we help businesses connect locations, protect critical systems, and manage their digital infrastructure with confidence.',
 
   cta: {
-    label: 'Explore All Solutions',
+    label: 'Explore Security Solutions',
     href: '#',
   },
 
-  supportingNote: 'Technology built for growth',
+  supportingNote: 'Connected with security in mind',
 
   card: {
     linkLabel: 'Explore solution',
@@ -50,42 +51,42 @@ export const solutionGridData = {
     {
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity & Security.',
+      title: 'VPN & Private Networks',
+      description: 'Private connectivity, secure remote access, and network management.',
     },
     {
       image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80',
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM, IoT / M2M connectivity.',
+      title: 'Network Security',
+      description: 'Network protection, access control, and security-focused infrastructure.',
     },
     {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
+      title: 'Monitoring & Management',
+      description: 'Network visibility, operational oversight, and infrastructure support.',
     },
   ],
 };
 
 export const offeringGridData = {
-  sectionId: 'contact-center',
+  sectionId: 'vpm-network-security',
 
-  eyebrow: 'Contact Center & Software',
+  eyebrow: 'VPM & Network Security',
 
   heading: {
-    first: 'Smarter Dialers.',
-    highlight: 'Better Conversations.',
+    first: 'Private Networks.',
+    highlight: 'Stronger Protection.',
   },
 
-  description: 'Boost your efficiency with our advanced dialer solutions, AI platform and fraud prevention tools. Empower your team with smarter technology designed to improve productivity and customer engagement.',
+  description: 'Connect users, offices, and business systems through virtual private networking and security-focused infrastructure. Our solutions help organizations manage access, strengthen network protection, and build a more controlled connectivity environment.',
 
   cta: {
-    label: 'Discover Contact Center Solutions',
+    label: 'Explore Network Security Solutions',
     href: '#',
   },
 
-  supportingNote: 'Intelligent solutions for modern business communication',
+  supportingNote: 'Private connectivity and protection for modern business',
 
   product: {
     arrow: '→',
@@ -97,28 +98,28 @@ export const offeringGridData = {
   items: [
     {
       icon: '✦',
-      title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
+      title: 'Virtual Private Networks',
+      description: 'Private connections between users, offices, and systems.',
     },
     {
       icon: '◇',
-      title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
+      title: 'Secure Remote Access',
+      description: 'Help authorized users connect to business resources securely.',
     },
     {
       icon: 'AI',
-      title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
+      title: 'Threat Detection',
+      description: 'Identify unusual activity and potential network risks.',
     },
     {
       icon: '◇',
-      title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
+      title: 'Network Protection',
+      description: 'Strengthen access controls and protect critical infrastructure.',
     },
     {
       icon: 'API',
-      title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
+      title: 'Network Management',
+      description: 'Manage connectivity, visibility, and security integrations.',
     },
   ],
 };
@@ -209,10 +210,10 @@ export const testimonialsData = {
     eyebrow: 'Client Experiences',
     heading: {
       first: 'Trusted by those',
-      second: 'who expect',
-      highlight: 'more.',
+      second: 'who value',
+      highlight: 'security.',
     },
-    description: 'The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.',
+    description: 'Discover how secure connectivity, network protection, and thoughtful infrastructure management can help businesses operate with greater confidence.',
   },
 
   decorative: {
@@ -225,7 +226,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus Networks',
-      quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
+      quote: 'A secure network is essential to the way we operate. Having a more structured approach to private connectivity and infrastructure management has helped us simplify our environment.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -234,7 +235,7 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Solutions',
-      quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
+      quote: 'We needed a connectivity solution that could support our distributed teams while keeping access to business resources controlled. The approach made our requirements easier to manage.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -243,7 +244,7 @@ export const testimonialsData = {
       name: 'Daniel Chen',
       role: 'Network Infrastructure Lead',
       company: 'CloudBridge Systems',
-      quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
+      quote: 'Managing network access across different environments can become complex. A clearer infrastructure and security strategy gives our team a better foundation for growth.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -252,7 +253,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Technologies',
-      quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
+      quote: 'We wanted to improve how our locations and remote users connect to business systems. The focus on our requirements and practical implementation made the process straightforward.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -261,7 +262,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of IT Infrastructure',
       company: 'Apex Digital',
-      quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
+      quote: 'Network visibility and access management are important parts of building resilient infrastructure. Having a more coordinated approach helps us plan and manage our environment.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -270,7 +271,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Communications',
-      quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
+      quote: 'Our infrastructure needs to evolve as the business grows. We value solutions that consider security, flexibility, and the practical needs of the people using the network.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -279,7 +280,7 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Connect',
-      quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
+      quote: 'A well-managed network supports the whole organization. We appreciate an approach that considers secure access, operational needs, and long-term infrastructure planning together.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -288,7 +289,7 @@ export const testimonialsData = {
       name: 'Ananya Kapoor',
       role: 'Network Operations Manager',
       company: 'Pinnacle Technologies',
-      quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
+      quote: 'Having a clearer view of network activity and connectivity requirements helps our team make more informed decisions. Flexibility and security need to work together.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -300,41 +301,41 @@ export const faqData = {
 
   heading: {
     eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    first: 'Understanding your',
+    highlight: 'network security.',
+    description: 'Learn more about virtual private networks, secure access, network protection, and how to get started.',
   },
 
   faqs: [
     {
-      question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      question: 'What is a virtual private network (VPN)?',
+      answer: 'A virtual private network creates an encrypted connection over an existing network, helping protect data in transit and allowing authorized users or locations to access private business resources.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'How can a VPN help protect my business?',
+      answer: 'A VPN can help protect information as it travels between users, offices, and business systems by encrypting network traffic. It can also support controlled remote access when configured with appropriate authentication and access policies.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'Can you connect multiple offices and remote users?',
+      answer: 'VPN solutions can be designed to connect business locations, remote employees, and selected systems. The appropriate configuration depends on your network architecture, access requirements, and security policies.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'What does network security include?',
+      answer: 'Network security can include access controls, secure connectivity, traffic visibility, monitoring, and protection measures designed to reduce exposure to unauthorized access and other network threats. The right combination depends on your environment.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'Can your solutions integrate with our existing infrastructure?',
+      answer: 'Integration options depend on your current network equipment, platforms, and technical requirements. Our team can review your environment and discuss suitable approaches for connecting with your existing systems.',
     },
     {
       question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      answer: "Contact our team to discuss your locations, users, network architecture, security priorities, and integration requirements. We'll help identify an approach that fits your business.",
     },
   ],
 
   contact: {
     heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    description: "Let's talk about your network and security requirements.",
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -345,11 +346,11 @@ export const CTAData = {
 
   heading: {
     eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    first: 'Build a more',
+    highlight: 'secure network.',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Whether you need private connectivity, secure remote access, network protection, or better infrastructure visibility, our team is ready to discuss your requirements.',
 
   cta: {
     primary: {
@@ -367,28 +368,28 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '3',
-    accent: 's',
-    label: 'P95 delivery',
-    description: 'Measured continuously',
+    value: 'Private',
+    accent: '',
+    label: 'Network access',
+    description: 'Connections designed around your needs',
   },
   {
-    value: '99.5',
-    accent: '%',
-    label: 'Delivery success',
-    description: 'With failover',
+    value: 'Secure',
+    accent: '',
+    label: 'Data in transit',
+    description: 'Encryption for supported VPN connections',
   },
   {
-    value: '500',
-    accent: 'ms',
-    label: 'Failover time',
-    description: 'Route-to-route',
+    value: 'Managed',
+    accent: '',
+    label: 'Network visibility',
+    description: 'A structured approach to oversight',
   },
   {
-    value: '200',
-    accent: '+',
-    label: 'Countries',
-    description: 'Premium OTP routes',
+    value: 'Scalable',
+    accent: '',
+    label: 'Connectivity',
+    description: 'Adaptable to changing business needs',
   },
 ];
 
@@ -398,15 +399,15 @@ export const countUpGridData = {
   badge: 'Who We Are',
 
   heading: {
-    firstLine: 'Infrastructure with',
-    highlight: 'purpose.',
+    firstLine: 'Security built into',
+    highlight: 'connectivity.',
   },
 
   description:
-    'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+    'Arventa Networks brings together connectivity and technology to help organizations build, manage, and protect their network infrastructure. We focus on practical solutions that support secure access and dependable business operations.',
 
   secondaryDescription:
-    'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+    'From virtual private networks and remote access to network protection and monitoring, our approach is built around security, flexibility, and long-term infrastructure needs.',
 
   cta: {
     label: 'Discover Our Approach',
@@ -415,62 +416,64 @@ export const countUpGridData = {
   },
 
   supportingNote:
-    'Reliable connectivity. Built for the long term.',
+    'Private connectivity. A security-focused approach.',
 
   statsPanel: {
     eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    heading: 'Security by design',
+    badge: 'Connected with confidence',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: 'VPN', label: 'Private Connectivity' },
+      { value: 'Access', label: 'User & Network Controls' },
+      { value: 'Monitor', label: 'Network Visibility' },
+      { value: 'Protect', label: 'Security Measures' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'A considered approach to network protection',
+      status: 'Security focused',
     },
   },
 };
+
 export const featureGridSectionData1 = {
   buttonText: 'Explore Solutions',
   eyebrow: 'What we do',
   heading: {
-    firstLine: 'Communication',
-    highlight: 'engineered.',
+    firstLine: 'Secure networks.',
+    highlight: 'Connected business.',
   },
-  description: 'From carrier services to communication infrastructure, we provide the technology and connectivity businesses need to grow, connect and operate.',
+  description: 'From private networking to network protection and monitoring, we provide connectivity solutions designed to help businesses connect their people, locations, and systems securely.',
   items: [
     {
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
+      title: 'Virtual Private Networks',
+      description: 'Private connectivity for offices, remote users, and business systems.',
     },
     {
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM and IoT / M2M connectivity solutions.',
+      title: 'Network Security',
+      description: 'Access controls and security measures for connected environments.',
     },
     {
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, fraud prevention and communication APIs.',
+      title: 'Monitoring & Visibility',
+      description: 'Greater insight into network activity and infrastructure performance.',
     },
     {
       icon: '✦',
-      title: 'Technology Partnerships',
-      description: 'Integrate. Automate. Grow with the right ecosystem.',
+      title: 'Managed Connectivity',
+      description: 'Flexible network solutions aligned with your operational requirements.',
     },
   ],
 };
+
 export const hero1Data = {
   hero: {
-    title: 'Voice Without',
-    highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
+    title: 'Security Without',
+    highlightedTitle: 'Compromise.',
+    description: 'Connect your people, locations, and business systems through virtual private networking and security-focused infrastructure. Build a more controlled network environment with solutions designed around your connectivity and protection requirements.',
     primaryButton: 'Get Started',
     secondaryButton: 'Explore Solutions',
   },
@@ -479,8 +482,8 @@ export const hero1Data = {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
+        title: 'Private Networking',
+        description: 'Connect offices, users, and systems through private network infrastructure.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -491,8 +494,8 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
+        title: 'Secure Access',
+        description: 'Support authorized access to business resources across locations.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -504,8 +507,8 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
+        title: 'Network Protection',
+        description: 'Strengthen your infrastructure with security-focused network management.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -516,85 +519,85 @@ export const hero1Data = {
       },
     ],
   },
-}
+};
 
 export const hero2Data = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'Network Security & Management',
+    title: 'Stay connected.',
+    highlightedTitle: 'Stay protected.',
+    description: 'Build a more secure network environment with private connectivity, controlled access, and infrastructure oversight designed around your business requirements.',
+    primaryButton: 'Explore Our Approach',
+    secondaryButton: 'View Security Solutions',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'VPN',
+        label: 'Private Connectivity',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'Access',
+        label: 'Controlled Connections',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'Secure',
+        label: 'Network Protection',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'Monitor',
+        label: 'Network Visibility',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'A considered approach to network security.',
+    status: 'Security focused',
+    availability: 'Solutions aligned with your requirements',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'NS',
+        name: 'Network Specialist',
+        role: 'Network Architecture',
+        status: 'Service area',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'SA',
+        name: 'Security Advisor',
+        role: 'Security Planning',
+        status: 'Service area',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'IM',
+        name: 'Infrastructure Manager',
+        role: 'Network Management',
+        status: 'Service area',
       },
     ] 
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Network security overview',
+    status: 'Designed around your environment',
   },
-}
+};
 
 export const hero3Data = {
   hero: {
-    eyebrow: 'About Our Company',
+    eyebrow: 'VPN & Network Security',
 
     heading: {
-      firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      firstLine: 'We connect securely.',
+      secondLine: 'We protect what matters.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'We help businesses build the network infrastructure behind secure digital operations, bringing together private connectivity, network protection, and practical technology management to support the way modern organizations work.',
 
     primaryCta: {
       label: 'Discover Our Story',
@@ -610,20 +613,20 @@ export const hero3Data = {
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
+        value: 'VPN',
+        label: 'Private Networking',
       },
       {
-        value: '42+',
-        label: 'Countries Connected',
+        value: 'Access',
+        label: 'Secure Connectivity',
       },
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Protect',
+        label: 'Network Security',
       },
       {
-        value: '24/7',
-        label: 'Global Support',
+        value: 'Manage',
+        label: 'Infrastructure Oversight',
       },
     ],
   },
@@ -636,8 +639,8 @@ export const hero3Data = {
     items: [
       {
         number: '01',
-        title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        title: 'Security First',
+        description: 'Network security should be considered from the beginning, with access and protection aligned to business requirements.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -648,8 +651,8 @@ export const hero3Data = {
 
       {
         number: '02',
-        title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        title: 'Built to Adapt',
+        description: 'Network infrastructure should evolve with changing teams, locations, technologies, and business needs.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -660,8 +663,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Dependable Connectivity',
+        description: 'Secure access and reliable network design help people and systems stay connected to the resources they need.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -671,4 +674,98 @@ export const hero3Data = {
       },
     ],
   },
+};
+
+export const processData = {
+  content: {
+    eyebrow: 'Our Operations',
+    titleLine1: 'From network design',
+    titleHighlight: 'to protection.',
+    description: 'Building and managing secure connectivity requires a structured approach. We consider your network architecture, access requirements, security priorities, and ongoing operational needs to shape an appropriate solution.',
+
+    statusText: 'A considered approach to secure connectivity',
+    flowText: 'Assess · Design · Secure · Manage',
+    footerTitle: 'Security through thoughtful management',
+    footerDescription: 'Every network decision should support a more secure and manageable environment.',
+    phaseLabel: 'Implementation stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Assess',
+      subtitle: 'Understand your network',
+      description: 'Review your existing infrastructure, locations, users, applications, connectivity requirements, and security priorities to understand the environment.',
+    },
+    {
+      number: '02',
+      title: 'Design',
+      subtitle: 'Plan the right architecture',
+      description: 'Define a suitable approach to private connectivity, network access, and security controls based on your technical environment and business objectives.',
+    },
+    {
+      number: '03',
+      title: 'Secure',
+      subtitle: 'Configure protection and access',
+      description: 'Implement the agreed connectivity and security configuration, including relevant access policies and protection measures for the environment.',
+    },
+    {
+      number: '04',
+      title: 'Manage & Improve',
+      subtitle: 'Review and adapt over time',
+      description: 'Review network requirements and operational insights, address changing business needs, and identify opportunities to strengthen network management and security.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Our Operations',
+    titleLine1: 'Secure networks start',
+    titleLine2: 'with clear principles.',
+    description: 'Effective network security is built on more than technology. It requires clear ownership, thoughtful access policies, visibility, and an ongoing commitment to improvement. These principles guide our approach to private connectivity and network protection.',
+
+    cardFooter: 'The principles behind our security approach',
+    approachEyebrow: 'The Arventa Approach',
+    approachTitle: 'People, processes, and technology working together.',
+    approachDescription: 'Because secure connectivity requires more than network infrastructure alone.',
+
+    approachHighlight: ' Built around security.',
+
+    approachLabel: 'Security commitment',
+    approachSubLabel: 'Focused on protected connectivity',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our security philosophy',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'Accountability',
+      description: 'Clear ownership, defined responsibilities, and documented processes help ensure network and security requirements receive appropriate attention.',
+      icon: "",
+      tag: 'Ownership',
+    },
+    {
+      number: '02',
+      title: 'Access Control',
+      description: 'Access should be aligned with user roles and business needs, helping limit unnecessary exposure of private systems and resources.',
+      icon: "",
+      tag: 'Protection',
+    },
+    {
+      number: '03',
+      title: 'Network Visibility',
+      description: 'An informed view of network activity and infrastructure helps teams understand their environment and identify areas that may need attention.',
+      icon: "",
+      tag: 'Awareness',
+    },
+    {
+      number: '04',
+      title: 'Continuous Improvement',
+      description: 'Regular reviews of network architecture, access requirements, and security practices help organizations adapt as their needs change.',
+      icon: "",
+      tag: 'Progress',
+    },
+  ],
 };

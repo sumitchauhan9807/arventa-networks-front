@@ -8,6 +8,8 @@ import Footer from '@/components/layout/Footer';
 import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection';
 import WorldVoipMap from '@/components/dynamic-zone/WorldMaps/WorldMap';
 import VoipHero from '@/components/Hero/VoipHero';
+import VoipHero2 from '@/components/Hero/VoipHero2';
+import VoipHero3 from '@/components/Hero/VoipHero3';
 
 import CountUp from '@/components/dynamic-zone/CountUp';
 import CTA from '@/components/dynamic-zone/CTA';
@@ -15,7 +17,10 @@ import FAQ from '@/components/dynamic-zone/FAQ';
 
 import VirtualOfficeNumbers from '@/components/dynamic-zone/VirtualNumberComponents/VirtualOfficeNumbers';
 import VirtualNumberSearch from '@/components/dynamic-zone/VirtualNumberComponents/VirtualNumberSearch';
-import { faqData, CTAData, countupData, featureGridSectionData1 ,hero1Data } from '@/app/data/networkSecurity';
+import ProcessSteps from '@/components/dynamic-zone/ProcessSteps';
+import PrinciplesGrid from '@/components/dynamic-zone/PrinciplesGrid';
+import ContactForm from '@/components/dynamic-zone/ContactForm'
+import { faqData, CTAData, countupData, featureGridSectionData1 ,hero1Data ,principlesData,processData ,hero2Data ,hero3Data } from '@/app/data/networkSecurity';
 
 import Loader from '@/components/layout/Loader';
 
@@ -49,14 +54,17 @@ export default function Home() {
         <Loader isLight={theme == 'light'} message="Loading About Arventa" duration={1800} />
       ) : (
         <>
-          <VoipHero data={hero1Data} />
+          {/* <VoipHero data={hero1Data} /> */}
+          {/* <VoipHero2 data={hero2Data}/> */}
+          <VoipHero3 data={hero3Data}/>
+
           <CountUp data={countupData} />
-          <VirtualNumberSearch onSearch={() => {}} />
-          <VirtualOfficeNumbers />
-          <WorldVoipMap />
+            <ProcessSteps data={processData} type="TYPE1" />
+          <PrinciplesGrid data={principlesData} type="TYPE1" />
           <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData1} />
           <FAQ data={faqData} />
           <CTA data={CTAData} />
+          <ContactForm/>
         </>
       )}
 

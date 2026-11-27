@@ -1,28 +1,29 @@
+
 export const serviceGridData = [
   {
     icon: '◈',
-    title: 'Carrier & Wholesale',
-    description: 'SIP Trunking, Origination/Termination, LCR',
+    title: 'Business VoIP',
+    description: 'Flexible, reliable voice communication for modern businesses.',
   },
   {
     icon: '▣',
-    title: 'Mobile & MVNO',
-    description: 'Flexible mobile solutions for your business',
+    title: 'SIP Trunking',
+    description: 'Connect your PBX and communication systems through SIP.',
   },
   {
     icon: '△',
-    title: 'IoT / M2M',
-    description: 'Connected devices. Unlimited possibilities.',
+    title: 'Voice Integration',
+    description: 'Connect telephony with your existing business applications.',
   },
   {
     icon: '◉',
-    title: 'Contact Center Software',
-    description: 'Powerful dialers, AI and fraud prevention.',
+    title: 'Cloud Telephony',
+    description: 'Modern calling solutions built for distributed teams.',
   },
   {
     icon: '◎',
-    title: 'Global Network',
-    description: 'Secure. Scalable. Reliable.',
+    title: 'Global Voice',
+    description: 'Scalable voice connectivity across locations and markets.',
   },
 ];
 
@@ -31,17 +32,17 @@ export const solutionGridData = {
 
   heading: {
     normal: 'Our',
-    highlight: 'Solutions',
+    highlight: 'Voice Solutions',
   },
 
-  description: 'From carrier services to AI-powered contact center solutions, we provide the infrastructure and software you need to grow, connect and succeed.',
+  description: 'From business VoIP and SIP trunking to cloud telephony and voice integration, we provide the connectivity and communication technology businesses need to stay connected and work smarter.',
 
   cta: {
     label: 'Explore All Solutions',
     href: '#',
   },
 
-  supportingNote: 'Technology built for growth',
+  supportingNote: 'Business communication built for growth',
 
   card: {
     linkLabel: 'Explore solution',
@@ -50,42 +51,42 @@ export const solutionGridData = {
     {
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity & Security.',
+      title: 'SIP Trunking',
+      description: 'Flexible SIP connectivity for business phone systems and PBX platforms.',
     },
     {
       image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80',
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM, IoT / M2M connectivity.',
+      title: 'Business VoIP',
+      description: 'Modern voice communication for offices, remote teams and growing businesses.',
     },
     {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
+      title: 'Cloud Telephony',
+      description: 'Flexible calling, voice integration and connected communication workflows.',
     },
   ],
 };
 
 export const offeringGridData = {
-  sectionId: 'contact-center',
+  sectionId: 'voice-services',
 
-  eyebrow: 'Contact Center & Software',
+  eyebrow: 'Voice & SIP Solutions',
 
   heading: {
-    first: 'Smarter Dialers.',
+    first: 'Clear Connections.',
     highlight: 'Better Conversations.',
   },
 
-  description: 'Boost your efficiency with our advanced dialer solutions, AI platform and fraud prevention tools. Empower your team with smarter technology designed to improve productivity and customer engagement.',
+  description: 'Modernize your business telephony with flexible VoIP services and SIP connectivity. Connect existing phone systems, support distributed teams and manage business calls through communication infrastructure designed around your needs.',
 
   cta: {
-    label: 'Discover Contact Center Solutions',
+    label: 'Discover Voice Solutions',
     href: '#',
   },
 
-  supportingNote: 'Intelligent solutions for modern business communication',
+  supportingNote: 'Flexible voice technology for modern businesses',
 
   product: {
     arrow: '→',
@@ -97,28 +98,28 @@ export const offeringGridData = {
   items: [
     {
       icon: '✦',
-      title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
+      title: 'Business VoIP',
+      description: 'Make and receive business calls over IP-based networks.',
     },
     {
       icon: '◇',
-      title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
+      title: 'SIP Trunking',
+      description: 'Connect compatible PBX systems to voice networks.',
     },
     {
       icon: 'AI',
-      title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
+      title: 'Cloud Telephony',
+      description: 'Flexible communication for teams across locations.',
     },
     {
       icon: '◇',
-      title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
+      title: 'Voice Integration',
+      description: 'Connect telephony with existing platforms and workflows.',
     },
     {
       icon: 'API',
-      title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
+      title: 'Voice APIs & Connectivity',
+      description: 'Integrate voice capabilities into your business applications.',
     },
   ],
 };
@@ -209,10 +210,10 @@ export const testimonialsData = {
     eyebrow: 'Client Experiences',
     heading: {
       first: 'Trusted by those',
-      second: 'who expect',
-      highlight: 'more.',
+      second: 'who value',
+      highlight: 'connection.',
     },
-    description: 'The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.',
+    description: 'Discover how dependable voice infrastructure, flexible SIP connectivity and responsive technical support can help businesses improve the way they communicate.',
   },
 
   decorative: {
@@ -225,7 +226,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus Networks',
-      quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
+      quote: 'Their voice infrastructure has helped us bring our communication systems together. The technical expertise and attention to our requirements made the transition much easier.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -234,7 +235,7 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Solutions',
-      quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
+      quote: 'We needed a flexible telephony solution that could support our growing team. Their approach made it easier to connect our people and manage business communication.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -243,7 +244,7 @@ export const testimonialsData = {
       name: 'Daniel Chen',
       role: 'Network Infrastructure Lead',
       company: 'CloudBridge Systems',
-      quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
+      quote: 'Integrating voice services into an existing network can be complex. Having a team that understands SIP connectivity and infrastructure requirements made a real difference.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -252,7 +253,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Technologies',
-      quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
+      quote: 'We wanted a modern communication setup that could adapt as our business changed. The process was clear, professional and focused on our needs.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -261,7 +262,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of IT Infrastructure',
       company: 'Apex Digital',
-      quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
+      quote: 'The team helped us rethink how our phone systems connect to our wider infrastructure. We now have a more flexible foundation for business communication.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -270,7 +271,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Communications',
-      quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
+      quote: 'We were looking for a voice solution that could support different teams and locations. Their technical guidance helped us plan a setup that fits our requirements.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -279,7 +280,7 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Connect',
-      quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
+      quote: 'From planning to deployment, the process was straightforward. We appreciate the focus on practical integration and communication infrastructure that can grow with us.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -288,7 +289,7 @@ export const testimonialsData = {
       name: 'Ananya Kapoor',
       role: 'Network Operations Manager',
       company: 'Pinnacle Technologies',
-      quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
+      quote: 'Their understanding of voice connectivity and network requirements gave us confidence when reviewing our telephony environment and planning the next stage.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -300,41 +301,49 @@ export const faqData = {
 
   heading: {
     eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    first: 'Everything about',
+    highlight: 'Voice & SIP.',
+    description: 'Find answers to common questions about business VoIP, SIP trunking, voice integration, call quality and getting started.',
   },
 
   faqs: [
     {
       question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      answer: 'Arventa Networks provides communication and connectivity solutions for businesses and service providers. Our voice offering includes business VoIP, SIP trunking and related communication infrastructure.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'What is business VoIP?',
+      answer: 'Business VoIP uses Internet Protocol networks to make and receive telephone calls. It allows organizations to manage voice communication over IP-based infrastructure rather than relying exclusively on traditional telephone lines.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'What is SIP trunking?',
+      answer: 'SIP trunking connects a compatible business phone system or PBX to a voice network using Session Initiation Protocol. It provides a flexible way to manage inbound and outbound calls over an IP connection.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'Can I keep my existing PBX or phone system?',
+      answer: 'In many cases, compatible existing PBX platforms can connect through SIP trunking. Compatibility depends on the system, configuration and technical requirements. Our team can help review your setup.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'Can VoIP support multiple business locations?',
+      answer: 'Yes. IP-based telephony can support communication across multiple offices and distributed teams, subject to suitable connectivity, configuration and network capacity.',
+    },
+    {
+      question: 'What affects VoIP call quality?',
+      answer: 'Call quality can be affected by available bandwidth, latency, jitter, packet loss, network congestion and device configuration. A properly configured network and suitable quality-of-service settings can help support clear, consistent calls.',
+    },
+    {
+      question: 'Can I integrate voice services with other business systems?',
+      answer: 'Depending on the platform and available interfaces, voice services can be integrated with business applications, contact center tools and communication workflows. Our team can discuss your integration requirements.',
     },
     {
       question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      answer: 'Contact our team to discuss your current phone system, number requirements, expected call volumes, locations and integration needs. We can help identify a suitable voice and SIP solution for your business.',
     },
   ],
 
   contact: {
     heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    description: "Let's talk about your business voice requirements.",
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -345,11 +354,11 @@ export const CTAData = {
 
   heading: {
     eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    first: "Let's improve the way",
+    highlight: 'you communicate.',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Whether you are upgrading your phone system, connecting an existing PBX or exploring flexible SIP trunking, our team is ready to help you find the right voice solution.',
 
   cta: {
     primary: {
@@ -367,28 +376,28 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '3',
-    accent: 's',
-    label: 'P95 delivery',
-    description: 'Measured continuously',
+    value: 'SIP',
+    accent: '',
+    label: 'Flexible Connectivity',
+    description: 'IP-based business telephony',
   },
   {
-    value: '99.5',
-    accent: '%',
-    label: 'Delivery success',
-    description: 'With failover',
+    value: 'VoIP',
+    accent: '',
+    label: 'Modern Voice',
+    description: 'Communication over IP networks',
   },
   {
-    value: '500',
-    accent: 'ms',
-    label: 'Failover time',
-    description: 'Route-to-route',
+    value: 'PBX',
+    accent: '',
+    label: 'System Integration',
+    description: 'Connect compatible phone systems',
   },
   {
-    value: '200',
-    accent: '+',
-    label: 'Countries',
-    description: 'Premium OTP routes',
+    value: '24/7',
+    accent: '',
+    label: 'Business Communication',
+    description: 'Voice solutions for connected teams',
   },
 ];
 
@@ -398,15 +407,15 @@ export const countUpGridData = {
   badge: 'Who We Are',
 
   heading: {
-    firstLine: 'Infrastructure with',
-    highlight: 'purpose.',
+    firstLine: 'Voice communication',
+    highlight: 'reimagined.',
   },
 
   description:
-    'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+    'Arventa Networks brings together telecommunications expertise and modern IP technology to help businesses build flexible, dependable voice communication environments.',
 
   secondaryDescription:
-    'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+    'From business VoIP and SIP trunking to PBX connectivity, cloud telephony and voice integration, we focus on solutions that help teams communicate across offices, devices and locations.',
 
   cta: {
     label: 'Discover Our Approach',
@@ -415,130 +424,131 @@ export const countUpGridData = {
   },
 
   supportingNote:
-    'Reliable connectivity. Built for the long term.',
+    'Better business communication starts with the right connection.',
 
   statsPanel: {
-    eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    eyebrow: 'Our Capabilities',
+    heading: 'Voice at a glance',
+    badge: 'Voice & SIP',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: 'VoIP', label: 'Business Telephony' },
+      { value: 'SIP', label: 'IP Connectivity' },
+      { value: 'PBX', label: 'System Integration' },
+      { value: 'Cloud', label: 'Flexible Communication' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'Connecting people and business systems',
+      status: 'Built for communication',
     },
   },
 };
+
 export const featureGridSectionData1 = {
   buttonText: 'Explore Solutions',
-  eyebrow: 'What we do',
+  eyebrow: 'What We Do',
   heading: {
-    firstLine: 'Communication',
-    highlight: 'engineered.',
+    firstLine: 'Business voice',
+    highlight: 'simplified.',
   },
-  description: 'From carrier services to communication infrastructure, we provide the technology and connectivity businesses need to grow, connect and operate.',
+  description: 'We bring together flexible VoIP services, SIP connectivity and modern communication technology to help businesses connect teams, manage calls and build a telephony environment that fits their needs.',
   items: [
     {
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
+      title: 'Business VoIP',
+      description: 'Modern IP-based calling for offices, remote teams and growing businesses.',
     },
     {
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM and IoT / M2M connectivity solutions.',
+      title: 'SIP Trunking',
+      description: 'Connect compatible PBX systems with flexible SIP connectivity.',
     },
     {
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, fraud prevention and communication APIs.',
+      title: 'Cloud Telephony',
+      description: 'Support flexible calling and communication across locations.',
     },
     {
       icon: '✦',
-      title: 'Technology Partnerships',
-      description: 'Integrate. Automate. Grow with the right ecosystem.',
+      title: 'Voice Integration',
+      description: 'Bring telephony together with business platforms and communication workflows.',
     },
   ],
 };
 
 export const heroData = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'Voice & SIP Solutions',
+    title: 'Business Voice.',
+    highlightedTitle: 'Without Limits.',
+    description: 'Connect your business with flexible VoIP and SIP solutions. From existing PBX integration to modern IP telephony, Arventa Networks helps you build a communication environment that keeps your people connected.',
+    primaryButton: 'Get Started',
+    secondaryButton: 'Explore Voice Solutions',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'VoIP',
+        label: 'Business Telephony',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'SIP',
+        label: 'Flexible Connectivity',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'PBX',
+        label: 'System Integration',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'Cloud',
+        label: 'Modern Communication',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'Every conversation starts with a connection.',
+    status: 'Voice Solutions',
+    availability: 'Designed for connected teams',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'IP',
+        name: 'IP Telephony',
+        role: 'Business Voice',
+        status: 'Connected',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'SI',
+        name: 'SIP Connectivity',
+        role: 'Voice Integration',
+        status: 'Flexible',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'PB',
+        name: 'PBX Integration',
+        role: 'System Compatibility',
+        status: 'Connected',
       },
     ] 
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Business voice infrastructure',
+    status: 'Built for communication',
   },
-}
+};
 
 export const hero1Data = {
   hero: {
     title: 'Voice Without',
     highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
+    description: 'Connect your business with flexible VoIP and SIP services designed to bring teams, offices and communication systems together. Build a voice environment that adapts to the way your business works.',
     primaryButton: 'Get Started',
     secondaryButton: 'Explore Solutions',
   },
@@ -547,9 +557,9 @@ export const hero1Data = {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
-        footer: 'Built for your business',
+        title: 'Business VoIP',
+        description: 'Modern IP-based calling for your business and teams.',
+        footer: 'Built for business communication',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
@@ -559,9 +569,9 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
-        footer: 'Built for your business',
+        title: 'SIP Trunking',
+        description: 'Connect compatible PBX systems to IP-based voice networks.',
+        footer: 'Built for flexible connectivity',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
@@ -572,9 +582,9 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
-        footer: 'Built for your business',
+        title: 'Scalable Voice',
+        description: 'Adapt your communication setup as your teams and call requirements evolve.',
+        footer: 'Built to grow with you',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -584,85 +594,85 @@ export const hero1Data = {
       },
     ],
   },
-}
+};
 
 export const hero2Data = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'Business Voice Infrastructure',
+    title: 'Every call matters.',
+    highlightedTitle: 'Every connection counts.',
+    description: 'Give your teams a flexible communication foundation with business VoIP, SIP trunking and connected telephony systems designed to support everyday conversations.',
+    primaryButton: 'Explore Voice Solutions',
+    secondaryButton: 'Talk to Our Team',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'SIP',
+        label: 'IP Voice Connectivity',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'VoIP',
+        label: 'Business Calling',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'PBX',
+        label: 'Phone System Integration',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'Cloud',
+        label: 'Flexible Telephony',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'Your communication, connected.',
+    status: 'Voice Solutions',
+    availability: 'Designed for modern businesses',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'VP',
+        name: 'VoIP Services',
+        role: 'Business Calling',
+        status: 'Available',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'ST',
+        name: 'SIP Trunking',
+        role: 'PBX Connectivity',
+        status: 'Connected',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'CI',
+        name: 'Cloud Integration',
+        role: 'Connected Systems',
+        status: 'Flexible',
       },
     ] 
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Connected business communication',
+    status: 'Ready to connect',
   },
-}
+};
 
 export const hero3Data = {
   hero: {
-    eyebrow: 'About Our Company',
+    eyebrow: 'About Our Voice Solutions',
 
     heading: {
       firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      secondLine: 'One call at a time.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'We believe business communication should be clear, flexible and dependable. By bringing together VoIP technology, SIP connectivity and practical expertise, we help organizations build better ways to connect.',
 
     primaryCta: {
       label: 'Discover Our Story',
@@ -670,28 +680,28 @@ export const hero3Data = {
     },
 
     secondaryCta: {
-      label: 'Meet Our Team',
-      href: '#team',
+      label: 'Explore Voice Solutions',
+      href: '#solutions',
     },
   },
 
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
+        value: 'VoIP',
+        label: 'Business Voice',
       },
       {
-        value: '42+',
-        label: 'Countries Connected',
+        value: 'SIP',
+        label: 'IP Connectivity',
       },
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'PBX',
+        label: 'System Integration',
       },
       {
         value: '24/7',
-        label: 'Global Support',
+        label: 'Communication Needs',
       },
     ],
   },
@@ -704,8 +714,8 @@ export const hero3Data = {
     items: [
       {
         number: '01',
-        title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        title: 'People First',
+        description: 'Communication technology should bring people closer and make everyday conversations easier.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -716,8 +726,8 @@ export const hero3Data = {
 
       {
         number: '02',
-        title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        title: 'Flexible by Design',
+        description: 'Voice solutions should adapt to changing teams, business locations and communication requirements.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -728,8 +738,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Dependable Communication',
+        description: 'Every conversation matters. We focus on the infrastructure, integration and support behind dependable voice services.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -739,4 +749,98 @@ export const hero3Data = {
       },
     ],
   },
+};
+
+export const processData = {
+  content: {
+    eyebrow: 'Getting Started with Voice & SIP',
+    titleLine1: 'From first conversation',
+    titleHighlight: 'to connected calls.',
+    description: 'Moving to modern business telephony should be straightforward. We help you understand your requirements, plan the right voice setup, configure your connectivity and prepare your communication environment for everyday use.',
+
+    statusText: 'A practical path to modern business telephony',
+    flowText: 'Discover · Configure · Test · Connect',
+    footerTitle: 'A smoother transition to IP telephony',
+    footerDescription: 'The right planning and integration help your communication work from day one.',
+    phaseLabel: 'Implementation stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Discover',
+      subtitle: 'Understand your communication needs',
+      description: 'We discuss your current phone system, number requirements, team locations, call volumes, business applications and future communication plans.',
+    },
+    {
+      number: '02',
+      title: 'Configure',
+      subtitle: 'Design your voice environment',
+      description: 'We identify a suitable VoIP or SIP approach, review PBX compatibility, plan connectivity and define the configuration required for your business.',
+    },
+    {
+      number: '03',
+      title: 'Test',
+      subtitle: 'Validate your voice setup',
+      description: 'We coordinate connection testing, call flows, number configuration and relevant network requirements to prepare your telephony environment for use.',
+    },
+    {
+      number: '04',
+      title: 'Connect & Improve',
+      subtitle: 'Support your ongoing communication',
+      description: 'Once your voice solution is active, we help address evolving requirements and identify opportunities to refine your communication setup as your business grows.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Our Voice Solutions',
+    titleLine1: 'Better communication',
+    titleLine2: 'starts with the right connection.',
+    description: 'Modern business telephony needs more than a dial tone. It requires thoughtful integration, dependable connectivity and an understanding of how people work. These principles guide our approach to Voice and SIP.',
+
+    cardFooter: 'The principles behind our voice solutions',
+    approachEyebrow: 'The Arventa Approach',
+    approachTitle: 'People, technology and connectivity working together.',
+    approachDescription: 'Because business communication should be easy to use, flexible to manage and ready to evolve.',
+
+    approachHighlight: ' Built around better communication.',
+
+    approachLabel: 'Our commitment',
+    approachSubLabel: 'Focused on connected businesses',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our communication philosophy',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'Clarity',
+      description: 'We focus on clear communication, practical recommendations and understandable solutions that help businesses make informed decisions about their telephony.',
+      icon: "",
+      tag: 'Simplicity',
+    },
+    {
+      number: '02',
+      title: 'Compatibility',
+      description: 'Every business has its own technology environment. We consider existing PBX systems, network configurations and integration requirements when planning voice connectivity.',
+      icon: "",
+      tag: 'Integration',
+    },
+    {
+      number: '03',
+      title: 'Flexibility',
+      description: 'Voice solutions should adapt to changing teams, locations and call requirements. We focus on communication setups that can evolve with your business.',
+      icon: "",
+      tag: 'Adaptability',
+    },
+    {
+      number: '04',
+      title: 'Reliability',
+      description: 'Dependable business communication starts with suitable infrastructure, careful configuration and ongoing attention to network and call quality.',
+      icon: "",
+      tag: 'Dependability',
+    },
+  ],
 };

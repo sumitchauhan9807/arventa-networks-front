@@ -1,28 +1,29 @@
+
 export const serviceGridData = [
   {
     icon: '◈',
-    title: 'Carrier & Wholesale',
-    description: 'SIP Trunking, Origination/Termination, LCR',
+    title: 'Local DID Numbers',
+    description: 'Give your business a local presence in the markets you serve.',
   },
   {
     icon: '▣',
-    title: 'Mobile & MVNO',
-    description: 'Flexible mobile solutions for your business',
+    title: 'International Numbers',
+    description: 'Reach customers across countries with international phone numbers.',
   },
   {
     icon: '△',
-    title: 'IoT / M2M',
-    description: 'Connected devices. Unlimited possibilities.',
+    title: 'Toll-Free Numbers',
+    description: 'Make it easier for customers to connect with your business.',
   },
   {
     icon: '◉',
-    title: 'Contact Center Software',
-    description: 'Powerful dialers, AI and fraud prevention.',
+    title: 'Number Porting',
+    description: 'Move existing business numbers while planning your transition.',
   },
   {
     icon: '◎',
-    title: 'Global Network',
-    description: 'Secure. Scalable. Reliable.',
+    title: 'DID Management',
+    description: 'Manage numbers, call routing, and business communications.',
   },
 ];
 
@@ -30,18 +31,18 @@ export const solutionGridData = {
   eyebrow: 'What We Do',
 
   heading: {
-    normal: 'Our',
+    normal: 'DID Number',
     highlight: 'Solutions',
   },
 
-  description: 'From carrier services to AI-powered contact center solutions, we provide the infrastructure and software you need to grow, connect and succeed.',
+  description: 'Give your business a professional presence with flexible DID number solutions. Choose numbers for the locations you serve, connect them to your communication systems, and manage incoming calls with greater flexibility.',
 
   cta: {
-    label: 'Explore All Solutions',
+    label: 'Explore DID Solutions',
     href: '#',
   },
 
-  supportingNote: 'Technology built for growth',
+  supportingNote: 'Business numbers without borders',
 
   card: {
     linkLabel: 'Explore solution',
@@ -50,42 +51,42 @@ export const solutionGridData = {
     {
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity & Security.',
+      title: 'Local DID Numbers',
+      description: 'Establish a local presence with geographic business numbers.',
     },
     {
       image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80',
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM, IoT / M2M connectivity.',
+      title: 'International & Toll-Free',
+      description: 'Make your business accessible across different markets.',
     },
     {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
+      title: 'Number Management',
+      description: 'Port, configure, and manage numbers for your business.',
     },
   ],
 };
 
 export const offeringGridData = {
-  sectionId: 'contact-center',
+  sectionId: 'did-services',
 
-  eyebrow: 'Contact Center & Software',
+  eyebrow: 'DID Numbers & Services',
 
   heading: {
-    first: 'Smarter Dialers.',
-    highlight: 'Better Conversations.',
+    first: 'The Right Numbers.',
+    highlight: 'More Connections.',
   },
 
-  description: 'Boost your efficiency with our advanced dialer solutions, AI platform and fraud prevention tools. Empower your team with smarter technology designed to improve productivity and customer engagement.',
+  description: 'Make it easier for customers to reach your business with flexible DID number services. From local and international numbers to toll-free options and number porting, build a numbering strategy that supports your communication needs.',
 
   cta: {
-    label: 'Discover Contact Center Solutions',
+    label: 'Discover DID Number Solutions',
     href: '#',
   },
 
-  supportingNote: 'Intelligent solutions for modern business communication',
+  supportingNote: 'Flexible numbering for modern business communication',
 
   product: {
     arrow: '→',
@@ -97,28 +98,28 @@ export const offeringGridData = {
   items: [
     {
       icon: '✦',
-      title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
+      title: 'Local DID Numbers',
+      description: 'Build a familiar local presence for your customers.',
     },
     {
       icon: '◇',
-      title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
+      title: 'International Numbers',
+      description: 'Make your business reachable in international markets.',
     },
     {
-      icon: 'AI',
-      title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
+      icon: '◎',
+      title: 'Toll-Free Numbers',
+      description: 'Offer customers a convenient way to contact your business.',
     },
     {
       icon: '◇',
-      title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
+      title: 'Number Porting',
+      description: 'Bring your existing numbers to a suitable new service.',
     },
     {
       icon: 'API',
-      title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
+      title: 'Number Management',
+      description: 'Organize numbers and connect them with your communication systems.',
     },
   ],
 };
@@ -208,11 +209,11 @@ export const testimonialsData = {
   section: {
     eyebrow: 'Client Experiences',
     heading: {
-      first: 'Trusted by those',
-      second: 'who expect',
-      highlight: 'more.',
+      first: 'Every number',
+      second: 'creates a new',
+      highlight: 'connection.',
     },
-    description: 'The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.',
+    description: 'Discover how flexible business numbering and dependable communication infrastructure can help organizations connect with customers and build a stronger presence in their markets.',
   },
 
   decorative: {
@@ -225,7 +226,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus Networks',
-      quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
+      quote: 'Having the right business numbers makes it easier for customers to reach the right teams. A flexible numbering setup is an important part of building a professional communication experience.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -234,7 +235,7 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Solutions',
-      quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
+      quote: 'We needed a practical way to manage business numbers across our operations. Flexibility and a clear approach to our requirements made the process much easier to plan.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -243,7 +244,7 @@ export const testimonialsData = {
       name: 'Daniel Chen',
       role: 'Network Infrastructure Lead',
       company: 'CloudBridge Systems',
-      quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
+      quote: 'Numbering is an important part of our communication infrastructure. The ability to plan number allocation and connect numbers with existing systems gives us more flexibility.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -252,7 +253,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Technologies',
-      quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
+      quote: 'A recognizable local number can make a meaningful difference to how customers interact with a business. We value solutions that help us create a more accessible customer experience.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -261,7 +262,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of IT Infrastructure',
       company: 'Apex Digital',
-      quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
+      quote: 'Managing business numbers should not add unnecessary complexity. A structured approach to numbering and call routing helps us keep our communication environment organized.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -270,7 +271,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Communications',
-      quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
+      quote: 'As our business expands into new markets, having access to suitable numbering options becomes increasingly important. Flexibility helps us plan for changing customer and operational needs.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -279,7 +280,7 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Connect',
-      quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
+      quote: 'Our communication setup needs to work across different teams and customer touchpoints. A well-planned numbering strategy helps create a consistent way for people to reach us.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -288,7 +289,7 @@ export const testimonialsData = {
       name: 'Ananya Kapoor',
       role: 'Network Operations Manager',
       company: 'Pinnacle Technologies',
-      quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
+      quote: 'The ability to organize numbers and connect them with our communication systems is valuable as our requirements evolve. It gives us more options for managing incoming calls.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -300,41 +301,41 @@ export const faqData = {
 
   heading: {
     eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    first: 'Everything you need',
+    highlight: 'to know about DIDs.',
+    description: 'Learn how DID numbers work, explore number types, and find out how to connect them with your business communication systems.',
   },
 
   faqs: [
     {
-      question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      question: 'What are DID numbers?',
+      answer: 'DID stands for Direct Inward Dialing. A DID number allows callers to reach a specific person, team, or destination within a business phone system without having to go through a central switchboard. DID numbers are commonly used with PBX and VoIP systems.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'What types of DID numbers are available?',
+      answer: 'Depending on country availability and service requirements, DID options may include local geographic numbers, national numbers, international numbers, and toll-free numbers. The right type depends on the markets you serve and how you want customers to reach your business.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'Can I get DID numbers in different countries?',
+      answer: 'International DID availability depends on local regulations, provider coverage, and the requirements of each country. Contact our team with your target markets so we can discuss suitable numbering options and any applicable requirements.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'Can I connect DID numbers to my existing PBX or VoIP system?',
+      answer: 'DID numbers can be configured to route incoming calls to compatible PBX, SIP, or VoIP systems. The exact setup depends on your existing infrastructure and the technical requirements of your communication platform.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'Can I port my existing business phone numbers?',
+      answer: 'Number porting may be possible depending on the number type, country, current provider, and applicable regulations. Our team can help review your requirements and explain the information needed to assess a porting request.',
     },
     {
-      question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      question: 'How can I get started with DID numbers?',
+      answer: "Contact our team with the countries or regions you are interested in, the number types you need, and your intended use. We'll help you explore availability, technical requirements, and the next steps for getting connected.",
     },
   ],
 
   contact: {
     heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    description: "Let's discuss your DID number requirements.",
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -345,11 +346,11 @@ export const CTAData = {
 
   heading: {
     eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    first: 'Give your business',
+    highlight: 'a number to reach.',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Whether you need local business numbers, international DIDs, toll-free numbers, or help managing your existing numbering setup, our team is ready to discuss the right solution for your business.',
 
   cta: {
     primary: {
@@ -367,28 +368,28 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '3',
-    accent: 's',
-    label: 'P95 delivery',
-    description: 'Measured continuously',
+    value: 'Local',
+    accent: '',
+    label: 'DID Numbers',
+    description: 'Build a presence in local markets',
   },
   {
-    value: '99.5',
-    accent: '%',
-    label: 'Delivery success',
-    description: 'With failover',
+    value: 'Global',
+    accent: '',
+    label: 'Number Options',
+    description: 'Explore international availability',
   },
   {
-    value: '500',
-    accent: 'ms',
-    label: 'Failover time',
-    description: 'Route-to-route',
+    value: 'Flexible',
+    accent: '',
+    label: 'Call Routing',
+    description: 'Connect numbers to your systems',
   },
   {
-    value: '200',
-    accent: '+',
-    label: 'Countries',
-    description: 'Premium OTP routes',
+    value: 'Simple',
+    accent: '',
+    label: 'Number Management',
+    description: 'Organize your business numbers',
   },
 ];
 
@@ -398,15 +399,15 @@ export const countUpGridData = {
   badge: 'Who We Are',
 
   heading: {
-    firstLine: 'Infrastructure with',
+    firstLine: 'Business numbers with',
     highlight: 'purpose.',
   },
 
   description:
-    'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+    'Arventa Networks brings together telecommunications expertise and communication infrastructure to help businesses make themselves accessible. We provide numbering solutions designed to support customer connections, business presence, and flexible call management.',
 
   secondaryDescription:
-    'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+    'From local and international DID numbers to toll-free options and number porting, our approach is built around flexibility, practical support, and the communication needs of modern businesses.',
 
   cta: {
     label: 'Discover Our Approach',
@@ -415,125 +416,74 @@ export const countUpGridData = {
   },
 
   supportingNote:
-    'Reliable connectivity. Built for the long term.',
+    'The right number. A better way to connect.',
 
   statsPanel: {
     eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    heading: 'Numbering solutions',
+    badge: 'Flexible reach',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: 'Local', label: 'Geographic Numbers' },
+      { value: 'Global', label: 'International Options' },
+      { value: 'Toll-Free', label: 'Customer Access' },
+      { value: 'Flexible', label: 'Call Routing' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'Business numbers made flexible',
+      status: 'Built around your needs',
     },
   },
 };
+
 export const featureGridSectionData1 = {
-  buttonText: 'Explore Solutions',
-  eyebrow: 'What we do',
+  buttonText: 'Explore DID Solutions',
+  eyebrow: 'What We Do',
   heading: {
-    firstLine: 'Communication',
-    highlight: 'engineered.',
+    firstLine: 'Business numbers',
+    highlight: 'reimagined.',
   },
-  description: 'From carrier services to communication infrastructure, we provide the technology and connectivity businesses need to grow, connect and operate.',
+  description: 'From local presence to international reach, we provide DID number solutions that help businesses stay accessible, organize incoming calls, and connect customers with the right destinations.',
   items: [
     {
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
+      title: 'Local DID Numbers',
+      description: 'Establish a familiar local presence in the markets you serve.',
     },
     {
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM and IoT / M2M connectivity solutions.',
+      title: 'International Numbers',
+      description: 'Make your business reachable across international markets.',
     },
     {
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, fraud prevention and communication APIs.',
+      title: 'Toll-Free Numbers',
+      description: 'Give customers a convenient way to contact your business.',
     },
     {
       icon: '✦',
-      title: 'Technology Partnerships',
-      description: 'Integrate. Automate. Grow with the right ecosystem.',
+      title: 'Number Porting & Management',
+      description: 'Manage existing numbers and plan your numbering setup.',
     },
   ],
 };
 
-export const heroData = {
-  hero: {
-    title: 'Voice Without',
-    highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
-    primaryButton: 'Get Started',
-    secondaryButton: 'Explore Solutions',
-  },
-
-  services: {
-    items: [
-      {
-        number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
-        footer: 'Built for your business',
-        icon: (
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
-            <path d="M8 10h8M8 14h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          </svg>
-        ),
-      },
-      {
-        number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
-        footer: 'Built for your business',
-        icon: (
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
-            <rect x="14" y="14" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
-            <path d="M10 6.5h3a4 4 0 0 1 4 4V14M14 17.5h-3a4 4 0 0 1-4-4V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          </svg>
-        ),
-      },
-      {
-        number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
-        footer: 'Built for your business',
-        icon: (
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M15 5h5v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        ),
-      },
-    ],
-  },
-}
-
 export const hero1Data = {
   hero: {
-    title: 'Voice Without',
-    highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
+    title: 'Your Business.',
+    highlightedTitle: 'Your Numbers.',
+    description: 'Make it easier for customers to reach you with flexible DID number solutions. Build a local presence, connect with international markets, and route incoming calls to the right teams through your business communication systems.',
     primaryButton: 'Get Started',
-    secondaryButton: 'Explore Solutions',
+    secondaryButton: 'Explore DID Solutions',
   },
 
   services: {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
+        title: 'Local DID Numbers',
+        description: 'Give your business a recognizable local phone presence.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -544,8 +494,8 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
+        title: 'International Reach',
+        description: 'Connect with customers through numbers in different markets.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -557,8 +507,8 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
+        title: 'Flexible Call Routing',
+        description: 'Direct incoming calls to the right teams and destinations.',
         footer: 'Built for your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -569,85 +519,85 @@ export const hero1Data = {
       },
     ],
   },
-}
+};
 
 export const hero2Data = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'DID Number Solutions',
+    title: 'One business.',
+    highlightedTitle: 'More ways to connect.',
+    description: 'Give customers a convenient way to reach your business. Explore local, international, and toll-free DID numbers, with flexible options for connecting incoming calls to your communication systems.',
+    primaryButton: 'Explore Number Options',
+    secondaryButton: 'Contact Our Team',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Local',
+        label: 'Geographic Numbers',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'Global',
+        label: 'International Reach',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'Flexible',
+        label: 'Call Routing',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'Managed',
+        label: 'Number Solutions',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'Every call starts with a connection.',
+    status: 'DID Number Services',
+    availability: 'Numbering options shaped around your needs',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'LD',
+        name: 'Local DID Numbers',
+        role: 'Geographic Numbering',
+        status: 'Service',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'IN',
+        name: 'International Numbers',
+        role: 'International Numbering',
+        status: 'Service',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'TF',
+        name: 'Toll-Free Numbers',
+        role: 'Customer Accessibility',
+        status: 'Service',
       },
     ] 
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Business numbering solutions',
+    status: 'Flexible options',
   },
-}
+};
 
 export const hero3Data = {
   hero: {
     eyebrow: 'About Our Company',
 
     heading: {
-      firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      firstLine: 'Every business',
+      secondLine: 'deserves to be reachable.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'We help businesses build better connections through flexible numbering and communication infrastructure. From local phone presence to international reach, our goal is to make it easier for customers and teams to connect.',
 
     primaryCta: {
       label: 'Discover Our Story',
@@ -663,20 +613,20 @@ export const hero3Data = {
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
+        value: 'Local',
+        label: 'Number Options',
       },
       {
-        value: '42+',
-        label: 'Countries Connected',
+        value: 'Global',
+        label: 'Numbering Reach',
       },
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Flexible',
+        label: 'Call Routing',
       },
       {
-        value: '24/7',
-        label: 'Global Support',
+        value: 'Business',
+        label: 'Communication Focus',
       },
     ],
   },
@@ -689,8 +639,8 @@ export const hero3Data = {
     items: [
       {
         number: '01',
-        title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        title: 'Customer Accessibility',
+        description: 'Every customer should have a convenient way to reach the businesses they rely on.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -701,8 +651,8 @@ export const hero3Data = {
 
       {
         number: '02',
-        title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        title: 'Flexible by Design',
+        description: 'Numbering solutions should adapt to changing markets, business structures, and communication requirements.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -713,8 +663,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Dependable Connections',
+        description: 'Every business number is part of a wider communication experience. We value solutions designed for consistent, dependable customer access.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />

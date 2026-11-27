@@ -16,6 +16,7 @@ import CTA from '@/components/dynamic-zone/CTA';
 
 import TeamSection from '@/components/dynamic-zone/Team';
 import AboutSection from '@/components/dynamic-zone/About';
+import ContactForm from '@/components/dynamic-zone/ContactForm'
 
 // import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection'
 
@@ -67,6 +68,7 @@ export default function Home() {
           {/* <WorldVoipMap /> */}
           <TeamSection data={teamData} />
           <CTA data={CTAData} />
+          <ContactForm/>
         </>
       )}
 

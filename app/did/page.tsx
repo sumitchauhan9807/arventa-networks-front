@@ -8,6 +8,8 @@ import Footer from '@/components/layout/Footer';
 import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection';
 import WorldVoipMap from '@/components/dynamic-zone/WorldMaps/WorldMap';
 import VoipHero from '@/components/Hero/VoipHero';
+import VoipHero2 from '@/components/Hero/VoipHero2';
+
 
 import CountUp from '@/components/dynamic-zone/CountUp';
 import CTA from '@/components/dynamic-zone/CTA';
@@ -15,8 +17,8 @@ import FAQ from '@/components/dynamic-zone/FAQ';
 
 import VirtualOfficeNumbers from '@/components/dynamic-zone/VirtualNumberComponents/VirtualOfficeNumbers';
 import VirtualNumberSearch from '@/components/dynamic-zone/VirtualNumberComponents/VirtualNumberSearch';
-import { faqData, CTAData, countupData, featureGridSectionData1 ,heroData } from '@/app/data/did';
-
+import { faqData, CTAData, countupData, featureGridSectionData1 ,hero1Data ,hero2Data } from '@/app/data/did';
+import ContactForm from '@/components/dynamic-zone/ContactForm'
 import Loader from '@/components/layout/Loader';
 
 import { useEffect, useState } from 'react';
@@ -49,7 +51,8 @@ export default function Home() {
         <Loader isLight={theme == 'light'} message="Loading About Arventa" duration={1800} />
       ) : (
         <>
-          <VoipHero data={heroData} />
+          {/* <VoipHero data={hero1Data} /> */}
+          <VoipHero2 data={hero2Data}/>
           <CountUp data={countupData} />
           <VirtualNumberSearch onSearch={() => {}} />
           <VirtualOfficeNumbers />
@@ -57,6 +60,7 @@ export default function Home() {
           <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData1} />
           <FAQ data={faqData} />
           <CTA data={CTAData} />
+          <ContactForm/>
         </>
       )}
 

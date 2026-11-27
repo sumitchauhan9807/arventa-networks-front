@@ -17,10 +17,11 @@ import Loader from '@/components/layout/Loader';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import {  CTAData  , featureGridSectionData3 ,countupData ,heroData ,offeringGridData } from '@/app/data/compliance';
+import { CTAData, featureGridSectionData3, countupData, heroData, offeringGridData, featureGridSectionData2, faqData, processData, principlesData } from '@/app/data/compliance';
 import OfferingGrid from '@/components/dynamic-zone/OfferingGrid';
-
-
+import ProcessSteps from '@/components/dynamic-zone/ProcessSteps';
+import PrinciplesGrid from '@/components/dynamic-zone/PrinciplesGrid';
+import ContactForm from '@/components/dynamic-zone/ContactForm'
 export default function Home() {
   const theme = useSelector((state) => state.theme.theme);
 
@@ -50,13 +51,15 @@ export default function Home() {
         <>
           <Hero data={heroData} />
           <CountUp data={countupData} />
-          {/* <WorldNetworksMap /> */}
-          <OfferingGrid  data={offeringGridData} />
 
-          <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData3} />
-          {/* <Team />
-          <FAQ /> */}
+          <OfferingGrid data={offeringGridData} />
+          <FeatureGridSection layoutType={'TIMELINE'} data={featureGridSectionData3} />
+          <ProcessSteps data={processData} type="TYPE2" />
+          <PrinciplesGrid data={principlesData} type="TYPE2" />
+
+          <FAQ data={faqData} />
           <CTA data={CTAData} />
+          <ContactForm/>
         </>
       )}
 

@@ -15,8 +15,10 @@ import FAQ from '@/components/dynamic-zone/FAQ';
 
 import VirtualOfficeNumbers from '@/components/dynamic-zone/VirtualNumberComponents/VirtualOfficeNumbers';
 import VirtualNumberSearch from '@/components/dynamic-zone/VirtualNumberComponents/VirtualNumberSearch';
-import { faqData, CTAData, countupData, featureGridSectionData1 ,hero1Data } from '@/app/data/comparison';
-
+import ProcessSteps from '@/components/dynamic-zone/ProcessSteps';
+import PrinciplesGrid from '@/components/dynamic-zone/PrinciplesGrid';
+import { faqData, CTAData, countupData, featureGridSectionData1 ,hero1Data ,principlesData ,processData } from '@/app/data/comparison';
+import ContactForm from '@/components/dynamic-zone/ContactForm'
 import Loader from '@/components/layout/Loader';
 
 import { useEffect, useState } from 'react';
@@ -51,12 +53,13 @@ export default function Home() {
         <>
           <VoipHero data={hero1Data} />
           <CountUp data={countupData} />
-          <VirtualNumberSearch onSearch={() => {}} />
-          <VirtualOfficeNumbers />
-          <WorldVoipMap />
+        
           <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData1} />
+           <ProcessSteps data={processData} type="TYPE2" />
+          <PrinciplesGrid data={principlesData} type="TYPE2" />
           <FAQ data={faqData} />
           <CTA data={CTAData} />
+          <ContactForm/>
         </>
       )}
 

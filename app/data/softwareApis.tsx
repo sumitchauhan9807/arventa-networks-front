@@ -1,28 +1,28 @@
 export const serviceGridData = [
   {
     icon: '◈',
-    title: 'Carrier & Wholesale',
-    description: 'SIP Trunking, Origination/Termination, LCR',
+    title: 'Custom Software',
+    description: 'Business-focused software designed around your workflows.',
   },
   {
     icon: '▣',
-    title: 'Mobile & MVNO',
-    description: 'Flexible mobile solutions for your business',
+    title: 'API Integration',
+    description: 'Connect platforms, systems, and services through APIs.',
   },
   {
     icon: '△',
-    title: 'IoT / M2M',
-    description: 'Connected devices. Unlimited possibilities.',
+    title: 'Workflow Automation',
+    description: 'Reduce repetitive tasks and simplify daily operations.',
   },
   {
     icon: '◉',
-    title: 'Contact Center Software',
-    description: 'Powerful dialers, AI and fraud prevention.',
+    title: 'Communication Platforms',
+    description: 'Software for messaging, voice, and customer interactions.',
   },
   {
     icon: '◎',
-    title: 'Global Network',
-    description: 'Secure. Scalable. Reliable.',
+    title: 'System Connectivity',
+    description: 'Bring your tools and technologies together.',
   },
 ];
 
@@ -30,62 +30,62 @@ export const solutionGridData = {
   eyebrow: 'What We Do',
 
   heading: {
-    normal: 'Our',
-    highlight: 'Solutions',
+    normal: 'Software',
+    highlight: '& APIs',
   },
 
-  description: 'From carrier services to AI-powered contact center solutions, we provide the infrastructure and software you need to grow, connect and succeed.',
+  description: 'Connect your business technology with flexible software and API solutions. From platform integrations to automated workflows, build a connected digital environment that supports the way your business operates.',
 
   cta: {
     label: 'Explore All Solutions',
     href: '#',
   },
 
-  supportingNote: 'Technology built for growth',
+  supportingNote: 'Technology designed to work together',
 
   card: {
     linkLabel: 'Explore solution',
   },
   items: [
     {
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80',
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity & Security.',
+      title: 'Software Solutions',
+      description: 'Flexible applications and tools for business operations.',
     },
     {
-      image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80',
+      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM, IoT / M2M connectivity.',
+      title: 'API Integration',
+      description: 'Connect platforms, services, and business systems.',
     },
     {
-      image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
+      image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
+      title: 'Automation & Platforms',
+      description: 'Simplify workflows and build connected experiences.',
     },
   ],
 };
 
 export const offeringGridData = {
-  sectionId: 'contact-center',
+  sectionId: 'software-apis',
 
-  eyebrow: 'Contact Center & Software',
+  eyebrow: 'Software & API Solutions',
 
   heading: {
-    first: 'Smarter Dialers.',
-    highlight: 'Better Conversations.',
+    first: 'Connected Systems.',
+    highlight: 'Smarter Workflows.',
   },
 
-  description: 'Boost your efficiency with our advanced dialer solutions, AI platform and fraud prevention tools. Empower your team with smarter technology designed to improve productivity and customer engagement.',
+  description: 'Make your technology work together. Explore software solutions, API integrations, and automation capabilities that help simplify processes, connect platforms, and support evolving business requirements.',
 
   cta: {
-    label: 'Discover Contact Center Solutions',
+    label: 'Discover Software Solutions',
     href: '#',
   },
 
-  supportingNote: 'Intelligent solutions for modern business communication',
+  supportingNote: 'Flexible technology for connected businesses',
 
   product: {
     arrow: '→',
@@ -97,28 +97,28 @@ export const offeringGridData = {
   items: [
     {
       icon: '✦',
-      title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
+      title: 'Custom Software',
+      description: 'Purpose-built tools for your business requirements.',
     },
     {
       icon: '◇',
-      title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
+      title: 'API Integration',
+      description: 'Connect applications and exchange data between systems.',
     },
     {
       icon: 'AI',
-      title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
+      title: 'AI & Automation',
+      description: 'Explore intelligent tools and streamlined workflows.',
     },
     {
       icon: '◇',
-      title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
+      title: 'Platform Integration',
+      description: 'Bring business systems together in one connected ecosystem.',
     },
     {
       icon: 'API',
       title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
+      description: 'Integrate. Automate. Build.',
     },
   ],
 };
@@ -208,11 +208,11 @@ export const testimonialsData = {
   section: {
     eyebrow: 'Client Experiences',
     heading: {
-      first: 'Trusted by those',
-      second: 'who expect',
-      highlight: 'more.',
+      first: 'Built around',
+      second: 'the way you',
+      highlight: 'work.',
     },
-    description: 'The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.',
+    description: 'Discover how connected technology, flexible software, and thoughtful integrations can help businesses simplify operations and create more efficient digital workflows.',
   },
 
   decorative: {
@@ -225,7 +225,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus Networks',
-      quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
+      quote: 'Connecting different systems is an important part of building a more efficient technology environment. A clear integration strategy helps teams work with their tools more effectively.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -234,7 +234,7 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Solutions',
-      quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
+      quote: 'Software should support the way people work, not make everyday processes more complicated. Flexible solutions and well-planned workflows can make a meaningful difference.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -243,7 +243,7 @@ export const testimonialsData = {
       name: 'Daniel Chen',
       role: 'Network Infrastructure Lead',
       company: 'CloudBridge Systems',
-      quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
+      quote: 'Reliable integrations help simplify complex environments. Bringing platforms together gives technical teams a clearer way to manage data and connected services.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -252,7 +252,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Technologies',
-      quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
+      quote: 'The right software should be adaptable to business needs. A thoughtful approach to technology makes it easier to improve processes while keeping future requirements in mind.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -261,7 +261,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of IT Infrastructure',
       company: 'Apex Digital',
-      quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
+      quote: 'A connected technology environment depends on systems that can work together. Good integration practices help create a more manageable and flexible infrastructure.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -270,7 +270,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Communications',
-      quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
+      quote: 'Automation can help teams spend less time on repetitive tasks and more time on meaningful work. The key is choosing solutions that fit the processes already in place.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -279,7 +279,7 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Connect',
-      quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
+      quote: 'When business applications are connected, workflows become easier to understand and manage. Integration planning is an important part of making technology useful across an organization.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -288,7 +288,7 @@ export const testimonialsData = {
       name: 'Ananya Kapoor',
       role: 'Network Operations Manager',
       company: 'Pinnacle Technologies',
-      quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
+      quote: 'Flexible software and accessible integrations help organizations adapt as their requirements change. Building with connectivity in mind creates room for future improvements.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -300,41 +300,41 @@ export const faqData = {
 
   heading: {
     eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    first: 'Everything about',
+    highlight: 'Software & APIs.',
+    description: 'Learn how software solutions, API integrations, and automation can help connect your business systems and simplify everyday operations.',
   },
 
   faqs: [
     {
-      question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      question: 'What are software and API solutions?',
+      answer: 'Software solutions provide applications and tools for specific business needs. APIs, or Application Programming Interfaces, allow different software systems to communicate, exchange information, and work together.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'How can APIs help my business?',
+      answer: 'APIs can connect applications, share data between platforms, and make it easier to build connected workflows. They can reduce manual handovers and help systems work together more efficiently.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'Can you integrate with our existing software?',
+      answer: 'Integration possibilities depend on your existing platforms, available APIs, documentation, and technical requirements. Our team can discuss your environment and help identify a suitable integration approach.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'Do you support custom software development?',
+      answer: 'Software requirements vary from business to business. We can discuss your goals, workflows, and technical needs to understand whether an existing solution, an integration, or a tailored software approach is appropriate.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'Can software integrations automate business processes?',
+      answer: 'Yes. When systems expose the right capabilities, integrations can help automate tasks such as data exchange, notifications, status updates, and workflow handovers. The available options depend on the platforms involved.',
     },
     {
-      question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      question: 'How do we get started?',
+      answer: "Contact our team with an overview of your systems, objectives, and integration requirements. We'll discuss the technical context and help you identify a practical way forward.",
     },
   ],
 
   contact: {
-    heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    heading: 'Have a project in mind?',
+    description: "Let's discuss your software and integration requirements.",
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -345,15 +345,15 @@ export const CTAData = {
 
   heading: {
     eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    first: "Let's make your",
+    highlight: 'systems work together.',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Whether you need software integration, API connectivity, workflow automation, or a more connected technology environment, our team is ready to discuss your requirements.',
 
   cta: {
     primary: {
-      label: 'Contact / Sales',
+      label: 'Talk to Our Team',
       href: 'mailto:sales@example.com',
       arrow: '→',
     },
@@ -367,46 +367,44 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '3',
-    accent: 's',
-    label: 'P95 delivery',
-    description: 'Measured continuously',
+    value: 'Connected',
+    accent: '',
+    label: 'Systems',
+    description: 'Bring platforms and applications together',
   },
   {
-    value: '99.5',
-    accent: '%',
-    label: 'Delivery success',
-    description: 'With failover',
+    value: 'Flexible',
+    accent: '',
+    label: 'Integrations',
+    description: 'Adapt connections to business requirements',
   },
   {
-    value: '500',
-    accent: 'ms',
-    label: 'Failover time',
-    description: 'Route-to-route',
+    value: 'Automated',
+    accent: '',
+    label: 'Workflows',
+    description: 'Simplify repetitive processes',
   },
   {
-    value: '200',
-    accent: '+',
-    label: 'Countries',
-    description: 'Premium OTP routes',
+    value: 'Scalable',
+    accent: '',
+    label: 'Technology',
+    description: 'Build with future requirements in mind',
   },
 ];
 
 export const countUpGridData = {
-  id: 'who-we-are',
+  id: 'software-apis',
 
-  badge: 'Who We Are',
+  badge: 'Software & APIs',
 
   heading: {
-    firstLine: 'Infrastructure with',
-    highlight: 'purpose.',
+    firstLine: 'Technology that',
+    highlight: 'works together.',
   },
 
-  description:
-    'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+  description: 'Modern businesses rely on a range of platforms, applications, and digital services. Software and APIs help connect these tools, creating a more coordinated technology environment that supports everyday operations.',
 
-  secondaryDescription:
-    'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+  secondaryDescription: 'From application integrations and data exchange to automation and communication platforms, build a connected foundation that can adapt as your business evolves.',
 
   cta: {
     label: 'Discover Our Approach',
@@ -414,63 +412,64 @@ export const countUpGridData = {
     icon: '→',
   },
 
-  supportingNote:
-    'Reliable connectivity. Built for the long term.',
+  supportingNote: 'Connected platforms. More streamlined workflows.',
 
   statsPanel: {
     eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    heading: 'Built for integration',
+    badge: 'Connected technology',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: 'Connect', label: 'Applications & Platforms' },
+      { value: 'Exchange', label: 'Data & Information' },
+      { value: 'Automate', label: 'Business Workflows' },
+      { value: 'Adapt', label: 'Evolving Requirements' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'Technology designed around your workflows',
+      status: 'Integration-focused',
     },
   },
 };
+
 export const featureGridSectionData1 = {
   buttonText: 'Explore Solutions',
   eyebrow: 'What we do',
   heading: {
-    firstLine: 'Communication',
-    highlight: 'engineered.',
+    firstLine: 'Software that',
+    highlight: 'connects.',
   },
-  description: 'From carrier services to communication infrastructure, we provide the technology and connectivity businesses need to grow, connect and operate.',
+  description: 'Bring your business technology together with flexible software, API integrations, and automation capabilities designed to simplify processes and support connected operations.',
   items: [
     {
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
+      title: 'Software Solutions',
+      description: 'Practical applications and tools for your business needs.',
     },
     {
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM and IoT / M2M connectivity solutions.',
+      title: 'API Integration',
+      description: 'Connect platforms and enable structured data exchange.',
     },
     {
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, fraud prevention and communication APIs.',
+      title: 'Workflow Automation',
+      description: 'Simplify repetitive tasks and streamline processes.',
     },
     {
       icon: '✦',
-      title: 'Technology Partnerships',
-      description: 'Integrate. Automate. Grow with the right ecosystem.',
+      title: 'Connected Platforms',
+      description: 'Bring services, applications, and systems into one ecosystem.',
     },
   ],
 };
+
 export const hero1Data = {
   hero: {
-    title: 'Voice Without',
-    highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
+    title: 'Software Without',
+    highlightedTitle: 'Limits.',
+    description: 'Connect your business technology with flexible software and API solutions. Simplify workflows, integrate platforms, and create digital experiences designed around the way your organization works.',
     primaryButton: 'Get Started',
     secondaryButton: 'Explore Solutions',
   },
@@ -479,9 +478,9 @@ export const hero1Data = {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
-        footer: 'Built for your business',
+        title: 'API Integration',
+        description: 'Connect applications and exchange information between systems.',
+        footer: 'Built around your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
@@ -491,9 +490,9 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
-        footer: 'Built for your business',
+        title: 'System Connectivity',
+        description: 'Bring business platforms and services together.',
+        footer: 'Built around your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
@@ -504,9 +503,9 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
-        footer: 'Built for your business',
+        title: 'Workflow Automation',
+        description: 'Simplify repetitive processes and support more efficient operations.',
+        footer: 'Built around your business',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -516,93 +515,93 @@ export const hero1Data = {
       },
     ],
   },
-}
+};
 
 export const hero2Data = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'Software & API Integration',
+    title: 'Everything connected.',
+    highlightedTitle: 'Workflows simplified.',
+    description: 'Create a more connected technology environment. Bring applications together, exchange information between platforms, and explore automation opportunities that support your business processes.',
+    primaryButton: 'Explore Solutions',
+    secondaryButton: 'Talk to Our Team',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'APIs',
+        label: 'System Integration',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'Data',
+        label: 'Information Exchange',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'Logic',
+        label: 'Workflow Automation',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'Systems',
+        label: 'Connected Platforms',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'Technology built around your workflows.',
+    status: 'Integration-focused',
+    availability: 'Designed for your requirements',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'API',
+        name: 'API Integration',
+        role: 'Connect applications and services',
+        status: 'Core capability',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'SW',
+        name: 'Software Solutions',
+        role: 'Support business processes',
+        status: 'Core capability',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'WA',
+        name: 'Workflow Automation',
+        role: 'Simplify operational tasks',
+        status: 'Connected capability',
       },
-    ] 
+    ],
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Connected technology workflow',
+    status: 'Integration-focused',
   },
-}
+};
 
 export const hero3Data = {
   hero: {
-    eyebrow: 'About Our Company',
+    eyebrow: 'About Our Software',
 
     heading: {
-      firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      firstLine: 'We connect systems.',
+      secondLine: 'We simplify work.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'We believe technology works best when everything connects. By bringing together software, APIs, and intelligent workflows, we help businesses create more coordinated digital environments and make their technology work harder for them.',
 
     primaryCta: {
-      label: 'Discover Our Story',
+      label: 'Discover Our Approach',
       href: '#our-story',
     },
 
     secondaryCta: {
-      label: 'Meet Our Team',
+      label: 'Explore Solutions',
       href: '#team',
     },
   },
@@ -610,20 +609,20 @@ export const hero3Data = {
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
+        value: 'Connected',
+        label: 'Digital Ecosystems',
       },
       {
-        value: '42+',
-        label: 'Countries Connected',
+        value: 'Flexible',
+        label: 'Software Solutions',
       },
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Integrated',
+        label: 'Business Systems',
       },
       {
-        value: '24/7',
-        label: 'Global Support',
+        value: 'Adaptable',
+        label: 'Technology Approach',
       },
     ],
   },
@@ -636,8 +635,8 @@ export const hero3Data = {
     items: [
       {
         number: '01',
-        title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        title: 'People First',
+        description: 'Technology should make everyday work easier, helping people focus on meaningful tasks instead of unnecessary complexity.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -648,8 +647,8 @@ export const hero3Data = {
 
       {
         number: '02',
-        title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        title: 'Built to Integrate',
+        description: 'Applications should work together. We value flexible connections that help businesses make better use of their existing technology.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -660,8 +659,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Always Evolving',
+        description: 'Business needs change. Software and integrations should be considered with flexibility, maintainability, and future requirements in mind.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -671,4 +670,98 @@ export const hero3Data = {
       },
     ],
   },
+};
+
+export const processData = {
+  content: {
+    eyebrow: 'Our Approach',
+    titleLine1: 'From your requirements',
+    titleHighlight: 'to connected systems.',
+    description: 'Successful software integration starts with understanding how your business works. We take a structured approach to defining requirements, evaluating systems, planning integrations, and supporting a connected technology environment.',
+
+    statusText: 'A practical approach to software integration',
+    flowText: 'Understand · Plan · Integrate · Improve',
+    footerTitle: 'Technology that evolves with your business',
+    footerDescription: 'Build connected workflows around your systems and operational needs.',
+    phaseLabel: 'Integration stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Understand',
+      subtitle: 'Explore your requirements',
+      description: 'Review your existing applications, business processes, technical environment, and integration goals to understand what needs to connect and why.',
+    },
+    {
+      number: '02',
+      title: 'Plan',
+      subtitle: 'Define the right approach',
+      description: 'Identify suitable integration methods, available APIs, data requirements, and workflow considerations. Establish a practical direction based on your systems and objectives.',
+    },
+    {
+      number: '03',
+      title: 'Integrate',
+      subtitle: 'Connect platforms and services',
+      description: 'Implement the agreed integration approach, connect relevant systems, and validate how information and workflows move between applications.',
+    },
+    {
+      number: '04',
+      title: 'Improve',
+      subtitle: 'Adapt as needs evolve',
+      description: 'Review how connected systems support your operations, identify opportunities to refine workflows, and consider future requirements as your business changes.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Our Approach',
+    titleLine1: 'Better software starts',
+    titleLine2: 'with better connections.',
+    description: 'Useful technology is about more than individual applications. It is about creating connected systems that support people, simplify processes, and adapt to changing business requirements.',
+
+    cardFooter: 'The principles behind our solutions',
+    approachEyebrow: 'The Arventa Approach',
+    approachTitle: 'People, processes, and technology working together.',
+    approachDescription: 'Because the best digital workflows are built around how your business operates.',
+
+    approachHighlight: ' Built for connected work.',
+
+    approachLabel: 'Technology commitment',
+    approachSubLabel: 'Focused on flexibility and integration',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our technology philosophy',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'Simplicity',
+      description: 'Technology should make processes easier to understand and manage. We value clear solutions that reduce unnecessary complexity in everyday operations.',
+      icon: '',
+      tag: 'Usability',
+    },
+    {
+      number: '02',
+      title: 'Connectivity',
+      description: 'Applications and platforms should work together wherever practical. Thoughtful integrations help businesses make better use of their technology ecosystem.',
+      icon: '',
+      tag: 'Integration',
+    },
+    {
+      number: '03',
+      title: 'Flexibility',
+      description: 'Every business has different requirements. Software and integration approaches should reflect existing systems, workflows, and changing operational needs.',
+      icon: '',
+      tag: 'Adaptability',
+    },
+    {
+      number: '04',
+      title: 'Continuous Improvement',
+      description: 'Technology should evolve alongside the business. Reviewing integrations and workflows helps identify opportunities to improve and adapt over time.',
+      icon: '',
+      tag: 'Progress',
+    },
+  ],
 };

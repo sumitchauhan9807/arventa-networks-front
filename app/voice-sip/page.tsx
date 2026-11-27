@@ -15,12 +15,14 @@ import FAQ from '@/components/dynamic-zone/FAQ';
 
 import VirtualOfficeNumbers from '@/components/dynamic-zone/VirtualNumberComponents/VirtualOfficeNumbers';
 import VirtualNumberSearch from '@/components/dynamic-zone/VirtualNumberComponents/VirtualNumberSearch';
-import { faqData, CTAData, countupData, featureGridSectionData1 ,heroData } from '@/app/data/voiceSip';
-
+import { faqData, CTAData, countupData, featureGridSectionData1 ,heroData ,principlesData , processData } from '@/app/data/voiceSip';
+import ContactForm from '@/components/dynamic-zone/ContactForm'
 import Loader from '@/components/layout/Loader';
 
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import ProcessSteps from '@/components/dynamic-zone/ProcessSteps';
+import PrinciplesGrid from '@/components/dynamic-zone/PrinciplesGrid';
 
 
 
@@ -53,12 +55,15 @@ export default function Home() {
         <>
           <VoipHero2 data={heroData} />
           <CountUp data={countupData} />
-          <VirtualNumberSearch onSearch={() => {}} />
-          <VirtualOfficeNumbers />
-          <WorldVoipMap />
+         
+          <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData1} />
+          <ProcessSteps data={processData} type="TYPE2" />
+          <PrinciplesGrid data={principlesData} type="TYPE2" />
+
           <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData1} />
           <FAQ data={faqData} />
           <CTA data={CTAData} />
+          <ContactForm/>
         </>
       )}
 

@@ -1,40 +1,41 @@
-export const countUpGridData = {
-  id: 'who-we-are',
 
-  badge: 'Who We Are',
+export const countUpGridData = {
+  id: 'operations',
+
+  badge: 'Our Operations',
 
   heading: {
-    firstLine: 'Infrastructure with',
-    highlight: 'purpose.',
+    firstLine: 'Keeping every',
+    highlight: 'conversation connected.',
   },
 
-  description: 'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+  description: 'Arventa Networks operates and monitors the voice infrastructure that keeps businesses connected. From SIP trunking and call routing to network performance and service availability, our operations are focused on dependable communication.',
 
-  secondaryDescription: 'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+  secondaryDescription: 'Through continuous monitoring, proactive maintenance, and coordinated technical support, we work to keep voice services stable, calls flowing, and business communications running smoothly.',
 
   cta: {
-    label: 'Discover Our Approach',
-    href: '#solutions',
+    label: 'Explore Our Operations',
+    href: '#operations-process',
     icon: '→',
   },
 
-  supportingNote: 'Reliable connectivity. Built for the long term.',
+  supportingNote: 'Every connection matters. Every call counts.',
 
   statsPanel: {
-    eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    eyebrow: 'Operations at a glance',
+    heading: 'Always on. Always connected.',
+    badge: '24/7 Monitoring',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: '24/7', label: 'Network Monitoring' },
+      { value: '99.99%', label: 'Target Service Availability' },
+      { value: 'Real-time', label: 'Traffic Monitoring' },
+      { value: 'Global', label: 'Voice Connectivity' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'Our focus is uninterrupted communication',
+      status: 'Operations Active',
     },
   },
 };
@@ -43,42 +44,46 @@ export const faqData = {
   sectionId: 'faq',
 
   heading: {
-    eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    eyebrow: 'Operations FAQs',
+    first: 'Everything about',
+    highlight: 'our operations.',
+    description: 'Learn how we monitor, maintain, and support the SIP and VoIP infrastructure behind your business communications.',
   },
 
   faqs: [
     {
-      question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      question: 'How does Arventa Networks monitor its VoIP infrastructure?',
+      answer: 'Our operational approach focuses on continuous monitoring of network performance, SIP connectivity, call traffic, and service availability. This helps identify unusual activity and potential service disruptions so our technical teams can investigate and respond.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'Do you provide 24/7 network monitoring?',
+      answer: 'Our operations are designed around continuous network oversight, with monitoring of critical voice infrastructure and service indicators to help maintain connectivity and identify potential issues.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'How do you handle call routing issues?',
+      answer: 'We investigate routing-related issues by examining SIP signaling, call paths, network connectivity, and relevant traffic indicators. Our technical team works to identify the source of the issue and coordinate the appropriate resolution.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'What happens when a service disruption occurs?',
+      answer: 'Potential incidents are assessed according to their impact and urgency. Our operational process includes investigation, technical escalation, service restoration activities, and communication with affected customers where applicable.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'How do you maintain voice service reliability?',
+      answer: 'We focus on proactive monitoring, infrastructure maintenance, performance analysis, and operational reviews. These practices help identify risks, improve network resilience, and support consistent voice service quality.',
     },
     {
-      question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      question: 'Can you support high-volume SIP traffic?',
+      answer: 'Our SIP and VoIP solutions are designed to accommodate business communication requirements across different traffic volumes. Capacity planning, traffic visibility, and appropriate infrastructure configuration help support changing demand.',
+    },
+    {
+      question: 'How can customers contact technical support?',
+      answer: 'Customers can contact our technical support team to report connectivity problems, call quality issues, SIP registration failures, and other service-related concerns. Our team will help investigate and coordinate the next steps.',
     },
   ],
 
   contact: {
-    heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    heading: 'Need operational support?',
+    description: 'Our team is ready to help with your SIP connectivity and voice infrastructure requirements.',
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -88,21 +93,21 @@ export const CTAData = {
   sectionId: 'contact',
 
   heading: {
-    eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    eyebrow: 'Connected by Design',
+    first: 'Reliable operations.',
+    highlight: 'Better communication.',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Whether you need SIP trunking, VoIP connectivity, call routing support, or dependable voice infrastructure, Arventa Networks is ready to help keep your business connected.',
 
   cta: {
     primary: {
-      label: 'Contact / Sales',
+      label: 'Talk to Our Team',
       href: 'mailto:sales@example.com',
       arrow: '→',
     },
     secondary: {
-      label: 'Explore Our Solutions',
+      label: 'Explore Voice Solutions',
       darkHref: 'index.html',
       lightHref: '#solutions',
     },
@@ -110,20 +115,20 @@ export const CTAData = {
 };
 
 export const featureGridSectionData3 = {
-  eyebrow: 'Our Principles',
+  eyebrow: 'Operational Excellence',
 
   heading: {
-    firstLine: 'The way we',
-    highlight: ' build.',
+    firstLine: 'What keeps our',
+    highlight: 'network running.',
   },
 
-  description: 'The principles behind every system, connection, and decision we make.',
+  description: 'The operational foundations behind reliable SIP connectivity and business-critical voice communication.',
 
   items: [
     {
       number: '01',
-      title: 'Reliability',
-      description: 'Infrastructure built to perform when communication matters most.',
+      title: 'Continuous Monitoring',
+      description: 'Ongoing visibility into network health, SIP connectivity, and service performance.',
       icon: (
         <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
           <circle cx="60" cy="60" r="43" stroke="currentColor" strokeWidth="1" strokeDasharray="3 6" />
@@ -136,8 +141,8 @@ export const featureGridSectionData3 = {
     },
     {
       number: '02',
-      title: 'Flexibility',
-      description: 'Solutions that adapt as your business and network evolve.',
+      title: 'Proactive Maintenance',
+      description: 'Identifying potential infrastructure issues and addressing risks before they escalate.',
       icon: (
         <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
           <circle cx="60" cy="60" r="42" stroke="currentColor" strokeWidth="1" strokeDasharray="2 7" />
@@ -152,8 +157,8 @@ export const featureGridSectionData3 = {
     },
     {
       number: '03',
-      title: 'Intelligence',
-      description: 'Better visibility and smarter infrastructure decisions.',
+      title: 'Incident Management',
+      description: 'Structured investigation, escalation, and response to service interruptions and network issues.',
       icon: (
         <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
           <circle cx="60" cy="60" r="43" stroke="currentColor" strokeWidth="1" strokeDasharray="2 7" />
@@ -170,8 +175,8 @@ export const featureGridSectionData3 = {
     },
     {
       number: '04',
-      title: 'Scale',
-      description: 'A foundation designed to grow alongside your requirements.',
+      title: 'Performance Optimization',
+      description: 'Analyzing voice traffic, call performance, and network indicators to continually improve service quality.',
       icon: (
         <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
           <path d="M30 82L47 67L59 75L91 43" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -190,48 +195,53 @@ export const featureGridSectionData3 = {
 
 export const heroData = {
   hero: {
-    eyebrow: 'Global Connectivity. Intelligent Solutions.',
+    eyebrow: '24/7 VoIP Operations & Network Monitoring',
 
     heading: {
-      firstLine: 'Connecting the World.',
-      secondLine: 'Intelligently.',
+      firstLine: 'Always Connected.',
+      secondLine: 'Always Operational.',
     },
-    description: 'Arventa Networks connects businesses, carriers and technologies across the globe through intelligent telecom, mobile, IoT and AI infrastructure.',
-    primaryButton: 'Explore Our Network',
-    secondaryButton: 'Talk to an Expert',
+
+    description: 'Behind every successful call is dependable infrastructure. Our operations focus on monitoring SIP connectivity, managing voice traffic, and maintaining the systems that keep business communications moving.',
+
+    primaryButton: 'Explore Our Operations',
+    secondaryButton: 'Talk to Our Team',
   },
+
   stats: [
     {
-      value: '180+',
-      label: 'Countries',
+      value: '24/7',
+      label: 'Network Monitoring',
     },
     {
       value: '99.99%',
-      label: 'Network Uptime',
+      label: 'Target Availability',
     },
     {
-      value: '24/7',
-      label: 'Operations',
+      value: 'Real-time',
+      label: 'Network Visibility',
     },
   ],
-  animation:"operations"
+
+  animation: "operations"
 };
+
 export const hero1Data = {
   hero: {
-    title: 'Voice Without',
-    highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
-    primaryButton: 'Get Started',
-    secondaryButton: 'Explore Solutions',
+    title: 'The People Behind',
+    highlightedTitle: 'Every Connection.',
+    description: 'Our operations bring together technical expertise, network oversight, and coordinated support to keep SIP and VoIP services performing reliably. From infrastructure monitoring to incident response, every detail matters.',
+    primaryButton: 'Our Operational Approach',
+    secondaryButton: 'Contact Our Team',
   },
 
   services: {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
-        footer: 'Built for your business',
+        title: 'Network Monitoring',
+        description: 'Continuous visibility into voice infrastructure, connectivity, and service health.',
+        footer: 'Always-on oversight',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
@@ -241,9 +251,9 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
-        footer: 'Built for your business',
+        title: 'Technical Support',
+        description: 'Structured investigation and assistance for SIP connectivity and VoIP service issues.',
+        footer: 'Expert assistance',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
@@ -254,9 +264,9 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
-        footer: 'Built for your business',
+        title: 'Traffic Management',
+        description: 'Visibility and operational oversight across call traffic, routing, and network capacity.',
+        footer: 'Built for performance',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -266,128 +276,128 @@ export const hero1Data = {
       },
     ],
   },
-}
+};
 
 export const hero2Data = {
   hero: {
     eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    title: 'Every connection.',
+    highlightedTitle: 'Under control.',
+    description: 'Our operational approach combines continuous monitoring, network visibility, and structured incident management to help keep your SIP and VoIP services running smoothly.',
+    primaryButton: 'Explore Our Process',
+    secondaryButton: 'Contact Operations',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: '24 / 7',
+        label: 'Network Monitoring',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'Real-time',
+        label: 'Service Visibility',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'SIP',
+        label: 'Voice Infrastructure',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'Proactive',
+        label: 'Issue Detection',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'Your communications matter. So does every detail.',
+    status: 'Operations Active',
+    availability: 'Continuous network oversight',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
-      },
-      {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
-      },
-      {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
+        initials: 'NO',
+        name: 'Network Operations',
+        role: 'Infrastructure Monitoring',
         status: 'Monitoring',
       },
-    ] 
+      {
+        initials: 'VS',
+        name: 'Voice Support',
+        role: 'SIP & VoIP Services',
+        status: 'Available',
+      },
+      {
+        initials: 'IR',
+        name: 'Incident Response',
+        role: 'Technical Investigation',
+        status: 'On Standby',
+      },
+    ],
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Network operations overview',
+    status: 'Monitoring',
   },
-}
+};
 
 export const hero3Data = {
   hero: {
-    eyebrow: 'About Our Company',
+    eyebrow: 'Our Operational Approach',
 
     heading: {
-      firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      firstLine: 'Behind every call.',
+      secondLine: 'A reliable network.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'Reliable voice communication takes more than technology. It requires the right people, structured processes, and continuous attention to the infrastructure connecting businesses around the world.',
 
     primaryCta: {
-      label: 'Discover Our Story',
-      href: '#our-story',
+      label: 'Explore Our Process',
+      href: '#operations-process',
     },
 
     secondaryCta: {
-      label: 'Meet Our Team',
-      href: '#team',
+      label: 'Contact Our Team',
+      href: '#contact',
     },
   },
 
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
-      },
-      {
-        value: '42+',
-        label: 'Countries Connected',
-      },
-      {
-        value: '99.99%',
-        label: 'Network Uptime',
-      },
-      {
         value: '24/7',
-        label: 'Global Support',
+        label: 'Operational Oversight',
+      },
+      {
+        value: 'SIP',
+        label: 'Voice Connectivity',
+      },
+      {
+        value: 'Real-time',
+        label: 'Performance Visibility',
+      },
+      {
+        value: 'Always',
+        label: 'Customer Focus',
       },
     ],
   },
 
   values: {
-    eyebrow: 'What We Believe',
-    heading: 'What We Believe',
-    label: 'OUR PRINCIPLES',
+    eyebrow: 'Operational Values',
+    heading: 'How We Work',
+    label: 'OUR COMMITMENT',
 
     items: [
       {
         number: '01',
-        title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        title: 'Responsibility',
+        description: 'We believe every service deserves clear ownership, disciplined management, and a commitment to dependable delivery.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -398,8 +408,8 @@ export const hero3Data = {
 
       {
         number: '02',
-        title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        title: 'Operational Resilience',
+        description: 'We focus on maintaining robust infrastructure and preparing for changing network demands and service challenges.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -410,8 +420,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Service Reliability',
+        description: 'Every call matters. We prioritize monitoring, service quality, and consistent voice connectivity.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -425,61 +435,62 @@ export const hero3Data = {
 
 export const processData = {
   content: {
-    eyebrow: 'Our operations',
-    titleLine1: 'From first signal',
+    eyebrow: 'Our Operations',
+    titleLine1: 'From first alert',
     titleHighlight: 'to resolution.',
-    description: 'Reliable operations require more than monitoring. Our approach brings visibility, structured response, and continuous improvement together in one operational lifecycle.',
+    description: 'Keeping voice services reliable requires a structured operational approach. We combine continuous monitoring, intelligent investigation, coordinated response, and ongoing improvement to support dependable SIP and VoIP connectivity.',
 
-    statusText: 'Designed for continuous operational oversight',
-    flowText: 'Monitor · Detect · Respond · Improve',
-    footerTitle: 'Built around continuous improvement',
-    footerDescription: 'Every incident creates an opportunity to learn.',
-    phaseLabel: 'Operational phase',
+    statusText: 'A continuous approach to network reliability',
+    flowText: 'Monitor · Detect · Investigate · Resolve',
+    footerTitle: 'Reliability through continuous improvement',
+    footerDescription: 'Every operational insight helps us strengthen the network.',
+    phaseLabel: 'Operational stage',
   },
+
   steps: [
     {
       number: '01',
       title: 'Monitor',
-      subtitle: 'Always-on visibility',
-      description: 'Monitor network performance, service availability, and operational signals to identify potential issues early.',
+      subtitle: 'Continuous network visibility',
+      description: 'Monitor SIP infrastructure, network connectivity, voice traffic, and service performance to maintain visibility into the health of critical communication systems.',
     },
     {
       number: '02',
       title: 'Detect',
-      subtitle: 'Identify what matters',
-      description: 'Analyze alerts and service indicators to identify anomalies and prioritize incidents based on their impact.',
+      subtitle: 'Identify potential issues',
+      description: 'Analyze service indicators, network alerts, and traffic patterns to identify anomalies, potential disruptions, and performance concerns.',
     },
     {
       number: '03',
-      title: 'Respond',
-      subtitle: 'Coordinate the right action',
-      description: 'Coordinate technical teams, investigate incidents, and work toward restoring normal service as quickly as possible.',
+      title: 'Investigate & Respond',
+      subtitle: 'Take coordinated action',
+      description: 'Investigate connectivity problems, SIP signaling issues, routing concerns, and service incidents while coordinating the appropriate technical response.',
     },
     {
       number: '04',
-      title: 'Improve',
-      subtitle: 'Learn and strengthen',
-      description: 'Review incidents, document findings, and use operational insights to improve processes and resilience.',
+      title: 'Resolve & Improve',
+      subtitle: 'Strengthen service reliability',
+      description: 'Work toward service restoration, review incident findings, document corrective actions, and identify opportunities to improve infrastructure and operational processes.',
     },
   ],
 };
 
 export const principlesData = {
   content: {
-    eyebrow: 'What guides us',
-    titleLine1: 'Reliability is built',
-    titleLine2: 'into every decision.',
-    description: 'Technology matters. So do the people, processes, and principles behind it. Our operational philosophy is built around disciplined execution, transparent communication, and a commitment to learning.',
+    eyebrow: 'What Guides Our Operations',
+    titleLine1: 'Reliable voice starts',
+    titleLine2: 'with reliable operations.',
+    description: 'Behind every dependable communication service is a commitment to accountability, technical discipline, and continuous improvement. These principles guide how we manage our infrastructure and support our customers.',
 
-    cardFooter: 'Our operational principles',
-    approachEyebrow: 'The Arventa approach',
+    cardFooter: 'The principles behind our operations',
+    approachEyebrow: 'The Arventa Approach',
     approachTitle: 'People, processes, and technology working together.',
-    approachDescription: 'Because dependable business communication begins with dependable operations.',
+    approachDescription: 'Because dependable SIP and VoIP services require more than infrastructure alone.',
 
-    approachHighlight: ' Working as one.',
+    approachHighlight: ' Built around reliability.',
 
-    approachLabel: 'Built on trust',
-    approachSubLabel: 'Guided by our principles',
+    approachLabel: 'Operational commitment',
+    approachSubLabel: 'Focused on dependable communication',
     principlePrefix: 'PRINCIPLE',
     philosophyFooter: 'Our operational philosophy',
   },
@@ -488,28 +499,28 @@ export const principlesData = {
     {
       number: '01',
       title: 'Accountability',
-      description: 'Clear ownership, defined responsibilities, and documented processes help keep operational work organized and traceable.',
+      description: 'Clear ownership, defined responsibilities, and documented operational procedures help ensure every issue receives the appropriate attention.',
       icon: "",
       tag: 'Ownership',
     },
     {
       number: '02',
-      title: 'Communication',
-      description: 'Structured updates and coordinated escalation help stakeholders understand what is happening and what comes next.',
+      title: 'Transparency',
+      description: 'Clear communication, structured updates, and coordinated escalation help customers understand service issues and operational progress.',
       icon: "",
-      tag: 'Transparency',
+      tag: 'Communication',
     },
     {
       number: '03',
-      title: 'Proactive thinking',
-      description: 'Monitoring service indicators and reviewing emerging patterns helps teams identify risks before they become larger problems.',
+      title: 'Proactive Monitoring',
+      description: 'Continuous visibility into network health, SIP connectivity, and voice performance helps identify potential risks before they become larger problems.',
       icon: "",
       tag: 'Prevention',
     },
     {
       number: '04',
-      title: 'Continuous improvement',
-      description: 'Operational reviews and documented lessons help strengthen processes, refine workflows, and support future reliability.',
+      title: 'Continuous Improvement',
+      description: 'Operational reviews, incident analysis, and performance insights help strengthen infrastructure, refine processes, and improve service reliability.',
       icon: "",
       tag: 'Progress',
     },

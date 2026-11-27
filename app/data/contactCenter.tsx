@@ -1,28 +1,29 @@
+
 export const serviceGridData = [
   {
     icon: '◈',
     title: 'Carrier & Wholesale',
-    description: 'SIP Trunking, Origination/Termination, LCR',
+    description: 'SIP Trunking, Voice Origination, Termination and LCR.',
   },
   {
     icon: '▣',
     title: 'Mobile & MVNO',
-    description: 'Flexible mobile solutions for your business',
+    description: 'Flexible mobile connectivity for modern businesses.',
   },
   {
     icon: '△',
     title: 'IoT / M2M',
-    description: 'Connected devices. Unlimited possibilities.',
+    description: 'Connected devices, sensors and machine communication.',
   },
   {
     icon: '◉',
     title: 'Contact Center Software',
-    description: 'Powerful dialers, AI and fraud prevention.',
+    description: 'Dialers, AI-powered tools, fraud prevention and APIs.',
   },
   {
     icon: '◎',
     title: 'Global Network',
-    description: 'Secure. Scalable. Reliable.',
+    description: 'Connectivity and infrastructure for distributed operations.',
   },
 ];
 
@@ -30,18 +31,18 @@ export const solutionGridData = {
   eyebrow: 'What We Do',
 
   heading: {
-    normal: 'Our',
+    normal: 'Contact Center',
     highlight: 'Solutions',
   },
 
-  description: 'From carrier services to AI-powered contact center solutions, we provide the infrastructure and software you need to grow, connect and succeed.',
+  description: 'Equip your contact center with intelligent dialer technology, AI-enabled workflows, fraud prevention tools and flexible integrations designed to support better customer interactions and more efficient operations.',
 
   cta: {
-    label: 'Explore All Solutions',
+    label: 'Explore Contact Center Solutions',
     href: '#',
   },
 
-  supportingNote: 'Technology built for growth',
+  supportingNote: 'Smarter tools for customer communication',
 
   card: {
     linkLabel: 'Explore solution',
@@ -51,19 +52,19 @@ export const solutionGridData = {
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
       icon: '◈',
       title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity & Security.',
+      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
     },
     {
       image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80',
       icon: '▣',
       title: 'Mobile & IoT',
-      description: 'MVNO, eSIM, IoT / M2M connectivity.',
+      description: 'MVNO, eSIM and IoT / M2M connectivity.',
     },
     {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
       title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
+      description: 'Dialers, AI tools, fraud prevention and software integrations.',
     },
   ],
 };
@@ -71,21 +72,21 @@ export const solutionGridData = {
 export const offeringGridData = {
   sectionId: 'contact-center',
 
-  eyebrow: 'Contact Center & Software',
+  eyebrow: 'Contact Center Software',
 
   heading: {
     first: 'Smarter Dialers.',
-    highlight: 'Better Conversations.',
+    highlight: 'Stronger Connections.',
   },
 
-  description: 'Boost your efficiency with our advanced dialer solutions, AI platform and fraud prevention tools. Empower your team with smarter technology designed to improve productivity and customer engagement.',
+  description: 'Give your contact center the tools to manage conversations more effectively. Explore dialer solutions, AI-enabled capabilities, fraud prevention and software integrations designed to support agent workflows, customer engagement and operational efficiency.',
 
   cta: {
     label: 'Discover Contact Center Solutions',
     href: '#',
   },
 
-  supportingNote: 'Intelligent solutions for modern business communication',
+  supportingNote: 'Flexible technology for modern customer engagement',
 
   product: {
     arrow: '→',
@@ -98,27 +99,27 @@ export const offeringGridData = {
     {
       icon: '✦',
       title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
+      description: 'Intelligent dialing workflows for contact center teams.',
     },
     {
       icon: '◇',
       title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
+      description: 'Flexible calling tools for customer outreach.',
     },
     {
       icon: 'AI',
       title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
+      description: 'AI-enabled tools to support smarter communication workflows.',
     },
     {
       icon: '◇',
       title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
+      description: 'Tools to help identify suspicious activity and protect communication operations.',
     },
     {
       icon: 'API',
       title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
+      description: 'Connect platforms, automate workflows and extend functionality.',
     },
   ],
 };
@@ -208,11 +209,11 @@ export const testimonialsData = {
   section: {
     eyebrow: 'Client Experiences',
     heading: {
-      first: 'Trusted by those',
-      second: 'who expect',
-      highlight: 'more.',
+      first: 'Better conversations',
+      second: 'start with',
+      highlight: 'the right tools.',
     },
-    description: 'The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.',
+    description: 'Discover how thoughtful communication technology, flexible software and dependable support can help contact center teams improve customer interactions and streamline their operations.',
   },
 
   decorative: {
@@ -225,7 +226,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus Networks',
-      quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
+      quote: 'The combination of flexible contact center technology and technical expertise helped us think more clearly about our communication workflows and integration requirements.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -234,16 +235,16 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Solutions',
-      quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
+      quote: 'We were looking for tools that could support our customer engagement processes without adding unnecessary complexity. A practical, considered approach made all the difference.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
     {
       id: 3,
       name: 'Daniel Chen',
-      role: 'Network Infrastructure Lead',
+      role: 'Contact Center Technology Lead',
       company: 'CloudBridge Systems',
-      quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
+      quote: 'Bringing dialer technology and communication integrations together gives businesses a more structured way to manage customer interactions and evolving operational needs.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -252,7 +253,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Technologies',
-      quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
+      quote: 'The focus on understanding our workflows and requirements made the solution discussion clear and productive. We value technology that supports both our team and our customers.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -261,7 +262,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of IT Infrastructure',
       company: 'Apex Digital',
-      quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
+      quote: 'A contact center environment depends on the right combination of software, connectivity and integration. Having these considerations addressed together helps simplify planning.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -270,7 +271,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Communications',
-      quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
+      quote: 'We appreciate a flexible approach to communication technology. The ability to consider automation, integrations and changing business requirements is important to our planning.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -279,16 +280,16 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Connect',
-      quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
+      quote: 'Contact center technology should make everyday workflows easier to manage. A focus on practical tools, clear processes and operational needs is what matters to us.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
     {
       id: 8,
       name: 'Ananya Kapoor',
-      role: 'Network Operations Manager',
+      role: 'Customer Operations Manager',
       company: 'Pinnacle Technologies',
-      quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
+      quote: 'Combining customer communication tools with thoughtful integration planning creates a stronger foundation for teams looking to improve how they engage with customers.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -300,41 +301,41 @@ export const faqData = {
 
   heading: {
     eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    first: 'Contact Center',
+    highlight: 'Questions Answered.',
+    description: 'Learn more about our contact center software, dialer solutions, AI capabilities, fraud prevention tools and integration options.',
   },
 
   faqs: [
     {
-      question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      question: 'What contact center solutions does Arventa Networks offer?',
+      answer: 'Our contact center offering includes dialer solutions, AI-enabled platform capabilities, fraud prevention tools and software integrations. The right combination depends on your communication workflows and business requirements.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'What are contact center dialers?',
+      answer: 'Dialers are software tools that help contact center teams manage outbound calling workflows. Depending on the solution, they can support different dialing approaches, campaign processes and agent workflows.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'How can AI support contact center operations?',
+      answer: 'AI-enabled tools can support communication workflows through capabilities such as automation, assistance and analysis. Available features depend on the platform, configuration and intended use case.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'How do your solutions help with fraud prevention?',
+      answer: 'Fraud prevention capabilities can help businesses identify suspicious communication activity and apply controls to reduce exposure. The appropriate protections depend on your traffic patterns, platform and risk requirements.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'Can contact center software integrate with our existing systems?',
+      answer: 'Integration options may include APIs and connections to existing business platforms. Available integrations and implementation requirements depend on your current systems and the selected solution.',
     },
     {
-      question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      question: 'How can we get started with Arventa Networks?',
+      answer: "Contact our team to discuss your contact center setup, calling workflows, agent requirements, integration needs and business objectives. We'll help you explore suitable solutions and the next steps.",
     },
   ],
 
   contact: {
-    heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    heading: 'Questions about contact center software?',
+    description: "Let's discuss your communication workflows and requirements.",
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -345,11 +346,11 @@ export const CTAData = {
 
   heading: {
     eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    first: 'Ready to improve',
+    highlight: 'every conversation?',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Whether you need dialer software, AI-enabled communication tools, fraud prevention capabilities or contact center integrations, our team is ready to discuss the right approach for your business.',
 
   cta: {
     primary: {
@@ -367,110 +368,112 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '3',
-    accent: 's',
-    label: 'P95 delivery',
-    description: 'Measured continuously',
+    value: 'Dialer',
+    accent: '',
+    label: 'Calling workflows',
+    description: 'Tools for outbound engagement',
   },
   {
-    value: '99.5',
-    accent: '%',
-    label: 'Delivery success',
-    description: 'With failover',
+    value: 'AI',
+    accent: '',
+    label: 'Intelligent tools',
+    description: 'Support for communication workflows',
   },
   {
-    value: '500',
-    accent: 'ms',
-    label: 'Failover time',
-    description: 'Route-to-route',
+    value: 'API',
+    accent: '',
+    label: 'Software integration',
+    description: 'Connect your existing systems',
   },
   {
-    value: '200',
-    accent: '+',
-    label: 'Countries',
-    description: 'Premium OTP routes',
+    value: 'Secure',
+    accent: '',
+    label: 'Fraud prevention',
+    description: 'Support for safer communication',
   },
 ];
 
 export const countUpGridData = {
-  id: 'who-we-are',
+  id: 'contact-center',
 
-  badge: 'Who We Are',
+  badge: 'Contact Center Solutions',
 
   heading: {
-    firstLine: 'Infrastructure with',
-    highlight: 'purpose.',
+    firstLine: 'Technology for',
+    highlight: 'better conversations.',
   },
 
   description:
-    'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+    'Arventa Networks brings together contact center software, dialer technology and intelligent communication tools to help businesses manage customer interactions and support their teams.',
 
   secondaryDescription:
-    'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+    'From outbound calling workflows and AI-enabled capabilities to fraud prevention and software integrations, our approach focuses on practical technology that can adapt to your operational requirements.',
 
   cta: {
-    label: 'Discover Our Approach',
+    label: 'Explore Contact Center Solutions',
     href: '#solutions',
     icon: '→',
   },
 
   supportingNote:
-    'Reliable connectivity. Built for the long term.',
+    'Smarter communication. More connected workflows.',
 
   statsPanel: {
-    eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    eyebrow: 'Solution overview',
+    heading: 'Tools for connected conversations',
+    badge: 'Contact center technology',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: 'Dialer', label: 'Calling workflows' },
+      { value: 'AI', label: 'Intelligent capabilities' },
+      { value: 'API', label: 'Software integration' },
+      { value: 'Secure', label: 'Fraud prevention' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'Technology designed around your workflows',
+      status: 'Built for your requirements',
     },
   },
 };
+
 export const featureGridSectionData1 = {
   buttonText: 'Explore Solutions',
   eyebrow: 'What we do',
   heading: {
-    firstLine: 'Communication',
-    highlight: 'engineered.',
+    firstLine: 'Contact Center',
+    highlight: 'technology.',
   },
-  description: 'From carrier services to communication infrastructure, we provide the technology and connectivity businesses need to grow, connect and operate.',
+  description: 'We bring together dialer software, AI-enabled tools, communication infrastructure and integrations to help businesses create more effective contact center workflows.',
   items: [
     {
       icon: '◈',
       title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
+      description: 'SIP Trunking, Voice, DIDs, connectivity and security for contact center communications.',
     },
     {
       icon: '▣',
       title: 'Mobile & IoT',
-      description: 'MVNO, eSIM and IoT / M2M connectivity solutions.',
+      description: 'Mobile connectivity, MVNO, eSIM and IoT / M2M solutions.',
     },
     {
       icon: '◉',
       title: 'Contact Center',
-      description: 'Dialers, AI, fraud prevention and communication APIs.',
+      description: 'Dialers, AI-enabled tools, fraud prevention and communication APIs.',
     },
     {
       icon: '✦',
       title: 'Technology Partnerships',
-      description: 'Integrate. Automate. Grow with the right ecosystem.',
+      description: 'Connect platforms, extend capabilities and build an integrated technology ecosystem.',
     },
   ],
 };
+
 export const hero1Data = {
   hero: {
-    title: 'Voice Without',
+    title: 'Conversations Without',
     highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
+    description: 'Give your contact center the technology to manage customer conversations with confidence. Explore flexible dialers, AI-enabled tools, fraud prevention and software integrations designed around your business workflows.',
     primaryButton: 'Get Started',
     secondaryButton: 'Explore Solutions',
   },
@@ -479,9 +482,9 @@ export const hero1Data = {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
-        footer: 'Built for your business',
+        title: 'Intelligent Dialers',
+        description: 'Flexible dialing solutions for structured contact center workflows.',
+        footer: 'Built around your workflow',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
@@ -491,9 +494,9 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
-        footer: 'Built for your business',
+        title: 'AI & Automation',
+        description: 'Explore intelligent tools that support customer communication workflows.',
+        footer: 'Built around your workflow',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
@@ -504,9 +507,9 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
-        footer: 'Built for your business',
+        title: 'Fraud Prevention',
+        description: 'Support safer communication with tools for identifying suspicious activity.',
+        footer: 'Built around your workflow',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -516,114 +519,114 @@ export const hero1Data = {
       },
     ],
   },
-}
+};
 
 export const hero2Data = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'Contact Center Technology',
+    title: 'Every conversation matters.',
+    highlightedTitle: 'Make each one count.',
+    description: 'Bring dialer technology, AI-enabled capabilities and communication integrations together in a contact center solution shaped around your workflows and customer engagement goals.',
+    primaryButton: 'Explore Solutions',
+    secondaryButton: 'Discuss Your Requirements',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Dialer',
+        label: 'Calling workflows',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'AI',
+        label: 'Intelligent tools',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'API',
+        label: 'Platform integration',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'Secure',
+        label: 'Fraud prevention',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'Technology built around your team.',
+    status: 'Contact Center Solutions',
+    availability: 'Designed for your workflows',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'CD',
+        name: 'Dialer Solutions',
+        role: 'Outbound Calling',
+        status: 'Calling workflows',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'AI',
+        name: 'AI Capabilities',
+        role: 'Intelligent Tools',
+        status: 'Workflow support',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'SI',
+        name: 'Software Integration',
+        role: 'Platform Connectivity',
+        status: 'Integration options',
       },
     ] 
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Contact center capabilities',
+    status: 'Solution overview',
   },
-}
+};
 
 export const hero3Data = {
   hero: {
-    eyebrow: 'About Our Company',
+    eyebrow: 'Contact Center Solutions',
 
     heading: {
-      firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      firstLine: 'We connect teams.',
+      secondLine: 'We improve conversations.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'We bring together contact center software, intelligent communication tools and dependable connectivity to help businesses create better customer interactions and more effective workflows.',
 
     primaryCta: {
-      label: 'Discover Our Story',
-      href: '#our-story',
+      label: 'Explore Our Solutions',
+      href: '#solutions',
     },
 
     secondaryCta: {
-      label: 'Meet Our Team',
-      href: '#team',
+      label: 'Contact Our Team',
+      href: '#contact',
     },
   },
 
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
+        value: 'Dialer',
+        label: 'Outbound calling workflows',
       },
       {
-        value: '42+',
-        label: 'Countries Connected',
+        value: 'AI',
+        label: 'Intelligent capabilities',
       },
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'API',
+        label: 'Software integration',
       },
       {
-        value: '24/7',
-        label: 'Global Support',
+        value: 'Secure',
+        label: 'Fraud prevention tools',
       },
     ],
   },
@@ -637,7 +640,7 @@ export const hero3Data = {
       {
         number: '01',
         title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        description: 'Technology should help teams communicate more naturally and make customer interactions more meaningful.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -648,8 +651,8 @@ export const hero3Data = {
 
       {
         number: '02',
-        title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        title: 'Built to Adapt',
+        description: 'Contact center tools should evolve with changing customer expectations, team structures and business workflows.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -660,8 +663,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Communication You Can Trust',
+        description: 'Dependable connectivity, thoughtful security and responsible technology choices are essential to every customer interaction.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -671,4 +674,98 @@ export const hero3Data = {
       },
     ],
   },
+};
+
+export const processData = {
+  content: {
+    eyebrow: 'Our Contact Center Approach',
+    titleLine1: 'From business needs',
+    titleHighlight: 'to better conversations.',
+    description: 'Building an effective contact center starts with understanding how your team communicates. We help identify the right dialer capabilities, software tools, connectivity and integrations for your workflows and operational requirements.',
+
+    statusText: 'A practical approach to contact center technology',
+    flowText: 'Understand · Configure · Integrate · Improve',
+    footerTitle: 'Technology shaped around your operation',
+    footerDescription: 'Your workflows, systems and customer engagement goals guide the solution.',
+    phaseLabel: 'Implementation stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Understand',
+      subtitle: 'Define your contact center needs',
+      description: 'Explore your calling workflows, team structure, customer engagement objectives, existing systems and technical requirements to establish a clear solution scope.',
+    },
+    {
+      number: '02',
+      title: 'Configure',
+      subtitle: 'Select the right capabilities',
+      description: 'Identify suitable dialer options, AI-enabled tools, fraud prevention capabilities and communication features based on your operational needs and selected platform.',
+    },
+    {
+      number: '03',
+      title: 'Integrate',
+      subtitle: 'Connect your systems and workflows',
+      description: 'Plan the connection between contact center software, voice infrastructure, business platforms and available APIs, subject to technical compatibility and configuration.',
+    },
+    {
+      number: '04',
+      title: 'Improve',
+      subtitle: 'Adapt as your operation evolves',
+      description: 'Review how your tools support everyday workflows, identify opportunities to refine processes and adjust your contact center setup as business needs change.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Our Solutions',
+    titleLine1: 'Better conversations start',
+    titleLine2: 'with the right technology.',
+    description: 'Effective contact center operations depend on more than software alone. A thoughtful combination of people, processes, connectivity and technology helps create a more consistent customer experience.',
+
+    cardFooter: 'The principles behind our contact center solutions',
+    approachEyebrow: 'The Arventa Approach',
+    approachTitle: 'People, platforms and communication working together.',
+    approachDescription: 'Because successful contact center operations require more than a dialer or software platform alone.',
+
+    approachHighlight: ' Designed around your conversations.',
+
+    approachLabel: 'Communication commitment',
+    approachSubLabel: 'Focused on practical customer engagement',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our contact center philosophy',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'Human-Centered Design',
+      description: 'Contact center technology should support agents, simplify workflows and help businesses create meaningful customer interactions.',
+      icon: "",
+      tag: 'People First',
+    },
+    {
+      number: '02',
+      title: 'Flexibility',
+      description: 'Adaptable dialer capabilities, software options and integration approaches help businesses respond to changing operational requirements.',
+      icon: "",
+      tag: 'Adaptability',
+    },
+    {
+      number: '03',
+      title: 'Security & Trust',
+      description: 'Responsible communication practices and appropriate fraud prevention measures help protect business operations and customer interactions.',
+      icon: "",
+      tag: 'Protection',
+    },
+    {
+      number: '04',
+      title: 'Continuous Improvement',
+      description: 'Reviewing workflows, technology capabilities and integration needs helps contact centers refine their processes as customer expectations evolve.',
+      icon: "",
+      tag: 'Progress',
+    },
+  ],
 };

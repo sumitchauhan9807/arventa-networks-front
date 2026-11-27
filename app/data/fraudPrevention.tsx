@@ -1,28 +1,29 @@
+
 export const serviceGridData = [
   {
     icon: '◈',
-    title: 'Carrier & Wholesale',
-    description: 'SIP Trunking, Origination/Termination, LCR',
+    title: 'Fraud Detection',
+    description: 'Identify unusual communication activity and potential misuse.',
   },
   {
     icon: '▣',
-    title: 'Mobile & MVNO',
-    description: 'Flexible mobile solutions for your business',
+    title: 'Risk Monitoring',
+    description: 'Review activity signals and recognize emerging risk patterns.',
   },
   {
     icon: '△',
-    title: 'IoT / M2M',
-    description: 'Connected devices. Unlimited possibilities.',
+    title: 'Traffic Analysis',
+    description: 'Understand usage trends, anomalies, and unexpected traffic changes.',
   },
   {
     icon: '◉',
-    title: 'Contact Center Software',
-    description: 'Powerful dialers, AI and fraud prevention.',
+    title: 'Alerts & Investigation',
+    description: 'Support timely reviews and informed responses to suspicious activity.',
   },
   {
     icon: '◎',
-    title: 'Global Network',
-    description: 'Secure. Scalable. Reliable.',
+    title: 'Security Integration',
+    description: 'Connect fraud prevention workflows with existing systems.',
   },
 ];
 
@@ -30,18 +31,18 @@ export const solutionGridData = {
   eyebrow: 'What We Do',
 
   heading: {
-    normal: 'Our',
+    normal: 'Fraud Prevention',
     highlight: 'Solutions',
   },
 
-  description: 'From carrier services to AI-powered contact center solutions, we provide the infrastructure and software you need to grow, connect and succeed.',
+  description: 'Explore tools and workflows designed to help communication providers identify unusual activity, assess potential risks, and respond to suspected telecom fraud.',
 
   cta: {
     label: 'Explore All Solutions',
     href: '#',
   },
 
-  supportingNote: 'Technology built for growth',
+  supportingNote: 'More visibility. More informed decisions.',
 
   card: {
     linkLabel: 'Explore solution',
@@ -50,42 +51,42 @@ export const solutionGridData = {
     {
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity & Security.',
+      title: 'Fraud Detection',
+      description: 'Identify unusual calling patterns and activity that may indicate misuse.',
     },
     {
       image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80',
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM, IoT / M2M connectivity.',
+      title: 'Traffic Monitoring',
+      description: 'Review communication traffic and recognize unexpected changes in usage.',
     },
     {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
+      title: 'Risk Management',
+      description: 'Assess suspicious activity and support structured investigation workflows.',
     },
   ],
 };
 
 export const offeringGridData = {
-  sectionId: 'contact-center',
+  sectionId: 'fraud-prevention',
 
-  eyebrow: 'Contact Center & Software',
+  eyebrow: 'Fraud Prevention & Security',
 
   heading: {
-    first: 'Smarter Dialers.',
-    highlight: 'Better Conversations.',
+    first: 'Stay Ahead of',
+    highlight: 'Suspicious Activity.',
   },
 
-  description: 'Boost your efficiency with our advanced dialer solutions, AI platform and fraud prevention tools. Empower your team with smarter technology designed to improve productivity and customer engagement.',
+  description: 'Build a more informed approach to communication security. Explore fraud detection, traffic analysis, risk monitoring, and integration capabilities designed to help teams recognize potential threats and take appropriate action.',
 
   cta: {
-    label: 'Discover Contact Center Solutions',
+    label: 'Explore Fraud Prevention',
     href: '#',
   },
 
-  supportingNote: 'Intelligent solutions for modern business communication',
+  supportingNote: 'Visibility and control for modern communications',
 
   product: {
     arrow: '→',
@@ -97,28 +98,28 @@ export const offeringGridData = {
   items: [
     {
       icon: '✦',
-      title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
+      title: 'Fraud Detection',
+      description: 'Recognize unusual activity and potential misuse.',
     },
     {
       icon: '◇',
-      title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
+      title: 'Traffic Monitoring',
+      description: 'Understand communication patterns and traffic changes.',
     },
     {
       icon: 'AI',
-      title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
+      title: 'Risk Analysis',
+      description: 'Evaluate activity signals and identify potential risks.',
     },
     {
       icon: '◇',
-      title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
+      title: 'Alerts & Investigation',
+      description: 'Support informed reviews of suspicious activity.',
     },
     {
       icon: 'API',
-      title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
+      title: 'Security Integrations',
+      description: 'Connect monitoring workflows with existing systems.',
     },
   ],
 };
@@ -208,11 +209,11 @@ export const testimonialsData = {
   section: {
     eyebrow: 'Client Experiences',
     heading: {
-      first: 'Trusted by those',
-      second: 'who expect',
-      highlight: 'more.',
+      first: 'Confidence through',
+      second: 'greater',
+      highlight: 'visibility.',
     },
-    description: 'The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.',
+    description: 'Discover how a structured approach to communication security can help organizations understand activity, review potential risks, and make more informed operational decisions.',
   },
 
   decorative: {
@@ -225,7 +226,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus Networks',
-      quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
+      quote: 'Having a clearer view of communication activity helps our team approach security decisions with greater confidence. Understanding unusual patterns is an important part of managing a complex environment.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -234,7 +235,7 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Solutions',
-      quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
+      quote: 'A structured approach to risk review makes it easier to understand what deserves attention. Clear workflows and practical insights are valuable when managing communication operations.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -243,7 +244,7 @@ export const testimonialsData = {
       name: 'Daniel Chen',
       role: 'Network Infrastructure Lead',
       company: 'CloudBridge Systems',
-      quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
+      quote: 'Understanding traffic behavior is an important part of protecting network infrastructure. Visibility into activity patterns can help technical teams investigate unusual behavior more effectively.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -252,7 +253,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Technologies',
-      quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
+      quote: 'Security decisions should be clear, considered, and aligned with the needs of the business. A consistent process for reviewing potential risks helps create a more confident operating environment.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -261,7 +262,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of IT Infrastructure',
       company: 'Apex Digital',
-      quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
+      quote: 'Bringing traffic insights and risk awareness into infrastructure operations helps teams take a more considered approach to communication security and ongoing network management.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -270,7 +271,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Communications',
-      quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
+      quote: 'Flexible security workflows matter because every organization has different operational requirements. The ability to assess activity in context is an important part of a thoughtful prevention strategy.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -279,7 +280,7 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Connect',
-      quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
+      quote: 'Fraud prevention is not just about identifying suspicious behavior. It is also about having a clear process for reviewing findings, coordinating teams, and deciding on the right response.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -288,7 +289,7 @@ export const testimonialsData = {
       name: 'Ananya Kapoor',
       role: 'Network Operations Manager',
       company: 'Pinnacle Technologies',
-      quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
+      quote: 'A better understanding of network activity gives operational teams useful context when something looks unusual. Consistent monitoring and investigation processes can make a real difference.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -300,41 +301,41 @@ export const faqData = {
 
   heading: {
     eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    first: 'Understanding',
+    highlight: 'Fraud Prevention.',
+    description: 'Learn how telecom fraud prevention works, what activity can be reviewed, and how organizations can approach communication security.',
   },
 
   faqs: [
     {
-      question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      question: 'What is telecom fraud prevention?',
+      answer: 'Telecom fraud prevention involves reviewing communication activity and usage patterns to identify potential misuse, unauthorized activity, and suspicious behavior. It helps organizations investigate risks and make informed decisions about protecting their communication services.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'What types of fraud can be identified?',
+      answer: 'Depending on the available data and detection capabilities, monitoring may help identify patterns associated with PBX compromise, traffic pumping, international revenue share fraud, subscription abuse, and other forms of suspicious communication activity.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'How does fraud detection work?',
+      answer: 'Fraud detection can involve analyzing call records, traffic volumes, destinations, usage trends, and other relevant activity signals. Configured rules and thresholds can help highlight unusual patterns for further review.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'Can suspicious activity be monitored continuously?',
+      answer: 'Monitoring frequency depends on the platform, configured data feeds, and operational setup. Some implementations support ongoing activity reviews and alerts, while others use scheduled analysis and reporting.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'What happens when suspicious activity is identified?',
+      answer: 'A potential risk should be reviewed in context before action is taken. Teams can investigate the relevant activity, assess its impact, and apply appropriate controls or escalation procedures based on their operational policies.',
     },
     {
-      question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      question: 'Can fraud prevention tools integrate with existing systems?',
+      answer: 'Integration options depend on your current telecom infrastructure, available APIs, data formats, and technical requirements. A review of your environment can help establish the most suitable integration approach.',
     },
   ],
 
   contact: {
     heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    description: "Let's discuss your fraud prevention requirements.",
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -345,20 +346,20 @@ export const CTAData = {
 
   heading: {
     eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    first: 'Take control of',
+    highlight: 'communication risk.',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Explore a more informed approach to telecom fraud prevention. Talk to our team about identifying suspicious activity, understanding traffic patterns, and building security workflows around your operational needs.',
 
   cta: {
     primary: {
-      label: 'Contact / Sales',
+      label: 'Talk to Our Team',
       href: 'mailto:sales@example.com',
       arrow: '→',
     },
     secondary: {
-      label: 'Explore Our Solutions',
+      label: 'Explore Fraud Prevention',
       darkHref: 'index.html',
       lightHref: '#solutions',
     },
@@ -367,46 +368,46 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '3',
-    accent: 's',
-    label: 'P95 delivery',
-    description: 'Measured continuously',
+    value: 'Proactive',
+    accent: '',
+    label: 'Risk Monitoring',
+    description: 'Review activity for unusual patterns',
   },
   {
-    value: '99.5',
-    accent: '%',
-    label: 'Delivery success',
-    description: 'With failover',
+    value: 'Insightful',
+    accent: '',
+    label: 'Traffic Analysis',
+    description: 'Understand changes in communication usage',
   },
   {
-    value: '500',
-    accent: 'ms',
-    label: 'Failover time',
-    description: 'Route-to-route',
+    value: 'Flexible',
+    accent: '',
+    label: 'Detection Rules',
+    description: 'Align monitoring with your risk profile',
   },
   {
-    value: '200',
-    accent: '+',
-    label: 'Countries',
-    description: 'Premium OTP routes',
+    value: 'Connected',
+    accent: '',
+    label: 'Security Workflows',
+    description: 'Fit prevention into existing operations',
   },
 ];
 
 export const countUpGridData = {
-  id: 'who-we-are',
+  id: 'fraud-prevention',
 
-  badge: 'Who We Are',
+  badge: 'Fraud Prevention',
 
   heading: {
-    firstLine: 'Infrastructure with',
+    firstLine: 'Protection with',
     highlight: 'purpose.',
   },
 
   description:
-    'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+    'Fraud prevention starts with understanding how communication services are being used. A considered approach to monitoring and risk analysis helps organizations recognize unusual activity and investigate potential threats.',
 
   secondaryDescription:
-    'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+    'From traffic analysis and detection rules to alerts and investigation workflows, build a security approach that reflects your infrastructure, operational priorities, and risk profile.',
 
   cta: {
     label: 'Discover Our Approach',
@@ -415,73 +416,75 @@ export const countUpGridData = {
   },
 
   supportingNote:
-    'Reliable connectivity. Built for the long term.',
+    'Better visibility. More informed security decisions.',
 
   statsPanel: {
     eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    heading: 'A layered approach',
+    badge: 'Risk awareness',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: 'Activity', label: 'Traffic Monitoring' },
+      { value: 'Patterns', label: 'Anomaly Analysis' },
+      { value: 'Alerts', label: 'Risk Review' },
+      { value: 'Response', label: 'Investigation Workflow' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'Designed around your security priorities',
+      status: 'Risk-focused',
     },
   },
 };
+
 export const featureGridSectionData1 = {
   buttonText: 'Explore Solutions',
   eyebrow: 'What we do',
   heading: {
-    firstLine: 'Communication',
-    highlight: 'engineered.',
+    firstLine: 'Fraud protection',
+    highlight: 'through insight.',
   },
-  description: 'From carrier services to communication infrastructure, we provide the technology and connectivity businesses need to grow, connect and operate.',
+  description: 'Understand communication activity, recognize unusual patterns, and support informed responses with a structured approach to telecom fraud prevention.',
   items: [
     {
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
+      title: 'Fraud Detection',
+      description: 'Identify unusual communication patterns and potential misuse.',
     },
     {
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM and IoT / M2M connectivity solutions.',
+      title: 'Traffic Analysis',
+      description: 'Review usage trends, destinations, and unexpected activity.',
     },
     {
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, fraud prevention and communication APIs.',
+      title: 'Risk Alerts',
+      description: 'Bring suspicious activity to the attention of the right teams.',
     },
     {
       icon: '✦',
-      title: 'Technology Partnerships',
-      description: 'Integrate. Automate. Grow with the right ecosystem.',
+      title: 'Security Integrations',
+      description: 'Connect fraud prevention workflows with your existing systems.',
     },
   ],
 };
+
 export const hero1Data = {
   hero: {
-    title: 'Voice Without',
-    highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
-    primaryButton: 'Get Started',
-    secondaryButton: 'Explore Solutions',
+    title: 'Protect Your',
+    highlightedTitle: 'Communications.',
+    description: 'Take a more informed approach to telecom fraud prevention. Understand communication activity, identify unusual patterns, and support better decisions with security workflows designed around your business.',
+    primaryButton: 'Talk to Our Team',
+    secondaryButton: 'Explore Protection',
   },
 
   services: {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
-        footer: 'Built for your business',
+        title: 'Fraud Detection',
+        description: 'Identify unusual activity and potential communication misuse.',
+        footer: 'Built around your risk profile',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
@@ -491,9 +494,9 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
-        footer: 'Built for your business',
+        title: 'Traffic Analysis',
+        description: 'Review usage patterns and recognize unexpected changes.',
+        footer: 'Built around your risk profile',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
@@ -504,9 +507,9 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
-        footer: 'Built for your business',
+        title: 'Risk Monitoring',
+        description: 'Support investigation and informed responses to suspicious activity.',
+        footer: 'Built around your risk profile',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -520,89 +523,89 @@ export const hero1Data = {
 
 export const hero2Data = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'Telecom Fraud Prevention',
+    title: 'See unusual activity.',
+    highlightedTitle: 'Respond with clarity.',
+    description: 'Understand communication patterns, review potential risk signals, and support a structured response to suspicious activity. Bring greater visibility to the way your communication environment is used.',
+    primaryButton: 'Explore Protection',
+    secondaryButton: 'Talk to Our Team',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Patterns',
+        label: 'Activity Analysis',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'Signals',
+        label: 'Risk Indicators',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'Context',
+        label: 'Traffic Review',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'Response',
+        label: 'Investigation Process',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'A structured approach to fraud prevention.',
+    status: 'Risk-focused workflows',
+    availability: 'Built around your operations',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'FD',
+        name: 'Fraud Detection',
+        role: 'Identify unusual activity',
+        status: 'Core capability',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'TA',
+        name: 'Traffic Analysis',
+        role: 'Understand usage patterns',
+        status: 'Core capability',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'RR',
+        name: 'Risk Review',
+        role: 'Support investigation',
+        status: 'Operational process',
       },
     ] 
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Fraud prevention workflow',
+    status: 'Risk-focused',
   },
 }
 
 export const hero3Data = {
   hero: {
-    eyebrow: 'About Our Company',
+    eyebrow: 'About Fraud Prevention',
 
     heading: {
-      firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      firstLine: 'Understand activity.',
+      secondLine: 'Protect communications.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'Effective fraud prevention begins with visibility. We believe organizations should have a clearer understanding of communication activity, practical ways to review potential risks, and processes that support responsible security decisions.',
 
     primaryCta: {
-      label: 'Discover Our Story',
+      label: 'Discover Our Approach',
       href: '#our-story',
     },
 
     secondaryCta: {
-      label: 'Meet Our Team',
+      label: 'Explore Solutions',
       href: '#team',
     },
   },
@@ -610,20 +613,20 @@ export const hero3Data = {
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
+        value: 'Risk-Aware',
+        label: 'Security Approach',
       },
       {
-        value: '42+',
-        label: 'Countries Connected',
+        value: 'Pattern-Led',
+        label: 'Activity Analysis',
       },
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Connected',
+        label: 'Security Workflows',
       },
       {
-        value: '24/7',
-        label: 'Global Support',
+        value: 'Operational',
+        label: 'Practical Response',
       },
     ],
   },
@@ -637,7 +640,7 @@ export const hero3Data = {
       {
         number: '01',
         title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        description: 'Security technology should help people make clearer decisions, investigate concerns, and protect the services they manage.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -648,8 +651,8 @@ export const hero3Data = {
 
       {
         number: '02',
-        title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        title: 'Proactive Protection',
+        description: 'Recognizing unusual patterns and reviewing risk signals can help organizations take a more prepared approach to communication security.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -660,8 +663,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Responsible Response',
+        description: 'Potential threats deserve careful review, clear escalation, and proportionate action based on evidence and operational context.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -671,4 +674,98 @@ export const hero3Data = {
       },
     ],
   },
+};
+
+export const processData = {
+  content: {
+    eyebrow: 'Our Approach',
+    titleLine1: 'From unusual activity',
+    titleHighlight: 'to informed action.',
+    description: 'A thoughtful fraud prevention process combines activity monitoring, anomaly identification, risk assessment, and coordinated response. The exact workflow depends on available data, configured detection rules, and your operational requirements.',
+
+    statusText: 'A structured approach to communication security',
+    flowText: 'Understand · Detect · Assess · Respond',
+    footerTitle: 'Better decisions through greater visibility',
+    footerDescription: 'Use activity insights to review potential risks and strengthen security processes.',
+    phaseLabel: 'Prevention stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Understand',
+      subtitle: 'Build activity visibility',
+      description: 'Review communication activity, usage patterns, destinations, and relevant traffic data to establish a clearer picture of normal operations.',
+    },
+    {
+      number: '02',
+      title: 'Detect',
+      subtitle: 'Identify unusual patterns',
+      description: 'Use configured rules, thresholds, and activity indicators to highlight patterns that may require further attention or investigation.',
+    },
+    {
+      number: '03',
+      title: 'Assess',
+      subtitle: 'Evaluate potential risk',
+      description: 'Review flagged activity in context, consider its potential impact, and investigate relevant details before deciding on an appropriate response.',
+    },
+    {
+      number: '04',
+      title: 'Respond & Improve',
+      subtitle: 'Take informed action',
+      description: 'Apply proportionate controls and escalation procedures where appropriate. Review findings and use operational insights to refine prevention processes over time.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Our Approach',
+    titleLine1: 'Stronger protection starts',
+    titleLine2: 'with informed decisions.',
+    description: 'Effective fraud prevention requires more than identifying unusual activity. It calls for thoughtful risk assessment, clear operational processes, and a responsible approach to protecting communication services.',
+
+    cardFooter: 'The principles behind our approach',
+    approachEyebrow: 'The Fraud Prevention Approach',
+    approachTitle: 'People, processes, and technology working together.',
+    approachDescription: 'Because better communication security begins with visibility and informed action.',
+
+    approachHighlight: ' Built around responsible protection.',
+
+    approachLabel: 'Security commitment',
+    approachSubLabel: 'Focused on informed decisions',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our security philosophy',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'Layered Protection',
+      description: 'Combine activity visibility, detection rules, risk reviews, and appropriate controls to support a more considered approach to communication security.',
+      icon: "",
+      tag: 'Prevention',
+    },
+    {
+      number: '02',
+      title: 'Risk-Based Decisions',
+      description: 'Evaluate suspicious activity in context and prioritize investigation based on relevant indicators, potential impact, and operational requirements.',
+      icon: "",
+      tag: 'Risk Assessment',
+    },
+    {
+      number: '03',
+      title: 'Clear Visibility',
+      description: 'Make communication activity and potential anomalies easier to understand so teams have useful context when reviewing security concerns.',
+      icon: "",
+      tag: 'Transparency',
+    },
+    {
+      number: '04',
+      title: 'Continuous Improvement',
+      description: 'Use investigation findings, operational feedback, and changing activity patterns to review and refine fraud prevention processes over time.',
+      icon: "",
+      tag: 'Progress',
+    },
+  ],
 };

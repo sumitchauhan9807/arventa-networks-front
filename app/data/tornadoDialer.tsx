@@ -1,28 +1,29 @@
+
 export const serviceGridData = [
   {
     icon: '◈',
     title: 'Carrier & Wholesale',
-    description: 'SIP Trunking, Origination/Termination, LCR',
+    description: 'SIP Trunking, Voice Origination, Termination and LCR.',
   },
   {
     icon: '▣',
     title: 'Mobile & MVNO',
-    description: 'Flexible mobile solutions for your business',
+    description: 'Flexible mobile connectivity for modern businesses.',
   },
   {
     icon: '△',
     title: 'IoT / M2M',
-    description: 'Connected devices. Unlimited possibilities.',
+    description: 'Connected devices and machine communication.',
   },
   {
     icon: '◉',
     title: 'Contact Center Software',
-    description: 'Powerful dialers, AI and fraud prevention.',
+    description: 'Powerful dialers, AI tools and fraud prevention.',
   },
   {
     icon: '◎',
     title: 'Global Network',
-    description: 'Secure. Scalable. Reliable.',
+    description: 'Communication infrastructure for connected businesses.',
   },
 ];
 
@@ -30,18 +31,18 @@ export const solutionGridData = {
   eyebrow: 'What We Do',
 
   heading: {
-    normal: 'Our',
-    highlight: 'Solutions',
+    normal: 'Powerful',
+    highlight: 'Dialing Solutions',
   },
 
-  description: 'From carrier services to AI-powered contact center solutions, we provide the infrastructure and software you need to grow, connect and succeed.',
+  description: 'Discover technology designed to help contact centers manage outbound calling, organize campaigns and support agent workflows. From advanced dialer capabilities to communication infrastructure and software integrations, we help businesses build more effective calling operations.',
 
   cta: {
-    label: 'Explore All Solutions',
+    label: 'Explore Our Solutions',
     href: '#',
   },
 
-  supportingNote: 'Technology built for growth',
+  supportingNote: 'Smarter dialing for modern contact centers',
 
   card: {
     linkLabel: 'Explore solution',
@@ -51,41 +52,41 @@ export const solutionGridData = {
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
       icon: '◈',
       title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity & Security.',
+      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
     },
     {
       image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80',
       icon: '▣',
       title: 'Mobile & IoT',
-      description: 'MVNO, eSIM, IoT / M2M connectivity.',
+      description: 'MVNO, eSIM and IoT / M2M connectivity.',
     },
     {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
       title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
+      description: 'Tornado Dialer, calling workflows, AI tools and APIs.',
     },
   ],
 };
 
 export const offeringGridData = {
-  sectionId: 'contact-center',
+  sectionId: 'tornado-dialer',
 
-  eyebrow: 'Contact Center & Software',
+  eyebrow: 'Tornado Dialer',
 
   heading: {
-    first: 'Smarter Dialers.',
-    highlight: 'Better Conversations.',
+    first: 'Powerful Dialing.',
+    highlight: 'Smarter Campaigns.',
   },
 
-  description: 'Boost your efficiency with our advanced dialer solutions, AI platform and fraud prevention tools. Empower your team with smarter technology designed to improve productivity and customer engagement.',
+  description: 'Take control of outbound calling with Tornado Dialer. Designed for contact center environments, it helps teams organize calling campaigns, manage dialing workflows and support agent productivity through flexible dialing technology and configurable features.',
 
   cta: {
-    label: 'Discover Contact Center Solutions',
+    label: 'Discover Tornado Dialer',
     href: '#',
   },
 
-  supportingNote: 'Intelligent solutions for modern business communication',
+  supportingNote: 'Flexible dialing technology for modern contact centers',
 
   product: {
     arrow: '→',
@@ -97,28 +98,28 @@ export const offeringGridData = {
   items: [
     {
       icon: '✦',
-      title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
+      title: 'Outbound Dialing',
+      description: 'Support structured outbound calling and campaign workflows.',
     },
     {
       icon: '◇',
-      title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
+      title: 'Campaign Management',
+      description: 'Organize calling activities around your campaign requirements.',
     },
     {
       icon: 'AI',
-      title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
+      title: 'Intelligent Workflows',
+      description: 'Explore automation and AI-enabled capabilities for contact center operations.',
     },
     {
       icon: '◇',
-      title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
+      title: 'Call Management',
+      description: 'Manage calling activity and support organized agent workflows.',
     },
     {
       icon: 'API',
       title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
+      description: 'Connect your dialer environment with compatible business systems.',
     },
   ],
 };
@@ -208,11 +209,11 @@ export const testimonialsData = {
   section: {
     eyebrow: 'Client Experiences',
     heading: {
-      first: 'Trusted by those',
-      second: 'who expect',
-      highlight: 'more.',
+      first: 'Better dialing',
+      second: 'for teams that',
+      highlight: 'do more.',
     },
-    description: 'The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.',
+    description: 'Discover how thoughtful communication technology and structured calling workflows can help contact center teams manage campaigns and customer interactions with confidence.',
   },
 
   decorative: {
@@ -225,7 +226,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus Networks',
-      quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
+      quote: 'A well-organized dialing environment can make a real difference to contact center operations. We value technology that brings calling workflows and communication requirements together.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -234,16 +235,16 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Solutions',
-      quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
+      quote: 'Managing outbound campaigns requires flexibility and a clear view of daily workflows. A solution that can adapt to operational requirements is an important part of our planning.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
     {
       id: 3,
       name: 'Daniel Chen',
-      role: 'Network Infrastructure Lead',
+      role: 'Contact Center Technology Lead',
       company: 'CloudBridge Systems',
-      quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
+      quote: 'We look for dialing technology that fits into our broader communication environment. Integration, configuration and a clear operational approach all matter.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -252,7 +253,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Technologies',
-      quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
+      quote: 'The right contact center tools should support the people using them every day. A focus on practical workflows and business requirements makes technology decisions easier.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -261,7 +262,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of IT Infrastructure',
       company: 'Apex Digital',
-      quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
+      quote: 'Dialing software needs to fit within a dependable communication environment. We appreciate solutions that consider connectivity, system compatibility and operational needs together.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -270,7 +271,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Communications',
-      quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
+      quote: 'Flexible calling workflows and integration options are important when contact center requirements evolve. Technology should give teams room to adapt their processes.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -279,16 +280,16 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Connect',
-      quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
+      quote: 'Campaign management is easier to plan when the tools support clear and consistent workflows. We believe in choosing technology around the way teams actually operate.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
     {
       id: 8,
       name: 'Ananya Kapoor',
-      role: 'Network Operations Manager',
+      role: 'Contact Center Operations Manager',
       company: 'Pinnacle Technologies',
-      quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
+      quote: 'A good dialing solution should work as part of a wider customer communication strategy. Flexibility, usability and integration all contribute to a considered setup.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -300,41 +301,41 @@ export const faqData = {
 
   heading: {
     eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    first: 'Everything about',
+    highlight: 'Tornado Dialer.',
+    description: 'Learn more about outbound dialing technology, campaign workflows, contact center operations and getting started with Tornado Dialer.',
   },
 
   faqs: [
     {
-      question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      question: 'What is Tornado Dialer?',
+      answer: 'Tornado Dialer is a dialing solution designed for contact center environments. It supports outbound calling workflows and helps teams organize calling activities around their campaign and operational requirements.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'How can a dialer improve contact center workflows?',
+      answer: 'Dialer technology can help organize outbound calling, manage campaign activity and support agent workflows. The available capabilities depend on the selected configuration and the way your contact center operates.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'Can Tornado Dialer support different campaign types?',
+      answer: 'Dialing requirements vary by campaign, audience and business process. Contact our team to discuss your intended use cases and confirm which dialing modes and campaign features are supported by your deployment.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'Can Tornado Dialer work with our existing communication infrastructure?',
+      answer: 'Integration depends on your current telephony environment, connectivity arrangements and technical requirements. Our team can help assess the appropriate setup and compatibility considerations.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'Does Tornado Dialer support integrations and automation?',
+      answer: 'Software integrations and automation options depend on the available platform features and configuration. Discuss your CRM, business systems and workflow requirements with our team to explore suitable options.',
     },
     {
-      question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      question: 'How can we get started with Tornado Dialer?',
+      answer: "Contact our team with details about your contact center, calling campaigns, agent workflows and technical environment. We'll discuss your requirements and help identify the right next steps.",
     },
   ],
 
   contact: {
-    heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    heading: 'Still have questions about Tornado Dialer?',
+    description: "Let's discuss your dialing and contact center requirements.",
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -345,11 +346,11 @@ export const CTAData = {
 
   heading: {
     eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    first: 'Ready to power',
+    highlight: 'your dialing operation?',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Whether you are setting up an outbound contact center, improving campaign workflows or exploring dialing technology for your existing operation, our team is ready to discuss how Tornado Dialer can fit your requirements.',
 
   cta: {
     primary: {
@@ -367,110 +368,112 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '3',
-    accent: 's',
-    label: 'P95 delivery',
-    description: 'Measured continuously',
+    value: 'Campaigns',
+    accent: '',
+    label: 'Outbound workflows',
+    description: 'Organize calling activities',
   },
   {
-    value: '99.5',
-    accent: '%',
-    label: 'Delivery success',
-    description: 'With failover',
+    value: 'Agents',
+    accent: '',
+    label: 'Team productivity',
+    description: 'Support structured agent workflows',
   },
   {
-    value: '500',
-    accent: 'ms',
-    label: 'Failover time',
-    description: 'Route-to-route',
+    value: 'Calls',
+    accent: '',
+    label: 'Call management',
+    description: 'Manage outbound activity',
   },
   {
-    value: '200',
-    accent: '+',
-    label: 'Countries',
-    description: 'Premium OTP routes',
+    value: 'API',
+    accent: '',
+    label: 'System integration',
+    description: 'Connect compatible platforms',
   },
 ];
 
 export const countUpGridData = {
-  id: 'who-we-are',
+  id: 'tornado-dialer',
 
-  badge: 'Who We Are',
+  badge: 'Tornado Dialer',
 
   heading: {
-    firstLine: 'Infrastructure with',
-    highlight: 'purpose.',
+    firstLine: 'Powerful dialing',
+    highlight: 'built for business.',
   },
 
   description:
-    'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+    'Tornado Dialer brings dialing technology and campaign workflows together to help contact center teams organize outbound calling and manage customer engagement activities.',
 
   secondaryDescription:
-    'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+    'From campaign organization and agent workflows to call management and integration possibilities, Tornado Dialer is designed to support the practical needs of modern outbound contact centers.',
 
   cta: {
-    label: 'Discover Our Approach',
+    label: 'Discover Tornado Dialer',
     href: '#solutions',
     icon: '→',
   },
 
   supportingNote:
-    'Reliable connectivity. Built for the long term.',
+    'Flexible dialing technology for contact center operations.',
 
   statsPanel: {
     eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    heading: 'Dialing capabilities',
+    badge: 'Tornado Dialer',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: 'Campaigns', label: 'Outbound organization' },
+      { value: 'Agents', label: 'Team workflows' },
+      { value: 'Calls', label: 'Call management' },
+      { value: 'API', label: 'Integration options' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'A structured approach to outbound calling',
+      status: 'Designed around your operation',
     },
   },
 };
+
 export const featureGridSectionData1 = {
-  buttonText: 'Explore Solutions',
-  eyebrow: 'What we do',
+  buttonText: 'Explore Tornado Dialer',
+  eyebrow: 'Powerful Dialing Technology',
   heading: {
-    firstLine: 'Communication',
-    highlight: 'engineered.',
+    firstLine: 'Outbound calling',
+    highlight: 'reimagined.',
   },
-  description: 'From carrier services to communication infrastructure, we provide the technology and connectivity businesses need to grow, connect and operate.',
+  description: 'Tornado Dialer helps contact centers organize outbound calling with flexible dialing workflows, campaign management capabilities and technology designed to support agent productivity.',
   items: [
     {
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
+      title: 'Dialing Technology',
+      description: 'Powerful outbound calling workflows for contact center environments.',
     },
     {
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM and IoT / M2M connectivity solutions.',
+      title: 'Campaign Management',
+      description: 'Organize calling activities around campaign goals and operational requirements.',
     },
     {
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, fraud prevention and communication APIs.',
+      title: 'Call Center Workflows',
+      description: 'Support agent activity, call management and customer engagement processes.',
     },
     {
       icon: '✦',
-      title: 'Technology Partnerships',
-      description: 'Integrate. Automate. Grow with the right ecosystem.',
+      title: 'Integrations & Connectivity',
+      description: 'Connect dialing technology with compatible communication infrastructure and business systems.',
     },
   ],
 };
+
 export const hero1Data = {
   hero: {
-    title: 'Voice Without',
-    highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
+    title: 'Dial Smarter.',
+    highlightedTitle: 'Reach Further.',
+    description: 'Power your outbound contact center with Tornado Dialer. Bring calling workflows, campaign organization and agent activity together through flexible dialing technology designed around your business needs.',
     primaryButton: 'Get Started',
     secondaryButton: 'Explore Solutions',
   },
@@ -479,9 +482,9 @@ export const hero1Data = {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
-        footer: 'Built for your business',
+        title: 'Outbound Dialing',
+        description: 'Support structured calling activity with flexible dialing workflows.',
+        footer: 'Built for your campaigns',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
@@ -491,9 +494,9 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
-        footer: 'Built for your business',
+        title: 'Campaign Workflows',
+        description: 'Organize outbound campaigns around your team and business objectives.',
+        footer: 'Built for your campaigns',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
@@ -504,9 +507,9 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
-        footer: 'Built for your business',
+        title: 'Flexible Integration',
+        description: 'Explore ways to connect dialing workflows with your existing systems.',
+        footer: 'Built for your campaigns',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -516,114 +519,114 @@ export const hero1Data = {
       },
     ],
   },
-}
+};
 
 export const hero2Data = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'Powerful Dialing Technology',
+    title: 'Every call has a purpose.',
+    highlightedTitle: 'Make your workflow count.',
+    description: 'Tornado Dialer brings outbound calling and campaign workflows into a structured contact center environment, helping teams manage calling activity around their business objectives.',
+    primaryButton: 'Explore Tornado Dialer',
+    secondaryButton: 'Discuss Your Requirements',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Outbound',
+        label: 'Dialing workflows',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'Campaigns',
+        label: 'Calling organization',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'Agents',
+        label: 'Team workflows',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'API',
+        label: 'Integration options',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'A dialing solution built around your team.',
+    status: 'Tornado Dialer',
+    availability: 'Configured for your requirements',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'OD',
+        name: 'Outbound Dialing',
+        role: 'Calling Workflows',
+        status: 'Campaign activity',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'CM',
+        name: 'Campaign Management',
+        role: 'Campaign Organization',
+        status: 'Workflow planning',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'SI',
+        name: 'System Integration',
+        role: 'Platform Connectivity',
+        status: 'Integration options',
       },
     ] 
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Dialer capabilities',
+    status: 'Solution overview',
   },
-}
+};
 
 export const hero3Data = {
   hero: {
-    eyebrow: 'About Our Company',
+    eyebrow: 'About Tornado Dialer',
 
     heading: {
-      firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      firstLine: 'We power outbound calls.',
+      // secondLine: 'We support better workflows.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'Tornado Dialer is designed to help contact centers organize outbound calling through flexible dialing technology, campaign workflows and communication tools shaped around the needs of modern businesses.',
 
     primaryCta: {
-      label: 'Discover Our Story',
-      href: '#our-story',
+      label: 'Explore Dialer Solutions',
+      href: '#solutions',
     },
 
     secondaryCta: {
-      label: 'Meet Our Team',
-      href: '#team',
+      label: 'Contact Our Team',
+      href: '#contact',
     },
   },
 
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
+        value: 'Outbound',
+        label: 'Dialing workflows',
       },
       {
-        value: '42+',
-        label: 'Countries Connected',
+        value: 'Campaigns',
+        label: 'Calling organization',
       },
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Agents',
+        label: 'Team productivity',
       },
       {
-        value: '24/7',
-        label: 'Global Support',
+        value: 'API',
+        label: 'Integration options',
       },
     ],
   },
@@ -636,8 +639,8 @@ export const hero3Data = {
     items: [
       {
         number: '01',
-        title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        title: 'Productivity Focused',
+        description: 'Dialing technology should help teams organize their calling activity and make everyday workflows easier to manage.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -648,8 +651,8 @@ export const hero3Data = {
 
       {
         number: '02',
-        title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        title: 'Built to Adapt',
+        description: 'Calling workflows and campaign requirements change. Technology should offer flexibility to support different operational needs.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -660,8 +663,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Responsible Communication',
+        description: 'Effective outbound calling should respect applicable laws, customer preferences, data protection requirements and responsible contact practices.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -671,4 +674,98 @@ export const hero3Data = {
       },
     ],
   },
+};
+
+export const processData = {
+  content: {
+    eyebrow: 'How Tornado Dialer Works',
+    titleLine1: 'From campaign planning',
+    titleHighlight: 'to connected conversations.',
+    description: 'A well-organized outbound operation starts with clear objectives and the right dialing setup. Tornado Dialer supports a structured approach to defining campaigns, configuring workflows, connecting communication systems and refining daily operations.',
+
+    statusText: 'A structured approach to outbound calling',
+    flowText: 'Plan · Configure · Connect · Improve',
+    footerTitle: 'Dialing workflows built around your goals',
+    footerDescription: 'Campaign requirements and team processes shape the right setup.',
+    phaseLabel: 'Implementation stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Plan',
+      subtitle: 'Define campaign requirements',
+      description: 'Identify your campaign objectives, target audiences, calling processes, agent workflows and operational requirements to establish a clear dialing strategy.',
+    },
+    {
+      number: '02',
+      title: 'Configure',
+      subtitle: 'Set up your dialing workflows',
+      description: 'Determine the appropriate dialing approach, campaign settings, user roles and workflow configuration based on your contact center needs and available platform capabilities.',
+    },
+    {
+      number: '03',
+      title: 'Connect',
+      subtitle: 'Integrate your communication environment',
+      description: 'Assess voice connectivity, telephony infrastructure and available software integrations to connect Tornado Dialer with compatible systems and operational tools.',
+    },
+    {
+      number: '04',
+      title: 'Improve',
+      subtitle: 'Refine your calling operation',
+      description: 'Review campaign workflows, agent processes and operational feedback to identify opportunities to improve how your contact center manages outbound calling.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Tornado Dialer',
+    titleLine1: 'Powerful dialing starts',
+    titleLine2: 'with the right foundation.',
+    description: 'Effective outbound calling requires more than dialing technology. Clear campaign objectives, practical workflows, compatible connectivity and responsible communication practices all contribute to a well-managed contact center operation.',
+
+    cardFooter: 'The principles behind Tornado Dialer',
+    approachEyebrow: 'The Arventa Approach',
+    approachTitle: 'Technology, workflows and people working together.',
+    approachDescription: 'Because effective outbound calling depends on more than software alone.',
+
+    approachHighlight: ' Built around your campaigns.',
+
+    approachLabel: 'Dialing commitment',
+    approachSubLabel: 'Focused on practical contact center operations',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our dialing philosophy',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'Productivity',
+      description: 'Organized dialing workflows help contact center teams manage calling activity and focus on their campaign objectives.',
+      icon: "",
+      tag: 'Efficiency',
+    },
+    {
+      number: '02',
+      title: 'Flexibility',
+      description: 'Campaign settings and dialing workflows should be adaptable to different contact center processes and business requirements.',
+      icon: "",
+      tag: 'Adaptability',
+    },
+    {
+      number: '03',
+      title: 'Integration',
+      description: 'Dialing technology works best when it fits into the wider communication environment and connects with compatible business systems.',
+      icon: "",
+      tag: 'Connectivity',
+    },
+    {
+      number: '04',
+      title: 'Responsible Calling',
+      description: 'Outbound campaigns should be planned and managed with appropriate attention to consent, contact preferences, applicable regulations and data protection.',
+      icon: "",
+      tag: 'Responsibility',
+    },
+  ],
 };

@@ -1,3 +1,4 @@
+
 export const serviceGridData = [
   {
     icon: '◈',
@@ -17,7 +18,7 @@ export const serviceGridData = [
   {
     icon: '◉',
     title: 'Contact Center Software',
-    description: 'Powerful dialers, AI and fraud prevention.',
+    description: 'Calling, campaign management, AI and fraud prevention.',
   },
   {
     icon: '◎',
@@ -34,14 +35,14 @@ export const solutionGridData = {
     highlight: 'Solutions',
   },
 
-  description: 'From carrier services to AI-powered contact center solutions, we provide the infrastructure and software you need to grow, connect and succeed.',
+  description: 'From carrier services to intelligent contact center technology, we provide the communication infrastructure and software businesses need to connect with customers and manage conversations.',
 
   cta: {
     label: 'Explore All Solutions',
     href: '#',
   },
 
-  supportingNote: 'Technology built for growth',
+  supportingNote: 'Technology built for better communication',
 
   card: {
     linkLabel: 'Explore solution',
@@ -63,29 +64,29 @@ export const solutionGridData = {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
       title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
+      description: 'Call Con Dialer, Tornado Dialer, AI, Fraud Prevention & APIs.',
     },
   ],
 };
 
 export const offeringGridData = {
-  sectionId: 'contact-center',
+  sectionId: 'call-con-dialer',
 
-  eyebrow: 'Contact Center & Software',
+  eyebrow: 'Calling & Campaign Management',
 
   heading: {
-    first: 'Smarter Dialers.',
-    highlight: 'Better Conversations.',
+    first: 'Smarter Calling.',
+    highlight: 'Better Campaigns.',
   },
 
-  description: 'Boost your efficiency with our advanced dialer solutions, AI platform and fraud prevention tools. Empower your team with smarter technology designed to improve productivity and customer engagement.',
+  description: 'Bring calling activity and campaign management together with Call Con Dialer. Organise outbound campaigns, coordinate calling workflows, support agent productivity and manage customer engagement through a configurable dialer solution.',
 
   cta: {
-    label: 'Discover Contact Center Solutions',
+    label: 'Discover Call Con Dialer',
     href: '#',
   },
 
-  supportingNote: 'Intelligent solutions for modern business communication',
+  supportingNote: 'A more organised approach to business calling',
 
   product: {
     arrow: '→',
@@ -96,29 +97,29 @@ export const offeringGridData = {
   },
   items: [
     {
-      icon: '✦',
-      title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
-    },
-    {
       icon: '◇',
       title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
+      description: 'Calling workflows and campaign management.',
+    },
+    {
+      icon: '✦',
+      title: 'Tornado Dialer',
+      description: 'Powerful dialing technology for contact centers.',
     },
     {
       icon: 'AI',
       title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
+      description: 'Intelligent tools for communication workflows.',
     },
     {
       icon: '◇',
       title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
+      description: 'Tools to help protect calling operations.',
     },
     {
       icon: 'API',
       title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
+      description: 'Connect systems and streamline workflows.',
     },
   ],
 };
@@ -208,11 +209,11 @@ export const testimonialsData = {
   section: {
     eyebrow: 'Client Experiences',
     heading: {
-      first: 'Trusted by those',
-      second: 'who expect',
-      highlight: 'more.',
+      first: 'Built around',
+      second: 'better customer',
+      highlight: 'conversations.',
     },
-    description: 'The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.',
+    description: 'Explore the qualities that matter in a calling and campaign management solution: clear workflows, thoughtful implementation and technology aligned with business needs.',
   },
 
   decorative: {
@@ -225,7 +226,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus Networks',
-      quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
+      quote: 'A well-organised calling environment starts with technology that fits the way teams work. Clear campaign processes and thoughtful integration can make day-to-day operations easier to manage.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -234,7 +235,7 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Solutions',
-      quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
+      quote: 'Campaign management works best when teams have a clear process. A configurable approach helps align calling activity with operational priorities and customer engagement goals.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -243,7 +244,7 @@ export const testimonialsData = {
       name: 'Daniel Chen',
       role: 'Network Infrastructure Lead',
       company: 'CloudBridge Systems',
-      quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
+      quote: 'Connecting communication tools with existing systems is an important part of a well-designed contact center environment. Integration planning and technical clarity make a real difference.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -252,7 +253,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Technologies',
-      quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
+      quote: 'A successful calling solution should be straightforward to understand and adaptable to business requirements. A clear implementation process helps teams approach change with confidence.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -261,7 +262,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of IT Infrastructure',
       company: 'Apex Digital',
-      quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
+      quote: 'The right campaign workflows help bring structure to outbound communication. It is important to have a solution that considers both the technical environment and the people using it.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -270,7 +271,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Communications',
-      quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
+      quote: 'Flexibility is essential when calling requirements change. Configurable workflows and a considered integration approach help technology stay aligned with evolving business needs.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -279,7 +280,7 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Connect',
-      quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
+      quote: 'Campaign planning, team coordination and clear processes all contribute to more organised customer outreach. The overall workflow matters just as much as the dialing technology.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -288,7 +289,7 @@ export const testimonialsData = {
       name: 'Ananya Kapoor',
       role: 'Network Operations Manager',
       company: 'Pinnacle Technologies',
-      quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
+      quote: 'A connected communication environment gives teams a clearer way to approach their daily work. Flexibility, integration and useful operational visibility are important considerations.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -300,41 +301,41 @@ export const faqData = {
 
   heading: {
     eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    first: 'Everything you need to know',
+    highlight: 'about Call Con Dialer.',
+    description: 'Learn how calling workflows, campaign management and contact center processes can come together with Call Con Dialer.',
   },
 
   faqs: [
     {
-      question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      question: 'What is Call Con Dialer?',
+      answer: 'Call Con Dialer is a calling and campaign management solution designed to help businesses organise outbound calling activity and manage customer engagement workflows. Available features depend on the product configuration and deployment.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'How can Call Con Dialer support campaign management?',
+      answer: 'It is designed to help teams structure calling campaigns, organise outreach activity and coordinate calling workflows. The specific campaign controls and available functions depend on the solution setup.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'Can calling workflows be configured for our business?',
+      answer: 'Calling workflows can be discussed and configured around your operational requirements, campaign objectives and team processes. Available settings and dialing options depend on the product configuration.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'Can Call Con Dialer work with our existing systems?',
+      answer: 'Integration requirements can be assessed during the initial discussion. Available APIs, supported integrations and compatibility with your existing systems should be confirmed as part of the technical scoping process.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'Does Call Con Dialer provide campaign visibility?',
+      answer: 'The solution can be evaluated for the campaign information and operational visibility your team needs. Available reporting, activity views and other monitoring capabilities depend on the enabled features and deployment.',
     },
     {
-      question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      question: 'How do we manage responsible outbound calling?',
+      answer: 'Businesses remain responsible for following applicable calling laws and regulations, obtaining appropriate consent, maintaining suppression and do-not-call lists, and respecting permitted calling hours. Product configuration may support internal calling controls, but it does not replace your legal and compliance responsibilities.',
     },
   ],
 
   contact: {
-    heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    heading: 'Have questions about Call Con Dialer?',
+    description: "Let's discuss your calling workflows and campaign management requirements.",
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -345,11 +346,11 @@ export const CTAData = {
 
   heading: {
     eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    first: "Let's make every",
+    highlight: 'campaign count.',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Whether you want to organise outbound calling, improve campaign workflows or explore contact center technology, our team is ready to discuss how Call Con Dialer can fit your business requirements.',
 
   cta: {
     primary: {
@@ -367,82 +368,83 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '3',
-    accent: 's',
-    label: 'P95 delivery',
-    description: 'Measured continuously',
+    value: 'Campaign',
+    accent: '',
+    label: 'Calling organisation',
+    description: 'Structure outbound activity',
   },
   {
-    value: '99.5',
-    accent: '%',
-    label: 'Delivery success',
-    description: 'With failover',
+    value: 'Agent',
+    accent: '',
+    label: 'Team coordination',
+    description: 'Support consistent workflows',
   },
   {
-    value: '500',
-    accent: 'ms',
-    label: 'Failover time',
-    description: 'Route-to-route',
+    value: 'Insight',
+    accent: '',
+    label: 'Campaign visibility',
+    description: 'Review available activity data',
   },
   {
-    value: '200',
-    accent: '+',
-    label: 'Countries',
-    description: 'Premium OTP routes',
+    value: 'API',
+    accent: '',
+    label: 'System integration',
+    description: 'Connect supported business tools',
   },
 ];
 
 export const countUpGridData = {
-  id: 'who-we-are',
+  id: 'call-con-dialer',
 
-  badge: 'Who We Are',
+  badge: 'Call Con Dialer',
 
   heading: {
-    firstLine: 'Infrastructure with',
+    firstLine: 'Calling campaigns with',
     highlight: 'purpose.',
   },
 
   description:
-    'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+    'Call Con Dialer brings calling and campaign management into one solution, helping businesses organise outbound communication and coordinate customer engagement workflows.',
 
   secondaryDescription:
-    'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+    'From campaign planning and calling processes to agent coordination and system integration, the approach is built around practical workflows and the needs of your team.',
 
   cta: {
-    label: 'Discover Our Approach',
-    href: '#solutions',
+    label: 'Explore Call Con Dialer',
+    href: '#call-con-dialer',
     icon: '→',
   },
 
   supportingNote:
-    'Reliable connectivity. Built for the long term.',
+    'Organised campaigns. Connected communication.',
 
   statsPanel: {
-    eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    eyebrow: 'The solution',
+    heading: 'Calling at a glance',
+    badge: 'Campaign management',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: 'Campaign', label: 'Calling workflows' },
+      { value: 'Agent', label: 'Team coordination' },
+      { value: 'Insight', label: 'Campaign visibility' },
+      { value: 'API', label: 'System integration' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'Designed around your calling processes',
+      status: 'Configurable workflows',
     },
   },
 };
+
 export const featureGridSectionData1 = {
   buttonText: 'Explore Solutions',
   eyebrow: 'What we do',
   heading: {
-    firstLine: 'Communication',
-    highlight: 'engineered.',
+    firstLine: 'Calling',
+    highlight: 'made organised.',
   },
-  description: 'From carrier services to communication infrastructure, we provide the technology and connectivity businesses need to grow, connect and operate.',
+  description: 'We bring together communication infrastructure and contact center technology to help businesses manage calling activity, coordinate campaigns and build better customer engagement workflows.',
   items: [
     {
       icon: '◈',
@@ -457,22 +459,22 @@ export const featureGridSectionData1 = {
     {
       icon: '◉',
       title: 'Contact Center',
-      description: 'Dialers, AI, fraud prevention and communication APIs.',
+      description: 'Call Con Dialer, Tornado Dialer, AI, fraud prevention and communication APIs.',
     },
     {
       icon: '✦',
       title: 'Technology Partnerships',
-      description: 'Integrate. Automate. Grow with the right ecosystem.',
+      description: 'Connect systems, support workflows and grow with the right ecosystem.',
     },
   ],
 };
 
 export const hero1Data = {
   hero: {
-    title: 'Voice Without',
-    highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
-    primaryButton: 'Get Started',
+    title: 'Calling Made',
+    highlightedTitle: 'More Connected.',
+    description: 'Manage outbound calling and customer engagement with Call Con Dialer. Bring campaign organisation, calling workflows and team coordination together in a configurable solution designed around your business.',
+    primaryButton: 'Discover Call Con Dialer',
     secondaryButton: 'Explore Solutions',
   },
 
@@ -480,9 +482,9 @@ export const hero1Data = {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
-        footer: 'Built for your business',
+        title: 'Campaign Management',
+        description: 'Organise outbound campaigns around your business goals.',
+        footer: 'Built around your workflow',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
@@ -492,9 +494,9 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
-        footer: 'Built for your business',
+        title: 'Calling Workflows',
+        description: 'Coordinate calling activity and customer engagement processes.',
+        footer: 'Built around your workflow',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
@@ -505,9 +507,9 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
-        footer: 'Built for your business',
+        title: 'Team Coordination',
+        description: 'Support consistent processes across calling teams and operations.',
+        footer: 'Built around your workflow',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -521,110 +523,110 @@ export const hero1Data = {
 
 export const hero2Data = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'Calling & Campaign Management',
+    title: 'Every campaign.',
+    highlightedTitle: 'A clearer workflow.',
+    description: 'Call Con Dialer helps bring calling activity and campaign processes together. Plan your outreach, organise team workflows and explore a calling solution shaped around your operational requirements.',
+    primaryButton: 'Explore Call Con Dialer',
+    secondaryButton: 'Discuss Your Requirements',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Campaigns',
+        label: 'Organised outreach',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'Calling',
+        label: 'Structured workflows',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'Agents',
+        label: 'Team coordination',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'APIs',
+        label: 'System integration',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'A workflow built around your team.',
+    status: 'Solution planning',
+    availability: 'Designed around your requirements',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'CC',
+        name: 'Campaign Management',
+        role: 'Campaign Planning',
+        status: 'Workflow design',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'AG',
+        name: 'Agent Coordination',
+        role: 'Team Workflows',
+        status: 'Process planning',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'IN',
+        name: 'Integration Planning',
+        role: 'Systems & APIs',
+        status: 'Technical scoping',
       },
     ] 
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'Campaign workflow overview',
+    status: 'Configured to requirements',
   },
 }
 
 export const hero3Data = {
   hero: {
-    eyebrow: 'About Our Company',
+    eyebrow: 'About Call Con Dialer',
 
     heading: {
-      firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      firstLine: 'We organise calling.',
+      secondLine: 'We connect conversations.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'Call Con Dialer brings calling and campaign management together to help businesses approach customer outreach with clear processes, coordinated teams and technology designed around their needs.',
 
     primaryCta: {
-      label: 'Discover Our Story',
-      href: '#our-story',
+      label: 'Explore Call Con Dialer',
+      href: '#call-con-dialer',
     },
 
     secondaryCta: {
-      label: 'Meet Our Team',
-      href: '#team',
+      label: 'Contact Our Team',
+      href: '#contact',
     },
   },
 
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
+        value: 'Calling',
+        label: 'Outbound workflows',
       },
       {
-        value: '42+',
-        label: 'Countries Connected',
+        value: 'Campaigns',
+        label: 'Campaign organisation',
       },
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'Agents',
+        label: 'Team coordination',
       },
       {
-        value: '24/7',
-        label: 'Global Support',
+        value: 'APIs',
+        label: 'System integration',
       },
     ],
   },
@@ -638,7 +640,7 @@ export const hero3Data = {
       {
         number: '01',
         title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        description: 'Technology should support thoughtful, relevant customer conversations and make calling workflows easier for the people who use them.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -649,8 +651,8 @@ export const hero3Data = {
 
       {
         number: '02',
-        title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        title: 'Built Around Workflows',
+        description: 'Calling and campaign processes should be configurable to reflect the objectives, requirements and working practices of each business.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -661,8 +663,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Responsible Engagement',
+        description: 'Effective outbound communication depends on thoughtful campaign practices, appropriate contact permissions and respect for customer preferences.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -672,4 +674,98 @@ export const hero3Data = {
       },
     ],
   },
+};
+
+export const processData = {
+  content: {
+    eyebrow: 'The Call Con Dialer Process',
+    titleLine1: 'From campaign planning',
+    titleHighlight: 'to customer conversations.',
+    description: 'Effective outbound calling starts with a clear process. Define campaign goals, organise calling workflows, coordinate the people and systems involved, then review activity and refine your approach based on operational needs.',
+
+    statusText: 'A structured approach to calling and campaigns',
+    flowText: 'Plan · Configure · Call · Review',
+    footerTitle: 'Better campaigns start with clear goals',
+    footerDescription: 'Campaign objectives, team workflows and contact requirements shape the setup.',
+    phaseLabel: 'Campaign stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Plan the Campaign',
+      subtitle: 'Define goals and audience',
+      description: 'Establish the purpose of your campaign, identify the intended audience, organise relevant contact lists and define the objectives and contact rules that will guide your outreach.',
+    },
+    {
+      number: '02',
+      title: 'Configure Calling',
+      subtitle: 'Shape the campaign workflow',
+      description: 'Review available dialing settings, campaign processes, schedules and retry rules. Configure the calling approach according to your requirements and the capabilities available in your deployment.',
+    },
+    {
+      number: '03',
+      title: 'Coordinate & Engage',
+      subtitle: 'Bring people and systems together',
+      description: 'Prepare agent workflows, call handling processes and relevant system integrations. Make sure the team understands the campaign objectives and the processes for handling customer conversations.',
+    },
+    {
+      number: '04',
+      title: 'Review & Refine',
+      subtitle: 'Learn from campaign activity',
+      description: 'Review available campaign information, calling activity and outcomes. Use operational insights to refine workflows, adjust campaign settings and improve the way your team manages outreach.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Our Calling Solutions',
+    titleLine1: 'Better campaigns start',
+    titleLine2: 'with thoughtful calling.',
+    description: 'Successful outbound engagement needs more than dialing technology. It takes clear processes, coordinated teams, useful visibility and a responsible approach to customer communication.',
+
+    cardFooter: 'The principles behind better calling',
+    approachEyebrow: 'The Arventa Approach',
+    approachTitle: 'Campaigns, people and technology working together.',
+    approachDescription: 'Effective calling management is about bringing every part of the outreach process into alignment.',
+
+    approachHighlight: ' Built around your workflow.',
+
+    approachLabel: 'Calling commitment',
+    approachSubLabel: 'Focused on organised, responsible engagement',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our calling philosophy',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'Human-Centered Engagement',
+      description: 'Customer conversations should be thoughtful, relevant and respectful. Calling technology should support meaningful engagement rather than treat every interaction as just another activity.',
+      icon: "",
+      tag: 'People First',
+    },
+    {
+      number: '02',
+      title: 'Configurable Workflows',
+      description: 'Every team has different campaign goals and operational requirements. Calling workflows should be adaptable to the processes and working practices of the business.',
+      icon: "",
+      tag: 'Flexibility',
+    },
+    {
+      number: '03',
+      title: 'Visibility & Control',
+      description: 'Clear campaign processes and access to available activity information help teams understand their calling operations and make informed workflow decisions.',
+      icon: "",
+      tag: 'Clarity',
+    },
+    {
+      number: '04',
+      title: 'Responsible Calling',
+      description: 'Businesses must follow applicable calling laws, obtain appropriate consent, maintain suppression and do-not-call lists, and respect permitted contact hours. Technology can support internal processes but cannot guarantee legal compliance.',
+      icon: "",
+      tag: 'Responsibility',
+    },
+  ],
 };

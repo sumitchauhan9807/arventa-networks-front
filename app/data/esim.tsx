@@ -1,28 +1,29 @@
+
 export const serviceGridData = [
   {
     icon: '◈',
-    title: 'Carrier & Wholesale',
-    description: 'SIP Trunking, Origination/Termination, LCR',
+    title: 'eSIM Connectivity',
+    description: 'Digital SIM solutions for connected devices and users.',
   },
   {
     icon: '▣',
     title: 'Mobile & MVNO',
-    description: 'Flexible mobile solutions for your business',
+    description: 'Flexible mobile services powered by eSIM technology.',
   },
   {
     icon: '△',
     title: 'IoT / M2M',
-    description: 'Connected devices. Unlimited possibilities.',
+    description: 'Connect and manage devices with digital SIM profiles.',
   },
   {
     icon: '◉',
-    title: 'Contact Center Software',
-    description: 'Powerful dialers, AI and fraud prevention.',
+    title: 'Global Connectivity',
+    description: 'Mobile data access across supported destinations.',
   },
   {
     icon: '◎',
-    title: 'Global Network',
-    description: 'Secure. Scalable. Reliable.',
+    title: 'Platform Integration',
+    description: 'Provisioning, APIs and subscriber management.',
   },
 ];
 
@@ -31,17 +32,17 @@ export const solutionGridData = {
 
   heading: {
     normal: 'Our',
-    highlight: 'Solutions',
+    highlight: 'eSIM Solutions',
   },
 
-  description: 'From carrier services to AI-powered contact center solutions, we provide the infrastructure and software you need to grow, connect and succeed.',
+  description: 'From digital SIM provisioning to mobile and IoT connectivity, we help businesses deliver flexible eSIM experiences with the technology and platform capabilities to activate, connect and manage devices.',
 
   cta: {
-    label: 'Explore All Solutions',
+    label: 'Explore eSIM Solutions',
     href: '#',
   },
 
-  supportingNote: 'Technology built for growth',
+  supportingNote: 'Digital connectivity built for flexibility',
 
   card: {
     linkLabel: 'Explore solution',
@@ -50,42 +51,42 @@ export const solutionGridData = {
     {
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity & Security.',
+      title: 'eSIM Platforms',
+      description: 'Digital provisioning, profile management and activation workflows.',
     },
     {
       image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80',
       icon: '▣',
       title: 'Mobile & IoT',
-      description: 'MVNO, eSIM, IoT / M2M connectivity.',
+      description: 'eSIM connectivity for smartphones, connected devices and M2M applications.',
     },
     {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80',
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, Fraud Prevention & APIs.',
+      title: 'Connectivity Management',
+      description: 'Subscriber workflows, integrations and mobile service management.',
     },
   ],
 };
 
 export const offeringGridData = {
-  sectionId: 'contact-center',
+  sectionId: 'esim',
 
-  eyebrow: 'Contact Center & Software',
+  eyebrow: 'eSIM Connectivity & Services',
 
   heading: {
-    first: 'Smarter Dialers.',
-    highlight: 'Better Conversations.',
+    first: 'Digital SIMs.',
+    highlight: 'Connected Experiences.',
   },
 
-  description: 'Boost your efficiency with our advanced dialer solutions, AI platform and fraud prevention tools. Empower your team with smarter technology designed to improve productivity and customer engagement.',
+  description: 'Make mobile connectivity simpler with eSIM solutions designed for digital activation, flexible provisioning and connected device management. Support customers and devices with streamlined workflows and integration-ready technology.',
 
   cta: {
-    label: 'Discover Contact Center Solutions',
+    label: 'Discover eSIM Solutions',
     href: '#',
   },
 
-  supportingNote: 'Intelligent solutions for modern business communication',
+  supportingNote: 'Flexible digital connectivity for modern devices',
 
   product: {
     arrow: '→',
@@ -97,28 +98,28 @@ export const offeringGridData = {
   items: [
     {
       icon: '✦',
-      title: 'Tornado Dialer',
-      description: 'High performance. Maximum reach.',
+      title: 'eSIM Provisioning',
+      description: 'Manage digital SIM profiles and activation workflows.',
     },
     {
       icon: '◇',
-      title: 'Call Con Dialer',
-      description: 'Flexible. Reliable. Scalable.',
+      title: 'Digital Activation',
+      description: 'Enable supported devices to connect without a physical SIM.',
     },
     {
-      icon: 'AI',
-      title: 'AI Platform',
-      description: 'Intelligent automation for better results.',
+      icon: 'SIM',
+      title: 'Mobile Connectivity',
+      description: 'Flexible mobile data services through supported networks.',
     },
     {
       icon: '◇',
-      title: 'Fraud Prevention',
-      description: 'Protect your business and customers.',
+      title: 'IoT & M2M eSIM',
+      description: 'Connect devices with digital SIM capabilities.',
     },
     {
       icon: 'API',
-      title: 'Software & APIs',
-      description: 'Integrate. Automate. Grow.',
+      title: 'eSIM APIs & Integration',
+      description: 'Connect provisioning and subscriber workflows to your systems.',
     },
   ],
 };
@@ -208,11 +209,11 @@ export const testimonialsData = {
   section: {
     eyebrow: 'Client Experiences',
     heading: {
-      first: 'Trusted by those',
-      second: 'who expect',
-      highlight: 'more.',
+      first: 'Connectivity that',
+      second: 'moves business',
+      highlight: 'forward.',
     },
-    description: 'The people behind the partnerships. Discover how our infrastructure solutions help businesses move forward with confidence.',
+    description: 'Discover how digital connectivity, flexible provisioning and connected device solutions can help businesses create better mobile experiences.',
   },
 
   decorative: {
@@ -225,7 +226,7 @@ export const testimonialsData = {
       name: 'Arjun Mehta',
       role: 'Chief Technology Officer',
       company: 'Nexus Networks',
-      quote: 'Their infrastructure has transformed how we manage connectivity across our operations. The reliability, attention to detail, and technical expertise have made a measurable difference to our business.',
+      quote: 'A flexible approach to digital connectivity can make it easier to manage devices and mobile services. The right provisioning workflows help simplify the experience from activation onward.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -234,7 +235,7 @@ export const testimonialsData = {
       name: 'Sarah Williams',
       role: 'Director of Operations',
       company: 'Vertex Solutions',
-      quote: 'What impressed us most was their ability to understand our requirements and build a solution that could grow with us. The entire experience felt thoughtful, professional, and dependable.',
+      quote: 'eSIM technology creates new opportunities to deliver convenient connectivity. We value solutions that make activation and ongoing service management easier to coordinate.',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -243,7 +244,7 @@ export const testimonialsData = {
       name: 'Daniel Chen',
       role: 'Network Infrastructure Lead',
       company: 'CloudBridge Systems',
-      quote: 'We needed a partner who could simplify a complex network environment without compromising performance. Their team delivered a scalable foundation and excellent ongoing support.',
+      quote: 'Managing connected devices requires a clear view of provisioning and connectivity. An integration-ready platform can help simplify complex device environments.',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -252,7 +253,7 @@ export const testimonialsData = {
       name: 'Olivia Bennett',
       role: 'Managing Director',
       company: 'Elevate Technologies',
-      quote: 'From the initial consultation to implementation, everything was handled with clarity and care. We now have greater confidence in our infrastructure and a partner we can trust.',
+      quote: 'Digital SIM solutions offer a more flexible way to approach mobile connectivity. Clear planning and a straightforward activation experience are essential to making the most of that flexibility.',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -261,7 +262,7 @@ export const testimonialsData = {
       name: 'Michael Anderson',
       role: 'Head of IT Infrastructure',
       company: 'Apex Digital',
-      quote: 'The team brought structure and clarity to our infrastructure challenges. Their scalable solutions and responsive support have helped us build a more resilient and future-ready network.',
+      quote: 'As device requirements evolve, businesses need connectivity options that can adapt. eSIM capabilities can support more flexible deployment and device management strategies.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -270,7 +271,7 @@ export const testimonialsData = {
       name: 'Priya Sharma',
       role: 'Technology Director',
       company: 'Brightwave Communications',
-      quote: 'We needed a flexible solution that could keep pace with our growth. Their thoughtful approach, technical knowledge, and consistent communication made the entire process seamless.',
+      quote: 'The combination of digital provisioning and platform integration makes eSIM an interesting option for businesses looking to simplify how they connect users and devices.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -279,7 +280,7 @@ export const testimonialsData = {
       name: 'James Mitchell',
       role: 'Chief Operating Officer',
       company: 'Summit Connect',
-      quote: 'From planning to deployment, the experience was smooth and professional. We appreciate the focus on reliability, long-term performance, and solutions tailored to our operational needs.',
+      quote: 'A well-planned eSIM approach can help organizations manage connectivity across different device types and use cases. Flexibility and clear service processes make a real difference.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -288,7 +289,7 @@ export const testimonialsData = {
       name: 'Ananya Kapoor',
       role: 'Network Operations Manager',
       company: 'Pinnacle Technologies',
-      quote: 'Their forward-thinking approach has given our team greater confidence in managing network demands. The combination of flexibility, expertise, and dependable support stands out.',
+      quote: 'Digital SIM technology opens up useful possibilities for IoT and mobile services. The ability to plan provisioning and connectivity around the needs of each deployment is particularly valuable.',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces',
       rating: 5,
     },
@@ -300,41 +301,41 @@ export const faqData = {
 
   heading: {
     eyebrow: 'Frequently Asked Questions',
-    first: 'Answers to help you',
-    highlight: 'move forward.',
-    description: 'Everything you need to know about our messaging infrastructure, global reach, and getting started.',
+    first: 'Everything you need to know',
+    highlight: 'about eSIM.',
+    description: 'Learn how eSIM works, how digital SIM profiles are activated, and what to consider when choosing an eSIM connectivity solution.',
   },
 
   faqs: [
     {
-      question: 'What is Arventa Networks?',
-      answer: 'Arventa Networks provides reliable messaging infrastructure designed to help businesses deliver OTPs, verification codes, and critical notifications across global markets.',
+      question: 'What is an eSIM and how does it work?',
+      answer: 'An eSIM is a digital SIM built into a compatible device. Instead of inserting a physical SIM card, users can download and activate a supported mobile network profile. Availability and activation methods depend on the device and mobile operator.',
     },
     {
-      question: 'How reliable is your message delivery?',
-      answer: 'Our infrastructure is designed with intelligent routing, delivery monitoring, and failover capabilities to help maintain reliable message delivery, even when individual routes experience issues.',
+      question: 'What are the benefits of using eSIM?',
+      answer: 'eSIM can simplify device activation, reduce the need to handle physical SIM cards and make it easier to manage mobile profiles. It can be useful for smartphones, tablets, laptops and supported IoT devices.',
     },
     {
-      question: 'Which countries and regions do you support?',
-      answer: 'We support messaging connectivity across 200+ countries and territories, helping businesses reach customers through a broad network of premium messaging routes.',
+      question: 'Which devices support eSIM?',
+      answer: 'Many newer smartphones, tablets, laptops and connected devices support eSIM, but compatibility varies by model, manufacturer, region and operator. Check the device specifications and supported network requirements before activation.',
     },
     {
-      question: 'How quickly can we integrate your platform?',
-      answer: 'Integration timelines depend on your use case and technical requirements. Our team can help you connect through the appropriate API and guide you through setup, testing, and deployment.',
+      question: 'Can eSIM be used for international connectivity?',
+      answer: 'eSIM can provide access to mobile connectivity in different destinations when supported profiles and network agreements are available. Coverage, data allowances, pricing and roaming conditions depend on the specific service and destination.',
     },
     {
-      question: 'Do you support high-volume messaging?',
-      answer: 'Our messaging infrastructure is designed to support growing traffic demands, with routing capabilities intended to help businesses manage delivery at scale.',
+      question: 'Can businesses manage multiple eSIM profiles and devices?',
+      answer: 'Business eSIM solutions can support digital profile provisioning and device connectivity workflows. Available management features, integrations and automation depend on the platform configuration and operator capabilities.',
     },
     {
-      question: 'How can I get started with Arventa Networks?',
-      answer: "Contact our team to discuss your messaging requirements, target markets, expected traffic, and integration needs. We'll help identify a suitable solution for your business.",
+      question: 'How can I get started with an eSIM solution?',
+      answer: "Contact our team to discuss your devices, target markets, connectivity requirements and expected usage. We'll help explore suitable eSIM options, provisioning workflows and integration requirements for your business.",
     },
   ],
 
   contact: {
     heading: 'Still have questions?',
-    description: "Let's talk about your messaging requirements.",
+    description: "Let's discuss your eSIM and connectivity requirements.",
     cta: 'Contact our team',
     href: '#contact',
   },
@@ -345,11 +346,11 @@ export const CTAData = {
 
   heading: {
     eyebrow: "Let's Connect",
-    first: "Let's build what's",
-    highlight: 'next.',
+    first: 'Ready to make the',
+    highlight: 'switch to eSIM?',
   },
 
-  description: 'Whether you are looking for carrier connectivity, mobile infrastructure, IoT solutions or intelligent communications software, our team is ready to discuss your requirements.',
+  description: 'Whether you are exploring digital SIM provisioning, mobile connectivity, IoT deployments or eSIM platform integration, our team is ready to discuss the right approach for your requirements.',
 
   cta: {
     primary: {
@@ -358,7 +359,7 @@ export const CTAData = {
       arrow: '→',
     },
     secondary: {
-      label: 'Explore Our Solutions',
+      label: 'Explore eSIM Solutions',
       darkHref: 'index.html',
       lightHref: '#solutions',
     },
@@ -367,122 +368,123 @@ export const CTAData = {
 
 export const countupData = [
   {
-    value: '3',
-    accent: 's',
-    label: 'P95 delivery',
-    description: 'Measured continuously',
+    value: 'eSIM',
+    accent: '',
+    label: 'Digital provisioning',
+    description: 'Manage digital SIM profiles',
   },
   {
-    value: '99.5',
-    accent: '%',
-    label: 'Delivery success',
-    description: 'With failover',
+    value: 'OTA',
+    accent: '',
+    label: 'Remote activation',
+    description: 'Supported digital workflows',
   },
   {
-    value: '500',
-    accent: 'ms',
-    label: 'Failover time',
-    description: 'Route-to-route',
+    value: 'IoT',
+    accent: '',
+    label: 'Connected devices',
+    description: 'Mobile connectivity for devices',
   },
   {
-    value: '200',
-    accent: '+',
-    label: 'Countries',
-    description: 'Premium OTP routes',
+    value: 'API',
+    accent: '',
+    label: 'Platform integration',
+    description: 'Connect provisioning workflows',
   },
 ];
 
 export const countUpGridData = {
-  id: 'who-we-are',
+  id: 'esim-connectivity',
 
-  badge: 'Who We Are',
+  badge: 'eSIM Connectivity',
 
   heading: {
-    firstLine: 'Infrastructure with',
-    highlight: 'purpose.',
+    firstLine: 'Digital connectivity',
+    highlight: 'made flexible.',
   },
 
   description:
-    'Arventa Networks operates at the intersection of telecom, technology and connectivity. We create communication infrastructure designed for organizations that depend on reliable communication every day.',
+    'Arventa Networks brings together mobile connectivity and technology capabilities to help businesses explore eSIM services, digital provisioning and connected device solutions.',
 
   secondaryDescription:
-    'From carrier services and voice infrastructure to mobile, IoT and contact center technologies, our approach is built around connectivity, flexibility and long-term partnerships.',
+    'From eSIM profile activation to IoT connectivity and platform integration, our approach is built around flexible service models, practical workflows and long-term connectivity needs.',
 
   cta: {
-    label: 'Discover Our Approach',
+    label: 'Discover Our eSIM Solutions',
     href: '#solutions',
     icon: '→',
   },
 
   supportingNote:
-    'Reliable connectivity. Built for the long term.',
+    'Digital SIM technology. Flexible connectivity.',
 
   statsPanel: {
-    eyebrow: 'At a glance',
-    heading: 'Network at scale',
-    badge: 'Global reach',
+    eyebrow: 'eSIM capabilities',
+    heading: 'Connected by design',
+    badge: 'Digital first',
 
     stats: [
-      { value: '99.9%', label: 'Network Uptime' },
-      { value: '200+', label: 'Carrier Partners' },
-      { value: '180+', label: 'Countries' },
-      { value: '24/7', label: 'Operations' },
+      { value: 'eSIM', label: 'Digital SIM Profiles' },
+      { value: 'OTA', label: 'Remote Provisioning' },
+      { value: 'IoT', label: 'Connected Devices' },
+      { value: 'API', label: 'Platform Integration' },
     ],
 
     footer: {
-      description: 'Connectivity you can count on',
-      status: 'Always connected',
+      description: 'Flexible mobile connectivity',
+      status: 'Built for digital services',
     },
   },
 };
+
 export const featureGridSectionData1 = {
-  buttonText: 'Explore Solutions',
+  buttonText: 'Explore eSIM Solutions',
   eyebrow: 'What we do',
   heading: {
-    firstLine: 'Communication',
-    highlight: 'engineered.',
+    firstLine: 'Digital connectivity',
+    highlight: 'simplified.',
   },
-  description: 'From carrier services to communication infrastructure, we provide the technology and connectivity businesses need to grow, connect and operate.',
+  description: 'From digital SIM provisioning to mobile and IoT connectivity, we provide the technology and integration capabilities businesses need to connect users, activate devices and manage services.',
   items: [
     {
       icon: '◈',
-      title: 'Carrier & Network',
-      description: 'SIP Trunking, Voice, DIDs, Connectivity and Security.',
+      title: 'eSIM Provisioning',
+      description: 'Digital SIM profiles, activation workflows and profile management.',
     },
     {
       icon: '▣',
-      title: 'Mobile & IoT',
-      description: 'MVNO, eSIM and IoT / M2M connectivity solutions.',
+      title: 'Mobile Connectivity',
+      description: 'Flexible mobile data services through supported network partners.',
     },
     {
       icon: '◉',
-      title: 'Contact Center',
-      description: 'Dialers, AI, fraud prevention and communication APIs.',
+      title: 'IoT & M2M',
+      description: 'eSIM connectivity options for connected devices and deployments.',
     },
     {
       icon: '✦',
-      title: 'Technology Partnerships',
-      description: 'Integrate. Automate. Grow with the right ecosystem.',
+      title: 'Platform Integration',
+      description: 'Connect eSIM provisioning and subscriber workflows with APIs.',
     },
   ],
 };
 
 export const hero1Data = {
   hero: {
-    title: 'Voice Without',
-    highlightedTitle: 'Boundaries.',
-    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
+    title: 'Connectivity Without',
+    highlightedTitle: 'SIM Limits.',
+    description: 'Make mobile connectivity more flexible with eSIM solutions designed for digital provisioning, convenient activation and connected devices. Explore the possibilities of a digital-first approach to mobile services.',
     primaryButton: 'Get Started',
-    secondaryButton: 'Explore Solutions',
+    secondaryButton: 'Explore eSIM Solutions',
   },
 
   services: {
     items: [
       {
         number: '01',
-        title: 'SIP Trunking',
-        description: 'Flexible, reliable SIP connectivity for your business.',
-        footer: 'Built for your business',
+        title: 'eSIM Provisioning',
+        description: 'Digital SIM profiles and streamlined provisioning workflows.',
+        footer: 'Built for digital connectivity',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
@@ -492,9 +494,9 @@ export const hero1Data = {
       },
       {
         number: '02',
-        title: 'Voice Integration',
-        description: 'Connect voice services with your existing systems.',
-        footer: 'Built for your business',
+        title: 'Digital Activation',
+        description: 'Activate supported devices with digital SIM profiles.',
+        footer: 'Built for digital connectivity',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
@@ -505,9 +507,9 @@ export const hero1Data = {
       },
       {
         number: '03',
-        title: 'Scalable Capacity',
-        description: 'Adapt call capacity to changing business demand.',
-        footer: 'Built for your business',
+        title: 'Connected Devices',
+        description: 'Explore eSIM connectivity for mobile and IoT devices.',
+        footer: 'Built for digital connectivity',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -517,114 +519,114 @@ export const hero1Data = {
       },
     ],
   },
-}
+};
 
 export const hero2Data = {
   hero: {
-    eyebrow: '24/7 Network Operations',
-    title: 'Always connected.',
-    highlightedTitle: 'Always operational.',
-    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
-    primaryButton: 'Meet the Team',
-    secondaryButton: 'View Network Status',
+    eyebrow: 'Digital SIM & Connectivity',
+    title: 'Activate digitally.',
+    highlightedTitle: 'Connect flexibly.',
+    description: 'eSIM technology brings digital provisioning and mobile connectivity together. Explore flexible ways to activate compatible devices, manage profiles and support connected services.',
+    primaryButton: 'Explore eSIM Services',
+    secondaryButton: 'Discuss Your Requirements',
   },
 
   stats: {
     items: [
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'eSIM',
+        label: 'Digital SIM Profiles',
         icon: '◉',
       },
       {
-        value: '24 / 7',
-        label: 'Active Monitoring',
+        value: 'OTA',
+        label: 'Remote Provisioning',
         icon: '◌',
       },
       {
-        value: '42+',
-        label: 'Countries Covered',
+        value: 'IoT',
+        label: 'Connected Devices',
         icon: '◎',
       },
       {
-        value: '18ms',
-        label: 'Avg. Latency',
+        value: 'API',
+        label: 'Platform Integration',
         icon: '↯',
       },
     ],
   },
 
   team: {
-    title: 'Your network is being watched.',
-    status: 'Operations Online',
-    availability: 'Global team online',
+    title: 'Your eSIM solution, built around your needs.',
+    status: 'eSIM Solutions',
+    availability: 'Configured around your requirements',
     members: [
       {
-        initials: 'AM',
-        name: 'Alex Morgan',
-        role: 'Network Engineer',
-        status: 'Online',
+        initials: 'EP',
+        name: 'eSIM Specialist',
+        role: 'Digital Provisioning',
+        status: 'Solution team',
       },
       {
-        initials: 'SK',
-        name: 'Sarah Kim',
-        role: 'Voice Specialist',
-        status: 'Online',
+        initials: 'MC',
+        name: 'Mobile Connectivity Lead',
+        role: 'Mobile Services',
+        status: 'Solution team',
       },
       {
-        initials: 'DR',
-        name: 'Daniel Reed',
-        role: 'Infrastructure',
-        status: 'Monitoring',
+        initials: 'IS',
+        name: 'Integration Specialist',
+        role: 'Platform Integration',
+        status: 'Solution team',
       },
     ] 
   },
 
   activity: {
-    title: 'Live infrastructure activity',
-    status: 'Normal',
+    title: 'eSIM service components',
+    status: 'Solution overview',
   },
-}
+};
 
 export const hero3Data = {
   hero: {
-    eyebrow: 'About Our Company',
+    eyebrow: 'About Our eSIM Solutions',
 
     heading: {
-      firstLine: 'We connect people.',
-      secondLine: 'We move businesses.',
+      firstLine: 'We simplify activation.',
+      secondLine: 'We connect devices.',
     },
 
-    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+    description: 'We bring together digital SIM technology, mobile connectivity and platform capabilities to help businesses create flexible connected experiences for people, devices and services.',
 
     primaryCta: {
-      label: 'Discover Our Story',
+      label: 'Discover Our Approach',
       href: '#our-story',
     },
 
     secondaryCta: {
-      label: 'Meet Our Team',
-      href: '#team',
+      label: 'Explore eSIM Solutions',
+      href: '#solutions',
     },
   },
 
   stats: {
     items: [
       {
-        value: '10+',
-        label: 'Years of Experience',
+        value: 'eSIM',
+        label: 'Digital SIM Technology',
       },
       {
-        value: '42+',
-        label: 'Countries Connected',
+        value: 'OTA',
+        label: 'Remote Provisioning',
       },
       {
-        value: '99.99%',
-        label: 'Network Uptime',
+        value: 'IoT',
+        label: 'Connected Devices',
       },
       {
-        value: '24/7',
-        label: 'Global Support',
+        value: 'API',
+        label: 'Platform Integration',
       },
     ],
   },
@@ -637,8 +639,8 @@ export const hero3Data = {
     items: [
       {
         number: '01',
-        title: 'Human First',
-        description: 'Technology should make communication simpler, more natural, and more human.',
+        title: 'Simple Experiences',
+        description: 'Digital connectivity should be easy to understand, activate and manage for businesses and end users.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -649,8 +651,8 @@ export const hero3Data = {
 
       {
         number: '02',
-        title: 'Built to Scale',
-        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        title: 'Built for Flexibility',
+        description: 'eSIM solutions should adapt to different devices, users, markets and connectivity requirements.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
@@ -661,8 +663,8 @@ export const hero3Data = {
 
       {
         number: '03',
-        title: 'Always Reliable',
-        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        title: 'Responsible Connectivity',
+        description: 'Every connection should be supported by clear service information, appropriate network arrangements and responsible data practices.',
         icon: (
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -672,4 +674,98 @@ export const hero3Data = {
       },
     ],
   },
+};
+
+export const processData = {
+  content: {
+    eyebrow: 'Our eSIM Process',
+    titleLine1: 'From connectivity needs',
+    titleHighlight: 'to digital activation.',
+    description: 'A successful eSIM deployment starts with understanding your devices, users and target markets. We help shape the connectivity model, provisioning requirements and integration approach around your business needs.',
+
+    statusText: 'A structured path to eSIM connectivity',
+    flowText: 'Define · Configure · Provision · Connect',
+    footerTitle: 'Digital connectivity, planned around you',
+    footerDescription: 'The right foundations help make eSIM services easier to activate and manage.',
+    phaseLabel: 'Implementation stage',
+  },
+
+  steps: [
+    {
+      number: '01',
+      title: 'Define',
+      subtitle: 'Understand your connectivity needs',
+      description: 'Identify your target devices, users, markets and use cases. Establish the connectivity model, expected usage and requirements for your eSIM deployment.',
+    },
+    {
+      number: '02',
+      title: 'Configure',
+      subtitle: 'Prepare the service model',
+      description: 'Define suitable mobile plans, supported network options, profile requirements, activation journeys and the service workflows needed for your deployment.',
+    },
+    {
+      number: '03',
+      title: 'Provision & Integrate',
+      subtitle: 'Connect the digital experience',
+      description: 'Plan eSIM profile provisioning and activation, and connect the relevant platform components, APIs and business systems according to technical and operator requirements.',
+    },
+    {
+      number: '04',
+      title: 'Connect & Manage',
+      subtitle: 'Support ongoing connectivity',
+      description: 'Activate compatible devices, manage relevant service workflows and review connectivity requirements as your users, devices and deployment evolve.',
+    },
+  ],
+};
+
+export const principlesData = {
+  content: {
+    eyebrow: 'What Guides Our eSIM Solutions',
+    titleLine1: 'Better digital connectivity',
+    titleLine2: 'starts with the right foundation.',
+    description: 'A great eSIM experience depends on more than digital activation. Clear provisioning, flexible connectivity options, thoughtful integration and responsible service management guide how we approach eSIM solutions.',
+
+    cardFooter: 'The principles behind our eSIM approach',
+    approachEyebrow: 'The Arventa Approach',
+    approachTitle: 'Digital technology, practical workflows, connected experiences.',
+    approachDescription: 'Because successful eSIM services need to work for devices, businesses and the people who use them.',
+
+    approachHighlight: ' Built around flexibility.',
+
+    approachLabel: 'Digital connectivity commitment',
+    approachSubLabel: 'Focused on practical eSIM experiences',
+    principlePrefix: 'PRINCIPLE',
+    philosophyFooter: 'Our eSIM philosophy',
+  },
+
+  items: [
+    {
+      number: '01',
+      title: 'User Experience',
+      description: 'Clear activation journeys, understandable service information and straightforward connectivity workflows help make eSIM easier to use.',
+      icon: "",
+      tag: 'Simplicity',
+    },
+    {
+      number: '02',
+      title: 'Flexibility',
+      description: 'Connectivity options should adapt to different devices, markets and business models, subject to device compatibility and operator availability.',
+      icon: "",
+      tag: 'Adaptability',
+    },
+    {
+      number: '03',
+      title: 'Seamless Integration',
+      description: 'Provisioning platforms, APIs and business systems should work together to support consistent eSIM activation and management processes.',
+      icon: "",
+      tag: 'Integration',
+    },
+    {
+      number: '04',
+      title: 'Responsible Connectivity',
+      description: 'Clear service terms, appropriate network agreements and responsible handling of subscriber and device information are essential to sustainable digital connectivity.',
+      icon: "",
+      tag: 'Responsibility',
+    },
+  ],
 };

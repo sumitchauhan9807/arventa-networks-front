@@ -17,7 +17,7 @@ import ProcessSteps from '@/components/dynamic-zone/ProcessSteps';
 import PrinciplesGrid from '@/components/dynamic-zone/PrinciplesGrid';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-
+import ContactForm from '@/components/dynamic-zone/ContactForm'
 
 import { faqData, CTAData, countUpGridData, featureGridSectionData3, heroData , processData , principlesData } from '@/app/data/operations';
 
@@ -54,6 +54,7 @@ export default function Home() {
           {/* <Team /> */}
           <FAQ data={faqData} />
           <CTA data={CTAData} />
+          <ContactForm/>
         </>
       )}
 

@@ -7,7 +7,8 @@ import Header2 from '@/components/layout/Header2';
 import Footer from '@/components/layout/Footer';
 import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection';
 import WorldVoipMap from '@/components/dynamic-zone/WorldMaps/WorldMap';
-import VoipHero from '@/components/Hero/VoipHero';
+import VoipHero from '@/components/Hero/VoipHero3';
+import ServicesGrid from '@/components/dynamic-zone/ServicesGrid';
 
 import CountUp from '@/components/dynamic-zone/CountUp';
 import CTA from '@/components/dynamic-zone/CTA';
@@ -15,12 +16,13 @@ import FAQ from '@/components/dynamic-zone/FAQ';
 
 import VirtualOfficeNumbers from '@/components/dynamic-zone/VirtualNumberComponents/VirtualOfficeNumbers';
 import VirtualNumberSearch from '@/components/dynamic-zone/VirtualNumberComponents/VirtualNumberSearch';
-import { faqData, CTAData, countupData, featureGridSectionData1 ,hero1Data } from '@/app/data/softwareApis';
-
+import { faqData, CTAData, countupData, featureGridSectionData1 ,hero3Data ,solutionGridData ,serviceGridData} from '@/app/data/softwareApis';
+import ContactForm from '@/components/dynamic-zone/ContactForm'
 import Loader from '@/components/layout/Loader';
 
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import SolutionsGrid from '@/components/dynamic-zone/SolutionsGrid';
 
 export default function Home() {
   const theme = useSelector((state) => state.theme.theme);
@@ -49,14 +51,17 @@ export default function Home() {
         <Loader isLight={theme == 'light'} message="Loading About Arventa" duration={1800} />
       ) : (
         <>
-          <VoipHero data={hero1Data} />
-          <CountUp data={countupData} />
-          <VirtualNumberSearch onSearch={() => {}} />
-          <VirtualOfficeNumbers />
-          <WorldVoipMap />
+          <VoipHero data={hero3Data} />
+          <SolutionsGrid  data={solutionGridData} type="TYPE1" />
+
+          <ServicesGrid  data={serviceGridData} />
+
+          {/* <CountUp data={countupData} /> */}
+         
           <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData1} />
           <FAQ data={faqData} />
           <CTA data={CTAData} />
+          <ContactForm/>
         </>
       )}
 
