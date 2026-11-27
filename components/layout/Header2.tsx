@@ -148,9 +148,9 @@ const menuSections = [
         icon: PhoneCall,
       },
       {
-        title: 'Vergleichsseite',
+        title: 'Tornado VS Traditional dialers',
         description: 'Compare available solutions.',
-        href: '/vergleich',
+        href: '/comparison',
         icon: GitCompareArrows,
       },
       {

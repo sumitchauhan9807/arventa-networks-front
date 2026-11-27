@@ -1,8 +1,12 @@
 import { ShieldCheck, ArrowUpRight } from 'lucide-react';
 
 import { OperationsAmbientBackground } from '@/components/common/AmbientBackgrounds';
-function PrinciplesGrid({ theme = 'dark', content , principles  }) {
-  const dark = theme === 'dark';
+import { useSelector } from "react-redux";
+
+function PrinciplesGrid({ data  }) {
+  const reduxTheme = useSelector((state) => state.theme?.theme);
+
+  const dark = reduxTheme === 'dark';
   const muted = dark ? 'text-white/55' : 'text-slate-600';
   const card = dark ? 'border-white/10 bg-[#111313] hover:border-[#C69B3D]/45' : 'border-slate-200 bg-white hover:border-[#C69B3D]/60';
 
@@ -15,22 +19,22 @@ function PrinciplesGrid({ theme = 'dark', content , principles  }) {
           <div>
             <div className="mb-5 flex items-center gap-3">
               <span className="h-px w-9 bg-[#C69B3D]" />
-              <span className="text-xs font-bold uppercase tracking-[0.22em] text-[#B88C30]">{content.eyebrow}</span>
+              <span className="text-xs font-bold uppercase tracking-[0.22em] text-[#B88C30]">{data.content.eyebrow}</span>
             </div>
 
             <h2 className="text-4xl font-semibold leading-[1.1] tracking-tight sm:text-6xl">
-              {content.titleLine1}
+              {data.content.titleLine1}
               <br />
-              <span className="text-[#C69B3D]">{content.titleLine2}</span>
+              <span className="text-[#C69B3D]">{data.content.titleLine2}</span>
             </h2>
           </div>
 
-          <p className={`max-w-xl text-sm leading-7 lg:justify-self-end ${muted}`}>{content.description}</p>
+          <p className={`max-w-xl text-sm leading-7 lg:justify-self-end ${muted}`}>{data.content.description}</p>
         </div>
 
         <div className="mt-16 grid gap-4 md:grid-cols-2">
-          {principles.map((item) => {
-            const Icon = item.icon;
+          {data.items.map((item) => {
+            const Icon = ShieldCheck
 
             return (
               <article key={item.number} className={`group relative overflow-hidden rounded-2xl border p-6 transition-all duration-300 hover:-translate-y-1 sm:p-8 ${card}`}>
@@ -42,7 +46,7 @@ function PrinciplesGrid({ theme = 'dark', content , principles  }) {
                   </div>
 
                   <span className="font-mono text-xs text-[#C69B3D]">
-                    {content.principlePrefix} / {item.number}
+                    {data.content.principlePrefix} / {item.number}
                   </span>
                 </div>
 
@@ -55,7 +59,7 @@ function PrinciplesGrid({ theme = 'dark', content , principles  }) {
                 </div>
 
                 <div className="relative mt-8 flex items-center justify-between border-t border-current/10 pt-5">
-                  <span className={`text-xs ${muted}`}>{content.philosophyFooter}</span>
+                  <span className={`text-xs ${muted}`}>{data.content.philosophyFooter}</span>
 
                   <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#C69B3D]/25 text-[#C69B3D] transition-all group-hover:border-[#C69B3D] group-hover:bg-[#C69B3D] group-hover:text-black">
                     <ArrowUpRight size={17} />
@@ -71,14 +75,14 @@ function PrinciplesGrid({ theme = 'dark', content , principles  }) {
 
           <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#B88C30]">{content.approachEyebrow}</span>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#B88C30]">{data.content.approachEyebrow}</span>
 
               <h3 className="mt-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-                {content.approachTitle}
-                <span className="text-[#C69B3D]">{content.approachHighlight}</span>
+                {data.content.approachTitle}
+                <span className="text-[#C69B3D]">{data.content.approachHighlight}</span>
               </h3>
 
-              <p className={`mt-4 max-w-2xl text-sm leading-7 ${muted}`}>{content.approachDescription}</p>
+              <p className={`mt-4 max-w-2xl text-sm leading-7 ${muted}`}>{data.content.approachDescription}</p>
             </div>
 
             <div className="flex shrink-0 items-center gap-4">
@@ -87,8 +91,8 @@ function PrinciplesGrid({ theme = 'dark', content , principles  }) {
               </div>
 
               <div>
-                <p className="text-sm font-semibold">{content.approachLabel}</p>
-                <p className={`mt-1 text-xs ${muted}`}>{content.approachSubLabel}</p>
+                <p className="text-sm font-semibold">{data.content.approachLabel}</p>
+                <p className={`mt-1 text-xs ${muted}`}>{data.content.approachSubLabel}</p>
               </div>
             </div>
           </div>

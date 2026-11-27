@@ -435,3 +435,32 @@ export const countUpGridData = {
     },
   },
 };
+
+export const heroData = {
+  hero: {
+    eyebrow: 'Global Connectivity. Intelligent Solutions.',
+
+    heading: {
+      firstLine: 'Connecting the World.',
+      secondLine: 'Intelligently.',
+    },
+    description: 'Arventa Networks connects businesses, carriers and technologies across the globe through intelligent telecom, mobile, IoT and AI infrastructure.',
+    primaryButton: 'Explore Our Network',
+    secondaryButton: 'Talk to an Expert',
+  },
+  stats: [
+    {
+      value: '180+',
+      label: 'Countries',
+    },
+    {
+      value: '99.99%',
+      label: 'Network Uptime',
+    },
+    {
+      value: '24/7',
+      label: 'Operations',
+    },
+  ],
+  animation:"home"
+};

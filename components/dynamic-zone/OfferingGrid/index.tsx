@@ -1,6 +1,8 @@
+import { useSelector } from 'react-redux';
 
 
-const OfferingGrid = ({ theme, data }) => {
+const OfferingGrid = ({  data }) => {
+   const theme = useSelector((state) => state.theme.theme);
   const isDark = theme === "dark";
 
   const styles = {

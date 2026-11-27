@@ -1,3 +1,83 @@
+export const partnerData = [
+  {
+    name: 'Salt Business',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_09_14_um_17_01_11_e747f175e8.png',
+    url: 'https://www.salt.ch/de/business',
+  },
+  {
+    name: 'Apple',
+    image: 'https://strapi.arventa.net/uploads/images_1_d04734391d.jpeg',
+    url: 'https://www.apple.com/chde/',
+  },
+  {
+    name: 'Starbucks',
+    image: 'https://strapi.arventa.net/uploads/images_d47c9a93a2.jpeg',
+    url: 'https://www.starbucks.ch/de',
+  },
+  {
+    name: 'outbox AG',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_09_14_um_16_48_47_removebg_preview_00d970b0c5.png',
+    url: 'https://www.outbox.de/',
+  },
+  {
+    name: 'A1 Austria Business',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_09_15_um_11_53_44_fae035cad7.png',
+    url: 'https://www.a1.net/business',
+  },
+  {
+    name: '3U Telekom',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_06_09_um_14_39_59_6eea280e85.png',
+    url: 'https://3utelecom.de/',
+  },
+  {
+    name: 'Phonestar',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_06_09_um_15_10_18_73a938ea3e.png',
+    url: 'https://www.phonestar.ch/',
+  },
+  {
+    name: 'Wildix Collaboration',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_06_09_um_14_45_10_168c8beb13.png',
+    url: 'https://www.wildix.com/de/product/wizyconf-web-conference-professionale/',
+  },
+  {
+    name: 'Collaboration 7',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_09_15_um_06_52_48_4b634ba18f.png',
+    url: 'https://app.wildix.com/',
+  },
+  {
+    name: 'Webex',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_09_15_um_06_54_48_371a85c6ef.png',
+    url: 'https://www.webex.com/',
+  },
+  {
+    name: 'Gamma Business',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_09_15_um_06_59_16_b371773815.png',
+    url: 'https://www.gammacommunications.de/',
+  },
+  {
+    name: 'Amazon Business',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_09_15_um_07_01_35_317b969b71.png',
+    url: 'https://www.amazon.de/',
+  },
+  {
+    name: 'Amazon',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_09_15_um_07_02_20_8411e59e8f.png',
+    url: 'https://www.amazon.de/',
+  },
+  {
+    name: 'Mazu Tech Software',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2025_02_13_um_06_20_37_545951b4e6.png',
+  },
+  {
+    name: 'Flirttool Prime Chat',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2025_02_28_um_13_22_51_f4b3fad1df.png',
+  },
+  {
+    name: 'Bellver Visa Card',
+    image: 'https://strapi.arventa.net/uploads/Bildschirmfoto_2026_10_09_um_19_38_35_928292bab1.png',
+    url: 'https://app.bellvercards.com?ref=idriskawa',
+  },
+];
 export const featureGridSectionData3 = {
   eyebrow: 'Our Principles',
 
@@ -127,5 +207,241 @@ export const CTAData = {
       darkHref: 'index.html',
       lightHref: '#solutions',
     },
+  },
+};
+
+export const heroData = {
+  hero: {
+    eyebrow: 'Stronger Together. Connected Globally.',
+
+    heading: {
+      firstLine: 'Building Partnerships.',
+      secondLine: 'Connecting Possibilities.',
+    },
+    description:
+      'Arventa Networks partners with telecom operators, technology providers, carriers and innovators to build a globally connected ecosystem, delivering intelligent connectivity, scalable infrastructure and next-generation digital solutions.',
+    primaryButton: 'Become a Partner',
+    secondaryButton: 'Explore Our Partners',
+  },
+  stats: [
+    {
+      value: '180+',
+      label: 'Countries Connected',
+    },
+    {
+      value: 'Global',
+      label: 'Partner Ecosystem',
+    },
+    {
+      value: '24/7',
+      label: 'Partner Support',
+    },
+  ],
+  animation: 'partners',
+};
+export const hero1Data = {
+  hero: {
+    title: 'Voice Without',
+    highlightedTitle: 'Boundaries.',
+    description: 'Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.',
+    primaryButton: 'Get Started',
+    secondaryButton: 'Explore Solutions',
+  },
+
+  services: {
+    items: [
+      {
+        number: '01',
+        title: 'SIP Trunking',
+        description: 'Flexible, reliable SIP connectivity for your business.',
+        footer: 'Built for your business',
+        icon: (
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M8 10h8M8 14h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>
+        ),
+      },
+      {
+        number: '02',
+        title: 'Voice Integration',
+        description: 'Connect voice services with your existing systems.',
+        footer: 'Built for your business',
+        icon: (
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
+            <rect x="14" y="14" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M10 6.5h3a4 4 0 0 1 4 4V14M14 17.5h-3a4 4 0 0 1-4-4V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>
+        ),
+      },
+      {
+        number: '03',
+        title: 'Scalable Capacity',
+        description: 'Adapt call capacity to changing business demand.',
+        footer: 'Built for your business',
+        icon: (
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M15 5h5v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        ),
+      },
+    ],
+  },
+}
+
+export const hero2Data = {
+  hero: {
+    eyebrow: '24/7 Network Operations',
+    title: 'Always connected.',
+    highlightedTitle: 'Always operational.',
+    description: 'Behind every call is a global team monitoring infrastructure, protecting connectivity, and keeping your communication running around the clock.',
+    primaryButton: 'Meet the Team',
+    secondaryButton: 'View Network Status',
+  },
+
+  stats: {
+    items: [
+      {
+        value: '99.99%',
+        label: 'Network Uptime',
+        icon: '◉',
+      },
+      {
+        value: '24 / 7',
+        label: 'Active Monitoring',
+        icon: '◌',
+      },
+      {
+        value: '42+',
+        label: 'Countries Covered',
+        icon: '◎',
+      },
+      {
+        value: '18ms',
+        label: 'Avg. Latency',
+        icon: '↯',
+      },
+    ],
+  },
+
+  team: {
+    title: 'Your network is being watched.',
+    status: 'Operations Online',
+    availability: 'Global team online',
+    members: [
+      {
+        initials: 'AM',
+        name: 'Alex Morgan',
+        role: 'Network Engineer',
+        status: 'Online',
+      },
+      {
+        initials: 'SK',
+        name: 'Sarah Kim',
+        role: 'Voice Specialist',
+        status: 'Online',
+      },
+      {
+        initials: 'DR',
+        name: 'Daniel Reed',
+        role: 'Infrastructure',
+        status: 'Monitoring',
+      },
+    ] 
+  },
+
+  activity: {
+    title: 'Live infrastructure activity',
+    status: 'Normal',
+  },
+}
+
+export const hero3Data = {
+  hero: {
+    eyebrow: 'About Our Company',
+
+    heading: {
+      firstLine: 'We connect people.',
+      secondLine: 'We move businesses.',
+    },
+
+    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+
+    primaryCta: {
+      label: 'Discover Our Story',
+      href: '#our-story',
+    },
+
+    secondaryCta: {
+      label: 'Meet Our Team',
+      href: '#team',
+    },
+  },
+
+  stats: {
+    items: [
+      {
+        value: '10+',
+        label: 'Years of Experience',
+      },
+      {
+        value: '42+',
+        label: 'Countries Connected',
+      },
+      {
+        value: '99.99%',
+        label: 'Network Uptime',
+      },
+      {
+        value: '24/7',
+        label: 'Global Support',
+      },
+    ],
+  },
+
+  values: {
+    eyebrow: 'What We Believe',
+    heading: 'What We Believe',
+    label: 'OUR PRINCIPLES',
+
+    items: [
+      {
+        number: '01',
+        title: 'Human First',
+        description: 'Technology should make communication simpler, more natural, and more human.',
+        icon: (
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+            <path d="M8 11h8M8 14h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>
+        ),
+      },
+
+      {
+        number: '02',
+        title: 'Built to Scale',
+        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        icon: (
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+            <path d="m3 8 6-4 6 3 6-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        ),
+      },
+
+      {
+        number: '03',
+        title: 'Always Reliable',
+        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        icon: (
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+            <path d="m8.5 12 2.2 2.2 4.8-4.8" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        ),
+      },
+    ],
   },
 };

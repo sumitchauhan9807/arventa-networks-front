@@ -10,7 +10,9 @@ type RootState = {
   };
 };
 
-const Hero = ({ animation = 'home' }: HeroProps) => {
+
+
+const Hero = ({data}) => {
   const reduxTheme = useSelector((state: RootState) => state.theme.theme);
 
   const isLight = reduxTheme === 'light';
@@ -108,24 +110,23 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
                 uppercase tracking-[.25em] ${theme.eyebrow}`}
             >
               <span className={`h-px w-10 ${theme.eyebrowLine}`} />
-              Global Connectivity. Intelligent Solutions.
+              {data.hero.eyebrow}
             </div>
 
             <h1
               className={`text-5xl font-semibold leading-[1.03] tracking-tight
                 ${theme.heading} sm:text-6xl lg:text-7xl xl:text-[78px]`}
             >
-              Connecting
+              {data.hero.heading.firstLine}
               <span
                 className={`block bg-gradient-to-r ${theme.gradient}
                   bg-clip-text text-transparent`}
               >
-                the World.
+                {data.hero.heading.secondLine}
               </span>
-              <span className="block">Intelligently.</span>
             </h1>
 
-            <p className={`mt-7 max-w-xl text-base leading-8 ${theme.body} sm:text-lg`}>Arventa Networks connects businesses, carriers and technologies across the globe through intelligent telecom, mobile, IoT and AI infrastructure.</p>
+            <p className={`mt-7 max-w-xl text-base leading-8 ${theme.body} sm:text-lg`}>{data.hero.description}</p>
 
             {/* Buttons */}
             <div className="mt-9 flex flex-wrap gap-4">
@@ -135,7 +136,7 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
                   bg-[#D9A83E] px-6 py-4 text-sm font-semibold transition
                   ${theme.primaryButton}`}
               >
-                Explore Our Network
+                {data.hero.primaryButton}
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
               </a>
 
@@ -144,31 +145,25 @@ const Hero = ({ animation = 'home' }: HeroProps) => {
                 className={`inline-flex items-center gap-3 rounded-md border px-6 py-4
                   text-sm font-medium backdrop-blur-sm transition ${theme.secondaryButton}`}
               >
-                Talk to an Expert
+                {data.hero.secondaryButton}
               </a>
             </div>
 
             {/* Stats */}
             <div className={`mt-12 grid max-w-xl grid-cols-3 border-t pt-7 ${theme.statBorder}`}>
-              <div>
-                <div className={`text-2xl font-semibold ${theme.statText}`}>180+</div>
-                <div className={`mt-1 text-[10px] uppercase tracking-wider ${theme.statMuted}`}>Countries</div>
-              </div>
-
-              <div className={`border-l pl-5 ${theme.statBorder}`}>
-                <div className={`text-2xl font-semibold ${theme.statText}`}>99.9%</div>
-                <div className={`mt-1 text-[10px] uppercase tracking-wider ${theme.statMuted}`}>Network Uptime</div>
-              </div>
-
-              <div className={`border-l pl-5 ${theme.statBorder}`}>
-                <div className={`text-2xl font-semibold ${theme.statText}`}>24/7</div>
-                <div className={`mt-1 text-[10px] uppercase tracking-wider ${theme.statMuted}`}>Operations</div>
-              </div>
+              {data.stats.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <div className={`text-2xl font-semibold ${theme.statText}`}>{item.value}</div>
+                    <div className={`mt-1 text-[10px] uppercase tracking-wider ${theme.statMuted}`}>{item.label}</div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
           <div className="relative h-[560px] sm:h-[650px] lg:h-[700px]">
-            <Animations type={animation} />
+            <Animations type={data.animation} />
           </div>
         </div>
       </div>

@@ -14,111 +14,87 @@ type Route = {
   delay: string;
 };
 
-const routes: Route[] = [
-  {
-    id: 'route-america-europe',
-    d: 'M180 230 Q360 40 540 175',
-    duration: '3.8s',
-    delay: '0s',
-  },
-  {
-    id: 'route-america-asia',
-    d: 'M180 230 Q570 30 820 190',
-    duration: '5s',
-    delay: '0.8s',
-  },
-  {
-    id: 'route-america-africa',
-    d: 'M180 230 Q440 280 550 330',
-    duration: '4s',
-    delay: '1.4s',
-  },
-  {
-    id: 'route-europe-asia',
-    d: 'M540 175 Q690 90 820 190',
-    duration: '3s',
-    delay: '0.4s',
-  },
-  {
-    id: 'route-europe-india',
-    d: 'M540 175 Q660 240 690 310',
-    duration: '3.6s',
-    delay: '1.8s',
-  },
-  {
-    id: 'route-india-asia',
-    d: 'M690 310 Q770 260 820 190',
-    duration: '3.2s',
-    delay: '0.6s',
-  },
-  {
-    id: 'route-asia-australia',
-    d: 'M820 190 Q950 300 970 420',
-    duration: '4.2s',
-    delay: '1.1s',
-  },
-  {
-    id: 'route-africa-asia',
-    d: 'M550 330 Q720 360 820 190',
-    duration: '4.5s',
-    delay: '2s',
-  },
-  {
-    id: 'route-south-america',
-    d: 'M245 345 Q300 430 285 480',
-    duration: '3.4s',
-    delay: '1.5s',
-  },
-];
+const network = {
+  routes: [
+    {
+      id: 'route-america-europe',
+      d: 'M180 230 Q360 40 540 175',
+      duration: '3.8s',
+      delay: '0s',
+    },
+    {
+      id: 'route-america-asia',
+      d: 'M180 230 Q570 30 820 190',
+      duration: '5s',
+      delay: '0.8s',
+    },
+    {
+      id: 'route-america-africa',
+      d: 'M180 230 Q440 280 550 330',
+      duration: '4s',
+      delay: '1.4s',
+    },
+    {
+      id: 'route-europe-asia',
+      d: 'M540 175 Q690 90 820 190',
+      duration: '3s',
+      delay: '0.4s',
+    },
+    {
+      id: 'route-europe-india',
+      d: 'M540 175 Q660 240 690 310',
+      duration: '3.6s',
+      delay: '1.8s',
+    },
+    {
+      id: 'route-india-asia',
+      d: 'M690 310 Q770 260 820 190',
+      duration: '3.2s',
+      delay: '0.6s',
+    },
+    {
+      id: 'route-asia-australia',
+      d: 'M820 190 Q950 300 970 420',
+      duration: '4.2s',
+      delay: '1.1s',
+    },
+    {
+      id: 'route-africa-asia',
+      d: 'M550 330 Q720 360 820 190',
+      duration: '4.5s',
+      delay: '2s',
+    },
+    {
+      id: 'route-south-america',
+      d: 'M245 345 Q300 430 285 480',
+      duration: '3.4s',
+      delay: '1.5s',
+    },
+  ] as Route[],
 
-const nodes = [
-  { x: 180, y: 230, label: 'North America' },
-  { x: 285, y: 480, label: 'South America' },
-  { x: 540, y: 175, label: 'Europe' },
-  { x: 550, y: 330, label: 'Africa' },
-  { x: 690, y: 310, label: 'India' },
-  { x: 820, y: 190, label: 'Asia' },
-  { x: 970, y: 420, label: 'Australia' },
-];
+  nodes: [
+    { x: 180, y: 230, label: 'North America' },
+    { x: 285, y: 480, label: 'South America' },
+    { x: 540, y: 175, label: 'Europe' },
+    { x: 550, y: 330, label: 'Africa' },
+    { x: 690, y: 310, label: 'India' },
+    { x: 820, y: 190, label: 'Asia' },
+    { x: 970, y: 420, label: 'Australia' },
+  ],
+};
 
-const services = [
-  {
-    number: '01',
-    title: 'SIP Trunking',
-    description: 'Flexible, reliable SIP connectivity for your business.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <rect x="3" y="6" width="18" height="12" rx="3" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M8 10h8M8 14h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    number: '02',
-    title: 'Voice Integration',
-    description: 'Connect voice services with your existing systems.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
-        <rect x="14" y="14" width="7" height="7" rx="2" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M10 6.5h3a4 4 0 0 1 4 4V14M14 17.5h-3a4 4 0 0 1-4-4V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    number: '03',
-    title: 'Scalable Capacity',
-    description: 'Adapt call capacity to changing business demand.',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M4 19V5m0 14h16M7 15l4-5 3 2 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M15 5h5v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-  },
-];
+// ============================================
+// STATIC data
+// ============================================
 
-const VoipHero: React.FC = () => {
+
+
+
+// ============================================
+// COMPONENT
+// ============================================
+
+const VoipHero = ({data}) => {
   const theme = useSelector((state: RootState) => state.theme.theme);
 
   const isDark = theme === 'dark';
@@ -147,6 +123,10 @@ const VoipHero: React.FC = () => {
     divider: isDark ? 'border-white/[0.13]' : 'border-[#151716]/[0.13]',
   };
 
+  // ============================================
+  // SCROLL FUNCTION
+  // ============================================
+
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: 'smooth',
@@ -154,32 +134,49 @@ const VoipHero: React.FC = () => {
     });
   };
 
+  // ============================================
+  // RENDER
+  // ============================================
+
   return (
     <section className={`relative isolate min-h-[900px] overflow-hidden transition-colors duration-500 ${styles.section}`}>
-      {/* Background ambience */}
+      {/* BACKGROUND AMBIENCE */}
 
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-1/2 top-[32%] h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[#D9A83E]/[0.10] blur-[150px]" />
+        {/* Main golden ambient light */}
+
+        <div className="absolute left-1/2 top-16 h-[420px] w-[min(90vw,1000px)] -translate-x-1/2 rounded-full bg-[#D9A83E]/[0.10] blur-[120px] sm:h-[560px]" />
+
+        {/* Secondary golden lighting */}
 
         <div className="absolute left-[-15%] top-[30%] h-[400px] w-[400px] rounded-full bg-[#D9A83E]/[0.055] blur-[130px]" />
 
         <div className="absolute right-[-10%] top-[25%] h-[450px] w-[450px] rounded-full bg-[#D9A83E]/[0.06] blur-[140px]" />
 
+        {/* Subtle 48px grid */}
+
         <div
-          className="absolute inset-0 opacity-[0.08]"
+          className="absolute inset-0 bg-[size:48px_48px]"
           style={{
-            backgroundImage: `
-              linear-gradient(rgba(217,168,62,0.25) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(217,168,62,0.25) 1px, transparent 1px)
-            `,
-            backgroundSize: '70px 70px',
+            backgroundImage: isDark
+              ? `linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+                 linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px)`
+              : `linear-gradient(rgba(21,23,22,0.045) 1px, transparent 1px),
+                 linear-gradient(90deg, rgba(21,23,22,0.045) 1px, transparent 1px)`,
           }}
         />
 
-        <div className={`absolute inset-x-0 top-0 h-[600px] ${isDark ? 'bg-gradient-to-b from-[#070909]/20 via-transparent to-[#070909]' : 'bg-gradient-to-b from-[#F7F5F0]/10 via-transparent to-[#F7F5F0]'}`} />
+        {/* Golden radial illumination */}
+
+        <div
+          className="absolute inset-0"
+          style={{
+            background: isDark ? 'radial-gradient(ellipse at 50% 25%, rgba(217,168,62,0.10), transparent 55%)' : 'radial-gradient(ellipse at 50% 25%, rgba(217,168,62,0.12), transparent 55%)',
+          }}
+        />
       </div>
 
-      {/* Global network animation */}
+      {/* GLOBAL NETWORK ANIMATION */}
 
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 flex justify-center">
         <div className="w-[1300px] max-w-none">
@@ -256,7 +253,7 @@ const VoipHero: React.FC = () => {
 
               {/* Glowing route lines */}
 
-              {routes.map((route) => (
+              {network.routes.map((route) => (
                 <g key={route.id}>
                   <path d={route.d} stroke="#D9A83E" strokeWidth="10" opacity="0.10" filter="url(#voipSoftGlow)" />
 
@@ -280,7 +277,7 @@ const VoipHero: React.FC = () => {
 
               {/* Pulsating connection nodes */}
 
-              {nodes.map((node, index) => (
+              {network.nodes.map((node, index) => (
                 <g key={node.label}>
                   <circle cx={node.x} cy={node.y} r="16" fill="url(#voipNodeGradient)" opacity="0.35" filter="url(#voipGlow)" />
 
@@ -300,119 +297,94 @@ const VoipHero: React.FC = () => {
         </div>
       </div>
 
-      {/* Hero content */}
+      {/* HERO data */}
 
       <div className="relative z-10 mx-auto max-w-6xl px-5 pb-24 pt-[180px] text-center sm:px-6 sm:pt-[220px] lg:pt-[245px]">
-        {/* Eyebrow */}
-
-        <div className={`mx-auto mb-7 inline-flex items-center gap-3 rounded-full border px-4 py-2.5 shadow-lg backdrop-blur-xl ${styles.eyebrow}`}>
-          <span className="relative flex h-2.5 w-2.5">
-            <span className="absolute inset-0 animate-ping rounded-full bg-[#D9A83E] opacity-70" />
-            <span className="relative h-2.5 w-2.5 rounded-full bg-[#F0C867]" />
-          </span>
-
-          <span className="text-[10px] font-semibold uppercase tracking-[0.22em] sm:text-[11px]">Global Voice Infrastructure</span>
-        </div>
-
         {/* Heading */}
 
         <h1 className={`font-display text-5xl font-medium leading-[0.98] tracking-[-0.055em] sm:text-7xl lg:text-[94px] ${styles.heading}`}>
-          Voice Without
+          {data.hero.title}
           <br />
-          <span className="bg-gradient-to-r from-[#A87918] via-[#E4B94F] to-[#FFF0B5] bg-clip-text text-transparent">Boundaries.</span>
+
+          <span className="bg-gradient-to-r from-[#A87918] via-[#E4B94F] to-[#FFF0B5] bg-clip-text text-transparent">{data.hero.highlightedTitle}</span>
         </h1>
 
         {/* Description */}
 
-        <p className={`mx-auto mt-7 max-w-2xl text-sm leading-7 sm:text-lg sm:leading-8 ${styles.paragraph}`}>Build flexible voice infrastructure with seamless SIP connectivity and business-ready communication services designed to connect teams, scale conversations, and power your business worldwide.</p>
+        <p className={`mx-auto mt-7 max-w-2xl text-sm leading-7 sm:text-lg sm:leading-8 ${styles.paragraph}`}>{data.hero.description}</p>
 
         {/* CTAs */}
 
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          {/* Primary Button */}
+
           <button type="button" onClick={() => scrollTo('contact')} className={`group inline-flex h-[54px] min-w-[175px] items-center justify-center gap-3 rounded-full px-7 text-sm font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_35px_rgba(217,168,62,0.25)] ${styles.primaryButton}`}>
-            Get Started
+            {data.hero.primaryButton}
+
             <svg viewBox="0 0 20 20" className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" aria-hidden="true">
               <path d="M4 10H16M11 5L16 10L11 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
 
+          {/* Secondary Button */}
+
           <button type="button" onClick={() => scrollTo('voice-solutions')} className={`inline-flex h-[54px] min-w-[175px] items-center justify-center gap-3 rounded-full border px-7 text-sm font-semibold backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 ${styles.secondaryButton}`}>
-            Explore Solutions
+            {data.hero.secondaryButton}
+
             <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none" aria-hidden="true">
               <path d="M10 3V17M4 10H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
           </button>
         </div>
 
-        {/* Service cards */}
+        {/* SERVICE CARDS */}
 
         <div id="voice-solutions" className="mx-auto mt-16 max-w-5xl scroll-mt-24 sm:mt-20">
           <div className={`overflow-hidden rounded-3xl border text-left shadow-2xl shadow-black/[0.08] backdrop-blur-2xl ${styles.card}`}>
             <div className="grid grid-cols-1 sm:grid-cols-3">
-              {services.map((service, index) => (
+              {data.services.items.map((service, index) => (
                 <article key={service.number} className={`group relative p-6 transition-colors duration-300 hover:bg-[#D9A83E]/[0.06] sm:p-7 ${index !== 2 ? `border-b sm:border-b-0 sm:border-r ${styles.divider}` : ''}`}>
+                  {/* Card Header */}
+
                   <div className="flex items-center justify-between">
                     <span className={`font-display text-sm font-semibold ${styles.gold}`}>{service.number}</span>
+
+                    {/* Icon */}
 
                     <div className={`flex h-11 w-11 items-center justify-center rounded-2xl border border-[#D9A83E]/35 bg-[#D9A83E]/[0.10] transition-all duration-300 group-hover:border-[#D9A83E]/60 group-hover:bg-[#D9A83E]/[0.18] group-hover:shadow-[0_0_25px_rgba(217,168,62,0.12)] ${styles.gold}`}>
                       <div className="h-5 w-5">{service.icon}</div>
                     </div>
                   </div>
 
+                  {/* Card Title */}
+
                   <h2 className={`mt-6 font-display text-xl font-semibold tracking-tight sm:text-2xl ${styles.cardTitle}`}>{service.title}</h2>
+
+                  {/* Card Description */}
 
                   <p className={`mt-3 text-sm leading-6 ${styles.cardMuted}`}>{service.description}</p>
 
+                  {/* Divider */}
+
                   <div className="mt-6 h-px w-full bg-gradient-to-r from-[#D9A83E]/45 via-[#D9A83E]/15 to-transparent" />
+
+                  {/* Card Footer */}
 
                   <div className={`mt-4 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.12em] ${styles.gold}`}>
                     <span className="h-1.5 w-1.5 rounded-full bg-[#D9A83E]" />
-                    Built for your business
+
+                    {service.footer}
                   </div>
                 </article>
               ))}
             </div>
           </div>
         </div>
-
-        {/* High-contrast feature highlights */}
-
-        <div className="mx-auto mt-10 max-w-4xl rounded-2xl border border-[#D9A83E]/20 bg-[#D9A83E]/[0.055] px-5 py-5 shadow-lg backdrop-blur-xl sm:px-7">
-          <p className={`mb-4 text-[10px] font-bold uppercase tracking-[0.2em] ${styles.gold}`}>Communication, built around you</p>
-
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-3">
-            {['Flexible SIP Connectivity', 'Seamless Voice Integration', 'Scalable Call Capacity'].map((feature) => (
-              <div key={feature} className={`flex items-center justify-center gap-2 text-xs font-semibold sm:text-sm ${styles.cardTitle}`}>
-                <svg viewBox="0 0 20 20" className={`h-4 w-4 shrink-0 ${styles.gold}`} fill="none" aria-hidden="true">
-                  <circle cx="10" cy="10" r="8" stroke="currentColor" strokeWidth="1.3" />
-                  <path d="m6.5 10 2.3 2.3 4.7-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-
-                <span>{feature}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
-      {/* Bottom trust strip with stronger contrast */}
+      {/* BOTTOM FADE */}
 
-      <div className={`relative z-20 border-t backdrop-blur-2xl ${isDark ? 'border-white/15 bg-[#090C0B]' : 'border-[#151716]/15 bg-[#FFFFFF]'}`}>
-        <div className="mx-auto grid max-w-6xl grid-cols-2 sm:grid-cols-4">
-          {[
-            ['SIP', 'Trunking Solutions'],
-            ['API', 'Voice Integration'],
-            ['Scale', 'Flexible Capacity'],
-            ['24 / 7', 'Voice Support'],
-          ].map(([value, label], index) => (
-            <div key={label} className={`flex min-h-[76px] items-center justify-center gap-3 px-2 py-4 sm:min-h-[88px] sm:px-4 ${index % 2 === 1 ? 'border-l' : ''} ${index >= 2 ? 'border-t sm:border-t-0' : ''} sm:border-l ${index === 0 ? 'sm:border-l-0' : ''} ${styles.divider}`}>
-              <span className={`font-display text-base font-bold tracking-tight sm:text-xl ${styles.gold}`}>{value}</span>
-
-              <span className={`max-w-[110px] text-[10px] font-semibold leading-4 sm:text-xs ${styles.cardMuted}`}>{label}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+      <div className={`pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-24 ${isDark ? 'bg-gradient-to-t from-[#070909] via-[#070909]/60 to-transparent' : 'bg-gradient-to-t from-[#F7F5F0] via-[#F7F5F0]/60 to-transparent'}`} aria-hidden="true" />
     </section>
   );
 };

@@ -9,7 +9,7 @@ import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection';
 import WorldVoipMap from '@/components/dynamic-zone/WorldMaps/WorldMap';
 import VoipHero from '@/components/Hero/VoipHero';
 import VoipHero2 from '@/components/Hero/VoipHero2';
-import AboutHero from '@/components/Hero/AboutHero';
+import VoipHero3 from '@/components/Hero/VoipHero3';
 
 import CountUp from '@/components/dynamic-zone/CountUp';
 import CTA from '@/components/dynamic-zone/CTA';
@@ -24,7 +24,9 @@ import Loader from '@/components/layout/Loader';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import { CTAData, countupData, teamData, aboutContent, featureGridSectionData1, featureGridSectionData2, featureGridSectionData3 } from '@/app/data/about';
+import { CTAData, countupData, teamData, aboutContent, featureGridSectionData1, featureGridSectionData2, featureGridSectionData3 ,heroData } from '@/app/data/about';
+
+
 
 export default function Home() {
   const theme = useSelector((state) => state.theme.theme);
@@ -55,7 +57,7 @@ export default function Home() {
         <>
           {/* <VoipHero2 />
           <VoipHero /> */}
-          <AboutHero />
+          <VoipHero3 data={heroData} />
           <CountUp data={countupData} />
           <AboutSection data={aboutContent} />
           <FeatureGridSection layoutType={'BOXES'} data={featureGridSectionData1} />

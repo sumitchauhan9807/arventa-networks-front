@@ -360,3 +360,91 @@ export const featureGridSectionData3 = {
     },
   ],
 };
+
+export const heroData = {
+  hero: {
+    eyebrow: 'About Our Company',
+
+    heading: {
+      firstLine: 'We connect people.',
+      secondLine: 'We move businesses.',
+    },
+
+    description: 'We build the communication infrastructure behind modern businesses, bringing together intelligent technology, dependable networks, and human-first service to make every conversation count.',
+
+    primaryCta: {
+      label: 'Discover Our Story',
+      href: '#our-story',
+    },
+
+    secondaryCta: {
+      label: 'Meet Our Team',
+      href: '#team',
+    },
+  },
+
+  stats: {
+    items: [
+      {
+        value: '10+',
+        label: 'Years of Experience',
+      },
+      {
+        value: '42+',
+        label: 'Countries Connected',
+      },
+      {
+        value: '99.99%',
+        label: 'Network Uptime',
+      },
+      {
+        value: '24/7',
+        label: 'Global Support',
+      },
+    ],
+  },
+
+  values: {
+    eyebrow: 'What We Believe',
+    heading: 'What We Believe',
+    label: 'OUR PRINCIPLES',
+
+    items: [
+      {
+        number: '01',
+        title: 'Human First',
+        description: 'Technology should make communication simpler, more natural, and more human.',
+        icon: (
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H8l-4 2v-5.2A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+            <path d="M8 11h8M8 14h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>
+        ),
+      },
+
+      {
+        number: '02',
+        title: 'Built to Scale',
+        description: 'Infrastructure that grows with ambitious businesses without adding unnecessary complexity.',
+        icon: (
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 19V12M10 19V7M16 19V10M22 19V4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+            <path d="m3 8 6-4 6 3 6-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        ),
+      },
+
+      {
+        number: '03',
+        title: 'Always Reliable',
+        description: 'Every connection matters. Our technology and people are focused on dependable communication.',
+        icon: (
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3 20 6v5.5c0 4.5-3.2 7.6-8 9.5-4.8-1.9-8-5-8-9.5V6l8-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+            <path d="m8.5 12 2.2 2.2 4.8-4.8" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        ),
+      },
+    ],
+  },
+};

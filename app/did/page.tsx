@@ -15,8 +15,7 @@ import FAQ from '@/components/dynamic-zone/FAQ';
 
 import VirtualOfficeNumbers from '@/components/dynamic-zone/VirtualNumberComponents/VirtualOfficeNumbers';
 import VirtualNumberSearch from '@/components/dynamic-zone/VirtualNumberComponents/VirtualNumberSearch';
-
-// import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection'
+import { faqData, CTAData, countupData, featureGridSectionData1 ,heroData } from '@/app/data/did';
 
 import Loader from '@/components/layout/Loader';
 
@@ -50,14 +49,14 @@ export default function Home() {
         <Loader isLight={theme == 'light'} message="Loading About Arventa" duration={1800} />
       ) : (
         <>
-          <VoipHero />
-          <CountUp />
+          <VoipHero data={heroData} />
+          <CountUp data={countupData} />
           <VirtualNumberSearch onSearch={() => {}} />
           <VirtualOfficeNumbers />
           <WorldVoipMap />
-          <FeatureGridSection layoutType={'NUMBERED'} />
-          <FAQ />
-          <CTA />
+          <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData1} />
+          <FAQ data={faqData} />
+          <CTA data={CTAData} />
         </>
       )}
 

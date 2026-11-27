@@ -11,7 +11,7 @@ import CTA from '@/components/dynamic-zone/CTA';
 import WorldNetworksMap from '@/components/dynamic-zone/WorldMaps/WorldNetworksMap';
 import FAQ from '@/components/dynamic-zone/FAQ';
 
-import {  CTAData  , featureGridSectionData3 ,countupData} from '@/app/data/partners';
+import { CTAData, featureGridSectionData3, countupData, heroData, partnerData } from '@/app/data/partners';
 
 // import FeatureGridSection from '@/components/dynamic-zone/FeatureGridSection'
 
@@ -19,7 +19,7 @@ import Loader from '@/components/layout/Loader';
 
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-
+import Partners from '@/components/dynamic-zone/Partners';
 
 export default function Home() {
   const theme = useSelector((state) => state.theme.theme);
@@ -48,10 +48,13 @@ export default function Home() {
         <Loader isLight={theme == 'light'} message="Loading About Arventa" duration={1800} />
       ) : (
         <>
-          <Hero animation="partners" />
-          <CountUp data={countupData} />
-          {/* <WorldNetworksMap /> */}
+          <Hero data={heroData} />
+          {/* <CountUp data={countupData} /> */}
           <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData3} />
+
+          <Partners data={partnerData} type="TYPE2" />
+
+          {/* <WorldNetworksMap /> */}
           {/* <Team />
           <FAQ /> */}
           <CTA data={CTAData} />

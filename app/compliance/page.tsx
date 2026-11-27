@@ -17,7 +17,8 @@ import Loader from '@/components/layout/Loader';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import {  CTAData  , featureGridSectionData3 ,countupData } from '@/app/data/compliance';
+import {  CTAData  , featureGridSectionData3 ,countupData ,heroData ,offeringGridData } from '@/app/data/compliance';
+import OfferingGrid from '@/components/dynamic-zone/OfferingGrid';
 
 
 export default function Home() {
@@ -47,9 +48,11 @@ export default function Home() {
         <Loader isLight={theme == 'light'} message="Loading About Arventa" duration={1800} />
       ) : (
         <>
-          <Hero animation="compliance" />
+          <Hero data={heroData} />
           <CountUp data={countupData} />
           {/* <WorldNetworksMap /> */}
+          <OfferingGrid  data={offeringGridData} />
+
           <FeatureGridSection layoutType={'NUMBERED'} data={featureGridSectionData3} />
           {/* <Team />
           <FAQ /> */}

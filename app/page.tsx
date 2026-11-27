@@ -30,7 +30,9 @@ import FancyComponents from '@/components/dynamic-zone/FancyComponents'
 
 
 
-import { serviceGridData, solutionGridData, testimonialsData, offeringGridData, partnerData, faqData, CTAData ,countupData ,countUpGridData } from '@/app/data/home';
+import { serviceGridData, solutionGridData, testimonialsData, offeringGridData, partnerData, faqData, CTAData ,countupData ,countUpGridData ,heroData } from '@/app/data/home';
+
+
 
 export default function Home() {
   const theme = useSelector((state) => state.theme.theme);
@@ -60,11 +62,11 @@ export default function Home() {
         <Loader isLight={theme == 'light'} message="Establishing secure connections" duration={1800} />
       ) : (
         <>
-          <Hero animation={'home'} />
+          <Hero data={heroData} />
           <ServicesGrid theme={theme} data={serviceGridData} />
           <SolutionsGrid theme={theme} data={solutionGridData} type="TYPE1" />
 
-          <OfferingGrid theme={theme} data={offeringGridData} />
+          <OfferingGrid  data={offeringGridData} />
           <FancyComponents/>
           <CountUp data={countupData} />
 
@@ -84,7 +86,7 @@ export default function Home() {
 
           <SolutionsGrid theme={theme} data={solutionGridData} type="TYPE2" />
 
-          <Partners data={partnerData} />
+          <Partners data={partnerData} type="TYPE1" />
 
           <Testimonials data={testimonialsData} />
           <FAQ data={faqData} />
