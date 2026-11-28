@@ -6,6 +6,9 @@ import { ArrowRight, ArrowUpRight, Building2, Users, Handshake, ShieldCheck, Net
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleTheme } from '@/redux/slices/themeSlice';
 
+import { useRef, useEffect } from 'react';
+import { Check } from 'lucide-react';
+
 const GOLD = '#E0B653';
 const GOLD_LIGHT = '#F3D58A';
 const GOLD_DARK = '#9A7020';
@@ -629,9 +632,7 @@ export default function Header() {
             {isDark ? <Sun size={16} className="transition-transform duration-300 hover:rotate-45" /> : <Moon size={16} />}
           </button>
 
-          <button type="button" aria-label="Language selector" className={`rounded-lg px-3 py-2 text-[11px] font-semibold transition-colors hover:text-[#E0B653] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E0B653] ${isDark ? 'text-white/75' : 'text-slate-700'}`}>
-            EN <span className="ml-1 opacity-50">⌄</span>
-          </button>
+          <LanguageSwitcher />
 
           <Link href="/contact" onClick={closeMenus} className={`group/contact ml-1 inline-flex items-center gap-2 rounded-lg border px-4 py-2.5 text-xs font-semibold transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E0B653] ${styles.salesButton}`}>
             Contact Us
@@ -705,10 +706,180 @@ export default function Header() {
             Contact Us
             <ArrowRight size={15} className="transition-transform duration-300 group-hover/mobilecta:translate-x-1" />
           </Link>
-
+          <div className="mt-2">
+            <center>
+              {' '}
+              <LanguageSwitcher />
+            </center>{' '}
+          </div>
           <p className={`mt-4 text-center text-[11px] ${styles.logoSubtext}`}>Global connectivity. Smarter communication.</p>
         </div>
       </div>
     </header>
+  );
+}
+
+const languages = [
+  { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+  { code: 'fr', label: 'Français', flag: '🇫🇷' },
+  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'it', label: 'Italiano', flag: '🇮🇹' },
+  { code: 'pt', label: 'Português', flag: '🇵🇹' },
+  { code: 'nl', label: 'Nederlands', flag: '🇳🇱' },
+  { code: 'ru', label: 'Русский', flag: '🇷🇺' },
+  { code: 'zh', label: '中文', flag: '🇨🇳' },
+  { code: 'ja', label: '日本語', flag: '🇯🇵' },
+  { code: 'ko', label: '한국어', flag: '🇰🇷' },
+  { code: 'ar', label: 'العربية', flag: '🇸🇦' },
+  { code: 'hi', label: 'हिन्दी', flag: '🇮🇳' },
+  { code: 'tr', label: 'Türkçe', flag: '🇹🇷' },
+  { code: 'pl', label: 'Polski', flag: '🇵🇱' },
+  { code: 'sv', label: 'Svenska', flag: '🇸🇪' },
+  { code: 'da', label: 'Dansk', flag: '🇩🇰' },
+  { code: 'no', label: 'Norsk', flag: '🇳🇴' },
+  { code: 'fi', label: 'Suomi', flag: '🇫🇮' },
+  { code: 'el', label: 'Ελληνικά', flag: '🇬🇷' },
+  { code: 'uk', label: 'Українська', flag: '🇺🇦' },
+  { code: 'th', label: 'ไทย', flag: '🇹🇭' },
+  { code: 'vi', label: 'Tiếng Việt', flag: '🇻🇳' },
+  { code: 'id', label: 'Bahasa Indonesia', flag: '🇮🇩' },
+  { code: 'ms', label: 'Bahasa Melayu', flag: '🇲🇾' },
+  { code: 'he', label: 'עברית', flag: '🇮🇱' },
+  { code: 'bn', label: 'বাংলা', flag: '🇧🇩' },
+];
+
+function LanguageSwitcher({ defaultLanguage = 'en', onLanguageChange }) {
+  const [language, setLanguage] = useState(languages.find((lang) => lang.code === defaultLanguage) || languages[0]);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    const handleEscape = (event) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleEscape);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, []);
+
+  // Handle language selection
+  const selectLanguage = (lang) => {
+    setLanguage(lang);
+    setIsOpen(false);
+
+    onLanguageChange?.(lang.code);
+  };
+
+  return (
+    <div className="relative inline-block" ref={dropdownRef}>
+      {/* Language Button */}
+      <button
+        style={{
+          background: 'none',
+          color: 'white',
+        }}
+        type="button"
+        onClick={() => setIsOpen((prev) => !prev)}
+        aria-expanded={isOpen}
+        aria-haspopup="listbox"
+        className="
+          flex items-center gap-2
+          rounded-full
+          border border-[#D4AF37]
+          bg-gradient-to-r from-[#F5D77A] to-[#C99A2E]
+          px-4 py-2
+          text-sm font-semibold text-[#29200B]
+          shadow-md shadow-yellow-900/20
+          transition-all duration-300
+          hover:from-[#FFE89A] hover:to-[#D4AF37]
+          hover:shadow-lg hover:shadow-yellow-900/30
+          focus:outline-none focus:ring-2
+          focus:ring-[#D4AF37]/50
+        "
+      >
+        <span className="text-lg">{language.flag}</span>
+
+        <span>{language.code.toUpperCase()}</span>
+
+        <ChevronDown size={16} className={`transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+      </button>
+
+      {/* Dropdown */}
+      {isOpen && (
+        <div
+          style={{ height: '460px' }}
+          role="listbox"
+          aria-label="Select language"
+          className="
+            absolute right-0 z-50 mt-3
+            w-52
+            overflow-y-auto
+            rounded-xl
+            border border-[#D4AF37]/50
+            bg-[#17130B]/90
+            p-1.5
+            shadow-xl shadow-black/30
+            backdrop-blur-xl
+            animate-in fade-in slide-in-from-top-2 duration-200
+            golden-scrollbar
+          "
+        >
+          {/* Dropdown Header */}
+          <div
+            className="
+            sticky top-0 z-10
+            border-b border-[#D4AF37]/20
+            bg-[#17130B]/95
+            px-3 py-2
+            text-[10px] font-semibold uppercase
+            tracking-[0.2em] text-[#D4AF37]
+          "
+          >
+            Select Language
+          </div>
+
+          {/* Language Options */}
+          {languages.map((lang) => (
+            <button
+              key={lang.code}
+              type="button"
+              role="option"
+              aria-selected={language.code === lang.code}
+              onClick={() => selectLanguage(lang)}
+              className={`
+                flex w-full items-center justify-between
+                rounded-lg px-3 py-2.5
+                text-sm transition-all duration-200
+                ${language.code === lang.code ? 'bg-gradient-to-r from-[#D4AF37]/30 to-[#B8860B]/20 text-[#FFD700]' : 'text-[#E8D5A3] hover:bg-[#D4AF37]/15 hover:text-[#FFD700]'}
+              `}
+            >
+              <span className="flex items-center gap-3">
+                <span className="text-lg">{lang.flag}</span>
+
+                <span className="font-medium">{lang.label}</span>
+              </span>
+
+              {language.code === lang.code && <Check size={16} className="shrink-0 text-[#FFD700]" />}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 
 const types = {
   WORLD_COUNTRIES: lazy(() => import('./WorldCountries')),
+  WORLD_COUNTRIES_COLORED: lazy(() => import('./WorldCountriesColored')),
   WORLD_MAP: lazy(() => import('./WorldMap')),
   WORLD_NETWORKS: lazy(() => import('./WorldNetworks')),
   WORLD_NETWORKS_MAP: lazy(() => import('./WorldNetworksMap')),

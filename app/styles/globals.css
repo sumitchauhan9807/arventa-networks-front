@@ -603,3 +603,33 @@ main.light .gold-text {
   background-clip: text;
   color: transparent;
 }
+
+
+/* Premium Golden Scrollbar */
+
+.golden-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #D4AF37 #3B301A;
+}
+
+.golden-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.golden-scrollbar::-webkit-scrollbar-track {
+  background: #3B301A;
+  border-radius: 10px;
+}
+
+.golden-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #FFD700,
+    #B8860B
+  );
+  border-radius: 10px;
+}
+
+.golden-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #FFE58A;
+}
